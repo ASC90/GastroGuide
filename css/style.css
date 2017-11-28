@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+
+footer {
+color: #E0E9E6;
+background-color: #20292F;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+font-family: 'Muli', sans-serif;
+}
+
+.footer{
+	position: relative;
+	align-items: center;
+}
+
+.row{
+	position: relative;
+}
+
+.col1{
+	display: inline-block;
+	position: relative;
+	margin-left: 400px;
+}
+
+.col1 p{
+	font-size: 12px;
+	width: 300px
+
+}
+
+.col2{
+	display: inline-block;
+	position: relative;
+	float: right; 
+	margin-right: 400px;
+
+}
+
+.copyright{
+	position: relative;	
+	display: inline-block;
+}
+
+.contenedor{
+	position: relative;	
+	display: inline-block;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%; 
+}
+
+
