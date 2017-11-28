@@ -87,7 +87,8 @@ div.icon-user
 }
 .icon-user:before 
 {
-	content: "👤"; 
+	font-family: 'entypo';
+	content: "\1f464"; 
 	font-style: normal;
 	font-size: 0.9em;
 }
