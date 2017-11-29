@@ -105,28 +105,30 @@ div.icon-user
 	background-color: #F6C324;
 	border: 0;
 	padding: 5px 15px;
-	color: #D3411C;
+	color: #218380;
 	font-size: 0.85em;
 	font-weight: 600;
 	border-radius: 25px;
-	margin-top: 10px
+	margin-top: 15px
 }
 .chef button{
-	background-color: #D3411C;
-	background-color: ;
+	background-color: #218380;
 	border: 0;
 	padding: 5px 15px;
 	color:#F6C324;
 	font-size: 0.85em;
 	font-weight: 600;
 	border-radius: 25px;
+	margin-top: 15px
 	
 }
 .log input{
 	width: 260px;
 	padding: 5px 5px;
 	margin-top: 10px;
-	font-size: 1em
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.658);
+	border: 0px
 
 }
 .lover{
@@ -152,6 +154,14 @@ div.icon-user
 .chef img{
 	margin-top: 50px;
 	margin-bottom: 30px;
+}
+.boton{
+	margin-top: 25px
+}
+.signup{
+	background-color: #E0E9E6 !important;
+	color: #218380 !important
+
 }
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
