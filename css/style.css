@@ -26,53 +26,69 @@ footer a{
 
 .footer{
 	position: relative;
-	align-items: center;
+	text-align:center;
 }
 
 .row{
 	position: relative;
+	display: inline-block;
+	width: auto;
 }
 
 .col1{
 	display: inline-block;
+    position: relative;
+    padding-right: 5%;
+}
+
+.col1 h4{
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+.img-footer{
+	display: inline-block;
 	position: relative;
-	margin-left: 400px;
+	padding-top: 2%;
+}
+
+img#logo-footer{
+	width: 130pt;
+	height: 100pt;
 }
 
 .col2{
 	display: inline-block;
 	position: relative;
-	float: right; 
-	margin-right: 400px;
+	padding-left: 5%;
 	font-family: entypo;
 }
 
 .col2 h3{
 	font-family: 'Muli', sans-serif;
-	text-align: center;
 }
 
-ul li{
+footer ul li{
 	list-style: none;
 	display: inline-block;
 }
 .icon-facebook-circled:before { /* icono facebook */
 	content: '\f30d'; 
-	font-size: 30px;
+	font-size: 2em;
 	font-style: normal;
-	padding-right:10px;
+	padding-right:0.5em;
 } 
 
 .icon-twitter-circled:before { /* icono twitter */
 	content: '\f30a';
-	font-size: 30px;
+	font-size: 2em;
 	font-style: normal;
-	padding-right:10px;
+	padding-right:0.5em;
 } 
 
 .icon-gplus-circled:before { /* icono google */
 	content: '\f310';
-	font-size: 30px;
+	font-size: 2em;
 	font-style: normal;
 } 
 
@@ -90,3 +106,6 @@ ul li{
 }
 
 
+#texto-footer{
+	font-size: 0.7em;
+}
