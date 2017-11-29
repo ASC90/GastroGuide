@@ -92,7 +92,38 @@ div.icon-user
 	font-style: normal;
 	font-size: 0.9em;
 }
+/*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
+.log{
+	border: 0%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	bottom: 0%;
+	height: 100%;
+}
 
+.log button{
+	background-color: #F8B05D;
+	border: 0px;
+	border-radius: 25px
+}
+.lover{
+	background-color: #D3411C;
+	float: left;
+	width: 50%;
+	align-content: center;
+	height: 100%
+	
+}
+.chef{
+	background-color:  #F6C324;
+	float: right;
+	width: 50%;
+	align-items: center;
+	height: 100%
+
+}
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
 footer {
