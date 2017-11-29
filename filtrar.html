@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Footer</title>
+	<link rel="stylesheet" type="text/css" href="css/stylefiltrar.css">
+</head>
+<body>
+
+	<header>
+		<nav class="navegacion"><!--navbar-->
+			<ul class="navbar">
+				<li class="lista-navbar">
+					<a href=""><img src="img/logo-small.png" alt="" class="gastro-guide-logo"></a>
+				</li>
+				<span class="navbar-derecha">
+						<li class="lista-navbar gestion-usuario-padding">
+							<a href="">
+								<button class="inicia-sesion">
+									<div class="icon-user">
+									</div>
+									Inicia sesión
+								</button>
+							</a>
+						</li>
+					</span>
+				</ul>
+			</nav>
+		</header>	
+
+		<section id="section-filtro"> <!--FILTRO LATERAL-->
+			<div class="filtros">
+				<div class="title-box">
+					<h2 class="title-box">Filtrar la búsqueda</h2>
+				</div>
+				<div class="tipo-cocina">
+					<h4 class="tipo-cocina">Cocina</h4>
+				</div>
+				<div class="checkbox-tipo-cocina">
+					<form action="tipo-cocina">
+						<input type="checkbox" name="tipo-cocina" value="Española">Española<br>
+						<input type="checkbox" name="tipo-cocina" value="India">India<br>
+						<input type="checkbox" name="tipo-cocina" value="Japonesa">Japonesa<br>
+						<input type="checkbox" name="tipo-cocina" value="China">China<br>
+						<input type="checkbox" name="tipo-cocina" value="Italiana">Italiana<br>
+						<input type="checkbox" name="tipo-cocina" value="Mexicana">Mexicana<br>
+						<input type="checkbox" name="tipo-cocina" value="Tailandesa">Tailandesa<br>
+						<input type="checkbox" name="tipo-cocina" value="Coreana">Coreana<br>
+						<input type="checkbox" name="tipo-cocina" value="Mediterranea">Mediterranea<br>
+						<input type="checkbox" name="tipo-cocina" value="Americana">Americana<br>
+						<input type="checkbox" name="tipo-cocina" value="Marroqui">Marroqui<br>
+						<input type="checkbox" name="tipo-cocina" value="Escandinava">Escandinava<br>					
+					</form>
+				</div>
+				<div class="precio-persona">
+					<h4>Precio por persona</h4>
+				</div>
+				<div id="slide-personas">
+	  				<input type="range" min="0" max="150" value="5" class="slider" id="myRange"><br>
+	  				<label for="">Precio de 0 a 150 € +</label>
+				</div>
+
+				<div class="nota-restaurante">
+					<h4>Nota</h4>	
+				</div>
+
+				<div id="slide-nota">
+	  				<input type="range" min="1" max="10" value="5" class="slider" id="myRange"><br>
+	  				<label for="">Precio de 0 a 10/10</label>
+				</div>
+			</div>
+		</section>
+
+		<section id="section-fichas"> <!--FICHAS FILTRADAS RESTAURANTES-->
+			<div class="contenedor-fichas">
+				<div class="img-ficha">
+					<img src="img/cater.jpg" alt="">
+				</div>
+
+				<div class="text-ficha">
+					<label> <a href=""><h2>Piazza Navona</h2></a><br>Carrer de Provença, 300 08008 Barcelona</label>
+				</div>
+				
+				<div class="opiniones-nota">
+					<label><h2>8,8</h2><br>Opiniones</label>
+				</div>
+			</div>
+
+			<div class="contenedor-fichas">
+				<div class="img-ficha">
+					<img src="img/alex.jpg" alt="">
+				</div>
+
+				<div class="text-ficha">
+					<label><a href=""><h2>Roca Bar</h2></a><br>Carrer del Roselló,148 08036 Barcelona</label>
+				</div>
+				
+				<div class="opiniones-nota">
+					<label><h2>9,2</h2> <br>Opiniones</label>
+				</div>
+			</div>
+
+			<div class="contenedor-fichas">
+				<div class="img-ficha">
+					<img src="img/clifford.jpg" alt="">
+				</div>
+
+				<div class="text-ficha">
+					<label><a href=""><h2>Opera</h2></a> <br>Plaza Molina, 2 08006 Barcelona</label>
+				</div>
+				
+				<div class="opiniones-nota">
+					<label><h2>6,7</h2><br>Opiniones</label>
+				</div>
+			</div>
+
+			<div class="contenedor-fichas">
+				<div class="img-ficha">
+					<img src="img/jay.jpg" alt="">
+				</div>
+
+				<div class="text-ficha">
+					<label><a href=""><h2>Guzzo</h2></a><br>Carrer dels Arcs, 5 08002 Barcelona</label>
+				</div>
+				
+				<div class="opiniones-nota">
+					<label><h2>7,3</h2><br>Opiniones</label>
+				</div>
+			</div>
+
+			<div class="contenedor-fichas">
+				<div class="img-ficha">
+					<img src="img/roman.jpg" alt="">
+				</div>
+
+				<div class="text-ficha">
+					<label><a href=""><h2>El Celler</h2></a><br>Avinguda Diagonal, 423 08036 Barcelona</label>
+				</div>
+				
+				<div class="opiniones-nota">
+					<label><h2>5,5</h2><br>Opiniones</label>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="footer">
+				<div class="row">
+					
+					<div class="col1">
+						<a href="."><h4>Aviso legal</h3></a>
+						<a href="."><h4>Condiciones legales</h3></a>		
+					</div>
+					
+					<div class="img-footer">	
+						<img id="logo-footer"src="img/logo.png" alt="logo"/>
+					</div>
+					
+					<div class="col2">
+						<h3>Conectar</h3>
+						<ul>
+							<li><a href="."><i class="icon-facebook-circled"></i></a></li>
+							<li><a href="."><i class="icon-twitter-circled"></i></a></li>
+							<li><a href="."><i class="icon-gplus-circled"></i></a></li>
+						</ul>
+				</div>
+				<div class="copyright">
+					
+					<div class="contenedor">
+						<p>© 2017 GASTRO GUIDE - Todos los Derechos Reservados</p>
+						<p id="texto-footer">*Ver condiciones y validez en la ficha del restaurante. Las ofertas sobre las bebidas
+							alcohólicas están estrictamente reservadas para los adultos. El abuso de alcohol es
+							peligroso para la salud. Consumir con moderación. El restaurante y GastroGuide declinan
+							toda responsabilidad en caso de abuso.</p>
+					</div>
+
+				</div>
+			</div>
+		</footer>		
+	</body>
+</html>
