@@ -17,6 +17,7 @@ body
 	margin: 0;
 	padding: 0;
 	border: 0;
+	margin-top: 55px;
 }
 /*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
 nav.navegacion
@@ -95,12 +96,9 @@ div.icon-user
 /*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
 .log{
 	border: 0%;
-	position: absolute;
 	left: 0%;
-	top: 0%;
 	right: 0%;
-	bottom: 0%;
-	height: 100%;
+	height:600px ;
 }
 
 .log button{
@@ -112,7 +110,7 @@ div.icon-user
 	background-color: #D3411C;
 	float: left;
 	width: 50%;
-	align-content: center;
+	text-align: center;
 	height: 100%
 	
 }
@@ -120,16 +118,23 @@ div.icon-user
 	background-color:  #F6C324;
 	float: right;
 	width: 50%;
-	align-items: center;
+	text-align: center;
 	height: 100%
 
+}
+.lover img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.chef img{
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
 footer {
 color: #E0E9E6;
 background-color: #20292F;
-position: absolute;
 bottom: 0;
 left: 0;
 right: 0;
