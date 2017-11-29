@@ -98,16 +98,39 @@ div.icon-user
 	border: 0%;
 	left: 0%;
 	right: 0%;
-	height:600px ;
+	height:700px ;
 }
 
-.log button{
-	background-color: #F8B05D;
-	border: 0px;
-	border-radius: 25px
+.lover button{
+	background-color: #F6C324;
+	border: 0;
+	padding: 5px 15px;
+	color: #D3411C;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+	margin-top: 10px
+}
+.chef button{
+	background-color: #D3411C;
+	background-color: ;
+	border: 0;
+	padding: 5px 15px;
+	color:#F6C324;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+	
+}
+.log input{
+	width: 260px;
+	padding: 5px 5px;
+	margin-top: 10px;
+	font-size: 1em
+
 }
 .lover{
-	background-color: #D3411C;
+	background-color: #218380;
 	float: left;
 	width: 50%;
 	text-align: center;
