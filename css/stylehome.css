@@ -23,11 +23,16 @@ img.cabecera
 	margin: 0;
 	padding: 0;
 }
-footer
+.premiamos-tu-confianza
 {
-	background-color: black;
-	width: 100%;
-	height: 300px;
+	margin: 40px;
+	margin-right: 40%;
+	padding: 15px;
+	border: 2px solid #F6C324;
+}
+.text-sobre-imagen
+{
+	position: absolute;
 }
 /* A partir d'aqui comença la barra buscadora */
 .caja-blanca
