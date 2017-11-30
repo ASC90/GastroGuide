@@ -34,7 +34,7 @@ img.cabecera
 {
 	color: white;
 	position: absolute;
-	top: 200px;
+	/*top: 200px;*/
 	left: 0;
 	width: 100%;
 }
