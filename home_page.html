@@ -4,12 +4,32 @@
 		<meta charset="utf-8">
 		<title>home</title>
 		<link href="css/home_page.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
 	</head>
 	<body>
 		<header>
+			<!--Navbar-->
+			<nav class="navegacion"><!--navbar-->
+			<ul class="navbar">
+				<li class="lista-navbar">
+					<a href=""><img src="img/logo-small.png" alt="" class="gastro-guide-logo"></a>
+				</li>
+				<span class="navbar-derecha">
+						<li class="lista-navbar gestion-usuario-padding">
+							<a href="">
+								<button class="inicia-sesion">
+									<div class="icon-user">
+									</div>
+									Inicia sesión
+								</button>
+							</a>
+						</li>
+					</span>
+				</ul>
+			</nav>
 			<!--Imagen cabecera-->
 			<div align="center">
-				<img src="img/portada_petita.png" alt="Error" class="img-fondo">
+				<img src="img/Large_portada.png" alt="Error" class="img-fondo">
 			</div>
 		</header>
 		<section>
@@ -34,9 +54,9 @@
 							<option value="option 5">Cubano</option>
 						</select>
 						<!--buscador-->
-						<input type="text" placeholder=" buscar..." class="selector-buscador">
+						<input type="text" placeholder="Dirección o código postal..." class="selector-buscador">
 						<!--segundo selector-->
-						<input type="date" size="10">
+						<input type="date" class="selector-buscador">
 						<!--<select name="" id="" class="selector-buscador">
 							<option value="option 1">07/07/2017</option>
 							<option value="option 2">07/07/2017</option>
@@ -81,10 +101,51 @@
 				<div class="container-textsobre">
 					<div class="text-sobre-imagen">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, vel, deserunt. Magnam, perferendis quia itaque. Perspiciatis omnis, eos excepturi beatae nulla laboriosam error tempore aperiam praesentium atque dolor sint vel.
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio fugiat saepe modi sed, non, consequuntur quod maiores rem architecto sint repudiandae magnam numquam harum ex facere distinctio a! Obcaecati, eos.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, error illum molestias, libero nostrum facere. Architecto unde debitis voluptates consequuntur natus dolor quasi. Suscipit, beatae, assumenda! Ipsa distinctio molestiae cum.
+						</p>
 					</div>
 				</div>
 			</div>
 			</div>
 		</section>
+		<!--Footer-->
+		<footer>
+		<div class="footer">
+			<div class="row">
+				
+				<div class="col1">
+					<a href="."><h4>Aviso legal</h3></a>
+					<a href="."><h4>Condiciones legales</h3></a>		
+				</div>
+				
+				<div class="img-footer">	
+					<img id="logo-footer"src="img/logo.png" alt="logo"/>
+				</div>
+				
+				<div class="col2">
+					<h3>Conectar</h3>
+					<ul>
+						<li><a href="."><i class="icon-facebook-circled"></i></a></li>
+						<li><a href="."><i class="icon-twitter-circled"></i></a></li>
+						<li><a href="."><i class="icon-gplus-circled"></i></a></li>
+					</ul>
+			</div>
+			<div class="copyright">
+				
+				<div class="contenedor">
+					<p>© 2017 GASTRO GUIDE - Todos los Derechos Reservados</p>
+					<p id="texto-footer">*Ver condiciones y validez en la ficha del restaurante. Las ofertas sobre las bebidas
+						alcohólicas están estrictamente reservadas para los adultos. El abuso de alcohol es
+						peligroso para la salud. Consumir con moderación. El restaurante y GastroGuide declinan
+						toda responsabilidad en caso de abuso.</p>
+				</div>
+
+			</div>
+		</div>
+	</footer>
 	</body>
 </html>
