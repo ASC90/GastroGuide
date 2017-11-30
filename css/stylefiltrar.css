@@ -1,0 +1,394 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+@font-face 
+{
+    font-family: 'entypo';
+    src: url('/font/entypo.eot');
+    src: url('/font/entypo.eot?#iefix') format('embedded-opentype'),
+         url('/font/entypo.woff') format('woff'),
+         url('/font/entypo.ttf') format('truetype'),
+         url('/font/entypo.svg#entypo') format('svg');
+    font-weight: normal; font-style: normal;
+  }
+body
+{
+	font-family: "Muli", sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
+/*/nav.navegacion
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+}/*/
+ul.navbar 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+	overflow: hidden;
+	background-color: #20292f; 
+	/*border-radius: 10px;*/
+	/*box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.40);*/
+}
+li.lista-navbar
+{
+	display: inline-flex;
+}
+li.lista-navbar a
+{
+    display: block;
+	color: white;
+	text-align: center;
+    padding: 4px 12px;
+	/*margin: 0;
+    padding: 0;
+	border: 0;*/
+    text-decoration: none;
+	font-size: 1.5em;
+}
+li.lista-navbar a:hover
+{
+    background-color: #415566;
+}
+ul.navbar span.navbar-derecha
+{
+	float: right;
+}
+.gastro-guide-logo
+{
+	width: 85px;
+	height: 35px;
+	margin-left: 12px;
+}
+.gestion-usuario-padding
+{
+	padding: 5px;
+	align-items: center;
+}
+button.inicia-sesion
+{
+	background-color: #F6C324;
+	border: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #20292f;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+}
+div.icon-user
+{
+	display: inline-flex;
+}
+.icon-user:before 
+{
+	font-family: 'entypo';
+	content: "\1f464"; 
+	font-style: normal;
+	font-size: 0.9em;
+}
+/*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
+.log{
+	border: 0%;
+	left: 0%;
+	right: 0%;
+}
+
+.lover button{
+	background-color: #F6C324;
+	border: 0;
+	padding: 5px 15px;
+	color: #218380;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+	margin-top: 15px
+}
+.chef button{
+	background-color: #218380;
+	border: 0;
+	padding: 5px 15px;
+	color:#F6C324;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+	margin-top: 15px
+	
+}
+.log input{
+	width: 260px;
+	padding: 5px 5px;
+	margin-top: 10px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.658);
+	border: 0px
+
+}
+.lover{
+	background-color: #218380;
+	float: left;
+	width: 50%;
+	text-align: center;
+	height: 100%
+	
+}
+.chef{
+	background-color:  #F6C324;
+	float: right;
+	width: 50%;
+	text-align: center;
+	height: 100%
+
+}
+.lover img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	height: 350px;
+}
+.chef img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	height: 350px;
+}
+.boton{
+	margin-top: 25px
+}
+.signup{
+	background-color: #E0E9E6 !important;
+	color: #218380 !important;
+	margin-bottom: 10%
+
+}
+
+/*/////////////////////////////////////////FILTRO LATERAL//////////////////////////////////////////////////////////////////////////*/
+
+section#section-filtro{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5em;
+    padding-left: 10em;
+}
+
+.filtros{
+	margin:0;
+	border-radius: 2em;
+}
+
+
+.title-box{	
+	background-color: #415566;
+	border-radius: 2em 2em 0 0;
+}
+
+.title-box h2{
+	padding:0;
+	margin: 0;
+	padding: 0.5em;
+	color:#FFF;
+}
+
+.tipo-cocina{
+	background-color: #e0e9e6;
+}
+
+.tipo-cocina h4{
+	padding:0;
+	margin: 0;
+	padding-top: 0.1em;
+	padding-left: 0.6em;
+}
+
+.checkbox-tipo-cocina{
+	display: block;
+	padding-top: 0.6em;
+	padding-left: 0.6em;
+}
+
+.precio-persona{
+	background-color: #e0e9e6;
+}
+
+.precio-persona h4{
+	padding:0;
+	margin: 0;	
+	padding-left: 0.6em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#slide-personas{
+	text-align: center;
+}
+
+.nota-restaurante h4{
+	padding:0;
+	margin: 0;	
+	padding-left: 0.6em;
+	background-color: #e0e9e6;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#slide-nota{
+	text-align: center;
+}
+
+.nota{
+	border: solid 0.3em;
+}
+
+.barra-nota{
+	border: solid 0.3em;
+}
+
+/*/////////////////////////////////////////FICHAS FILTRADAS RESTAURANTES///////////////////////////////////////////////////////////////*/
+
+section#section-fichas{
+	display: inline-block;
+	padding-top: 5em;
+}
+
+.contenedor-fichas{
+	margin:0;
+	padding-left:10em;
+	padding-bottom: 10em;
+	height: 1em;
+}
+
+
+.img-ficha{
+	display: inline-block;
+}
+
+.img-ficha img{
+	width: 10em;
+	height: 10em;
+}
+
+.text-ficha{
+	display: inline-block;
+	height: 10em;
+	padding-left:1em;
+	width: 19em;
+	vertical-align: top;
+}
+
+.text-ficha a{
+	text-decoration: none;
+	color: #000;
+}
+.opiniones-nota{
+	border-left: solid 0.1em #e0e9e6;
+	display: inline-block;
+	height: 10em;
+	padding-left:1em;
+	margin-left: 5em;
+	vertical-align: top;
+}
+
+/*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
+
+footer {
+color: #E0E9E6;
+background-color: #20292F;
+bottom: 0;
+left: 0;
+right: 0;
+font-family: 'Muli', sans-serif;
+}
+
+footer a{
+	color:#E0E9E6;
+	text-decoration: none;
+}
+
+.footer{
+	/*/position: relative;/*/
+	text-align:center;
+}
+
+.row{
+/*/	position: relative;/*/
+	display: inline-block;
+	width: auto;
+}
+
+.col1{
+	display: inline-block;
+  /*/  position: relative;/*/
+    padding-right: 5%;
+}
+
+.col1 h4{
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+.img-footer{
+	display: inline-block;
+	/*/position: relative;/*/
+	padding-top: 2%;
+}
+
+img#logo-footer{
+	width: 130pt;
+	height: 100pt;
+}
+
+.col2{
+	display: inline-block;
+	/*/position: relative;/*/
+	padding-left: 5%;
+	font-family: entypo;
+}
+
+.col2 h3{
+	font-family: 'Muli', sans-serif;
+}
+
+footer ul li{
+	list-style: none;
+	display: inline-block;
+}
+.icon-facebook-circled:before { /* icono facebook */
+	content: '\f30d'; 
+	font-size: 2em;
+	font-style: normal;
+	padding-right:0.5em;
+} 
+
+.icon-twitter-circled:before { /* icono twitter */
+	content: '\f30a';
+	font-size: 2em;
+	font-style: normal;
+	padding-right:0.5em;
+} 
+
+.icon-gplus-circled:before { /* icono google */
+	content: '\f310';
+	font-size: 2em;
+	font-style: normal;
+} 
+
+.copyright{
+	/*/position: relative;/*/	
+	display: inline-block;
+}
+
+.contenedor{
+	/*/position: relative;/*/	
+	display: inline-block;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%; 
+}
+
+
+#texto-footer{
+	font-size: 0.7em;
+}
