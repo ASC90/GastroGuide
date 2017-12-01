@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+@font-face {
+    font-family: 'entypo';
+    src: url('/font/entypo.eot');
+    src: url('/font/entypo.eot?#iefix') format('embedded-opentype'),
+         url('/font/entypo.woff') format('woff'),
+         url('/font/entypo.ttf') format('truetype'),
+         url('/font/entypo.svg#entypo') format('svg');
+    font-weight: normal; font-style: normal;
+  }
+  
+body {
+	font-family: 'Muli', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0; 
+}
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            
+  }
+#pubconf {
+    display:inline-flex;
+    
+}
+
+#pubconf>div {
+
+    width:250px;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}  
+
+#pubconfan {
+    width:250px;
+    height: 250px;
+    border: dashed lightgrey;
+    color: lightgrey;
+    font-weight: bold;
+    font-size: 1.4em;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+
+} 
+
+
+.pubconfimgcon {
+
+    max-width:100%;
+    max-height:100%;
+}
