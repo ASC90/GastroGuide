@@ -1,0 +1,365 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+
+body
+{
+	font-family: "Muli", sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
+
+ul.navbar 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+	overflow: hidden;
+	background-color: #20292f; 
+}
+
+li.lista-navbar
+{
+	display: inline-flex;
+}
+li.lista-navbar a
+{
+    display: block;
+	color: white;
+	text-align: center;
+    padding: 4px 12px;
+    text-decoration: none;
+	font-size: 1.5em;
+}
+li.lista-navbar a:hover
+{
+    background-color: #415566;
+}
+ul.navbar span.navbar-derecha
+{
+	float: right;
+}
+.gastro-guide-logo
+{
+	width: 85px;
+	height: 35px;
+	margin-left: 12px;
+}
+.gestion-usuario-padding
+{
+	padding: 5px;
+	align-items: center;
+}
+button.inicia-sesion
+{
+	background-color: #F6C324;
+	border: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #20292f;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+}
+div.icon-user
+{
+	display: inline-flex;
+}
+.icon-user{
+
+}
+/*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
+.log{
+	border: 0%;
+	left: 0%;
+	right: 0%;
+}
+
+.lover button{
+	background-color: #F6C324;
+	border: 0;
+	padding: 5px 15px;
+	color: #218380;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+	margin-top: 15px
+}
+.chef button{
+	background-color: #218380;
+	border: 0;
+	padding: 5px 15px;
+	color:#F6C324;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+	margin-top: 15px
+	
+}
+.log input{
+	width: 260px;
+	padding: 5px 5px;
+	margin-top: 10px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.658);
+	border: 0px
+
+}
+.lover{
+	background-color: #218380;
+	float: left;
+	width: 50%;
+	text-align: center;
+	height: 100%
+	
+}
+.chef{
+	background-color:  #F6C324;
+	float: right;
+	width: 50%;
+	text-align: center;
+	height: 100%
+
+}
+.lover img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	height: 350px;
+}
+.chef img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	height: 350px;
+}
+.boton{
+	margin-top: 25px
+}
+.signup{
+	background-color: #E0E9E6 !important;
+	color: #218380 !important;
+	margin-bottom: 10%
+
+}
+
+/*////////////////////////////////////////////////HOME RESTAURANTE////////////////////////////////////////////////////////////////*/
+
+section#section-panel-control{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10em;
+    padding-left: 8em;
+}
+
+.panel-control{
+	margin:0;
+	border-radius: 2em;
+}
+
+
+.title-panel-control{	
+	background-color: #415566;
+	border-radius: 2em 2em 0 0;
+}
+
+.title-panel-control h2{
+	padding:0;
+	margin: 0;
+	padding: 0.5em;
+	color:#FFF;
+	text-align: center;
+}
+
+.editar-perfil{
+	background-color: #e0e9e6;
+}
+
+.editar-perfil img{
+	padding: 0;
+	margin:0;
+	display: inline-block;
+	padding-left: 0.5em; 
+}
+
+.editar-perfil a h4{
+	padding:0;
+	margin: 0;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: 0.6em;
+	display: inline-block;
+	color:#000;
+}
+
+.vista-previa-perfil{
+	background-color: #e0e9e6;
+	border-top: solid 0.1em;
+}
+
+.vista-previa-perfil img{
+	padding: 0;
+	margin:0;
+	display: inline-block;
+	padding-left: 0.5em; 
+}
+
+.vista-previa-perfil a h4{
+	padding:0;
+	margin: 0;	
+	padding-left: 0.6em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	display: inline-block;
+	color:#000;
+}
+
+.descripcion-general{
+	background-color: #415566;
+}
+
+.descripcion-general h4{
+	padding:0;
+	margin: 0;	
+	padding-left: 0.6em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color:#FFF;
+	text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 1em;
+}
+
+section#opciones {
+	display: inline-block;
+	padding-left: 10em;
+	padding-top: 5em;
+}
+
+#titulo-publicar-contenido{
+	display: inline-block;
+}
+
+#titulo-publicar-contenido h2{
+	border-bottom: solid 0.2em;
+}
+
+#bloque1{
+	display: inline-block;
+	padding-right: 6em;
+	padding-left: 2em;
+}
+#bloque1 img{
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+#bloque1 h3{
+    padding-bottom: 0.1em;
+    margin: 0;
+	padding-left: 2em;
+}
+
+#bloque2{
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+#bloque2 h3{
+    padding-bottom: 0.1em;
+    margin: 0;
+}
+
+
+
+
+
+/*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
+
+footer {
+color: #E0E9E6;
+background-color: #20292F;
+bottom: 0;
+left: 0;
+right: 0;
+font-family: 'Muli', sans-serif;
+}
+
+footer a{
+	color:#E0E9E6;
+	text-decoration: none;
+}
+
+.footer{
+	text-align:center;
+}
+
+.row{
+	display: inline-block;
+	width: auto;
+}
+
+.col1{
+	display: inline-block;
+    padding-right: 5%;
+}
+
+.col1 h4{
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+.img-footer{
+	display: inline-block;
+	padding-top: 2%;
+}
+
+img#logo-footer{
+	width: 130pt;
+	height: 100pt;
+}
+
+.col2{
+	display: inline-block;
+	padding-left: 5%;
+	font-family: entypo;
+}
+
+.col2 h3{
+	padding-left: 1.6em;
+	font-family: 'Muli', sans-serif;
+}
+
+footer ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+.col2 ul li img{
+	padding-right: 0.3em;
+}
+
+
+.copyright{	
+	display: inline-block;
+}
+
+.contenedor{	
+	display: inline-block;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%; 
+}
+
+
+#texto-footer{
+	font-size: 0.7em;
+}
