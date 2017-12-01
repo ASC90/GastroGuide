@@ -23,8 +23,8 @@ section.seccion-menu
 {
 	border-bottom: 2px solid #F6C324;
 	border-top: 2px solid #F6C324;
-	background-image: url("../img/brooke-lark-transp.png");
-	background-size: auto;
+	/*background-image: url("../img/brooke-lark-transp.png");
+	background-size: auto;*/
 	margin: 0;
 	padding: 0;
 }
