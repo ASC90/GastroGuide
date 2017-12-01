@@ -1,16 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
-@font-face 
-{
-    font-family: 'entypo';
-    src: url('/font/entypo.eot');
-    src: url('/font/entypo.eot?#iefix') format('embedded-opentype'),
-         url('/font/entypo.woff') format('woff'),
-         url('/font/entypo.ttf') format('truetype'),
-         url('/font/entypo.svg#entypo') format('svg');
-    font-weight: normal; font-style: normal;
-  }
+
 body
 {
 	font-family: "Muli", sans-serif;
@@ -19,12 +10,7 @@ body
 	border: 0;
 }
 /*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
-/*/nav.navegacion
-{
-	position: fixed;
-	width: 100%;
-	top: 0;
-}/*/
+
 ul.navbar 
 {
     list-style-type: none;
@@ -32,9 +18,8 @@ ul.navbar
     padding: 5px;
 	overflow: hidden;
 	background-color: #20292f; 
-	/*border-radius: 10px;*/
-	/*box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.40);*/
 }
+
 li.lista-navbar
 {
 	display: inline-flex;
@@ -45,9 +30,6 @@ li.lista-navbar a
 	color: white;
 	text-align: center;
     padding: 4px 12px;
-	/*margin: 0;
-    padding: 0;
-	border: 0;*/
     text-decoration: none;
 	font-size: 1.5em;
 }
@@ -85,12 +67,8 @@ div.icon-user
 {
 	display: inline-flex;
 }
-.icon-user:before 
-{
-	font-family: 'entypo';
-	content: "\1f464"; 
-	font-style: normal;
-	font-size: 0.9em;
+.icon-user{
+
 }
 /*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
 .log{
@@ -184,19 +162,16 @@ footer a{
 }
 
 .footer{
-	/*/position: relative;/*/
 	text-align:center;
 }
 
 .row{
-/*/	position: relative;/*/
 	display: inline-block;
 	width: auto;
 }
 
 .col1{
 	display: inline-block;
-  /*/  position: relative;/*/
     padding-right: 5%;
 }
 
@@ -207,7 +182,6 @@ footer a{
 
 .img-footer{
 	display: inline-block;
-	/*/position: relative;/*/
 	padding-top: 2%;
 }
 
@@ -218,12 +192,12 @@ img#logo-footer{
 
 .col2{
 	display: inline-block;
-	/*/position: relative;/*/
 	padding-left: 5%;
 	font-family: entypo;
 }
 
 .col2 h3{
+	padding-left: 1.6em;
 	font-family: 'Muli', sans-serif;
 }
 
@@ -231,33 +205,17 @@ footer ul li{
 	list-style: none;
 	display: inline-block;
 }
-.icon-facebook-circled:before { /* icono facebook */
-	content: '\f30d'; 
-	font-size: 2em;
-	font-style: normal;
-	padding-right:0.5em;
-} 
 
-.icon-twitter-circled:before { /* icono twitter */
-	content: '\f30a';
-	font-size: 2em;
-	font-style: normal;
-	padding-right:0.5em;
-} 
+.col2 ul li img{
+	padding-right: 0.3em;
+}
 
-.icon-gplus-circled:before { /* icono google */
-	content: '\f310';
-	font-size: 2em;
-	font-style: normal;
-} 
 
-.copyright{
-	/*/position: relative;/*/	
+.copyright{	
 	display: inline-block;
 }
 
-.contenedor{
-	/*/position: relative;/*/	
+.contenedor{	
 	display: inline-block;
 	text-align: center;
 	padding-left: 10%;
