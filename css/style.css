@@ -103,17 +103,17 @@ div.icon-user
 	background-color: #F6C324;
 	border: 0;
 	padding: 5px 15px;
-	color: #218380;
+	color: #20292f;
 	font-size: 0.85em;
 	font-weight: 600;
 	border-radius: 25px;
 	margin-top: 15px
 }
 .chef button{
-	background-color: #218380;
+	background-color: #F6C324;
 	border: 0;
 	padding: 5px 15px;
-	color:#F6C324;
+	color: #20292f;
 	font-size: 0.85em;
 	font-weight: 600;
 	border-radius: 25px;
@@ -129,8 +129,11 @@ div.icon-user
 	border: 0px
 
 }
+.chef input{
+background-color: #e0e9e6d5;
+}
 .lover{
-	background-color: #218380;
+	background-color: #e0e9e6;
 	float: left;
 	width: 50%;
 	text-align: center;
@@ -138,7 +141,8 @@ div.icon-user
 	
 }
 .chef{
-	background-color:  #F6C324;
+
+	background-color: #ffffff;
 	float: right;
 	width: 50%;
 	text-align: center;
@@ -159,13 +163,30 @@ div.icon-user
 	margin-top: 25px
 }
 .signup{
-	background-color: #E0E9E6 !important;
-	color: #218380 !important;
+	background-color: #20292f !important;
+	color: #e0e9e6 !important;
 	margin-bottom: 10%
 
 }
 /*////////////////////////////////////////////////Perfil Restaurante///////////////////////////////////////////////////////////////////////*/
- 
+.perfil{
+    margin: 0 auto;
+    max-width: 75%;
+}
+.pdatos ul{
+	padding-left: 0%;
+}
+.pdatos li{
+	list-style: none;
+	display: inline-block;
+	padding: 2px 5px;
+	border: solid #20292f 0.5px;
+	border-radius: 15px;
+	margin: 0 2px;
+}
+.pdatos a{
+	text-decoration: none;
+}
 
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
