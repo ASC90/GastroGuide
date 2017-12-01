@@ -19,7 +19,8 @@ section.seccion-ofertas form
 	border: 2px solid #F6C324;
 	width: 320px;
 	margin-left: 33%;
-	padding: 20px;
+	padding: 50px;
+	padding-right: 100px;
 }
 section.seccion-ofertas form > div.bold-text
 {
@@ -29,6 +30,7 @@ section.seccion-ofertas form input
 {
 	border: none;
 	border-radius: 12px;
+	padding: 8px;
 }
 section.seccion-ofertas form textarea
 {
@@ -46,4 +48,11 @@ section.seccion-ofertas form button
 	font-weight: 900;
 	margin-left: 160px;
 	cursor: pointer;
+}
+section.seccion-ofertas > div
+{
+	margin-left: 33%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 800;
 }

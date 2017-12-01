@@ -68,13 +68,14 @@ section.seccion-menu form button
 section.seccion-menu div
 {
 	border: 2px solid #F6C324;
-	padding: 20px;
+	padding: 50px;
+	padding-right: 100px;
 	width: 320px;
 }
 section.seccion-menu form
 {
 	margin-top: 0;
-	margin-left: 30%;
+	margin-left: 33%;
 	border: 0;
 	padding: 0;
 }
