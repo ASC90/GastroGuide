@@ -37,9 +37,14 @@ li.lista-navbar a:hover
 {
     background-color: #415566;
 }
+
 ul.navbar span.navbar-derecha
 {
 	float: right;
+}
+ul.navbar span.navbar-derecha li
+{
+	margin: auto 0;
 }
 .gastro-guide-logo
 {
@@ -56,12 +61,23 @@ button.inicia-sesion
 {
 	background-color: #F6C324;
 	border: 0;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0.3em 0.6em;
 	color: #20292f;
-	font-size: 0.85em;
+	font-size: 1.1em;
 	font-weight: 600;
 	border-radius: 25px;
+	cursor: pointer;
+	margin-top: 0.5em;
+	margin-right: 1em;
+}
+button.inicia-sesion:hover
+{
+	background-color: #F9D873;
+}
+button.inicia-sesion:active
+{
+	background-color: #AB8D2F;
+	color: white;
 }
 div.icon-user
 {
@@ -218,6 +234,7 @@ background-color: #e0e9e6d5;
 .popinion .pcol2{
 	width: 40em;
 	margin-right: 2em;
+	
 }
 .popinion .pcol3{
 	width:3em;
@@ -244,6 +261,76 @@ background-color: #e0e9e6d5;
 	width: 20em;
 	margin-left: 2em;
 	vertical-align: top
+}
+
+/*////////////////////////////////////////////////FormularioRegistroRestaurantes///////////////////////////////////////////////*/
+
+.formres{
+
+	display:inline;
+}
+
+	/* Columna imagen+subir */
+.formresimage {
+	
+	width:30%;
+	text-align: right;
+	vertical-align: top;
+	display:inline-block;
+	padding-right: 20px;
+}
+/* Margen fiv casilla */
+.formreslist div {
+
+	margin-top: 1.6%;
+	margin-bottom: 1.6%;
+}
+/* Columna formulario */
+.formreslist {
+		
+	width: 60%;
+	display: inline-block;
+	padding-left: 20px;
+	}
+/* imagen */
+.formresimage img {
+	
+	width: 100px;
+	
+}
+
+/* Diseño casilla */
+.formreslist input{
+
+	border-radius: 20px;
+	padding: 1%;
+	width:50%;
+	border:none;
+
+}
+/* Enseñar genero en linea */
+.genero div {
+
+	display: inline-block;
+}
+
+/* .formres button {
+
+	background-color: #F6C324;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #20292f;
+    font-size: 0.85em;
+    font-weight: 600;
+    border-radius: 25px;
+} */
+
+/* Width aceptar terminos */
+#rescheck input{
+
+	margin: 0;
+	width:auto;
 }
 
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
