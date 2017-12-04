@@ -245,11 +245,13 @@ section#section-filtro {
 }
 
 
+
 /*/////////////////////////////////////////FICHAS FILTRADAS RESTAURANTES///////////////////////////////////////////////////////////////*/
 
 section#section-fichas {
     display: inline-block;
-    padding-top: 5em;
+	padding-top: 5em;
+	margin-bottom: 5em;
 }
 
 .contenedor-fichas {
