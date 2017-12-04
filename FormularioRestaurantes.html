@@ -35,9 +35,9 @@
                     <div>
                         <img src="img/GastroChef.png" alt="">
                     </div>
-                    <div>
-                        <input type="file" name="logo" accept="image/*" class="inputfile" id="res-anadir" > 
-                        <label for="res-anadir">Añadir foto de perfil</label>
+                    <div id="formresimageimage"> 
+                        <input type="file" name="logo" accept="image/*" class="inputfile" id="res-anadir"> 
+                        <label for="res-anadir" class="boton">Añadir foto de perfil</label>
                     </div>
                 </div>
                 <div class="formreslist">
@@ -53,14 +53,14 @@
                         <label for="apellidos">Apellidos</label>
                         <input id="apellidos" type="text" name="apellidos" required placeholder="Apellidos...">
                     </div>
-                    <div class="genero">
+                    <div class="res-genero">
                         <div>
-                            <label for="hombre">Hombre</label>
-                            <input id="hombre" type="radio" name="genero">
+                            <label for="res-hombre">Hombre</label>
+                            <input id="res-hombre" type="radio" name="genero">
                         </div>
-                        <div id="res-mujer">
-                            <label for="mujer">Mujer</label>
-                            <input id="mujer" type="radio" name="genero">
+                        <div id="res-mujerg">
+                            <label for="res-mujer">Mujer</label>
+                            <input id="res-mujer" type="radio" name="genero">
                         </div>
                     </div>
                     <div>
@@ -103,10 +103,11 @@
                     </div>
 
                     <div>
+                        <button class="boton">
+                            Crear cuenta
+                        </button>
                     </div>
-                    <button class="boton">
-                        Crear cuenta
-                    </button>
+
                 </div>
 
             </form>
