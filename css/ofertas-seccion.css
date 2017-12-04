@@ -43,6 +43,10 @@ section.seccion-ofertas form div
 {
 	margin: 1em 0;
 }
+section.seccion-ofertas form input
+{
+	border: none;
+}
 section.seccion-ofertas > div
 {
 	/*margin-left: 33%;*/
