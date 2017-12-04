@@ -222,18 +222,22 @@ div.icon-user
 	font-size: 3em;	
 	font-weight: 700;
 }
-.pdatos img{
+.pdatos img,.precetas img{
 	width: 100%;
 	border-radius: 25px;
+	overflow: hidden;
 }
 .pmenu{
 	width: 60%;
 	margin: 0 auto;
 	text-align: center;
 }
-.pmenu>h2,.popinion>h2,.poferta>h2,.pvideo>h2{
+.pmenu>h2,.popinion>h2,.poferta>h2,.pvideo>h2,.precetas>h2{
 	text-align: center;
 	padding: 5px 0px 0px 0px;
+}
+.popinion{
+	margin: 0 auto;
 }
 .popinion img{
 	width: 100%;
@@ -253,7 +257,7 @@ div.icon-user
 .popinion .pcol2{
 	width: 40em;
 	margin-right: 2em;
-	
+
 }
 .popinion .pcol3{
 	width:3em;
@@ -267,13 +271,22 @@ div.icon-user
 	border-radius: 10px;
 	background-color: rgba(248, 176, 93, 0.315)
 }
+.precetas>div>div{
+display: inline-block;
+}
+.ingre{
+	width: 13em;
+	vertical-align: top;
+	margin-left: 4em;
+}
+.prep{
+	width: 40em ;
+}
 .pvideo{
 	margin-bottom: 10em;
 }
 .pvideo>div>div{
 	display: inline-block;
-
-
 }
 
 .pvideo .pcol2{
@@ -281,6 +294,7 @@ div.icon-user
 	margin-left: 2em;
 	vertical-align: top
 }
+
 
 /*////////////////////////////////////////////////FormularioRegistroRestaurantes///////////////////////////////////////////////*/
 #formre {
