@@ -87,81 +87,78 @@ div.icon-user
 
 }
 /*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
-.log{
-	border: 0%;
-	left: 0%;
-	right: 0%;
+.log {
+    border: 0%;
+    left: 0%;
+    right: 0%;
+}
+ 
+.log>article {
+    display: inline-block;
+    border: 0;
+}
+ 
+.boton {
+    background-color: #F6C324;
+    border: 0;
+    padding: 5px 15px;
+    color: #20292f;
+    font-size: 0.85em;
+    font-weight: 600;
+    border-radius: 25px;
+    margin-top: 15px
+}
+ 
+.log input {
+	 width: 260px;
+    padding: 5px 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 0px
+}
+ 
+.chef input {
+    background-color: #e0e9e6d5;
+}
+ 
+.lover {
+    background-color: #e0e9e6;
+    width: 50%;
+    text-align: center;
+    height: 100%
+}
+.chef {
+    background-color: #ffffff;
+    width: 49.5%;
+    text-align: center;
+    height: 100%
+}
+ 
+.lover img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 350px;
+}
+ 
+.chef img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 350px;
+}
+.signup {
+    background-color: #20292f;
+    color: #e0e9e6 ;
+  margin-bottom: 10%;
+  border: 0;
+  padding: 5px 15px;
+  font-size: 0.85em;
+    font-weight: 600;
+    border-radius: 25px;
+    margin-top: 15px;
 }
 
-.lover button{
-	background-color: #F6C324;
-	border: 0;
-	padding: 5px 15px;
-	color: #20292f;
-	font-size: 0.85em;
-	font-weight: 600;
-	border-radius: 25px;
-	margin-top: 15px
-}
-.chef button{
-	background-color: #F6C324;
-	border: 0;
-	padding: 5px 15px;
-	color: #20292f;
-	font-size: 0.85em;
-	font-weight: 600;
-	border-radius: 25px;
-	margin-top: 15px
-	
-}
-.log input{
-	width: 260px;
-	padding: 5px 5px;
-	margin-top: 10px;
-	font-size: 1em;
-	background-color: rgba(255, 255, 255, 0.658);
-	border: 0px
-
-}
-.chef input{
-background-color: #e0e9e6d5;
-}
-.lover{
-	background-color: #e0e9e6;
-	float: left;
-	width: 50%;
-	text-align: center;
-	height: 100%
-	
-}
-.chef{
-
-	background-color: #ffffff;
-	float: right;
-	width: 50%;
-	text-align: center;
-	height: 100%
-
-}
-.lover img{
-	margin-top: 50px;
-	margin-bottom: 30px;
-	height: 350px;
-}
-.chef img{
-	margin-top: 50px;
-	margin-bottom: 30px;
-	height: 350px;
-}
-.boton{
-	margin-top: 25px
-}
-.signup{
-	background-color: #20292f !important;
-	color: #e0e9e6 !important;
-	margin-bottom: 10%
-
-}
+ 
 /*////////////////////////////////////////////////Perfil Restaurante///////////////////////////////////////////////////////////////////////*/
 .perfil{
     margin: 0 auto;
