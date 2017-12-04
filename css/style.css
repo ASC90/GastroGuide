@@ -37,9 +37,14 @@ li.lista-navbar a:hover
 {
     background-color: #415566;
 }
+
 ul.navbar span.navbar-derecha
 {
 	float: right;
+}
+ul.navbar span.navbar-derecha li
+{
+	margin: auto 0;
 }
 .gastro-guide-logo
 {
@@ -56,12 +61,23 @@ button.inicia-sesion
 {
 	background-color: #F6C324;
 	border: 0;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0.3em 0.6em;
 	color: #20292f;
-	font-size: 0.85em;
+	font-size: 1.1em;
 	font-weight: 600;
 	border-radius: 25px;
+	cursor: pointer;
+	margin-top: 0.5em;
+	margin-right: 1em;
+}
+button.inicia-sesion:hover
+{
+	background-color: #F9D873;
+}
+button.inicia-sesion:active
+{
+	background-color: #AB8D2F;
+	color: white;
 }
 div.icon-user
 {
