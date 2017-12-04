@@ -263,6 +263,82 @@ background-color: #e0e9e6d5;
 	vertical-align: top
 }
 
+/*////////////////////////////////////////////////FormularioRegistroRestaurantes///////////////////////////////////////////////*/
+
+.formres{
+
+	display:inline;
+}
+
+.formres h1{
+
+	margin-left:33%;
+}
+
+
+	/* Columna imagen+subir */
+.formresimage {
+	
+	width:30%;
+	text-align: right;
+	vertical-align: top;
+	display:inline-block;
+	padding-right: 20px;
+}
+/* Margen fiv casilla */
+.formreslist div {
+
+	margin-top: 1.6%;
+	margin-bottom: 1.6%;
+}
+/* Columna formulario */
+.formreslist {
+		
+	width: 60%;
+	display: inline-block;
+	padding-left: 20px;
+	}
+/* imagen */
+.formresimage img {
+	
+	width: 100px;
+	
+}
+
+/* Diseño casilla */
+.formreslist input{
+
+	border-radius: 20px;
+	padding: 1%;
+	width:50%;
+	border:none;
+
+}
+/* Enseñar genero en linea */
+.genero div {
+
+	display: inline-block;
+}
+
+/* .formres button {
+
+	background-color: #F6C324;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #20292f;
+    font-size: 0.85em;
+    font-weight: 600;
+    border-radius: 25px;
+} */
+
+/* Width aceptar terminos */
+#rescheck input{
+
+	margin: 0;
+	width:auto;
+}
+
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
 footer {
