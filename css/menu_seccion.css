@@ -10,7 +10,7 @@ body{
 	border:0;
 }
 
-section.seccion-menu{
+.seccion-menu{
 	margin: 0;
 	padding: 0;
 }
@@ -20,33 +20,34 @@ section.seccion-menu{
 	width: 20em;
 }
 
-section.seccion-menu form{
+.seccion-menu form{
 	margin-top: 0;
 	margin-left: 33%;
 	border: 0;
 	padding: 0;
-}
 
-section.seccion-menu form div input{
+}
+.seccion-menu>form>div{
+	display: block;
+
+}
+.seccion-menu>form>div>input{
 	border-radius: 0.1em;
 	padding: 0.3em;
-	display: block;
+	
 	margin-bottom: 1em;
 	
 }
-section.seccion-menu form div label p textarea{
+.seccion-menu form div label p textarea{
 	border:  0.1em solid grey;
 	padding: 0.3em;
 }
-<<<<<<< Updated upstream
 
-section.seccion-menu form button {
+.seccion-menu form button {
 	display: block;
 	font-weight: 600;
-=======
-section.seccion-menu form button
-{
->>>>>>> Stashed changes
+
+.seccion-menu form button{
 	border: none;
 	padding: 1em;
 	border-radius: 12px;
@@ -58,28 +59,20 @@ section.seccion-menu form button
 	cursor: pointer;
 	margin-bottom: 1em;
 }
-<<<<<<< Updated upstream
 
-
-
-
-=======
-section.seccion-menu div
+.seccion-menu div
 {
 	border: 2px solid #F6C324;
 	padding: 50px;
 	padding-right: 100px;
 	width: 320px;
 }
-section.seccion-menu form
+.seccion-menu form
 {
 	margin-top: 0;
 	margin-left: 33%;
 	border: 0;
 	padding: 0;
 }
-section.seccion-menu form div
-{
-	/*background-color: #e0e9e6;*/
-}
->>>>>>> Stashed changes
+
+
