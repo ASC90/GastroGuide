@@ -53,7 +53,7 @@ ul.navbar span.navbar-derecha {
     align-items: center;
 }
 
-button.inicia-sesion {
+/*button.inicia-sesion {
     background-color: #F6C324;
     border: 0;
     padding-left: 15px;
@@ -62,18 +62,16 @@ button.inicia-sesion {
     font-size: 0.85em;
     font-weight: 600;
     border-radius: 25px;
-}
+}*/
 
-div.icon-user {
+div.icon-user 
+{
     display: inline-flex;
 }
-
-.icon-user {}
-
-
 /*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
 
-.log {
+.log 
+{	
     border: 0%;
     left: 0%;
     right: 0%;
@@ -198,9 +196,11 @@ div.icon-user {
 
 /*///////////////////////////Buscador////////////////////////////////////*/
 
-.cuadro-blanco {
+.cuadro-blanco 
+{
     margin-top: 55px;
     margin-bottom: 55px;
+	margin: 55px auto;
     width: 75%;
     height: 40px;
     max-width: 900px;

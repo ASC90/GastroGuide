@@ -128,85 +128,58 @@
 		<div>
 			<h3>Publicar Vídeo</h3>
 		</div>
-		<form action="">
-			<span>Título: </span>
-			<input type="text" placeholder="Introduce un titulo...">
-			<span>Descripción:</span>
-			<textarea name="" id="" cols="30" rows="10" placeholder="Introduce un texto..."></textarea>
-			<span>Url video:</span>
-			<input type="url" placeholder="Examinar">
-			<button>Aplicar</button>
-		</form>
+		<div id="cont-video">
+			<div id="inputs-video">
+				<form action="">
+					<span>Título: </span>
+					<input type="text" placeholder="Introduce un titulo...">
+					<span>Descripción:</span>
+					<input type="url" placeholder="Descripción">
+					<span>URL video:</span>
+					<input type="url" placeholder="Examinar">
+				</form>
+			</div>
+		
+			<div id="area-video">
+				<textarea name="" id="" cols="30" rows="10" placeholder="Introduce un texto..."></textarea>
+				<button class="boton">Aplicar</button>
+			</div>
+		</div>
+
+
 	</section>    		
 
 	<!--/////////////////////////////////////MENU RESTUARANTE//////////////////////////////////////////////////////-->
 
 	<section class="seccion-menu">		
 		<form action="">
-			<div>
+			<div class="seccion-menu-block">
 				<h3>Introduce tu Menú</h3>
 			</div>
 
 			<div>
-				<h4>Entrantes</h4>
+				<div id="platos-menu">
+					<h4>Entrantes</h4>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir entrantes"></textarea>
 
-				<input type="text" placeholder="Opción 1...">
+					<h4>Primer plato</h4>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir primeros platos"></textarea>
+				</div>
 
-				<input type="text" placeholder="Opción 2...">
-
-				<input type="text" placeholder="Opción 3...">
-
-				<input type="text" placeholder="Opción 4...">
-
-
-				<h4>Primer plato</h4>
-
-				<input type="text" placeholder="Opción 1...">
-
-				<input type="text" placeholder="Opción 2...">
-
-				<input type="text" placeholder="Opción 3...">
-
-				<input type="text" placeholder="Opción 4...">
-
-
-				<h4>Segundo plato</h4>
-
-				<input type="text" placeholder="Opción 1...">
-
-				<input type="text" placeholder="Opción 2...">
-
-				<input type="text" placeholder="Opción 3...">	
-
-				<input type="text" placeholder="Opción 4...">
-
-
-				<h4>Postre</h4>
-
-				<input type="text" placeholder="Opción 1...">
-
-				<input type="text" placeholder="Opción 2...">
-
-				<input type="text" placeholder="Opción 3...">
-
-				<input type="text" placeholder="Opción 4...">
-
-
-				<h4>Bebida</h4>
-
-				<input type="text" placeholder="Opción 1...">
-
-				<input type="text" placeholder="Opción 2...">
-
-				<input type="text" placeholder="Opción 3...">
-
-				<input type="text" placeholder="Opción 4...">
-
-
-				<textarea name="" id="" cols="30" rows="10" placeholder="Introduce algún aspecto destacado..."></textarea>
-				<br>
-				<button>Aplicar</button>
+				<div id="platos-menu">			
+					<h4>Segundo plato</h4>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir segundos platos"></textarea>
 				
+					<h4>Postre</h4>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir postres"></textarea>
+				
+				</div>
+				<div id="platos-menu">
+					<input type="text" placeholder="Nombre del menú">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Introduce algún aspecto destacado..."></textarea>
+					<br>
+					<button class="boton">Aplicar</button>
+				</div>
 			</div>
 		</form>
 	</section>
@@ -230,15 +203,18 @@
 				Promociones:
 				<input type="radio" name="radio">
 			</div>
-				
+		
 			Título:
 			<input type="text" placeholder="título de la oferta...">
+		</form>
+
+		<div id="descr-oferta">
 			<div>
 				Descripción de la oferta:
 			</div>
 			<textarea placeholder="describe la oferta..." name="" id="" cols="30" rows="10"></textarea>
-			<button>Aplicar</button>
-		</form>
+			<button class="boton">Aplicar</button>
+		</div>
 	</section>
 
 	<footer>

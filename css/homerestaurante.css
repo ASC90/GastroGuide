@@ -352,11 +352,6 @@ section#opciones {
 	box-sizing: border-box;
 }
 
-#tit-video{
-	display: block !important;
-	margin-bottom: 1em;	
-}
-
 .seccion-videos h3 {
 	border-bottom: 0.3em solid;
 	width: 80%;
@@ -364,50 +359,64 @@ section#opciones {
 
 .seccion-videos div {
 	padding-left: 8em;
-	margin:0;
 }
 
 .seccion-videos form span {
 	display: block;
 	margin-bottom: 0.2em;
-	margin-left: 8em;
 }
 
 .seccion-videos form input{
-	margin-bottom: 0.6em;
-	margin-left: 12em;	
-}
-
-.seccion-videos form{
+	margin-bottom: 2em;	
 	width: 320px;
-	display: block;
+	margin-top:0;
+}
+
+div#cont-video{
+	display: inline-block;	
+}
+
+div#inputs-video{
+	display:inline-block;
 	margin: 0;
+	padding: 0;
 }
 
-.seccion-videos textarea{
-	margin-bottom: 0.7em;
+div#area-video{
+	display: inline-block;
+	padding-left: 3em;
+}
+
+#area-video textarea{	
+	width: 600px;
+	height: 100px;
 	display: block;
-	margin-left: 12em;	
 }
 
-.seccion-videos form button{
-	border: none;
-	padding: 1em;
-	border-radius: 12px;
-	color: #20292f;
-	background-color: #F6C324;
-	font-weight: 900;
-	margin-left: 20em;
-	margin-top: 1em;
-	cursor: pointer;
-	margin-bottom: 1em;
-}
 
+#area-video button.boton {
+    margin-left: 38em;
+}
 /*////////////////////////////////////////////////Menu restaurante/////////////////////////////////////////////////////////////*/
 .seccion-menu{
 	margin: 0;
 	padding: 0;	
 	padding-left: 8em;
+}
+
+.seccion-menu-block {
+	display: block;
+	width: 100%;
+}
+
+.seccion-menu div{
+	display: inline-block;
+	padding-right: 2em;
+}
+
+div#platos-menu{
+	display: inline-block;
+	padding-left: 10em;
 }
 
 .seccion-menu div h3{
@@ -419,24 +428,20 @@ section#opciones {
 	border-radius: 0.1em;
 	padding: 0.3em;
 	display: block;
-	margin-bottom: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 320px;
 	
 }
-.seccion-menu form div label textarea{
+.seccion-menu form textarea{
 	border:  0.1em solid grey;
 	padding: 0.3em;
+	width: 320px;
 }
 
 .seccion-menu form button{
-	border: none;
-	padding: 1em;
-	border-radius: 12px;
-	color: #20292f;
-	background-color: #F6C324;
-	font-weight: 900;
-	margin-left: 11em;
+	margin-left: 18em;
 	margin-top: 1em;
-	cursor: pointer;
 	margin-bottom: 1em;
 }
 
@@ -446,6 +451,7 @@ section.seccion-ofertas{
 	margin-top:2em;
 	padding-left: 8em;
 	font-weight: bold;	
+	display: inline-block;
 }
 
 section.seccion-ofertas h3{
@@ -460,9 +466,12 @@ section.seccion-ofertas form{
 	display: block;
 }
 
-section.seccion-ofertas form > div.bold-text{
-	font-weight: bolder;
-	font-size: 5em;
+div#descr-oferta{
+	display: inline-block;
+}
+
+div.bold-text{
+	display: block;
 }
 
 section.seccion-ofertas form div{
@@ -476,15 +485,8 @@ section.seccion-ofertas > div{
 }
 
 section.seccion-ofertas form button{
-	border: none;
-	padding: 1em;
-	border-radius: 12px;
-	color: #20292f;
-	background-color: #F6C324;
-	font-weight: 900;
 	margin-left: 11em;
 	margin-top: 1em;
-	cursor: pointer;
 	margin-bottom: 1em;	
 }
 

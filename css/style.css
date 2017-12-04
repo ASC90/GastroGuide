@@ -8,6 +8,7 @@ body
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 12pt;
 }
 /*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
 
@@ -106,7 +107,12 @@ div.icon-user
     font-size: 0.85em;
     font-weight: 600;
     border-radius: 25px;
-    margin-top: 15px
+    margin-top: 15px;
+    font-family: "Muli", sans-serif;
+}
+
+.boton:hover {
+    background-color: #F9D873;
 }
  
 .log input {
@@ -158,29 +164,6 @@ div.icon-user
     margin-top: 15px;
 }
 
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
-
-.inputfile + label {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: white;
-    background-color: black;
-    display: inline-block;
-}
-
-.inputfile:focus + label,
-.inputfile + label:hover {
-    background-color: red;
-}
-
- 
 /*////////////////////////////////////////////////Perfil Restaurante///////////////////////////////////////////////////////////////////////*/
 .perfil{
     margin: 0 auto;
@@ -323,7 +306,7 @@ display: inline-block;
 	text-align: left;
 	vertical-align: top;
 	display:inline-block;
-	// padding-right: 20px;
+	
 }
 /* Margen fiv casilla */
 .formreslist div {
@@ -355,12 +338,12 @@ display: inline-block;
 
 }
 /* Enseñar genero en linea */
-.genero div {
+.res-genero div {
 	margin: 0;
 	display: inline-block;
 }
 
-#res-mujer {
+#res-mujerg {
 	margin-left: 5%;
 }
 
@@ -371,6 +354,33 @@ display: inline-block;
 	width:auto;
 	display: inline-block;
 }
+
+.inputfile {
+	
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.formresimage div {
+	
+	text-align: center;
+}
+
+#formresimageimage {
+	
+	margin-top: 10%;
+}
+
+
+.res-genero input {
+
+	margin-top: 10px;
+}
+
 
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
