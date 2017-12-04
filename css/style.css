@@ -37,9 +37,14 @@ li.lista-navbar a:hover
 {
     background-color: #415566;
 }
+
 ul.navbar span.navbar-derecha
 {
 	float: right;
+}
+ul.navbar span.navbar-derecha li
+{
+	margin: auto 0;
 }
 .gastro-guide-logo
 {
@@ -56,12 +61,23 @@ button.inicia-sesion
 {
 	background-color: #F6C324;
 	border: 0;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0.3em 0.6em;
 	color: #20292f;
-	font-size: 0.85em;
+	font-size: 1.1em;
 	font-weight: 600;
 	border-radius: 25px;
+	cursor: pointer;
+	margin-top: 0.5em;
+	margin-right: 1em;
+}
+button.inicia-sesion:hover
+{
+	background-color: #F9D873;
+}
+button.inicia-sesion:active
+{
+	background-color: #AB8D2F;
+	color: white;
 }
 div.icon-user
 {
@@ -81,17 +97,17 @@ div.icon-user
 	background-color: #F6C324;
 	border: 0;
 	padding: 5px 15px;
-	color: #218380;
+	color: #20292f;
 	font-size: 0.85em;
 	font-weight: 600;
 	border-radius: 25px;
 	margin-top: 15px
 }
 .chef button{
-	background-color: #218380;
+	background-color: #F6C324;
 	border: 0;
 	padding: 5px 15px;
-	color:#F6C324;
+	color: #20292f;
 	font-size: 0.85em;
 	font-weight: 600;
 	border-radius: 25px;
@@ -107,8 +123,11 @@ div.icon-user
 	border: 0px
 
 }
+.chef input{
+background-color: #e0e9e6d5;
+}
 .lover{
-	background-color: #218380;
+	background-color: #e0e9e6;
 	float: left;
 	width: 50%;
 	text-align: center;
@@ -116,7 +135,8 @@ div.icon-user
 	
 }
 .chef{
-	background-color:  #F6C324;
+
+	background-color: #ffffff;
 	float: right;
 	width: 50%;
 	text-align: center;
@@ -137,13 +157,110 @@ div.icon-user
 	margin-top: 25px
 }
 .signup{
-	background-color: #E0E9E6 !important;
-	color: #218380 !important;
+	background-color: #20292f !important;
+	color: #e0e9e6 !important;
 	margin-bottom: 10%
 
 }
 /*////////////////////////////////////////////////Perfil Restaurante///////////////////////////////////////////////////////////////////////*/
- 
+.perfil{
+    margin: 0 auto;
+    max-width: 75%;
+}
+.perfil article{
+	margin-bottom: 4em;
+}
+.pdatos>div{
+	display: inline-block;
+}
+.pdatos div:first-child{
+	width: 82%;
+}
+.pdatos ul{
+	padding-left: 0%;
+}
+.pdatos li{
+	list-style: none;
+	display: inline-block;
+	padding: 2px 5px;
+	border-radius: 15px;
+	margin: 0 2px;
+	background-color: #F8B05D;
+}
+.pdatos li:hover{
+	border: solid #F8B05D 0.5px;
+	background-color: transparent;
+}
+.pdatos a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.pdatos a:hover{
+	color: #F8B05D;
+}
+.pdatos p{
+	float: right;
+	font-size: 3em;	
+	font-weight: 700;
+}
+.pdatos img{
+	width: 100%;
+	border-radius: 25px;
+}
+.pmenu{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+.pmenu>h2,.popinion>h2,.poferta>h2,.pvideo>h2{
+	text-align: center;
+	padding: 5px 0px 0px 0px;
+}
+.popinion img{
+	width: 100%;
+}
+.popinion>div>div{
+	display: inline-block;
+
+}
+.popinion .pcol1{
+	width: 6em;
+	height: 6em;
+	overflow: hidden;
+	border:solid #e0e9e6 2px;
+	border-radius: 15px;
+	margin-right: 2em;
+}
+.popinion .pcol2{
+	width: 40em;
+	margin-right: 2em;
+}
+.popinion .pcol3{
+	width:3em;
+	font-size: 2em;
+	font-weight: 700;
+	vertical-align: top;
+}
+.poferta{
+	padding: 2% 20% 5% 20%;
+	margin: auto;
+	border-radius: 10px;
+	background-color: rgba(248, 176, 93, 0.315)
+}
+.pvideo{
+	margin-bottom: 10em;
+}
+.pvideo>div>div{
+	display: inline-block;
+
+
+}
+
+.pvideo .pcol2{
+	width: 20em;
+	margin-left: 2em;
+	vertical-align: top
+}
 
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 

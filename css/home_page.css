@@ -1,24 +1,152 @@
 @charset "utf-8";
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
-@font-face 
-{
-    font-family: 'entypo';
-    src: url('/font/entypo.eot');
-    src: url('/font/entypo.eot?#iefix') format('embedded-opentype'),
-         url('/font/entypo.woff') format('woff'),
-         url('/font/entypo.ttf') format('truetype'),
-         url('/font/entypo.svg#entypo') format('svg');
-    font-weight: normal; font-style: normal;
-}
-/*/////////////////////////////////////////////////////////////////////////////////////*/
+
 body
 {
 	font-family: "Muli", sans-serif;
-	border: 0;
 	margin: 0;
 	padding: 0;
+	border: 0;
 }
+/*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
+
+ul.navbar 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+	overflow: hidden;
+	background-color: #20292f; 
+}
+
+li.lista-navbar
+{
+	display: inline-flex;
+}
+li.lista-navbar a
+{
+    display: block;
+	color: white;
+	text-align: center;
+    padding: 4px 12px;
+    text-decoration: none;
+	font-size: 1.5em;
+}
+li.lista-navbar a:hover
+{
+    background-color: #415566;
+}
+ul.navbar span.navbar-derecha
+{
+	float: right;
+}
+.gastro-guide-logo
+{
+	width: 85px;
+	height: 35px;
+	margin-left: 12px;
+}
+.gestion-usuario-padding
+{
+	padding: 5px;
+	align-items: center;
+}
+button.inicia-sesion
+{
+	background-color: #F6C324;
+	border: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #20292f;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+}
+div.icon-user
+{
+	display: inline-flex;
+}
+.icon-user{
+
+}
+/*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
+.log{
+	border: 0%;
+	left: 0%;
+	right: 0%;
+}
+
+.lover button{
+	background-color: #F6C324;
+	border: 0;
+	padding: 5px 15px;
+	color: #218380;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+	margin-top: 15px
+}
+.chef button{
+	background-color: #218380;
+	border: 0;
+	padding: 5px 15px;
+	color:#F6C324;
+	font-size: 0.85em;
+	font-weight: 600;
+	border-radius: 25px;
+	margin-top: 15px
+	
+}
+.log input{
+	width: 260px;
+	padding: 5px 5px;
+	margin-top: 10px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.658);
+	border: 0px
+
+}
+.lover{
+	background-color: #218380;
+	float: left;
+	width: 50%;
+	text-align: center;
+	height: 100%
+	
+}
+.chef{
+	background-color:  #F6C324;
+	float: right;
+	width: 50%;
+	text-align: center;
+	height: 100%
+
+}
+.lover img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	height: 350px;
+}
+.chef img{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	height: 350px;
+}
+.boton{
+	margin-top: 25px
+}
+.signup{
+	background-color: #E0E9E6 !important;
+	color: #218380 !important;
+	margin-bottom: 10%
+
+}
+
+
+
+/*/////////////////////////////////////////////HOME/////////////////////////////////////////////////////////////*/
+
 /*//////////Imatge centrada i gran i contingut////////////////////////////*/
 .img-fondo
 {
@@ -29,36 +157,45 @@ body
 }
 .premiamos-tu-confianza
 {
-	margin: 40px;
-	margin-right: 40%;
+	margin: 40px 20%;
 	padding: 15px;
 	border: 2px solid #F6C324;
+	text-align: center;
 }
 .imagen
 {
-	position: relative;
 	width: 100%;
 	top: 10px;
 	margin: 0;
 	border: 0;
 	padding: 0;
+	background-image: url("../img/MB3_dark.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.text-sobre-imagen
-{
-	color: white;
-	/*position: absolute;*/
-	/*top: 200px;*/
-	/*left: 0;*/
-	/*width: 100%;*/
-}
+
+
 .container-textsobre
 {
 	margin-top: 50px;
-	margin-left: 27%;
-	margin-right: 27%;
-	width: 46%;
-	position: absolute;
 	top: 10%;
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 60px;
+
+
+}
+
+.container-textsobre>div{
+
+	display: inline-block;
+	width: 20%;
+	margin: 2% 5%;
+	vertical-align: top;
+
+
+
 }
 /*///////////////////////////Buscador////////////////////////////////////*/
 .cuadro-blanco
@@ -66,10 +203,9 @@ body
 	margin-top: 55px;
 	margin-bottom: 55px;
 	width: 75%;
-	max-width: 860px;
-	padding: 10px;
-	/*margin-left: 20%;
-	margin-right: 20%;*/
+	height: 40px;
+	max-width: 900px;
+	padding-bottom: 15px;
 	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.50);
 }
 .formulario
@@ -82,8 +218,106 @@ body
 	border: none;
 	font-family: "Muli", sans-serif;
 	font-size: 1.1em;
+
+
 }
 .selector-buscador:hover
 {
 	background-color: #e0e9e6;
+}
+
+.espacio-imagen
+{
+
+padding-left: 20px;
+padding-right: 8px;
+}
+
+
+
+
+
+
+
+
+*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
+
+footer {
+color: #E0E9E6;
+background-color: #20292F;
+bottom: 0;
+left: 0;
+right: 0;
+font-family: 'Muli', sans-serif;
+}
+
+footer a{
+	color:#E0E9E6;
+	text-decoration: none;
+}
+
+.footer{
+	text-align:center;
+}
+
+.row{
+	display: inline-block;
+	width: auto;
+}
+
+.col1{
+	display: inline-block;
+    padding-right: 5%;
+}
+
+.col1 h4{
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+.img-footer{
+	display: inline-block;
+	padding-top: 2%;
+}
+
+img#logo-footer{
+	width: 130pt;
+	height: 100pt;
+}
+
+.col2{
+	display: inline-block;
+	padding-left: 5%;
+	font-family: entypo;
+}
+
+.col2 h3{
+	padding-left: 1.6em;
+	font-family: 'Muli', sans-serif;
+}
+
+footer ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+.col2 ul li img{
+	padding-right: 0.3em;
+}
+
+
+.copyright{	
+	display: inline-block;
+}
+
+.contenedor{	
+	display: inline-block;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%; 
+}
+
+
+#texto-footer{
+	font-size: 0.7em;
 }
