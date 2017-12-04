@@ -272,7 +272,8 @@ background-color: #e0e9e6d5;
 
 .formres h1{
 
-	margin-left:33%;
+	margin-left:33.3%;
+	margin-bottom: 2%
 }
 
 
@@ -288,8 +289,7 @@ background-color: #e0e9e6d5;
 /* Margen fiv casilla */
 .formreslist div {
 
-	margin-top: 1.6%;
-	margin-bottom: 1.6%;
+	margin-bottom: 2%;
 }
 /* Columna formulario */
 .formreslist {
@@ -316,7 +316,7 @@ background-color: #e0e9e6d5;
 }
 /* Enseñar genero en linea */
 .genero div {
-
+	margin: 0;
 	display: inline-block;
 }
 
