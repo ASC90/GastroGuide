@@ -1,81 +1,59 @@
 @charset "utf-8";
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
-@font-face 
-{
-    font-family: 'entypo';
-    src: url('/font/entypo.eot');
-    src: url('/font/entypo.eot?#iefix') format('embedded-opentype'),
-         url('/font/entypo.woff') format('woff'),
-         url('/font/entypo.ttf') format('truetype'),
-         url('/font/entypo.svg#entypo') format('svg');
-    font-weight: normal; font-style: normal;
-}
-body
-{
+
+body{
 	font-family: "Muli", sans-serif;
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
 	border:0;
 }
-section.seccion-menu
-{
-	border-bottom: 2px solid #F6C324;
-	border-top: 2px solid #F6C324;
-	/*background-image: url("../img/brooke-lark-transp.png");
-	background-size: auto;*/
+
+section.seccion-menu{
 	margin: 0;
 	padding: 0;
 }
-section.seccion-menu form label span
-{
-	font-weight: 700;
+
+.seccion-menu span h2{
+	border-bottom: solid 0.3em;
+	width: 20em;
 }
-section.seccion-menu form p span
-{
-	font-weight: 800;
-}
-section.seccion-menu form p span
-{
-	font-weight: 800;
-}
-section.seccion-menu form div label p input
-{
-	border: none;
-	border-radius: 12px;
-	padding: 5px;
-	
-}
-section.seccion-menu form div label p textarea
-{
-	border: none;
-	border-radius: 12px;
-	padding: 5px;
-}
-section.seccion-menu form button
-{
-	font-weight: 600;
-	border: none;
-	padding: 10px;
-	border-radius: 12px;
-	color: #20292f;
-	background-color: #F6C324;
-	font-weight: 900;
-	margin-left: 160px;
-	cursor: pointer;
-}
-section.seccion-menu div
-{
-	border: 2px solid #F6C324;
-	padding: 50px;
-	padding-right: 100px;
-	width: 320px;
-}
-section.seccion-menu form
-{
+
+section.seccion-menu form{
 	margin-top: 0;
 	margin-left: 33%;
 	border: 0;
 	padding: 0;
 }
+
+section.seccion-menu form div input{
+	border-radius: 0.1em;
+	padding: 0.3em;
+	display: block;
+	margin-bottom: 1em;
+	
+}
+section.seccion-menu form div label p textarea{
+	border:  0.1em solid grey;
+	padding: 0.3em;
+}
+
+section.seccion-menu form button {
+	display: block;
+	font-weight: 600;
+	border: none;
+	padding: 1em;
+	border-radius: 12px;
+	color: #20292f;
+	background-color: #F6C324;
+	font-weight: 900;
+	margin-left: 11em;
+	margin-top: 1em;
+	cursor: pointer;
+	margin-bottom: 1em;
+}
+
+
+
+
