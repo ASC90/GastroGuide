@@ -2,8 +2,7 @@
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
 
-body
-{
+body{
 	font-family: "Muli", sans-serif;
 	margin: 0;
 	padding: 0;
@@ -11,8 +10,7 @@ body
 }
 /*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
 
-ul.navbar 
-{
+ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 5px;
@@ -67,9 +65,7 @@ div.icon-user
 {
 	display: inline-flex;
 }
-.icon-user{
 
-}
 /*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
 .log{
 	border: 0%;
@@ -257,6 +253,7 @@ section#opciones {
 	padding-right: 6em;
 	padding-left: 2em;
 }
+
 #bloque1 img{
 	display: inline-block;
 	margin-bottom: 1em;
@@ -283,6 +280,12 @@ section#opciones {
 #pub-con-f-title {
 	display: block !important;
 	margin-bottom: 3em;
+	padding-left: 8em;
+}
+
+#pub-con-f-title h3 {
+	border-bottom: 0.3em solid;
+	width: 80%;
 }
 
 #pub-con-f {
@@ -321,7 +324,6 @@ section#opciones {
 } 
 
 #pub-con-f-an-tab {
-
     display: table !important;
     margin:20px !important;
 }
@@ -333,7 +335,6 @@ section#opciones {
 }
 
 #pub-con-gal img {
-
    height: 100%;
 }
 
@@ -342,6 +343,150 @@ section#opciones {
     display:inline-block;
 }
 
+/*////////////////////////////////////////////////Video///////////////////////////////////////////////////////////////////////*/
+
+.seccion-videos{
+	font-weight: bold;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#tit-video{
+	display: block !important;
+	margin-bottom: 1em;	
+}
+
+.seccion-videos h3 {
+	border-bottom: 0.3em solid;
+	width: 80%;
+}
+
+.seccion-videos div {
+	padding-left: 8em;
+	margin:0;
+}
+
+.seccion-videos form span {
+	display: block;
+	margin-bottom: 0.2em;
+	margin-left: 8em;
+}
+
+.seccion-videos form input{
+	margin-bottom: 0.6em;
+	margin-left: 12em;	
+}
+
+.seccion-videos form{
+	width: 320px;
+	display: block;
+	margin: 0;
+}
+
+.seccion-videos textarea{
+	margin-bottom: 0.7em;
+	display: block;
+	margin-left: 12em;	
+}
+
+.seccion-videos form button{
+	border: none;
+	padding: 1em;
+	border-radius: 12px;
+	color: #20292f;
+	background-color: #F6C324;
+	font-weight: 900;
+	margin-left: 20em;
+	margin-top: 1em;
+	cursor: pointer;
+	margin-bottom: 1em;
+}
+
+/*////////////////////////////////////////////////Menu restaurante/////////////////////////////////////////////////////////////*/
+.seccion-menu{
+	margin: 0;
+	padding: 0;	
+	padding-left: 8em;
+}
+
+.seccion-menu div h3{
+	border-bottom: 0.3em solid;
+	width: 80%;
+}
+
+.seccion-menu input{
+	border-radius: 0.1em;
+	padding: 0.3em;
+	display: block;
+	margin-bottom: 1em;
+	
+}
+.seccion-menu form div label textarea{
+	border:  0.1em solid grey;
+	padding: 0.3em;
+}
+
+.seccion-menu form button{
+	border: none;
+	padding: 1em;
+	border-radius: 12px;
+	color: #20292f;
+	background-color: #F6C324;
+	font-weight: 900;
+	margin-left: 11em;
+	margin-top: 1em;
+	cursor: pointer;
+	margin-bottom: 1em;
+}
+
+/*////////////////////////////////////////////////Ofertas restaurante/////////////////////////////////////////////////////////////*/
+
+section.seccion-ofertas{
+	margin-top:2em;
+	padding-left: 8em;
+	font-weight: bold;	
+}
+
+section.seccion-ofertas h3{
+	margin: 0;
+	width: 20em;
+	border-bottom: 0.3em solid;
+	width: 80%;
+}
+
+section.seccion-ofertas form{
+	width: 20em;
+	display: block;
+}
+
+section.seccion-ofertas form > div.bold-text{
+	font-weight: bolder;
+	font-size: 5em;
+}
+
+section.seccion-ofertas form div{
+	margin: 1em 0;
+}
+
+section.seccion-ofertas > div{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 800;
+}
+
+section.seccion-ofertas form button{
+	border: none;
+	padding: 1em;
+	border-radius: 12px;
+	color: #20292f;
+	background-color: #F6C324;
+	font-weight: 900;
+	margin-left: 11em;
+	margin-top: 1em;
+	cursor: pointer;
+	margin-bottom: 1em;	
+}
 
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
