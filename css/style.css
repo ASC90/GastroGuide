@@ -10,6 +10,8 @@ body {
     border: 0;
     font-size: 12pt;
 }
+
+
 /*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
 
 ul.navbar {
@@ -174,7 +176,8 @@ div.icon-user {
 }
 
 .perfil article {
-    margin-bottom: 4em;
+    margin-bottom: 4em !important;
+    margin: 0 auto;
 }
 
 .pdatos>div {
@@ -415,6 +418,7 @@ div.icon-user {
     margin-top: 10px;
 }
 
+
 /*/////////////////////////////////////////FILTRO LATERAL//////////////////////////////////////////////////////////////////////////*/
 
 section#section-filtro {
@@ -456,7 +460,7 @@ section#section-filtro {
     display: block;
     padding-top: 0.6em;
     padding-left: 0.6em;
-	padding-bottom: 0.6em;
+    padding-bottom: 0.6em;
 }
 
 .precio-persona {
@@ -495,30 +499,31 @@ section#section-filtro {
 .barra-nota {
     border: solid 0.3em;
 }
-.ambientes
-{
-	background-color: #e0e9e6;
+
+.ambientes {
+    background-color: #e0e9e6;
 }
-.ambientes h4
-{
-	padding: 0;
-    margin: 0.2em 0 ;
+
+.ambientes h4 {
+    padding: 0;
+    margin: 0.2em 0;
     padding-top: 0.1em;
     padding-left: 0.6em;
 }
-.checkbox-ambientes
-{
-	display: block;
+
+.checkbox-ambientes {
+    display: block;
     padding-top: 0.6em;
     padding-left: 0.6em;
 }
+
 
 /*/////////////////////////////////////////FICHAS FILTRADAS RESTAURANTES///////////////////////////////////////////////////////////////*/
 
 section#section-fichas {
     display: inline-block;
-	padding-top: 5em;
-	margin-bottom: 5em;
+    padding-top: 5em;
+    margin-bottom: 5em;
 }
 
 .contenedor-fichas {
@@ -559,99 +564,99 @@ section#section-fichas {
     vertical-align: top;
 }
 
+
 /*////////////////////////////////////////////////HOME RESTAURANTE////////////////////////////////////////////////////////////////*/
 
-#titulo-publicar-contenido{
+#titulo-publicar-contenido {
     display: block;
-    width:80%;
-    border-bottom:0.3em;
-    padding-left:8em;
+    width: 80%;
+    border-bottom: 0.3em;
+    padding-left: 8em;
 }
 
-#titulo-publicar-contenido h2{
+#titulo-publicar-contenido h2 {
     border-bottom: solid 0.2em;
 }
 
-section#section-panel-control{
+section#section-panel-control {
     display: inline-block;
     vertical-align: top;
     padding-top: 2em;
     padding-left: 8em;
 }
 
-.panel-control{
-    margin:0;
+.panel-control {
+    margin: 0;
     border-radius: 2em;
 }
 
-
-.title-panel-control{
+.title-panel-control {
     background-color: #415566;
     border-radius: 2em 2em 0 0;
 }
 
-.title-panel-control h2{
-    padding:0;
+.title-panel-control h2 {
+    padding: 0;
     margin: 0;
     padding: 0.5em;
-    color:#FFF;
+    color: #FFF;
     text-align: center;
 }
 
-.editar-perfil{
+.editar-perfil {
     background-color: #e0e9e6;
 }
 
-.editar-perfil img{
+.editar-perfil img {
     padding: 0;
-    margin:0;
+    margin: 0;
     display: inline-block;
     padding-left: 0.5em;
 }
 
-.editar-perfil a h4{
-    padding:0;
+.editar-perfil a h4 {
+    padding: 0;
     margin: 0;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
     padding-left: 0.6em;
     display: inline-block;
-    color:#000;
+    color: #000;
 }
 
-.vista-previa-perfil{
+.vista-previa-perfil {
     background-color: #e0e9e6;
     border-top: solid 0.1em;
 }
 
-.vista-previa-perfil img{
+.vista-previa-perfil img {
     padding: 0;
-    margin:0;
+    margin: 0;
     display: inline-block;
     padding-left: 0.5em;
 }
 
-.vista-previa-perfil a h4{
-    padding:0;
+.vista-previa-perfil a h4 {
+    padding: 0;
     margin: 0;
     padding-left: 0.6em;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
     display: inline-block;
-    color:#000;
+    color: #000;
 }
 
-.descripcion-general{
+.descripcion-general {
     background-color: #415566;
 }
 
-.descripcion-general h4{
-    padding:0;
+.descripcion-general h4 {
+    padding: 0;
     margin: 0;
     padding-left: 0.6em;
     padding-top: 1em;
     padding-bottom: 1em;
-    color:#FFF;
+    color: #FFF;
     text-align: center;
 }
 
@@ -659,7 +664,8 @@ table {
     border-collapse: collapse;
 }
 
-table, td{
+table,
+td {
     border: 1px solid black;
     text-align: center;
     padding: 1em;
@@ -671,32 +677,33 @@ section#opciones {
     padding-top: 2em;
 }
 
-#bloque1{
+#bloque1 {
     display: inline-block;
     padding-right: 6em;
     padding-left: 2em;
 }
 
-#bloque1 img{
+#bloque1 img {
     display: inline-block;
     margin-bottom: 1em;
 }
 
-#bloque1 h3{
+#bloque1 h3 {
     padding-bottom: 0.1em;
     margin: 0;
     padding-left: 2em;
 }
 
-#bloque2{
+#bloque2 {
     display: inline-block;
     margin-bottom: 1em;
 }
 
-#bloque2 h3{
+#bloque2 h3 {
     padding-bottom: 0.1em;
     margin: 0;
 }
+
 
 /*////////////////////////////////////////////////Foto///////////////////////////////////////////////////////////////////////*/
 
@@ -712,14 +719,14 @@ section#opciones {
 }
 
 #pub-con-f {
-    display:inline-flex;
+    display: inline-flex;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 8em;
 }
 
-#pub-con-f>div{
+#pub-con-f>div {
     margin-right: 20px;
 }
 
@@ -735,8 +742,8 @@ section#opciones {
 }
 
 #pub-con-f-an {
-    width:250px;
-    height:250px;
+    width: 250px;
+    height: 250px;
     border: dashed lightgrey;
     color: lightgrey;
     font-weight: bold;
@@ -748,27 +755,27 @@ section#opciones {
 
 #pub-con-f-an-tab {
     display: table !important;
-    margin:20px !important;
+    margin: 20px !important;
 }
 
 #pub-con-f-an-tab-txt {
-
     display: table-cell !important;
     vertical-align: middle;
 }
 
 #pub-con-gal img {
-   height: 100%;
+    height: 100%;
 }
 
 #pub-con-gal {
     max-width: 65em;
-    display:inline-block;
+    display: inline-block;
 }
+
 
 /*////////////////////////////////////////////////Video///////////////////////////////////////////////////////////////////////*/
 
-.seccion-videos{
+.seccion-videos {
     font-weight: bold;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -790,42 +797,42 @@ section#opciones {
     margin-bottom: 0.2em;
 }
 
-.seccion-videos form input{
+.seccion-videos form input {
     margin-bottom: 2em;
     width: 320px;
-    margin-top:0;
+    margin-top: 0;
 }
 
-div#cont-video{
+div#cont-video {
     display: inline-block;
 }
 
-div#inputs-video{
-    display:inline-block;
+div#inputs-video {
+    display: inline-block;
     margin: 0;
     padding: 0;
     vertical-align: top;
 }
 
-div#area-video{
+div#area-video {
     display: inline-block;
     padding-left: 3em;
 }
 
-#area-video textarea{
+#area-video textarea {
     width: 600px;
     height: 100px;
     display: block;
 }
 
-
 #area-video button.boton {
     margin-left: 38em;
 }
 
+
 /*////////////////////////////////////////////////Menu restaurante/////////////////////////////////////////////////////////////*/
 
-.seccion-menu{
+.seccion-menu {
     margin: 0;
     padding: 0;
     padding-left: 8em;
@@ -836,46 +843,46 @@ div#area-video{
     width: 100%;
 }
 
-.seccion-menu div{
+.seccion-menu div {
     display: inline-block;
     padding-right: 2em;
 }
 
-div#platos-menu{
+div#platos-menu {
     display: inline-block;
     vertical-align: top;
-
 }
 
-.seccion-menu div h3{
+.seccion-menu div h3 {
     border-bottom: 0.1em solid;
     width: 80%;
 }
 
-.seccion-menu input{
+.seccion-menu input {
     border-radius: 0.1em;
     padding: 0.3em;
     display: block;
     margin-top: 2em;
     margin-bottom: 2em;
     width: 320px;
-
 }
-.seccion-menu form textarea{
-    border:  0.1em solid grey;
+
+.seccion-menu form textarea {
+    border: 0.1em solid grey;
     padding: 0.3em;
     width: 320px;
 }
 
-.seccion-menu form button{
+.seccion-menu form button {
     margin-left: 18em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
+
 /*////////////////////////////////////////////////Ofertas restaurante/////////////////////////////////////////////////////////////*/
 
-div#ofertas{
+div#ofertas {
     display: block;
     border-bottom: 0.1em solid;
     margin-left: 8em;
@@ -883,37 +890,36 @@ div#ofertas{
     margin-top: 2em;
 }
 
-div#ofertas h3{
+div#ofertas h3 {
     margin: 0;
 }
 
-.form-ofertas1{
+.form-ofertas1 {
     display: inline-block;
     margin-left: 8em;
     margin-top: 3em;
     vertical-align: top;
 }
 
-.form-ofertas2{
+.form-ofertas2 {
     margin-top: 2em;
     display: inline-block;
     margin-left: 6em;
 }
 
-.form-ofertas2 textarea{
+.form-ofertas2 textarea {
     width: 500px;
 }
 
-
-.form-ofertas2 button{
+.form-ofertas2 button {
     display: block;
     margin-left: 31em;
 }
 
+
 /*////////////////////////////////////////////////Recetas Restaurante///////////////////////////////////////////////////////////////////////*/
 
-
-div.recetas{
+div.recetas {
     display: block;
     border-bottom: 0.1em solid;
     margin-left: 8em;
@@ -922,135 +928,64 @@ div.recetas{
     margin-bottom: 2em;
 }
 
-div.recetas h3{
+div.recetas h3 {
     margin: 0;
 }
 
-.form-recetas label{
+.form-recetas label {
     padding-left: 8em;
     font-weight: bold;
 }
 
-.form-recetas textarea{
+.form-recetas textarea {
     margin-top: 1em;
     margin-left: 9.5em;
     margin-bottom: 5em;
 }
 
-.form-recetas button{
+.form-recetas button {
     margin-right: 2em;
 }
 
-.prep-receta{
+.prep-receta {
     display: inline-block;
 }
 
-.img-recetas{
+.img-recetas {
     display: inline-block;
     vertical-align: top;
     padding-left: 15em;
 }
 
-.img-recetas img{
+.img-recetas img {
     width: 50%;
     height: 50%;
 }
 
-.img-recetas button{
+.img-recetas button {
     display: block;
 }
 
-/*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
-footer {
-color: #E0E9E6;
-background-color: #20292F;
-bottom: 0;
-left: 0;
-right: 0;
-font-family: 'Muli', sans-serif;
-}
+/*////////////////////////////////////////////////construccion///////////////////////////////////////////////////////////////////////*/
 
-footer a{
-    color:#E0E9E6;
-    text-decoration: none;
-}
-
-.footer{
-    text-align:center;
-}
-
-.row{
-    display: inline-block;
-    width: auto;
-}
-
-.col1{
-    display: inline-block;
-    padding-right: 5%;
-}
-
-.col1 h4{
-    padding-top: 0.5em;
-    margin: 0;
-}
-
-.img-footer{
-    display: inline-block;
-    padding-top: 2%;
-}
-
-img#logo-footer{
-    width: 130pt;
-    height: 100pt;
-}
-
-.col2{
-    display: inline-block;
-    padding-left: 5%;
-    font-family: entypo;
-}
-
-.col2 h3{
-    padding-left: 1.6em;
-    font-family: 'Muli', sans-serif;
-}
-
-footer ul li{
-    list-style: none;
-    display: inline-block;
-}
-
-.col2 ul li img{
-    padding-right: 0.3em;
-}
-
-
-.copyright{
-    display: inline-block;
-}
-
-.contenedor{
-    display: inline-block;
+.enconstruccion {
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-bottom: 5%;
 }
 
-
-#texto-footer{
-    font-size: 0.7em;
-}
 
 /*/////////////////////Aviso legal/////////////////////*/
-.avisolegal div
-{
-	overflow: scroll;
-  overflow-x: hidden;
-	height: 25em;
-	display: block;
-	margin: 4% 20%;
+
+.avisolegal div {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 25em;
+    display: block;
+    margin: 4% 20%;
 }
+
+
 /*/////////////////////////////////////////////HOME/////////////////////////////////////////////////////////////*/
 
 
@@ -1099,9 +1034,8 @@ footer ul li{
 
 /*///////////////////////////Buscador////////////////////////////////////*/
 
-.cuadro-blanco
-{
-	margin: 1em auto;
+.cuadro-blanco {
+    margin: 1em auto;
     width: 75%;
     height: 40px;
     max-width: 900px;
@@ -1133,6 +1067,8 @@ button.selector-buscador a {
     padding-left: 20px;
     padding-right: 8px;
 }
+
+
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
 footer {
