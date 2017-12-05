@@ -963,9 +963,7 @@ div#ofertas h3{
 
 .cuadro-blanco 
 {
-    margin-top: 55px;
-    margin-bottom: 55px;
-	margin: 55px auto;
+	margin: 1em auto;
     width: 75%;
     height: 40px;
     max-width: 900px;
