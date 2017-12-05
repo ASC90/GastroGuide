@@ -912,6 +912,91 @@ div#ofertas h3{
 	display: block;
 	margin: 4% 20%;
 }
+/*/////////////////////////////////////////////HOME/////////////////////////////////////////////////////////////*/
+
+
+/*//////////Imatge centrada i gran i contingut////////////////////////////*/
+
+.img-fondo {
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.premiamos-tu-confianza {
+    margin: 40px 20%;
+    padding: 15px;
+    border: 2px solid #F6C324;
+    text-align: center;
+}
+
+.imagen {
+    width: 100%;
+    top: 10px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-image: url("../img/MB3_dark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-textsobre {
+    margin-top: 50px;
+    top: 10%;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.container-textsobre>div {
+    display: inline-block;
+    width: 20%;
+    margin: 2% 5%;
+    vertical-align: top;
+}
+
+
+/*///////////////////////////Buscador////////////////////////////////////*/
+
+.cuadro-blanco 
+{
+    margin-top: 55px;
+    margin-bottom: 55px;
+	margin: 55px auto;
+    width: 75%;
+    height: 40px;
+    max-width: 900px;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.50);
+}
+
+.formulario {
+    padding: 15px;
+}
+
+.selector-buscador {
+    background-color: white;
+    border: none;
+    font-family: "Muli", sans-serif;
+    font-size: 1.1em;
+}
+
+.selector-buscador:hover {
+    background-color: #e0e9e6;
+}
+
+button.selector-buscador a {
+    text-decoration: none;
+    color: #20292f;
+}
+
+.espacio-imagen {
+    padding-left: 20px;
+    padding-right: 8px;
+}
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
 footer {
