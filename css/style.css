@@ -804,6 +804,7 @@ div#inputs-video{
     display:inline-block;
     margin: 0;
     padding: 0;
+    vertical-align: top;
 }
 
 div#area-video{
@@ -842,6 +843,7 @@ div#area-video{
 
 div#platos-menu{
     display: inline-block;
+    vertical-align: top;
 
 }
 
