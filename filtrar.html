@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Footer</title>
-	<!--<link href="css/home_page.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/stylefiltrar.css">-->
+	<title>Gastro GUIDE</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/logoicon.png">
 </head>
+
 <body>
 
 
 	<header>
-		<nav class="navegacion"><!--navbar-->
+		<nav class="navegacion">
+			<!--navbar-->
 			<ul class="navbar">
 				<li class="lista-navbar">
-					<a href="home_page.html"><img src="img/logo-small.png" alt="" class="gastro-guide-logo"></a>
+					<a href="home_page.html">
+						<img src="img/logo-small.png" alt="" class="gastro-guide-logo">
+					</a>
 				</li>
 				<span class="navbar-derecha">
-						<a href="LoginSignup.html">
+					<a href="LoginSignup.html">
 						<button class="inicia-sesion">
 							<div class="icon-user">
 								<img src="img/man-user.png" alt="">
 							</div>
 							Inicia sesión
-						</button></a>
-					</span>
-				</ul>
-			</nav>
-			<div class="cuadro-blanco" align="center">
-					<!--<div class="dropdown">
+						</button>
+					</a>
+				</span>
+			</ul>
+		</nav>
+		<div class="cuadro-blanco" align="center">
+			<!--<div class="dropdown">
 						<a href="" class="dropbtn">Dropdown</a>
 						<div class="dropdown-content">
 							<a href="">link 1</a>
@@ -36,220 +41,295 @@
 							<a href="">link 3</a>
 						</div>
 					</div>-->
-					<form action="" class="formulario">
-						<!--primer selector-->
-						<select name="" id="" class="selector-buscador">
-							<option value="option 1"> Japonés</option>
-							<option value="option 2">Mexicano</option>
-							<option value="option 3">Brasileño</option>
-							<option value="option 4">Chino</option>
-							<option value="option 5">Cubano</option>
-						</select>
-						<!--buscador-->
+			<form action="" class="formulario">
+				<!--primer selector-->
+				<select name="" id="" class="selector-buscador">
+					<option value="option 1"> Japonés</option>
+					<option value="option 2">Mexicano</option>
+					<option value="option 3">Brasileño</option>
+					<option value="option 4">Chino</option>
+					<option value="option 5">Cubano</option>
+				</select>
+				<!--buscador-->
 
-						<img class="espacio-imagen" src="img/glass-icon.png" alt="">
+				<img class="espacio-imagen" src="img/glass-icon.png" alt="">
 
-						<input type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
-						<!--segundo selector-->
-						<input type="date" class="selector-buscador">
-						<!--<select name="" id="" class="selector-buscador">
+				<input type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
+				<!--segundo selector-->
+				<input type="date" class="selector-buscador">
+				<!--<select name="" id="" class="selector-buscador">
 							<option value="option 1">07/07/2017</option>
 							<option value="option 2">07/07/2017</option>
 							<option value="option 3">07/07/2017</option>
 							<option value="option 4">07/07/2017</option>
 							<option value="option 5"></option>
 						</select>-->
-						<!--tercer selector-->
-						<select name="" id="" class="selector-buscador">
-							<option value="option 1">8:00</option>
-							<option value="option 2">9:00</option>
-							<option value="option 3">10:00</option>
-							<option value="option 4">11:00</option>
-							<option value="option 5">12:00</option>
-						</select>
-						<!--cuarto selector-->
-						<select name="" id="" class="selector-buscador">
-							<option value="option 1">1 persona</option>
-							<option value="option 2">2 personas</option>
-							<option value="option 3">3 personas</option>
-							<option value="option 4">4 personas</option>
-							<option value="option 5">5 personas</option>
-						</select>
-						<button class="selector-buscador">
-							<a href="filtrar.html">
-								Buscar
+				<!--tercer selector-->
+				<select name="" id="" class="selector-buscador">
+					<option value="option 1">8:00</option>
+					<option value="option 2">9:00</option>
+					<option value="option 3">10:00</option>
+					<option value="option 4">11:00</option>
+					<option value="option 5">12:00</option>
+				</select>
+				<!--cuarto selector-->
+				<select name="" id="" class="selector-buscador">
+					<option value="option 1">1 persona</option>
+					<option value="option 2">2 personas</option>
+					<option value="option 3">3 personas</option>
+					<option value="option 4">4 personas</option>
+					<option value="option 5">5 personas</option>
+				</select>
+				<button class="selector-buscador">
+					<a href="filtrar.html">
+						Buscar
+					</a>
+				</button>
+			</form>
+		</div>
+	</header>
+
+	<section id="section-filtro">
+		<!--FILTRO LATERAL-->
+		<div class="filtros">
+			<div class="title-box">
+				<h2 class="title-box">Filtrar la búsqueda</h2>
+			</div>
+			<div class="tipo-cocina">
+				<h4 class="tipo-cocina">Cocina</h4>
+			</div>
+			<div class="checkbox-tipo-cocina">
+				<form action="tipo-cocina">
+					<input type="checkbox" name="tipo-cocina" value="Española">Española
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="India">India
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Japonesa">Japonesa
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="China">China
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Italiana">Italiana
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Mexicana">Mexicana
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Tailandesa">Tailandesa
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Coreana">Coreana
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Mediterranea">Mediterránea
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Americana">Americana
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Marroqui">Marroquí
+					<br>
+					<input type="checkbox" name="tipo-cocina" value="Escandinava">Escandinava
+					<br>
+				</form>
+			</div>
+			<div class="ambientes">
+				<h4>Ambientes</h4>
+			</div>
+			<div class="checkbox-ambientes">
+				<form action="">
+					<input type="checkbox" name="ambientes" value="con-amigos">Con amigos
+					<br>
+					<input type="checkbox" name="ambientes" value="romantico">Romántico
+					<br>
+					<input type="checkbox" name="ambientes" value="de-fiesta">De fiesta
+					<br>
+					<input type="checkbox" name="ambientes" value="moderno">Moderno
+					<br>
+					<input type="checkbox" name="ambientes" value="tradicional">Tradicional
+					<br>
+					<input type="checkbox" name="ambientes" value="negocios">De negocios
+					<br>
+					<input type="checkbox" name="ambientes" value="para-grupos">Para grupos
+					<br>
+					<input type="checkbox" name="ambientes" value="familia">Família
+					<br>
+					<input type="checkbox" name="ambientes" value="tranquilo">Tranquilo
+					<br>
+					<input type="checkbox" name="ambientes" value="ecologico">Ecológico
+					<br>
+				</form>
+			</div>
+			<div class="precio-persona">
+				<h4>Precio por persona</h4>
+			</div>
+			<div id="slide-personas">
+				<input type="range" min="0" max="150" value="5" class="slider" id="myRange">
+				<br>
+				<label for="">Precio de 0 a 150 € +</label>
+			</div>
+
+			<div class="nota-restaurante">
+				<h4>Nota</h4>
+			</div>
+
+			<div id="slide-nota">
+				<input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+				<br>
+				<label for="">Nota de 0 a 10/10</label>
+			</div>
+		</div>
+	</section>
+
+	<section id="section-fichas">
+		<!--FICHAS FILTRADAS RESTAURANTES-->
+		<div class="contenedor-fichas">
+			<div class="img-ficha">
+				<img src="img/cater.jpg" alt="">
+			</div>
+
+			<div class="text-ficha">
+				<label>
+					<a href="piazza_navona.html">
+						<h2>Piazza Navona</h2>
+					</a>
+					<br>Carrer de Provença, 300 08008 Barcelona</label>
+			</div>
+
+			<div class="opiniones-nota">
+				<label>
+					<h2>8,8</h2>
+					<br>Opiniones 222</label>
+			</div>
+		</div>
+
+		<div class="contenedor-fichas">
+			<div class="img-ficha">
+				<img src="img/alex.jpg" alt="">
+			</div>
+
+			<div class="text-ficha">
+				<label>
+					<a href="roca_bar.html">
+						<h2>Roca Bar</h2>
+					</a>
+					<br>Carrer del Roselló,148 08036 Barcelona</label>
+			</div>
+
+			<div class="opiniones-nota">
+				<label>
+					<h2>9,2</h2>
+					<br>Opiniones 34</label>
+			</div>
+		</div>
+
+		<div class="contenedor-fichas">
+			<div class="img-ficha">
+				<img src="img/clifford.jpg" alt="">
+			</div>
+
+			<div class="text-ficha">
+				<label>
+					<a href="opera.html">
+						<h2>Opera</h2>
+					</a>
+					<br>Plaza Molina, 2 08006 Barcelona</label>
+			</div>
+
+			<div class="opiniones-nota">
+				<label>
+					<h2>6,7</h2>
+					<br>Opiniones 85</label>
+			</div>
+		</div>
+
+		<div class="contenedor-fichas">
+			<div class="img-ficha">
+				<img src="img/jay.jpg" alt="">
+			</div>
+
+			<div class="text-ficha">
+				<label>
+					<a href="guzzo.html">
+						<h2>Guzzo</h2>
+					</a>
+					<br>Carrer dels Arcs, 5 08002 Barcelona</label>
+			</div>
+
+			<div class="opiniones-nota">
+				<label>
+					<h2>7,3</h2>
+					<br>Opiniones 409</label>
+			</div>
+		</div>
+
+		<div class="contenedor-fichas">
+			<div class="img-ficha">
+				<img src="img/roman.jpg" alt="">
+			</div>
+
+			<div class="text-ficha">
+				<label>
+					<a href="el_celler.html">
+						<h2>El Celler</h2>
+					</a>
+					<br>Avinguda Diagonal, 423 08036 Barcelona</label>
+			</div>
+
+			<div class="opiniones-nota">
+				<label>
+					<h2>5,5</h2>
+					<br>Opiniones 332</label>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="footer">
+			<div class="row">
+
+				<div class="col1">
+					<a href="avisolegal.html">
+						<h4>Aviso legal</h4>
+					</a>
+					<a href="condiciones.html">
+						<h4>Condiciones legales</h4>
+					</a>
+				</div>
+
+				<div class="img-footer">
+					<img id="logo-footer" src="img/logo.png" alt="logo" />
+				</div>
+
+				<div class="col2">
+					<h3>Conectar</h3>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/">
+								<img src="img/facebook.png">
+								</i>
 							</a>
-						</button>
-					</form>
-				</div>
-		</header>	
-		
-		<section id="section-filtro"> <!--FILTRO LATERAL-->
-			<div class="filtros">
-				<div class="title-box">
-					<h2 class="title-box">Filtrar la búsqueda</h2>
-				</div>
-				<div class="tipo-cocina">
-					<h4 class="tipo-cocina">Cocina</h4>
-				</div>
-				<div class="checkbox-tipo-cocina">
-					<form action="tipo-cocina">
-						<input type="checkbox" name="tipo-cocina" value="Española">Española<br>
-						<input type="checkbox" name="tipo-cocina" value="India">India<br>
-						<input type="checkbox" name="tipo-cocina" value="Japonesa">Japonesa<br>
-						<input type="checkbox" name="tipo-cocina" value="China">China<br>
-						<input type="checkbox" name="tipo-cocina" value="Italiana">Italiana<br>
-						<input type="checkbox" name="tipo-cocina" value="Mexicana">Mexicana<br>
-						<input type="checkbox" name="tipo-cocina" value="Tailandesa">Tailandesa<br>
-						<input type="checkbox" name="tipo-cocina" value="Coreana">Coreana<br>
-						<input type="checkbox" name="tipo-cocina" value="Mediterranea">Mediterránea<br>
-						<input type="checkbox" name="tipo-cocina" value="Americana">Americana<br>
-						<input type="checkbox" name="tipo-cocina" value="Marroqui">Marroquí<br>
-						<input type="checkbox" name="tipo-cocina" value="Escandinava">Escandinava<br>					
-					</form>
-				</div>
-				<div class="ambientes">
-					<h4>Ambientes</h4>
-				</div>
-				<div class="checkbox-ambientes">
-					<form action="">
-						<input type="checkbox" name="ambientes" value="con-amigos">Con amigos<br>
-						<input type="checkbox" name="ambientes" value="romantico">Romántico<br>
-						<input type="checkbox" name="ambientes" value="de-fiesta">De fiesta<br>
-						<input type="checkbox" name="ambientes" value="moderno">Moderno<br>
-						<input type="checkbox" name="ambientes" value="tradicional">Tradicional<br>
-						<input type="checkbox" name="ambientes" value="negocios">De negocios<br>
-						<input type="checkbox" name="ambientes" value="para-grupos">Para grupos<br>
-						<input type="checkbox" name="ambientes" value="familia">Família<br>
-						<input type="checkbox" name="ambientes" value="tranquilo">Tranquilo<br>
-						<input type="checkbox" name="ambientes" value="ecologico">Ecológico<br>
-					</form>
-				</div>
-				<div class="precio-persona">
-					<h4>Precio por persona</h4>
-				</div>
-				<div id="slide-personas">
-	  				<input type="range" min="0" max="150" value="5" class="slider" id="myRange"><br>
-	  				<label for="">Precio de 0 a 150 € +</label>
-				</div>
-
-				<div class="nota-restaurante">
-					<h4>Nota</h4>	
-				</div>
-
-				<div id="slide-nota">
-	  				<input type="range" min="1" max="10" value="5" class="slider" id="myRange"><br>
-	  				<label for="">Nota de 0 a 10/10</label>
-				</div>
-			</div>
-		</section>
-
-		<section id="section-fichas"> <!--FICHAS FILTRADAS RESTAURANTES-->
-			<div class="contenedor-fichas">
-				<div class="img-ficha">
-					<img src="img/cater.jpg" alt="">
-				</div>
-
-				<div class="text-ficha">
-					<label> <a href="piazza_navona.html"><h2>Piazza Navona</h2></a><br>Carrer de Provença, 300 08008 Barcelona</label>
-				</div>
-				
-				<div class="opiniones-nota">
-					<label><h2>8,8</h2><br>Opiniones 222</label>
-				</div>
-			</div>
-
-			<div class="contenedor-fichas">
-				<div class="img-ficha">
-					<img src="img/alex.jpg" alt="">
-				</div>
-
-				<div class="text-ficha">
-					<label><a href="roca_bar.html"><h2>Roca Bar</h2></a><br>Carrer del Roselló,148 08036 Barcelona</label>
-				</div>
-				
-				<div class="opiniones-nota">
-					<label><h2>9,2</h2> <br>Opiniones 34</label>
-				</div>
-			</div>
-
-			<div class="contenedor-fichas">
-				<div class="img-ficha">
-					<img src="img/clifford.jpg" alt="">
-				</div>
-
-				<div class="text-ficha">
-					<label><a href="opera.html"><h2>Opera</h2></a> <br>Plaza Molina, 2 08006 Barcelona</label>
-				</div>
-				
-				<div class="opiniones-nota">
-					<label><h2>6,7</h2><br>Opiniones 85</label>
-				</div>
-			</div>
-
-			<div class="contenedor-fichas">
-				<div class="img-ficha">
-					<img src="img/jay.jpg" alt="">
-				</div>
-
-				<div class="text-ficha">
-					<label><a href="guzzo.html"><h2>Guzzo</h2></a><br>Carrer dels Arcs, 5 08002 Barcelona</label>
-				</div>
-				
-				<div class="opiniones-nota">
-					<label><h2>7,3</h2><br>Opiniones 409</label>
-				</div>
-			</div>
-
-			<div class="contenedor-fichas">
-				<div class="img-ficha">
-					<img src="img/roman.jpg" alt="">
-				</div>
-
-				<div class="text-ficha">
-					<label><a href="el_celler.html"><h2>El Celler</h2></a><br>Avinguda Diagonal, 423 08036 Barcelona</label>
-				</div>
-				
-				<div class="opiniones-nota">
-					<label><h2>5,5</h2><br>Opiniones 332</label>
-				</div>
-			</div>
-		</section>
-		
-
-		<footer>
-			<div class="footer">
-				<div class="row">
-					
-					<div class="col1">
-						<a href="avisolegal.html"><h4>Aviso legal</h4></a>
-						<a href="condiciones.html"><h4>Condiciones legales</h4></a>		
-					</div>
-					
-					<div class="img-footer">	
-						<img id="logo-footer"src="img/logo.png" alt="logo"/>
-					</div>
-					
-					<div class="col2">
-						<h3>Conectar</h3>
-						<ul>
-							<li><a href="https://www.facebook.com/"><img src="img/facebook.png"></i></a></li>
-							<li><a href="https://www.twitter.com/"><img src="img/twitter.png"></i></a></li>
-							<li><a href="https://plus.google.com/"><img src="img/google-plus.png"></i></a></li>
-						</ul>
+						</li>
+						<li>
+							<a href="https://www.twitter.com/">
+								<img src="img/twitter.png">
+								</i>
+							</a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/">
+								<img src="img/google-plus.png">
+								</i>
+							</a>
+						</li>
+					</ul>
 				</div>
 				<div class="copyright">
-					
+
 					<div class="contenedor">
 						<p>© 2017 GASTRO GUIDE - Todos los Derechos Reservados</p>
-						<p id="texto-footer">*Ver condiciones y validez en la ficha del restaurante. Las ofertas sobre las bebidas
-							alcohólicas están estrictamente reservadas para los adultos. El abuso de alcohol es
-							peligroso para la salud. Consumir con moderación. El restaurante y GastroGuide declinan
-							toda responsabilidad en caso de abuso.</p>
+						<p id="texto-footer">*Ver condiciones y validez en la ficha del restaurante. Las ofertas sobre las bebidas alcohólicas están estrictamente
+							reservadas para los adultos. El abuso de alcohol es peligroso para la salud. Consumir con moderación. El restaurante
+							y GastroGuide declinan toda responsabilidad en caso de abuso.</p>
 					</div>
-	
+
 				</div>
 			</div>
-		</footer>	
-	</body>
+	</footer>
+</body>
+
 </html>

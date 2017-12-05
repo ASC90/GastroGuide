@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Footer</title>	
+	<title>Gastro GUIDE</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/logoicon.png">
 </head>
+
 <body>
 	<header>
-		<nav class="navegacion"><!--navbar-->
+		<nav class="navegacion">
+			<!--navbar-->
 			<ul class="navbar">
 				<li class="lista-navbar">
-					<a href="home_page.html"><img src="img/logo-small.png" alt="" class="gastro-guide-logo"></a>
+					<a href="home_page.html">
+						<img src="img/logo-small.png" alt="" class="gastro-guide-logo">
+					</a>
 				</li>
 				<span class="navbar-derecha">
-						<a href="LoginSignup.html">
+					<a href="LoginSignup.html">
 						<button class="inicia-sesion">
 							<div class="icon-user">
 								<img src="img/man-user.png" alt="">
 							</div>
 							Inicia sesión
-						</button></a>
-					</span>
-				</ul>
-			</nav>
-	</header>	
-	
+						</button>
+					</a>
+				</span>
+			</ul>
+		</nav>
+	</header>
+
 	<div id="titulo-publicar-contenido">
 		<h2>Publicar contenido</h2>
 	</div>
 
-	<section id="section-panel-control"> <!--FILTRO LATERAL-->
+	<section id="section-panel-control">
+		<!--FILTRO LATERAL-->
 		<div class="panel-control">
 			<div class="title-panel-control">
 				<h2 class="title-panel-control">Panel de Control</h2>
 			</div>
 			<div class="editar-perfil">
 				<img src="img/editar.png" alt="editar">
-				<a href=""><h4>Editar Perfil</h4></a>
+				<a href="">
+					<h4>Editar Perfil</h4>
+				</a>
 			</div>
 
 			<div class="vista-previa-perfil">
-				<img src="img/vista-previa.png" alt="vista-previa">					
-				<a href=""><h4>Vista previa perfil</h4></a>
+				<img src="img/vista-previa.png" alt="vista-previa">
+				<a href="">
+					<h4>Vista previa perfil</h4>
+				</a>
 			</div>
 
 			<div class="descripcion-general">
-				<h4>Descripción general <br> de su establecimiento</h4>
+				<h4>Descripción general
+					<br> de su establecimiento</h4>
 			</div>
 
 			<div class="content-descripcion">
@@ -56,44 +69,57 @@
 					</tr>
 					<tr>
 						<td>Puntuación</td>
-						<td><img src="img/puntos.png" alt="puntos" width="25" height="25"></td>
+						<td>
+							<img src="img/puntos.png" alt="puntos" width="25" height="25">
+						</td>
 					</tr>
 				</table>
 			</div>
 		</div>
 	</section>
 
-	<section id="opciones">	<!--OPCIONES-->	
+	<section id="opciones">
+		<!--OPCIONES-->
 		<div id=bloque1>
 			<div>
-				<h3>Foto</h3> 
-				<a href="#Fotos"><img id="bloque1" src="img/photo.png" alt="photo"></a>
+				<h3>Foto</h3>
+				<a href="#Fotos">
+					<img id="bloque1" src="img/photo.png" alt="photo">
+				</a>
 			</div>
-			
+
 			<div>
 				<h3>Menú</h3>
-				<a href="#Menu"><img id="bloque1" src="img/menu.png" alt="menu"></a>
+				<a href="#Menu">
+					<img id="bloque1" src="img/menu.png" alt="menu">
+				</a>
 			</div>
 		</div>
 
 		<div id="bloque2">
 			<div>
 				<h3>Video</h3>
-				<a href="#Videos"><img id="bloque2" src="img/video.png" alt="video"></a>
+				<a href="#Videos">
+					<img id="bloque2" src="img/video.png" alt="video">
+				</a>
 			</div>
 			<div>
 				<h3>Ofertas</h3>
-				<a href="#Ofertas"><img id="bloque2" src="img/coupon.png" alt="ofertas"></a>					
+				<a href="#Ofertas">
+					<img id="bloque2" src="img/coupon.png" alt="ofertas">
+				</a>
 			</div>
-		</div>		
+		</div>
 	</section>
 	<!--/////////////////////////////////////MENU FOTO//////////////////////////////////////////////////////-->
-	
+
 	<div id="pub-con-f-title">
-		<a name="Fotos"><h3>Publicar o modificar fotos</h3></a>
+		<a name="Fotos">
+			<h3>Publicar o modificar fotos</h3>
+		</a>
 	</div>
 
-	<section id="pub-con-f">		
+	<section id="pub-con-f">
 		<div id="pub-con-f-an">
 			<div id="pub-con-f-an-tab">
 				<div id="pub-con-f-an-tab-txt">Añadir imagenes</div>
@@ -124,7 +150,9 @@
 
 	<section class="seccion-videos">
 		<div>
-			<a name="Videos"><h3>Publicar Vídeos</h3></a>
+			<a name="Videos">
+				<h3>Publicar Vídeos</h3>
+			</a>
 		</div>
 		<div id="cont-video">
 			<div id="inputs-video">
@@ -137,7 +165,7 @@
 					<input type="url" placeholder="Examinar">
 				</form>
 			</div>
-		
+
 			<div id="area-video">
 				<textarea name="" id="" cols="30" rows="10" placeholder="Introduce un texto..."></textarea>
 				<button class="boton">Aplicar</button>
@@ -145,14 +173,16 @@
 		</div>
 
 
-	</section>    		
+	</section>
 
 	<!--/////////////////////////////////////MENU RESTUARANTE//////////////////////////////////////////////////////-->
 
-	<section class="seccion-menu">		
+	<section class="seccion-menu">
 		<form action="">
 			<div class="seccion-menu-block">
-				<a name="Menu"><h3>Introduce tu Menú</h3></a>
+				<a name="Menu">
+					<h3>Introduce tu Menú</h3>
+				</a>
 			</div>
 
 			<div>
@@ -164,13 +194,13 @@
 					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir primeros platos"></textarea>
 				</div>
 
-				<div id="platos-menu">			
+				<div id="platos-menu">
 					<h4>Segundo plato</h4>
 					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir segundos platos"></textarea>
-				
+
 					<h4>Postre</h4>
 					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir postres"></textarea>
-				
+
 				</div>
 				<div id="platos-menu">
 					<input type="text" placeholder="Nombre del menú">
@@ -186,51 +216,64 @@
 
 	<section>
 		<div id="ofertas">
-			<a name="Ofertas"><h3>Ofertas</h3></a>
+			<a name="Ofertas">
+				<h3>Ofertas</h3>
+			</a>
 		</div>
 
 		<div class="form-ofertas1">
 			<form>
-	  			<input type="radio" name="radio"> <b>Promociones</b><br>
-	  			 <input type="radio" name="radio"> <b>Descuentos</b><br>	
-			</form>	
+				<input type="radio" name="radio">
+				<b>Promociones</b>
+				<br>
+				<input type="radio" name="radio">
+				<b>Descuentos</b>
+				<br>
+			</form>
 		</div>
 
 		<div class="form-ofertas2">
 			<form>
-				<b>Descripción de la oferta:</b> <br><br>			
+				<b>Descripción de la oferta:</b>
+				<br>
+				<br>
 				<textarea placeholder="Describe la oferta..." name="" id="" cols="30" rows="10"></textarea>
-				<button class="boton">Aplicar</button>			
-			</form>	
-		</div>	
+				<button class="boton">Aplicar</button>
+			</form>
+		</div>
 
 	</section>
-	
+
 	<!--/////////////////////////////////////RECETAS RESTAURANTE//////////////////////////////////////////////////////-->
 
 	<section>
 		<div class="recetas">
-			<a name="Recetas"><h3>Recetas</h3></a>
+			<a name="Recetas">
+				<h3>Recetas</h3>
+			</a>
 		</div>
 
-        <div class="form-recetas">
-            <div>
-                <label for="receta">Nombre de la receta</label>
-                <input id="receta" type="text" name="receta" required placeholder="Nombre de la receta...">
-                <label for="ingredientes">Ingredientes</label>
-                <input id="ingredientes" type="text" name="ingredientes" required placeholder="Ingredientes...">	
+		<div class="form-recetas">
+			<div>
+				<label for="receta">Nombre de la receta</label>
+				<input id="receta" type="text" name="receta" required placeholder="Nombre de la receta...">
+				<label for="ingredientes">Ingredientes</label>
+				<input id="ingredientes" type="text" name="ingredientes" required placeholder="Ingredientes...">
 				<button class="boton">Añadir +</button>
-            </div>		
-        	
-			<div class="prep-receta">
-				<br><label>Preparación:</label> <br>
-				<textarea placeholder="Introduce la preparación de la receta..." name="preparación" cols="100" rows="10"></textarea> <br>
-			</div>	
+			</div>
 
-			<div class="img-recetas">				
-        		<img src="img/GastroChef.png" alt="">
+			<div class="prep-receta">
+				<br>
+				<label>Preparación:</label>
+				<br>
+				<textarea placeholder="Introduce la preparación de la receta..." name="preparación" cols="100" rows="10"></textarea>
+				<br>
+			</div>
+
+			<div class="img-recetas">
+				<img src="img/GastroChef.png" alt="">
 				<button class="boton">Añadir foto + </button>
-			</div>			
+			</div>
 		</div>
 	</section>
 
@@ -240,35 +283,54 @@
 			<div class="row">
 
 				<div class="col1">
-					<a href="avisolegal.html"><h4>Aviso legal</h4></a>
-					<a href="condiciones.html"><h4>Condiciones legales</h4></a>		
+					<a href="avisolegal.html">
+						<h4>Aviso legal</h4>
+					</a>
+					<a href="condiciones.html">
+						<h4>Condiciones legales</h4>
+					</a>
 				</div>
-					
-				<div class="img-footer">	
-					<img id="logo-footer"src="img/logo.png" alt="logo"/>
+
+				<div class="img-footer">
+					<img id="logo-footer" src="img/logo.png" alt="logo" />
 				</div>
-					
+
 				<div class="col2">
 					<h3>Conectar</h3>
 					<ul>
-						<li><a href="https://www.facebook.com/"><img src="img/facebook.png"></i></a></li>
-						<li><a href="https://www.twitter.com/"><img src="img/twitter.png"></i></a></li>
-						<li><a href="https://plus.google.com/"><img src="img/google-plus.png"></i></a></li>
+						<li>
+							<a href="https://www.facebook.com/">
+								<img src="img/facebook.png">
+								</i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com/">
+								<img src="img/twitter.png">
+								</i>
+							</a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/">
+								<img src="img/google-plus.png">
+								</i>
+							</a>
+						</li>
 					</ul>
 				</div>
-				
+
 				<div class="copyright">
-					
+
 					<div class="contenedor">
 						<p>© 2017 GASTRO GUIDE - Todos los Derechos Reservados</p>
-						<p id="texto-footer">*Ver condiciones y validez en la ficha del restaurante. Las ofertas sobre las bebidas
-							alcohólicas están estrictamente reservadas para los adultos. El abuso de alcohol es
-							peligroso para la salud. Consumir con moderación. El restaurante y GastroGuide declinan
-							toda responsabilidad en caso de abuso.</p>
+						<p id="texto-footer">*Ver condiciones y validez en la ficha del restaurante. Las ofertas sobre las bebidas alcohólicas están estrictamente
+							reservadas para los adultos. El abuso de alcohol es peligroso para la salud. Consumir con moderación. El restaurante
+							y GastroGuide declinan toda responsabilidad en caso de abuso.</p>
 					</div>
 
 				</div>
 			</div>
-		</footer>
-	</body>
+	</footer>
+</body>
+
 </html>

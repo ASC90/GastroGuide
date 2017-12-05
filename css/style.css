@@ -174,7 +174,8 @@ div.icon-user {
 }
 
 .perfil article {
-    margin-bottom: 4em;
+	margin-bottom: 4em !important;
+	margin: 0 auto;
 }
 
 .pdatos>div {
@@ -963,87 +964,6 @@ div.recetas h3{
 	margin-bottom: 5%;
 }
 
-/*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
-
-footer {
-color: #E0E9E6;
-background-color: #20292F;
-bottom: 0;
-left: 0;
-right: 0;
-font-family: 'Muli', sans-serif;
-}
-
-footer a{
-    color:#E0E9E6;
-    text-decoration: none;
-}
-
-.footer{
-    text-align:center;
-}
-
-.row{
-    display: inline-block;
-    width: auto;
-}
-
-.col1{
-    display: inline-block;
-    padding-right: 5%;
-}
-
-.col1 h4{
-    padding-top: 0.5em;
-    margin: 0;
-}
-
-.img-footer{
-    display: inline-block;
-    padding-top: 2%;
-}
-
-img#logo-footer{
-    width: 130pt;
-    height: 100pt;
-}
-
-.col2{
-    display: inline-block;
-    padding-left: 5%;
-    font-family: entypo;
-}
-
-.col2 h3{
-    padding-left: 1.6em;
-    font-family: 'Muli', sans-serif;
-}
-
-footer ul li{
-    list-style: none;
-    display: inline-block;
-}
-
-.col2 ul li img{
-    padding-right: 0.3em;
-}
-
-
-.copyright{
-    display: inline-block;
-}
-
-.contenedor{
-    display: inline-block;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-
-#texto-footer{
-    font-size: 0.7em;
-}
 
 /*/////////////////////Aviso legal/////////////////////*/
 .avisolegal div
