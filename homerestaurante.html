@@ -28,6 +28,10 @@
 			</ul>
 		</nav>
 	</header>	
+	
+	<div id="titulo-publicar-contenido">
+		<h2>Publicar contenido</h2>
+	</div>
 
 	<section id="section-panel-control"> <!--FILTRO LATERAL-->
 		<div class="panel-control">
@@ -63,9 +67,7 @@
 		</div>
 	</section>
 
-	<section id="opciones">	<!--OPCIONES-->
-		<div id="titulo-publicar-contenido"/>
-		<h2>Publicar contenido</h2>
+	<section id="opciones">	<!--OPCIONES-->	
 		<div id=bloque1>
 			<div>
 				<h3>Foto</h3> 
@@ -184,7 +186,7 @@
 		</form>
 	</section>
 
-	<!--/////////////////////////////////////OFERTAS RESTURANTE//////////////////////////////////////////////////////-->
+	<!--/////////////////////////////////////OFERTAS RESTAURANTE//////////////////////////////////////////////////////-->
 
 	<section>
 		<div id="ofertas">
@@ -193,20 +195,49 @@
 
 		<div class="form-ofertas1">
 			<form>
-	  			<input type="radio" name="radio"> Promociones<br>
-	  			 <input type="radio" name="radio"> Descuentos<br>	
+	  			<input type="radio" name="radio"> <b>Promociones</b><br>
+	  			 <input type="radio" name="radio"> <b>Descuentos</b><br>	
 			</form>	
 		</div>
 
 		<div class="form-ofertas2">
 			<form>
-				Descripción de la oferta: <br><br>			
+				<b>Descripción de la oferta:</b> <br><br>			
 				<textarea placeholder="Describe la oferta..." name="" id="" cols="30" rows="10"></textarea>
 				<button class="boton">Aplicar</button>			
 			</form>	
 		</div>	
 
 	</section>
+	
+	<!--/////////////////////////////////////RECETAS RESTAURANTE//////////////////////////////////////////////////////-->
+
+	<section>
+		<div class="recetas">
+			<a name="Recetas"><h3>Recetas</h3></a>
+		</div>
+
+        <div class="form-recetas">
+            <div>
+                <label for="receta">Nombre de la receta</label>
+                <input id="receta" type="text" name="receta" required placeholder="Nombre de la receta...">
+                <label for="ingredientes">Ingredientes</label>
+                <input id="ingredientes" type="text" name="ingredientes" required placeholder="Ingredientes...">	
+				<button class="boton">Añadir +</button>
+            </div>		
+        	
+			<div class="prep-receta">
+				<br><label>Preparación:</label> <br>
+				<textarea placeholder="Introduce la preparación de la receta..." name="preparación" cols="100" rows="10"></textarea> <br>
+			</div>	
+
+			<div class="img-recetas">				
+        		<img src="img/GastroChef.png" alt="">
+				<button class="boton">Añadir foto + </button>
+			</div>			
+		</div>
+	</section>
+
 
 	<footer>
 		<div class="footer">
