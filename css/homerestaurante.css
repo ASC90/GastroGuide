@@ -141,10 +141,21 @@ div.icon-user
 
 /*////////////////////////////////////////////////HOME RESTAURANTE////////////////////////////////////////////////////////////////*/
 
+#titulo-publicar-contenido{
+	display: block;
+	padding-left: 8em;
+	width: 80%;
+}
+
+#titulo-publicar-contenido h2{
+	border-bottom: solid 0.2em;
+
+}
+
 section#section-panel-control{
     display: inline-block;
     vertical-align: top;
-    padding-top: 10em;
+    padding-top: 2em;
     padding-left: 8em;
 }
 
@@ -237,15 +248,7 @@ table, td{
 section#opciones {
 	display: inline-block;
 	padding-left: 10em;
-	padding-top: 5em;
-}
-
-#titulo-publicar-contenido{
-	display: inline-block;
-}
-
-#titulo-publicar-contenido h2{
-	border-bottom: solid 0.2em;
+	padding-top: 2em;
 }
 
 #bloque1{
@@ -350,7 +353,6 @@ section#opciones {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-
 }
 
 .seccion-videos h3 {
@@ -399,7 +401,9 @@ div#area-video{
 #area-video button.boton {
     margin-left: 38em;
 }
+
 /*////////////////////////////////////////////////Menu restaurante/////////////////////////////////////////////////////////////*/
+
 .seccion-menu{
 	margin: 0;
 	padding: 0;	
@@ -471,7 +475,7 @@ div#ofertas h3{
 .form-ofertas2{
 	margin-top: 2em;
 	display: inline-block;
-	margin-left: 2em;
+	margin-left: 6em;
 }
 
 .form-ofertas2 textarea{
@@ -482,7 +486,56 @@ div#ofertas h3{
 .form-ofertas2 button{
 	display: block;
 	margin-left: 31em;
-	margin-bottom: 4em;
+}
+
+/*////////////////////////////////////////////////Recetas Restaurante///////////////////////////////////////////////////////////////////////*/
+
+
+div.recetas{
+	display: block;
+	border-bottom: 0.1em solid;
+	margin-left: 8em;
+	width: 80%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+div.recetas h3{
+	margin: 0;
+}
+
+.form-recetas label{
+	padding-left: 8em;
+	font-weight: bold;
+}
+
+.form-recetas textarea{
+	margin-top: 1em;
+	margin-left: 9.5em;
+	margin-bottom: 5em;
+}
+
+.form-recetas button{
+	margin-right: 2em;
+}
+
+.prep-receta{
+	display: inline-block;	
+}
+
+.img-recetas{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 15em;
+}
+
+.img-recetas img{
+	width: 50%;
+	height: 50%;
+}
+
+.img-recetas button{
+	display: block;
 }
 
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
