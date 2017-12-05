@@ -1004,6 +1004,10 @@ div.recetas h3 {
     text-align: center;
 }
 
+.premiamos-tu-confianza img{
+    border-radius: 25px;
+}
+
 .imagen {
     width: 100%;
     top: 10px;
