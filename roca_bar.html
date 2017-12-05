@@ -8,30 +8,82 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navegacion">
             <!--navbar-->
             <ul class="navbar">
                 <li class="lista-navbar">
-                    <a href="">
+                    <a href="home_page.html">
                         <img src="img/logo-small.png" alt="" class="gastro-guide-logo">
                     </a>
                 </li>
                 <span class="navbar-derecha">
-                    <li class="lista-navbar gestion-usuario-padding">
-                        <a href="">
-                            <button class="inicia-sesion">
-                                <div class="icon-user">
-                                    <img src="img/man-user.png" alt="">
-                                </div>
-                                Inicia sesión
-                            </button>
-                        </a>
-                    </li>
+                    <a href="LoginSignup.html">
+                        <button class="inicia-sesion">
+                            <div class="icon-user">
+                                <img src="img/man-user.png" alt="">
+                            </div>
+                            Inicia sesión
+                        </button>
+                    </a>
                 </span>
             </ul>
         </nav>
+        <div class="cuadro-blanco" align="center">
+            <!--<div class="dropdown">
+                                <a href="" class="dropbtn">Dropdown</a>
+                                <div class="dropdown-content">
+                                    <a href="">link 1</a>
+                                    <a href="">link 2</a>
+                                    <a href="">link 3</a>
+                                </div>
+                            </div>-->
+            <form action="" class="formulario">
+                <!--primer selector-->
+                <select name="" id="" class="selector-buscador">
+                    <option value="option 1"> Japonés</option>
+                    <option value="option 2">Mexicano</option>
+                    <option value="option 3">Brasileño</option>
+                    <option value="option 4">Chino</option>
+                    <option value="option 5">Cubano</option>
+                </select>
+                <!--buscador-->
+
+                <img class="espacio-imagen" src="img/glass-icon.png" alt="">
+
+                <input type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
+                <!--segundo selector-->
+                <input type="date" class="selector-buscador">
+                <!--<select name="" id="" class="selector-buscador">
+                                    <option value="option 1">07/07/2017</option>
+                                    <option value="option 2">07/07/2017</option>
+                                    <option value="option 3">07/07/2017</option>
+                                    <option value="option 4">07/07/2017</option>
+                                    <option value="option 5"></option>
+                                </select>-->
+                <!--tercer selector-->
+                <select name="" id="" class="selector-buscador">
+                    <option value="option 1">8:00</option>
+                    <option value="option 2">9:00</option>
+                    <option value="option 3">10:00</option>
+                    <option value="option 4">11:00</option>
+                    <option value="option 5">12:00</option>
+                </select>
+                <!--cuarto selector-->
+                <select name="" id="" class="selector-buscador">
+                    <option value="option 1">1 persona</option>
+                    <option value="option 2">2 personas</option>
+                    <option value="option 3">3 personas</option>
+                    <option value="option 4">4 personas</option>
+                    <option value="option 5">5 personas</option>
+                </select>
+                <button class="selector-buscador">
+                    <a href="filtrar.html">
+                        Buscar
+                    </a>
+                </button>
+            </form>
+        </div>
     </header>
 
     <section class="perfil">
@@ -155,57 +207,61 @@
         <article class="precetas">
             <h2>RECETAS</h2>
             <div>
-                <img src="img/fideua.jpg" alt="foto receta">
-                <h3>Fideua con gambas al estilo celler</h3>
+                <img src="img/tacos.jpg" alt="foto receta">
+                <h3>Tacos Roca Bar</h3>
             </div>
             <div>
                 <div class="prep">
                     <h4>Preparación</h4>
                     <div>
                         <h5>Paso 1/5</h5>
-                        <p>Pelar las gambas reservando cabezas y cáscaras. Limpiar los calamares y cortarlos en anillas. Pelar
-                            y picar los ajos. Lavar, retirar las semillas, el tallo y los nervios de los pimientos. Picar
-                            en daditos pequeños. Pelar, lavar y picar en daditos pequeños la cebolla. Majar el azafrán en
-                            el mortero con un poco de sal. Cocer juntos los ingredientes para el caldo de pescado 15 minutos
-                            y colar.</p>
+                        <p>Picamos los ajos y los cocinamos a fuego muy suave durante 1 minuto. Que no coja color</p>
                     </div>
                     <div>
                         <h5>Paso 2/5</h5>
-                        <p>Colocar una paella con el aceite al fuego a calentar. Cuando está caliente rehogar el ajo, antes
-                            de que tome color, incorporar el pimiento y la cebolla muy picados. Seguir rehogando a fuego
-                            lento hasta que estén bien blandos. Añadir ahora el calamar y continuar rehogando 6 minutos más.</p>
+                        <p> Añadimos el medio kilo de tomates, ya pelados y troceados y subimos la potencia del fuego. Salpimentamos
+                            y cocinamos durante un rato. El tomate soltará agua, debe evaporarse toda que, puede tartar un
+                            rato. Una vez evaporada dejamos cocinar a fuego suave mientras removemos constantemente, durante
+                            5 minutos más, para que coja buen sabor</p>
                     </div>
                     <div>
                         <h5>Paso 3/5</h5>
-                        <p>Fuera del fuego poner el pimentón y de nuevo en el fuego incorporar el tomate. Seguir rehogando 8
-                            minutos más.
+                        <p>Mientras se evapora el agua de los tomates, preparamos el pico de gallo. En un bol echamos toda la
+                            verdura de esta salsa bien picada. Añadimos el zumo de 1/2 lima o de medio limón y removemos
+                            bien. Dejamos reposar
                         </p>
                     </div>
                     <div>
                         <h5>Paso 4/5</h5>
-                        <p>Bañar con el caldo de pescado y cuando esté hirviendo incorporar los fideos y las gambas. Cocer 5
-                            minutos en el fuego y 5 minutos más en el horno.
+                        <p>Cuando se haya cocinado un poco el tomate, añadimos la carne picada que hayamos elegido. Echamos
+                            su parte de sal y pimienta y cocinamos a fuego fuerte. Con una cuchara de madera, vamos removiendo
+                            todo y desmenuzando la carne picada, para que no que queden trozos grandes. De hecho, cuanto
+                            más finos queden mejor. Así que mezclamos con el tomate y el ajo, mientras la desmenuzamos y
+                            cocinamos la carne
                         </p>
                     </div>
                     <div>
                         <h5>Paso 5/5</h5>
-                        <p>Servir en la misma paella, adornando las asas con servilletas. Se puede acompañar de salsa alioli
-                            elaborada con aceite de oliva.</p>
+                        <p>Una vez se haya cocinado, ¡ya está lista! Calentamos una a una las tortillas por sus dos caras en
+                            una sartén a fuego medio. Después ponemos encima unas cucharadas de la carne, aderezamos con
+                            un poco de pico de gallo, lo envolvemos dándole la forma característica de taco ¡Y ya está listo!.
+                            Opcionalmente puedes espolvorear también queso rallado por encima</p>
                     </div>
                 </div>
                 <div class="ingre">
                     <h4>Ingredientes</h4>
                     <ul>
-                        <li>200g gambas</li>
-                        <li>300g calamar</li>
-                        <li>2 dientes de ajo</li>
-                        <li>1 pimiento verde</li>
-                        <li>150g cebolla</li>
-                        <li>1tsp pimentón</li>
-                        <li>10 ramitas azafrán</li>
-                        <li>1tbsp aceite de oliva</li>
-                        <li>150ml de pescado</li>
-                        <li>350g fideos nº3</li>
+                        <li>6 tortillas de trigo o de maíz</li>
+                        <li>350g de carne picada de ternera o de pollo</li>
+                        <li>4 dientes de ajo</li>
+                        <li>500g de tomates</li>
+                        <li>sal y pimienta</li>
+                        <li>aceite</li>
+                        <li>queso rallado</li>
+                        <li>1 cebolleta pequeña</li>
+                        <li>1 jalapeño</li>
+                        <li>Unas hojas de cilantro</li>
+                        <li>1/2 lima o 1/2 limón</li>
                     </ul>
                 </div>
             </div>
@@ -219,9 +275,8 @@
                 </div>
                 <div class="pcol2">
                     <h4>Como funciona nuestra cocina</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vitae in ipsum voluptatum enim minus repellendus
-                        obcaecati labore cumque sit, nobis numquam corporis! Harum, eum. Animi nobis exercitationem provident
-                        dolores!
+                    <p>Estuvimos a la hora del almuerzo, en medio de fogones, ollas y cocineros apasionados por lo que hacen.
+                        Bladimir Tovar, chef encargado de la cocina, fue el guía.
                     </p>
                 </div>
             </div>

@@ -1,104 +1,105 @@
 @charset "utf-8";
-/* CSS Document */
-@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
 
-body
-{
-	font-family: "Muli", sans-serif;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 12pt;
+/* CSS Document */
+
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+body {
+    font-family: "Muli", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 12pt;
 }
+
+
 /*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
 
-ul.navbar 
-{
+ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 5px;
-	overflow: hidden;
-	background-color: #20292f; 
+    overflow: hidden;
+    background-color: #20292f;
 }
 
-li.lista-navbar
-{
-	display: inline-flex;
+li.lista-navbar {
+    display: inline-flex;
 }
-li.lista-navbar a
-{
+
+li.lista-navbar a {
     display: block;
-	color: white;
-	text-align: center;
+    color: white;
+    text-align: center;
     padding: 4px 12px;
     text-decoration: none;
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
-li.lista-navbar a:hover
-{
+
+li.lista-navbar a:hover {
     background-color: #415566;
 }
 
-ul.navbar span.navbar-derecha
-{
-	float: right;
+ul.navbar span.navbar-derecha {
+    float: right;
 }
-ul.navbar span.navbar-derecha li
-{
-	margin: auto 0;
-}
-.gastro-guide-logo
-{
-	width: 85px;
-	height: 35px;
-	margin-left: 12px;
-}
-.gestion-usuario-padding
-{
-	padding: 5px;
-	align-items: center;
-}
-button.inicia-sesion
-{
-	background-color: #F6C324;
-	border: 0;
-	padding: 0.3em 0.6em;
-	color: #20292f;
-	font-size: 1.1em;
-	font-weight: 600;
-	border-radius: 25px;
-	cursor: pointer;
-	margin-top: 0.5em;
-	margin-right: 1em;
-}
-button.inicia-sesion:hover
-{
-	background-color: #F9D873;
-}
-button.inicia-sesion:active
-{
-	background-color: #AB8D2F;
-	color: white;
-}
-div.icon-user
-{
-	display: inline-flex;
-}
-.icon-user{
 
+ul.navbar span.navbar-derecha li {
+    margin: auto 0;
 }
+
+.gastro-guide-logo {
+    width: 85px;
+    height: 35px;
+    margin-left: 12px;
+}
+
+.gestion-usuario-padding {
+    padding: 5px;
+    align-items: center;
+}
+
+button.inicia-sesion {
+    background-color: #F6C324;
+    border: 0;
+    padding: 0.3em 0.6em;
+    color: #20292f;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 0.5em;
+    margin-right: 1em;
+}
+
+button.inicia-sesion:hover {
+    background-color: #F9D873;
+}
+
+button.inicia-sesion:active {
+    background-color: #AB8D2F;
+    color: white;
+}
+
+div.icon-user {
+    display: inline-flex;
+}
+
+.icon-user {}
+
+
 /*///////////////////////////////////////////////Log in///////////////////////////////////////////////////////////////////////////*/
+
 .log {
     border: 0%;
     left: 0%;
     right: 0%;
 }
- 
+
 .log>article {
     display: inline-block;
     border: 0;
 }
- 
+
 .boton {
     background-color: #F6C324;
     border: 0;
@@ -114,352 +115,385 @@ div.icon-user
 .boton:hover {
     background-color: #F9D873;
 }
- 
+
 .log input {
-	 width: 260px;
+    width: 260px;
     padding: 5px 5px;
     margin-top: 10px;
     font-size: 1em;
     background-color: rgba(255, 255, 255, 0.658);
     border: 0px
 }
- 
+
 .chef input {
     background-color: #e0e9e6d5;
 }
- 
+
 .lover {
     background-color: #e0e9e6;
     width: 50%;
     text-align: center;
     height: 100%
 }
+
 .chef {
     background-color: #ffffff;
     width: 49.5%;
     text-align: center;
     height: 100%
 }
- 
+
 .lover img {
     margin-top: 50px;
     margin-bottom: 30px;
     height: 350px;
 }
- 
+
 .chef img {
     margin-top: 50px;
     margin-bottom: 30px;
     height: 350px;
 }
+
 .signup {
     background-color: #20292f;
-    color: #e0e9e6 ;
-  margin-bottom: 10%;
-  border: 0;
-  padding: 5px 15px;
-  font-size: 0.85em;
+    color: #e0e9e6;
+    margin-bottom: 10%;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 0.85em;
     font-weight: 600;
     border-radius: 25px;
     margin-top: 15px;
 }
 
+
 /*////////////////////////////////////////////////Perfil Restaurante///////////////////////////////////////////////////////////////////////*/
-.perfil{
+
+.perfil {
     margin: 0 auto;
     max-width: 75%;
 }
-.perfil article{
-	margin-bottom: 4em;
-}
-.pdatos>div{
-	display: inline-block;
-}
-.pdatos div:first-child{
-	width: 82%;
-}
-.pdatos ul{
-	padding-left: 0%;
-}
-.pdatos li{
-	list-style: none;
-	display: inline-block;
-	padding: 2px 5px;
-	border-radius: 15px;
-	margin: 0 2px;
-	background-color: #F8B05D;
-}
-.pdatos li:hover{
-	border: solid #F8B05D 0.5px;
-	background-color: transparent;
-}
-.pdatos a{
-	text-decoration: none;
-	color: #ffffff;
-}
-.pdatos a:hover{
-	color: #F8B05D;
-}
-.pdatos p{
-	float: right;
-	font-size: 3em;	
-	font-weight: 700;
-}
-.pdatos img,.precetas img{
-	width: 100%;
-	border-radius: 25px;
-	overflow: hidden;
-}
-.pmenu{
-	width: 60%;
-	margin: 0 auto;
-	text-align: center;
-}
-.pmenu>h2,.popinion>h2,.poferta>h2,.pvideo>h2,.precetas>h2{
-	text-align: center;
-	padding: 5px 0px 0px 0px;
-}
-.popinion{
-	margin: 0 auto;
-}
-.popinion img{
-	width: 100%;
-}
-.popinion>div>div{
-	display: inline-block;
 
-}
-.popinion .pcol1{
-	width: 6em;
-	height: 6em;
-	overflow: hidden;
-	border:solid #e0e9e6 2px;
-	border-radius: 15px;
-	margin-right: 2em;
-}
-.popinion .pcol2{
-	width: 40em;
-	margin-right: 2em;
-
-}
-.popinion .pcol3{
-	width:3em;
-	font-size: 2em;
-	font-weight: 700;
-	vertical-align: top;
-}
-.poferta{
-	padding: 2% 20% 5% 20%;
-	margin: auto;
-	border-radius: 10px;
-	background-color: rgba(248, 176, 93, 0.315)
-}
-.precetas>div>div{
-display: inline-block;
-}
-.ingre{
-	width: 13em;
-	vertical-align: top;
-	margin-left: 4em;
-}
-.prep{
-	width: 40em ;
-}
-.pvideo{
-	margin-bottom: 10em;
-}
-.pvideo>div>div{
-	display: inline-block;
+.perfil article {
+    margin-bottom: 4em;
 }
 
-.pvideo .pcol2{
-	width: 20em;
-	margin-left: 2em;
-	vertical-align: top
+.pdatos>div {
+    display: inline-block;
+}
+
+.pdatos div:first-child {
+    width: 82%;
+}
+
+.pdatos ul {
+    padding-left: 0%;
+}
+
+.pdatos li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 15px;
+    margin: 0 2px;
+    background-color: #F8B05D;
+}
+
+.pdatos li:hover {
+    border: solid #F8B05D 0.5px;
+    background-color: transparent;
+}
+
+.pdatos a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pdatos a:hover {
+    color: #F8B05D;
+}
+
+.pdatos p {
+    float: right;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.pdatos img,
+.precetas img {
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.pmenu {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pmenu>h2,
+.popinion>h2,
+.poferta>h2,
+.pvideo>h2,
+.precetas>h2 {
+    text-align: center;
+    padding: 5px 0px 0px 0px;
+}
+
+.popinion {
+    margin: 0 auto;
+}
+
+.popinion img {
+    width: 100%;
+}
+
+.popinion>div>div {
+    display: inline-block;
+}
+
+.popinion .pcol1 {
+    width: 6em;
+    height: 6em;
+    overflow: hidden;
+    border: solid #e0e9e6 2px;
+    border-radius: 15px;
+    margin-right: 2em;
+}
+
+.popinion .pcol2 {
+    width: 40em;
+    margin-right: 2em;
+}
+
+.popinion .pcol3 {
+    width: 3em;
+    font-size: 2em;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.poferta {
+    padding: 2% 20% 5% 20%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(248, 176, 93, 0.315)
+}
+
+.precetas>div>div {
+    display: inline-block;
+}
+
+.ingre {
+    width: 13em;
+    vertical-align: top;
+    margin-left: 4em;
+}
+
+.prep {
+    width: 40em;
+}
+
+.pvideo {
+    margin-bottom: 10em;
+}
+
+.pvideo>div>div {
+    display: inline-block;
+}
+
+.pvideo .pcol2 {
+    width: 20em;
+    margin-left: 2em;
+    vertical-align: top
 }
 
 
 /*////////////////////////////////////////////////FormularioRegistroRestaurantes///////////////////////////////////////////////*/
+
 #formre {
-	margin: 5% 0 10% 0;
+    margin: 5% 0 10% 0;
 }
 
-.formres{
-
-	display:inline;
+.formres {
+    display: inline;
 }
 
-.formres h1{
-	border-bottom: solid 0.2em;
-	margin-left:33.3%;
-	margin-bottom: 2%;
-	width:18%;
-	height: 1%;
+.formres h1 {
+    border-bottom: solid 0.2em;
+    margin-left: 33.3%;
+    margin-bottom: 2%;
+    width: 18%;
+    height: 1%;
 }
 
 
-	/* Columna imagen+subir */
+/* Columna imagen+subir */
+
 .formresimage {
-	
-	margin-left: 5%;
-	width:25%;
-	text-align: left;
-	vertical-align: top;
-	display:inline-block;
-	
+    margin-left: 5%;
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
 }
-/* Margen fiv casilla */
-.formreslist div {
 
-	margin-bottom: 2%;
+
+/* Margen fiv casilla */
+
+.formreslist div {
+    margin-bottom: 2%;
 }
+
+
 /* Columna formulario */
+
 .formreslist {
-		
-	width: 60%;
-	display: inline-block;
-	padding-left: 40px;
-	}
-/* imagen */
-.formresimage img {
-	
-	width: 100px;
-	
+    width: 60%;
+    display: inline-block;
+    padding-left: 40px;
 }
+
+
+/* imagen */
+
+.formresimage img {
+    width: 100px;
+}
+
 
 /* Diseño casilla */
-.formreslist input{
- margin: 1% 0;
-	padding: 1%;
-	width:80%;
-	border:none;
-	background-color: #e0e9e6d5;
-	display: block;
 
+.formreslist input {
+    margin: 1% 0;
+    padding: 1%;
+    width: 80%;
+    border: none;
+    background-color: #e0e9e6d5;
+    display: block;
 }
+
+
 /* Enseñar genero en linea */
+
 .res-genero div {
-	margin: 0;
-	display: inline-block;
+    margin: 0;
+    display: inline-block;
 }
 
 #res-mujerg {
-	margin-left: 5%;
+    margin-left: 5%;
 }
 
-/* Width aceptar terminos */
-#rescheck input{
 
-	margin: 0;
-	width:auto;
-	display: inline-block;
+/* Width aceptar terminos */
+
+#rescheck input {
+    margin: 0;
+    width: auto;
+    display: inline-block;
 }
 
 .inputfile {
-	
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
 .formresimage div {
-	
-	text-align: center;
+    text-align: center;
 }
 
 #formresimageimage {
-	
-	margin-top: 10%;
+    margin-top: 10%;
 }
 
-
 .res-genero input {
-
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 
 /*////////////////////////////////////////////////Footer///////////////////////////////////////////////////////////////////////*/
 
 footer {
-color: #E0E9E6;
-background-color: #20292F;
-bottom: 0;
-left: 0;
-right: 0;
-font-family: 'Muli', sans-serif;
+    color: #E0E9E6;
+    background-color: #20292F;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Muli', sans-serif;
 }
 
-footer a{
-	color:#E0E9E6;
-	text-decoration: none;
+footer a {
+    color: #E0E9E6;
+    text-decoration: none;
 }
 
-.footer{
-	text-align:center;
+.footer {
+    text-align: center;
 }
 
-.row{
-	display: inline-block;
-	width: auto;
+.row {
+    display: inline-block;
+    width: auto;
 }
 
-.col1{
-	display: inline-block;
+.col1 {
+    display: inline-block;
     padding-right: 5%;
 }
 
-.col1 h4{
+.col1 h4 {
     padding-top: 0.5em;
     margin: 0;
 }
 
-.img-footer{
-	display: inline-block;
-	padding-top: 2%;
+.img-footer {
+    display: inline-block;
+    padding-top: 2%;
 }
 
-img#logo-footer{
-	width: 130pt;
-	height: 100pt;
+img#logo-footer {
+    width: 130pt;
+    height: 100pt;
 }
 
-.col2{
-	display: inline-block;
-	padding-left: 5%;
-	font-family: entypo;
+.col2 {
+    display: inline-block;
+    padding-left: 5%;
+    font-family: entypo;
 }
 
-.col2 h3{
-	padding-left: 1.6em;
-	font-family: 'Muli', sans-serif;
+.col2 h3 {
+    padding-left: 1.6em;
+    font-family: 'Muli', sans-serif;
 }
 
-footer ul li{
-	list-style: none;
-	display: inline-block;
+footer ul li {
+    list-style: none;
+    display: inline-block;
 }
 
-.col2 ul li img{
-	padding-right: 0.3em;
+.col2 ul li img {
+    padding-right: 0.3em;
 }
 
-
-.copyright{	
-	display: inline-block;
+.copyright {
+    display: inline-block;
 }
 
-.contenedor{	
-	display: inline-block;
-	text-align: center;
-	padding-left: 10%;
-	padding-right: 10%; 
+.contenedor {
+    display: inline-block;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-
-#texto-footer{
-	font-size: 0.7em;
+#texto-footer {
+    font-size: 0.7em;
 }
