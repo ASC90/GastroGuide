@@ -1,8 +1,9 @@
-
+﻿
 // JSON Document, Filtrar Ambientes
+url:  http://www.mocky.io/v2/5a3b8525300000e40e82d1e3
 
 {
-	"filtrar": "Ambientes",
+	
 	"tipoDeAmbiente": ["Con amigos","Romántico","De fiesta",
 				  "Moderno","Tradicional","De negocios",
 				  "Para grupos","Família","Tranquilo",
