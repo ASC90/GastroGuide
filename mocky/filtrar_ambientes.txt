@@ -1,0 +1,10 @@
+
+// JSON Document, Filtrar Ambientes
+
+{
+	"filtrar": "Ambientes",
+	"tipoDeAmbiente": ["Con amigos","Romántico","De fiesta",
+				  "Moderno","Tradicional","De negocios",
+				  "Para grupos","Família","Tranquilo",
+				  "Ecológico"]
+}
