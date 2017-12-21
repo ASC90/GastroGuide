@@ -1,0 +1,8 @@
+{
+	imgsHomeRes[		
+		"img/alex.jpg", 
+		"img/roman.jpg", 
+		"img/chutter.jpg", 
+		"img/jay.jpg"	
+	]
+}

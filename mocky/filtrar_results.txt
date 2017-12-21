@@ -1,0 +1,36 @@
+URL: “http://www.mocky.io/v2/5a3b8459300000aa0e82d1de”
+[{  
+    “nombre”: “Piazza Navona”,
+    “direccion”: “Carrer de Provença, 300 08008 Barcelona”,
+    “nota”: “8,8”,
+    “opiniones”: “Opiniones 222”,
+    “foto”:¨img/cater.jpg”
+},
+{   
+    “nombre”: “Roca Bar”,
+    “direccion”: “Carrer del Roselló,148 08036 Barcelona”,
+    “nota”: “9,2”,
+    “opiniones”: “Opiniones 34”,
+    “foto”:¨img/alex.jpg”
+},
+{   
+    “nombre”: “Opera”,
+    “direccion”: “Plaza Molina, 2 08006 Barcelona”,
+    “nota”: “6,7”,
+    “opiniones”: “Opiniones 85”,
+    “foto”:¨img/clifford.jpg”
+},
+{   
+    “nombre”: “Guzzo”,
+    “direccion”: “Carrer dels Arcs, 5 08002 Barcelona”,
+    “nota”: “7,3”,
+    “opiniones”: “Opiniones 409”,
+    “foto”:¨img/jay.jpg”
+},
+{   
+    “nombre”: “El Celler”,
+    “direccion”: “Avinguda Diagonal, 423 08036 Barcelona”,
+    “nota”: “5,5”,
+    “opiniones”: “Opiniones 332”,
+    “foto”:¨img/roman.jpg”
+}]
