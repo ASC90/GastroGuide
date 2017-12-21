@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 ArialUnicodeMS;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red26\green26\blue26;\red255\green255\blue255;
+\red26\green26\blue26;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c13333\c13333\c13333;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 [\{\'93nombre\'94: \'93Piazza Navona\'94,\
+\'93direccion\'94: \'93\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Carrer de Proven\'e7a, 300 08008 Barcelona\'94,\
+\'93nota\'94: \'938,8\'94,\
+\'93opiniones\'94: \'93Opiniones 222\'94,\
+\'93foto\'94:\cf3 \strokec3 \'a8img/cater.jpg\cb4 \'94\},\
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \{\'93nombre\'94: \'93Roca Bar\'94,\
+\'93direccion\'94: \'93\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Carrer del Rosell\'f3,148 08036 Barcelona\cf2 \outl0\strokewidth0 \'94,\
+\'93nota\'94: \'939,2\'94,\
+\'93opiniones\'94: \'93Opiniones 34\'94,\
+\'93foto\'94:\cf5 \'a8img/alex.jpg\cb4 \'94\},\
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \{\'93nombre\'94: \'93Opera\'94,\
+\'93direccion\'94: \'93\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Plaza Molina, 2 08006 Barcelona\cf2 \outl0\strokewidth0 \'94,\
+\'93nota\'94: \'936,7\'94,\
+\'93opiniones\'94: \'93Opiniones 85\'94,\
+\'93foto\'94:\cf5 \'a8img/clifford.jpg\cb4 \'94\},\
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \{\'93nombre\'94: \'93Guzzo\'94,\
+\'93direccion\'94: \'93\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Carrer dels Arcs, 5 08002 Barcelona\cf2 \outl0\strokewidth0 \'94,\
+\'93nota\'94: \'937,3\'94,\
+\'93opiniones\'94: \'93Opiniones 409\'94,\
+\'93foto\'94:\cf5 \'a8img/jay.jpg\cb4 \'94\},\
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \{\'93nombre\'94: \'93El Celler\'94,\
+\'93direccion\'94: \'93\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Avinguda Diagonal, 423 08036 Barcelona\cf2 \outl0\strokewidth0 \'94,\
+\'93nota\'94: \'935,5\'94,\
+\'93opiniones\'94: \'93Opiniones 332\'94,\
+\'93foto\'94:\cf5 \'a8img/roman.jpg\cb4 \'94\},]\
+
+\f1\fs24 \cf3 \cb4 \outl0\strokewidth0 \strokec3 \
+}
