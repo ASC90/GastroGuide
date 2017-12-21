@@ -1,0 +1,8 @@
+// JSON Document
+{
+	"filtrar": "Cocina",
+	"tipoDeCocina": ["Española","Inida","Japonesa",
+				  "China","Italiana","Mexicana",
+				  "Tailandesa","Coreana","Mediterránea",
+				  "Americana","Marroquí","Escandinava"]
+}
