@@ -1,0 +1,60 @@
+﻿URL: http://www.mocky.io/v2/5a3ba458300000091882d292
+{
+	"nombre":"Guzzo",
+	"valoracion": "7,3",
+	"adresa":"Carrer dels Arcs, 5 08002 Barcelona",
+	"tipo":["Mexicano","Fusión","Romántico","Grupos"],
+	"imagen":"img/rest1.jpg",
+	"menu":[
+	{
+	"titol":"Entrantes",
+	"platos":"Nachos especiales con carne, guacamole, queso con chorizo",
+	"tipus":"0"},
+	{
+	"titol":"Primeros",
+	"platos":"Ceviche de pescado, rajas con queso, cóctel de camarón",
+	"tipus":"1"},
+	{
+	"titol":"Segundos",
+	"platos":"Cochinita pibil, tacos de arrachera, tacos gobernador",
+	"tipus":"2"},
+	{
+	"titol":"Postres",
+	"platos":"Cheesecake de mango o fresa o maracuyá con helados artesanos",
+	"tipus":"3"},
+	Cochinita pibil, tacos de arrachera, tacos gobernador
+	{
+	"titol":"Menú grupos 25€",
+	"platos":"Los platos arriba mencionados podrán cambiar en función del mercado y aparecen indicados a modo de ejemplo.",
+	"tipus":"4"}
+	],	
+	"opiniones":[
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Marc R.",
+	"comentario":"Carta extensa y variada, tacos muy buenos! Atencion perfecta, calidad-precio genial. Volveremos!",
+	"valoracion":"8"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Isisdro B.",
+	"comentario":"Comida muy buena pero nos hicieron esperar muchísimo y solo había 3 mesas... Y cuando pedimos más tortillas para acompañar la comida nos dijeron que nos las cobrarían como suplemento. Cuando llevas más de media hora entre el 1ero y el 2do, se agradece un gesto de amabilidad. Además es que te dabas cuenta de que eran conscientes que no era normal la espera. En fin, supongo que no saben mucho de hostelería. Eso sí, claramente no fue con mala intención. Y por eso, bueno y porque la comida me encantó, pienso volver. Soy partidario de que a veces necesitamos segundas oportunidades.",
+	"valoracion":"7,5"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"David C.",
+	"comentario":"Servicio muy atento. Con el descuento una excelente calidad/precio.",
+	"valoracion":"8"}
+	],
+	"promociones":
+	{
+	"promocion":"-40% en Carta",
+	"descripcion":"Menús y bebidas no incluidos. Esta promoción se aplica sin consumo mínimo, ni restricciones de platos, para que comas lo que te apetezca y solamente prestes atención a disfrutar. Válida en la franja horaria seleccionada."
+	},
+	
+	},
+	"videos":[{"videoUrl":"","titulo":"","descripcion":""}]
+
+}
+	
+	
+	
