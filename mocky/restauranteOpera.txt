@@ -1,0 +1,64 @@
+URL: http://www.mocky.io/v2/5a3ba24b300000941682d28c
+{
+	"nombre":"Opera",
+	"valoracion": "6,7",
+	"adresa":"Plaza Molina, 2 08006 Barcelona",
+	"tipo":["Mediterraneo","Creativo","Negocios","Grupos"],
+	"imagen":"img/rest2.jpg",
+	"menu":[
+	{
+	"titol":"Entrantes",
+	"platos":"Nachos OPERA, hummus casero con crudites de verduras",
+	"tipus":"0"},
+	{
+	"titol":"Primeros",
+	"platos":"Tartar de salmon, pulpo a la parmentier, tataki de ternara",
+	"tipus":"1"},
+	{
+	"titol":"Segundos",
+	"platos":"Bruschette de salmon marinado y mozzarella, arroz caldoso de pescado, parmiggiana vegetal (de berenjena, tomate y quesos)",
+	"tipus":"2"},
+	{
+	"titol":"Postres",
+	"platos":"Coulant de chocolate con helado de vainilla, New York cheese cake",
+	"tipus":"3"},
+	
+	{
+	"titol":"Menú diario 13€",
+	"platos":"Precio por persona (IVA incluido). Bebidas no incluidas.",
+	"tipus":"4"}
+	],	
+	"opiniones":[
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Ester P.",
+	"comentario":"TLocal agradable. Buena comida. Volveremos.",
+	"valoracion":"8"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Isidro B.",
+	"comentario":"Muy recomendable! La atención del servicio es inmejorable, te hacen sentir muy a gusto. La comida rica y a buen precio.",
+	"valoracion":"7"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Lluisa G.",
+	"comentario":"Larga espera y en los 2 platos d carne, no solo la racion era muy justa si no que era todo grasa y tendones por lo que no quedaba nada que comer. Eso si, los postres exquisitos!",
+	"valoracion":"5"}
+	],
+	"promociones":
+	{
+	"promocion":"-20% en la cuenta final",
+	"descripcion":"Esta promoción se aplica sin consumo mínimo, ni restricciones de platos, para que comas y bebas lo que te apetezca y solamente prestes atención a disfrutar. Válida en la franja horaria seleccionada."
+	},
+	
+	"recetas":
+	{
+	"imagen":"",
+	"nombre":"",
+	"preparacion":[{"titulo":"","descripcion":""}
+	],
+	"ingredientes":[]
+	},
+	"videos":[{"videoUrl":"","titulo":"","descripcion":""}]
+
+}
