@@ -1,0 +1,75 @@
+{
+	"nombre":"Roca Bar",
+	"valoracion": "9,2",
+	"adresa":"Carrer del Roselló,148 08036 Barcelona",
+	"tipo":["Mexicana","Romántico","Tradicional"],
+	"imagen":"img/mexicana.jpg",
+	"menu":[
+	{
+	"titol":"Entrantes",
+	"platos":"Nachos (de maíz mexicano, frijoles, guacamole, crema, queso, jalapeños y taquera roja)",
+	"tipus":"0"},
+	{
+	"titol":"Primeros",
+	"platos":"Quesadillas (Queso, champiñones, cochinita pibil, chorizo, papa con chorizo, tinga de pollo, tinga de zanahoria o calabacin a la plancha) Temales (Queso, masa de maíz envuelta en hoja de plátano, cocida al vapor y rellena de diversos guisos)",
+	"tipus":"1"},
+	{
+	"titol":"Segundos",
+	"platos":"Tacos de cochinita pibil (Guiso de cerdo a la Yucateca adobado con achiote) o Al pastor de olla (Lomo de cerdo marinado en chiles secos, achiote y especias) Tostadas (Tortilla crujiente de maiz, con frijoles refrtos, lechuga, crema, queso en polvo, tomate, aguacate y chile con carne)",
+	"tipus":"2"},
+	{
+	"titol":"Postres",
+	"platos":"Tarta imposible, tarta tres leches y sorbete de limón al Mezcal.",
+	"tipus":"3"},
+	
+	{
+	"titol":"Menú especial parejas de 50 €",
+	"platos":"Precio por persona (IVA incluido) y bebidas incluidas. Se te solicitará una señal de 25 € directamente desde el restaurante para confirmar tu reserva.",
+	"tipus":"4"}
+	],	
+	"opiniones":[
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Mathew A.",
+	"comentario":"Comida muy rica! Probamos varios tacos y todos estaban deliciosos. El tamal estaba buenísimo. Para repetir!",
+	"valoracion":"9,8"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Karla V.",
+	"comentario":"Muy muy bien, muy amables y la comida fantástica. Los tacos estan buenísimos!",
+	"valoracion":"10"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Amanda M.",
+	"comentario":"Buen ambiente, buena comida, ideal para los amantes de la comida mexicana!",
+	"valoracion":"8,5"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Maria P.",
+	"comentario":"Un sitio para recomendar. La comida estaba buenísima, buenas cantidades y el trato que nos dieron fue excelente. Sin duda repetiremos.",
+	"valoracion":"9,8"}
+	],
+	"promociones":
+	{
+	"promocion":"-30% en Carta",
+	"descripcion":"Bebidas incluidas, menús no incluidos.Esta promoción se aplica sin consumo mínimo, ni restricciones de platos, para que comas y bebas lo que te apetezca y solamente prestes atención a disfrutar. No aplicable en terraza."
+	},
+	
+	"recetas":
+	{
+	"imagen":"img/tacos.jpg", 
+	"nombre":"Tacos Roca Bar",
+	"preparacion":[{"titulo":"Paso 1/5","Picamos los ajos y los cocinamos a fuego muy suave durante 1 minuto. Que no coja color"},
+			{"titulo":"Paso 2/5","descripcion":"Añadimos el medio kilo de tomates, ya pelados y troceados y subimos la potencia del fuego. Salpimentamos y cocinamos durante un rato. El tomate soltará agua, debe evaporarse toda que, puede tartar un rato. Una vez evaporada dejamos cocinar a fuego suave mientras removemos constantemente, durante 5 minutos más, para que coja buen sabor."},
+			{"titulo":"Paso 3/5","descripcion":"Mientras se evapora el agua de los tomates, preparamos el pico de gallo. En un bol echamos toda la verdura de esta salsa bien picada. Añadimos el zumo de 1/2 lima o de medio limón y removemos bien. Dejamos reposar."},
+			{"titulo":"Paso 4/5","descripcion":"Cuando se haya cocinado un poco el tomate, añadimos la carne picada que hayamos elegido. Echamos su parte de sal y pimienta y cocinamos a fuego fuerte. Con una cuchara de madera, vamos removiendo todo y desmenuzando la carne picada, para que no que queden trozos grandes. De hecho, cuanto más finos queden mejor. Así que mezclamos con el tomate y el ajo, mientras la desmenuzamos y cocinamos la carne"},
+			{"titulo":"Paso 5/5","descripcion":"Una vez se haya cocinado, ¡ya está lista! Calentamos una a una las tortillas por sus dos caras en una sartén a fuego medio. Después ponemos encima unas cucharadas de la carne, aderezamos con un poco de pico de gallo, lo envolvemos dándole la forma característica de taco ¡Y ya está listo!. Opcionalmente puedes espolvorear también queso rallado por encima."}
+	],
+	"ingredientes":["6 tortillas de trigo o de maíz","350g de carne picada de ternera o de pollo","4 dientes de ajo","500g de tomates","sal y pimienta","aceite","queso rallado","1 cebolleta pequeña","1 jalapeño","Unas hojas de cilantro","1/2 lima o 1/2 limón"]
+	},
+	"videos":[{"videoUrl":"","titulo":"","descripcion":""}]
+
+}
+	
+	
+	
