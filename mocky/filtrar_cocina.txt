@@ -1,4 +1,5 @@
-// JSON Document
+﻿// JSON Document
+URL: http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4
 {
 	"filtrar": "Cocina",
 	"tipoDeCocina": ["Española","Inida","Japonesa",
