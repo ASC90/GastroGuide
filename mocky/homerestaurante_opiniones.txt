@@ -1,5 +1,5 @@
 {
 	"opiniones": "",
-	"puntuacion": "img/puntos.png",
+	"puntuacion": "img/puntos.png"
 }
 

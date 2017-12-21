@@ -1,0 +1,8 @@
+{
+	imagenes[{
+		"imagen1": "img/alex.jpg", 
+		"imagen2": "img/roman.jpg", 
+		"imagen3": "img/chutter.jpg", 
+		"imagen4": "img/jay.jpg"	
+	]
+}
