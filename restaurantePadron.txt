@@ -1,0 +1,69 @@
+{
+	"nombre":"Piazza Navona",
+	"valoracion": "8,8",
+	"adresa":"Plaça de Sant Bernat Calbó, 6 08005 Barcelona España",
+	"tipo":["Italiano","Con Amigos","Moderno","Grupos"],
+	"imagen":"img/rest1.jpg",
+	"menu":[
+	{
+	"titol":"Entrantes",
+	"platos":"Misto de verduras y mozzarella fritas, surtido de embutidos y quesos italianos",
+	"tipus":"0"},
+	{
+	"titol":"Primeros",
+	"platos":"Agnolotti in Brodo (pasta casera rellena de carne de ternera en su proprio caldo) Ravioli ricotta e spinaci (pasta casera rellena de ricotta y espinacas con un toque de mantequilla y salvia)",
+	"tipus":"1"},
+	{
+	"titol":"Segundos",
+	"platos":"Cosciotto di agnello al forno con patate alla duchessa e verdurine al vapore (Pierna de cordero al horno con patatas a la duquesa y verduritas al vapor) Parmigiana di patate, scamorza e zucchine (Parmigiana de patatas, queso scamorza y calabacin)",
+	"tipus":"2"},
+	{
+	"titol":"Postres",
+	"platos":"Tiramisu al Pandoro, pasticceria mista fruta seca, cafe' y limoncello",
+	"tipus":"3"},
+	
+	{
+	"titol":"Menú de Navidad 45 €",
+	"platos":"Precio por persona (IVA incluido). Bebidas no incluidas. El 25/12 en comida y cena. Se te solicitará una señal de 25 € directamente desde el restaurante para confirmar tu reserva.",
+	"tipus":"4"}
+	],	
+	"opiniones":[
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Laia S.",
+	"comentario":"Todo muuy rico en un italiano diferente! y muuy buen de precio!",
+	"valoracion":"8"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"L.O.",
+	"comentario":"Excelente !!!!",
+	"valoracion":"9"},
+	{
+	"imagen":"img/GastroLover.png",
+	"nombre":"Raquel G.",
+	"comentario":"Excelente atención del personal muy amables y mucha simpatía en todo momento, el entrante que tenían en sugerencias nos sorprendió, las pizzas muy buenas, masa fina, crujiente y la calidad en los ingredientes se notaba. Los postres el broche final a una velada perfecta. Sin duda repetiremos.",
+	"valoracion":"10"}
+	],
+	"promociones":
+	{
+	"promocion":"-40% en Carta",
+	"descripcion":"Menu y bebida no incluida. Esta promoción se aplica sin consumo mínimo, ni restricciones de platos, para que comas lo que te apetezca y solamente prestes atención a disfrutar. No aplicable en terraza"
+	},
+	
+	"recetas":
+	{
+	"imagen":"img/sardesaor.jpg",
+	"nombre":"Sarde in saor",
+	"preparacion":[{"titulo":"Paso 1/4","descripcion":"Limpiar las sardinas y abrirlas quitándoles la espina central. Pasarlas por harina, sacudiéndolas para quitar el exceso. Freirlas y reservarlas."},
+			{"titulo":"Paso 2/4","descripcion":"Cortar las cebollas en tiras y freirlas a fuego lento durante unos 15 minutos hasta que estén transparentes y bien pochadas. Pasado este tiempo, subir el fuego y añadir el azúcar, el vinagre y un poco de sal, dejar cocer durante un par de minutos más."},
+			{"titulo":"Paso 3/4","descripcion":"Poner una capa de sardinas en una fuente honda, cubrirlas con una capa de cebolla y un puñado de pasas y piñones. Seguir poniendo capas en el mismo orden y terminar con una capa de cebollas cubriendolo todo. Dejar reposar en el frigorífico hasta el día siguiente."},
+			{"titulo":"Paso 4/4","descripcion":"Como todos los escabeches, es aconsejable dejar reposar estas sardinas durante al menos 24 horas antes de comerlas, y se conservan sin problema en el frigorífico durante varios días."}
+	],
+	"ingredientes":["600g sardinas","40g pasas","40g piñones","1 pizca de sal","2 cebollas","1tsp azucar","aceite de oliva","2tbsp harina","200ml viangre de vino blanco"]
+	},
+	"videos":[{"videoUrl":"","titulo":"","descripcion":""}]
+
+}
+	
+	
+	
