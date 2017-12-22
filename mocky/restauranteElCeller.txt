@@ -1,6 +1,6 @@
-url http://www.mocky.io/v2/5a3ba178300000021682d285
+url http://www.mocky.io/v2/5a3ccf90310000b810b592de
 {
-	"nombre":"El Celler",
+    "nombre":"El Celler",
 	"valoracion": "5,5",
 	"adresa":"Avinguda Diagonal, 423 08036 Barcelona",
 	"tipo":["Mediterránea","Con Amigos","Moderno"],
@@ -43,13 +43,12 @@ url http://www.mocky.io/v2/5a3ba178300000021682d285
 	"imagen":"img/GastroLover.png",
 	"nombre":"Alba C.",
 	"comentario":"Todo bueno. Justo lo que esperábamos encontrar de tantas veces que hemos ido a comer.",
-	"valoracion":"10"}
+	"valoracion":"10"},
 	{
 	"imagen":"img/GastroLover.png",
 	"nombre":"Antonio P.",
 	"comentario":"Lo mejor la ensalada de vino tinto y la Tagliata.",
 	"valoracion":"7,3"}	
-	}
 	],
 	"promociones":
 	{
@@ -63,8 +62,8 @@ url http://www.mocky.io/v2/5a3ba178300000021682d285
 	"nombre":"Fideua con gambas al estilo celler",
 	"preparacion":[{"titulo":"Paso 1/5","descripcion":"Pelar las gambas reservando cabezas y cáscaras. Limpiar los calamares y cortarlos en anillas. Pelar y picar los ajos. Lavar, retirar las semillas, el tallo y los nervios de los pimientos. Picar en daditos pequeños. Pelar, lavar y picar en daditos pequeños la cebolla. Majar el azafrán en el mortero con un poco de sal. Cocer juntos los ingredientes para el caldo de pescado 15 minutos y colar."},
 			{"titulo":"Paso 2/5","descripcion":"Colocar una paella con el aceite al fuego a calentar. Cuando está caliente rehogar el ajo, antes de que tome color, incorporar el pimiento y la cebolla muy picados. Seguir rehogando a fuego lento hasta que estén bien blandos. Añadir ahora el calamar y continuar rehogando 6 minutos más."},
-			{"titulo":"Paso 3/5","Fuera del fuego poner el pimentón y de nuevo en el fuego incorporar el tomate. Seguir rehogando 8 minutos más."},
-			{"titulo":"Paso 4/5","descripcion":"Bañar con el caldo de pescado y cuando esté hirviendo incorporar los fideos y las gambas. Cocer 5 minutos en el fuego y 5 minutos más en el horno."}
+			{"titulo":"Paso 3/5","descripcion":"Fuera del fuego poner el pimentón y de nuevo en el fuego incorporar el tomate. Seguir rehogando 8 minutos más."},
+			{"titulo":"Paso 4/5","descripcion":"Bañar con el caldo de pescado y cuando esté hirviendo incorporar los fideos y las gambas. Cocer 5 minutos en el fuego y 5 minutos más en el horno."},
 			{"titulo":"Paso 5/5","descripcion":"Servir en la misma paella, adornando las asas con servilletas. Se puede acompañar de salsa alioli elaborada con aceite de oliva."}
 	],
 	"ingredientes":["200g gambas","300g calamar","2 dientes de ajo","1 pimiento verde","150g cebolla","1tsp pimentón","10 ramitas azafrán","1tbsp aceite de oliva","150ml de pescado","350g fideos nº3"]
