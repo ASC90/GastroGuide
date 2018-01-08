@@ -17,7 +17,7 @@
             <!--navbar-->
             <ul class="navbar">
                 <li class="lista-navbar">
-                    <a href="home_page.html">
+                    <a href="index.html">
                         <img src="img/logo-small.png" alt="" class="gastro-guide-logo">
                     </a>
                 </li>
@@ -78,116 +78,32 @@
             </a>
         </div>
         <article class="pdatos">
-
             <div>
-                <h2>Guzzo</h2>
-                <address>Carrer dels Arcs, 5 08002 Barcelona</address>
+                <h2 id="nombre"></h2>
+                <address id="adresa"></address>
                 <div>
-                    <ul>
-                        <li>
-                            <a href="#">MEXICANA</a>
-                        </li>
-                        <li>
-                            <a href="#">FUSIÓN</a>
-                        </li>
-                        <li>
-                            <a href="#">ROMANTICO</a>
-                        </li>
+                    <ul id="tipo">
+                    
                     </ul>
                 </div>
 
             </div>
             <div>
-                <p>7,3/10</p>
+                <p id="valoracion">/10</p>
             </div>
 
-            <div>
-                <img src="img/rest3.jpg" alt="foto del restaurante">
+            <div id="imagen">
+                
             </div>
         </article>
         <article class="pmenu">
             <h2>MENÚS</h2>
-            <h4>Entrantes</h4>
-            <p>Nachos especiales con carne, guacamole, queso con chorizo</p>
-            <h4>Primeros</h4>
-            <p>Ceviche de pescado, rajas con queso, cóctel de camarón</p>
-            <h4>Segundos</h4>
-            <p>Cochinita pibil, tacos de arrachera, tacos gobernador</p>
-            <h4>Postres</h4>
-            <p>Cheesecake de mango o fresa o maracuyá con helados artesanos
-            </p>
-            <h4>Menú gupos 25€</h4>
-            <p>Los platos arriba mencionados podrán cambiar en función del mercado y aparecen indicados a modo de ejemplo.</p>
+            <div id="menu"></div>
         </article>
-        <article class="popinion">
-            <h2>OPINIONES</h2>
-            <div>
-                <div class="pcol1">
-                    <img src="img/GastroLover.png" alt="">
-                </div>
-                <div class="pcol2">
-                    <h4>Marc R.</h4>
-                    <p>
-                        Carta extensa y variada, tacos muy buenos! Atencion perfecta, calidad-precio genial. Volveremos!
-                    </p>
-                </div>
-                <div class="pcol3">
-                    <span>8/10</span>
-                </div>
-            </div>
-            <div>
-                <div class="pcol1">
-                    <img src="img/GastroLover.png" alt="">
-                </div>
-                <div class="pcol2">
-                    <h4>Isisdro B.</h4>
-                    <p>Comida muy buena pero nos hicieron esperar muchísimo y solo había 3 mesas... Y cuando pedimos más tortillas
-                        para acompañar la comida nos dijeron que nos las cobrarían como suplemento. Cuando llevas más de
-                        media hora entre el 1ero y el 2do, se agradece un gesto de amabilidad. Además es que te dabas cuenta
-                        de que eran conscientes que no era normal la espera. En fin, supongo que no saben mucho de hostelería.
-                        Eso sí, claramente no fue con mala intención. Y por eso, bueno y porque la comida me encantó, pienso
-                        volver. Soy partidario de que a veces necesitamos segundas oportunidades.</p>
-                </div>
-                <div class="pcol3">
-                    <span>7,5/10</span>
-                </div>
-            </div>
-            <div>
-                <div class="pcol1">
-                    <img src="img/GastroLover.png" alt="">
-                </div>
-                <div class="pcol2">
-                    <h4>David C.</h4>
-                    <p> Servicio muy atento. Con el descuento una excelente calidad/precio.</p>
-                </div>
-                <div class="pcol3">
-                    <span>8/10</span>
-                </div>
-            </div>
+        <article class="popinion" id="opiniones">
         </article>
-        <article class="poferta">
-            <h2>PROMOCIONES</h2>
-            <div>
-                <h4>-40% en carta</h4>
-                <p> Menús y bebidas no incluidos. Esta promoción se aplica sin consumo mínimo, ni restricciones de platos, para
-                    que comas lo que te apetezca y solamente prestes atención a disfrutar. Válida en la franja horaria seleccionada.</p>
-            </div>
-
-        </article>
-        <article class="pvideo">
-            <h2>VIDEOS</h2>
-            <div>
-                <div class="pcol1">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6fhAchG-jcw" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="pcol2">
-                    <h4>Como funciona nuestra cocina</h4>
-                    <p>Estuvimos a la hora del almuerzo, en medio de fogones, ollas y cocineros apasionados por lo que hacen.
-                        Bladimir Tovar, chef encargado de la cocina, fue el guía.
-                    </p>
-                </div>
-            </div>
-        </article>
+        <article class="poferta" id="poferta"></article>
+        <article class="pvideo" id="pvideo"></article>
     </section>
     <footer>
         <div class="footer">
@@ -242,7 +158,8 @@
                 </div>
             </div>
     </footer>
-
+    <script src="javascript/guzzo.js"></script>
+    
 </body>
 
 </html>

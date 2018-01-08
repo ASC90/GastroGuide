@@ -1,5 +1,5 @@
 // JavaScript Document
-var piazzaUrl = "http://www.mocky.io/v2/5a3ba376300000181682d290";
+var guzzoUrl = "http://www.mocky.io/v2/5a535f183000004b201ebef7";
 
 function inyectaTipoRestaurante (jsonObj)
 {
@@ -38,17 +38,35 @@ function openAndLoad (pUrl, callback)
 			document.getElementById("opiniones").innerHTML += '<div><div class="pcol1"><img src="'+ jsonObj.opiniones[i].imagen +'" alt=""></div><div class="pcol2"><h4>'+jsonObj.opiniones[i].nombre+'</h4><p>'+jsonObj.opiniones[i].comentario+'</p></div><div class="pcol3"><span>'+jsonObj.opiniones[i].valoracion+ '/10'+'</span></div></div>';	
 		}
 		document.getElementById("poferta").innerHTML = '<h2>PROMOCIONES</h2><div><h4>'+jsonObj.promociones.promocion+'</h4><p>'+jsonObj.promociones.descripcion+'</p></div>';
-		let cadena = "";
-		for (let i = 0; i < jsonObj.recetas.preparacion.length;i++)
-		{
-			cadena += '<div><h5>'+jsonObj.recetas.preparacion[i].titulo+'</h5><p>'+jsonObj.recetas.preparacion[i].descripcion+'</p></div>';
+		let cadena = ""; 
+
+		if (jsonObj.recetas){
+
+			for (let i = 0; i < jsonObj.recetas.preparacion.length;i++)
+			{
+				cadena += '<div><h5>'+jsonObj.recetas.preparacion[i].titulo+'</h5><p>'+jsonObj.recetas.preparacion[i].descripcion+'</p></div>';
+			}
+			let lista = "";
+			for (let i = 0; i < jsonObj.recetas.ingredientes.length;i++)
+			{
+				lista += '<li>'+jsonObj.recetas.ingredientes[i]+'</li>';
+			}
 		}
-		let lista = "";
-		for (let i = 0; i < jsonObj.recetas.ingredientes.length;i++)
-		{
-			lista += '<li>'+jsonObj.recetas.ingredientes[i]+'</li>';
-		}
-		document.getElementById("recetas").innerHTML += '<h2>RECETAS</h2><div><img src="'+jsonObj.recetas.imagen+'" alt="foto receta"><h3>'+jsonObj.recetas.nombre+'</h3></div><div class="prep"><h4>Preparación</h4>'+cadena+'</div><div class="ingre"><h4>Ingredientes</h4><ul>'+lista+'</ul></div></div>';
+
+        document.getElementById("pvideo").innerHTML = `
+        <h2>VIDEOS</h2>
+        <div>
+            <div class="pcol1">
+                <iframe width="560" height="315" src="${jsonObj.videos[0].videoUrl}" frameborder="0" allowfullscreen></iframe>
+            </div>
+           
+            <div class="pcol2">
+                <h4>${jsonObj.videos[0].titulo}</h4>
+                <p>${jsonObj.videos[0].descripcion}
+                </p>
+            </div>
+        </div>
+        `;
 		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		if (this.status === 200)
@@ -64,4 +82,4 @@ function openAndLoad (pUrl, callback)
 	request.send();	
 }
 
-openAndLoad(piazzaUrl, inyectaTipoRestaurante);
+openAndLoad(guzzoUrl, inyectaTipoRestaurante);
