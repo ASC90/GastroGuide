@@ -40,17 +40,21 @@
                 <img src="img/GastroLover.png" alt="Gastro LOVER">
             </div>
             <div>
-                <form action="construccion.html" method="post">
+                <form method="post">
                     <div>
-                        <input type="email" class="email" name="email" placeholder="Email" required>
+                        <input type="text" id="emailCliente" name="email" placeholder="Email">
+                        <br>
+                        <span id="emailClienteOK"></span>
                     </div>
                     <div>
-                        <input type="password" class="password" placeholder="Password" required>
-                    </div>
-                    <div>
-                        <button class="boton">Inicia Sesión</button>
+                        <input type="password" id="passwordCliente" placeholder="Password">
+                        <br>
+                        <span id="passClienteOK"></span>
                     </div>
                 </form>
+                <div>
+                    <button class="boton" id="btnSubmitCliente">Inicia Sesión</button>
+                </div>               
             </div>
             <div>
                 <a href="construccion.html">
@@ -63,17 +67,21 @@
                 <img src="img/GastroChef.png" alt="Gastro CHEF">
             </div>
             <div>
-                <form action="homerestaurante.html" method="post">
+                <form method="post">
                     <div>
-                        <input type="email" class="email" name="email" placeholder="Email" required>
+                        <input type="text" id="emailRestaurante" name="email" placeholder="Email">
+                        <br>
+                        <span id="emailRestauranteOK"></span>
                     </div>
                     <div>
-                        <input type="password" class="password" placeholder="Password" required>
-                    </div>
-                    <div>
-                        <button class="boton">Inicia Sesión</button>
+                        <input type="password" id="passwordRestaurante" placeholder="Password">
+                        <br>
+                        <span id="passRestauranteOK"></span>
                     </div>
                 </form>
+                <div>
+                    <button class="boton" id="btnSubmitRestaurante">Inicia Sesión</button>
+                </div>               
             </div>
             <div>
                 <a href="FormularioRestaurantes.html">
@@ -135,6 +143,7 @@
                 </div>
             </div>
     </footer>
+    <script src="javascript/LoginSignup.js"></script>
 </body>
 
 </html>
