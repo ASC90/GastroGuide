@@ -1,18 +1,18 @@
-http://www.mocky.io/v2/5a3ba262300000271582d28d
+ http://www.mocky.io/v2/5a534a4f300000cb1b1ebe7c
 {
 	"nombre":"Roca Bar",
 	"valoracion": "9,2",
-	"adresa":"Carrer del Roselló,148 08036 Barcelona",
-	"tipo":["Mexicana","Romántico","Tradicional"],
+	"adresa":"Carrer del Rosellï¿½,148 08036 Barcelona",
+	"tipo":["Mexicana","Romï¿½ntico","Tradicional"],
 	"imagen":"img/mexicana.jpg",
 	"menu":[
 	{
 	"titol":"Entrantes",
-	"platos":"Nachos (de maíz mexicano, frijoles, guacamole, crema, queso, jalapeños y taquera roja)",
+	"platos":"Nachos (de maï¿½z mexicano, frijoles, guacamole, crema, queso, jalapeï¿½os y taquera roja)",
 	"tipus":"0"},
 	{
 	"titol":"Primeros",
-	"platos":"Quesadillas (Queso, champiñones, cochinita pibil, chorizo, papa con chorizo, tinga de pollo, tinga de zanahoria o calabacin a la plancha) Temales (Queso, masa de maíz envuelta en hoja de plátano, cocida al vapor y rellena de diversos guisos)",
+	"platos":"Quesadillas (Queso, champiï¿½ones, cochinita pibil, chorizo, papa con chorizo, tinga de pollo, tinga de zanahoria o calabacin a la plancha) Temales (Queso, masa de maï¿½z envuelta en hoja de plï¿½tano, cocida al vapor y rellena de diversos guisos)",
 	"tipus":"1"},
 	{
 	"titol":"Segundos",
@@ -20,24 +20,24 @@ http://www.mocky.io/v2/5a3ba262300000271582d28d
 	"tipus":"2"},
 	{
 	"titol":"Postres",
-	"platos":"Tarta imposible, tarta tres leches y sorbete de limón al Mezcal.",
+	"platos":"Tarta imposible, tarta tres leches y sorbete de limï¿½n al Mezcal.",
 	"tipus":"3"},
 	
 	{
-	"titol":"Menú especial parejas de 50 €",
-	"platos":"Precio por persona (IVA incluido) y bebidas incluidas. Se te solicitará una señal de 25 € directamente desde el restaurante para confirmar tu reserva.",
+	"titol":"Menï¿½ especial parejas de 50 ï¿½",
+	"platos":"Precio por persona (IVA incluido) y bebidas incluidas. Se te solicitarï¿½ una seï¿½al de 25 ï¿½ directamente desde el restaurante para confirmar tu reserva.",
 	"tipus":"4"}
 	],	
 	"opiniones":[
 	{
 	"imagen":"img/GastroLover.png",
 	"nombre":"Mathew A.",
-	"comentario":"Comida muy rica! Probamos varios tacos y todos estaban deliciosos. El tamal estaba buenísimo. Para repetir!",
+	"comentario":"Comida muy rica! Probamos varios tacos y todos estaban deliciosos. El tamal estaba buenï¿½simo. Para repetir!",
 	"valoracion":"9,8"},
 	{
 	"imagen":"img/GastroLover.png",
 	"nombre":"Karla V.",
-	"comentario":"Muy muy bien, muy amables y la comida fantástica. Los tacos estan buenísimos!",
+	"comentario":"Muy muy bien, muy amables y la comida fantï¿½stica. Los tacos estan buenï¿½simos!",
 	"valoracion":"10"},
 	{
 	"imagen":"img/GastroLover.png",
@@ -47,26 +47,26 @@ http://www.mocky.io/v2/5a3ba262300000271582d28d
 	{
 	"imagen":"img/GastroLover.png",
 	"nombre":"Maria P.",
-	"comentario":"Un sitio para recomendar. La comida estaba buenísima, buenas cantidades y el trato que nos dieron fue excelente. Sin duda repetiremos.",
+	"comentario":"Un sitio para recomendar. La comida estaba buenï¿½sima, buenas cantidades y el trato que nos dieron fue excelente. Sin duda repetiremos.",
 	"valoracion":"9,8"}
 	],
 	"promociones":
 	{
 	"promocion":"-30% en Carta",
-	"descripcion":"Bebidas incluidas, menús no incluidos.Esta promoción se aplica sin consumo mínimo, ni restricciones de platos, para que comas y bebas lo que te apetezca y solamente prestes atención a disfrutar. No aplicable en terraza."
+	"descripcion":"Bebidas incluidas, menï¿½s no incluidos.Esta promociï¿½n se aplica sin consumo mï¿½nimo, ni restricciones de platos, para que comas y bebas lo que te apetezca y solamente prestes atenciï¿½n a disfrutar. No aplicable en terraza."
 	},
 	
 	"recetas":
 	{
 	"imagen":"img/tacos.jpg", 
 	"nombre":"Tacos Roca Bar",
-	"preparacion":[{"titulo":"Paso 1/5","Picamos los ajos y los cocinamos a fuego muy suave durante 1 minuto. Que no coja color"},
-			{"titulo":"Paso 2/5","descripcion":"Añadimos el medio kilo de tomates, ya pelados y troceados y subimos la potencia del fuego. Salpimentamos y cocinamos durante un rato. El tomate soltará agua, debe evaporarse toda que, puede tartar un rato. Una vez evaporada dejamos cocinar a fuego suave mientras removemos constantemente, durante 5 minutos más, para que coja buen sabor."},
-			{"titulo":"Paso 3/5","descripcion":"Mientras se evapora el agua de los tomates, preparamos el pico de gallo. En un bol echamos toda la verdura de esta salsa bien picada. Añadimos el zumo de 1/2 lima o de medio limón y removemos bien. Dejamos reposar."},
-			{"titulo":"Paso 4/5","descripcion":"Cuando se haya cocinado un poco el tomate, añadimos la carne picada que hayamos elegido. Echamos su parte de sal y pimienta y cocinamos a fuego fuerte. Con una cuchara de madera, vamos removiendo todo y desmenuzando la carne picada, para que no que queden trozos grandes. De hecho, cuanto más finos queden mejor. Así que mezclamos con el tomate y el ajo, mientras la desmenuzamos y cocinamos la carne"},
-			{"titulo":"Paso 5/5","descripcion":"Una vez se haya cocinado, ¡ya está lista! Calentamos una a una las tortillas por sus dos caras en una sartén a fuego medio. Después ponemos encima unas cucharadas de la carne, aderezamos con un poco de pico de gallo, lo envolvemos dándole la forma característica de taco ¡Y ya está listo!. Opcionalmente puedes espolvorear también queso rallado por encima."}
+	"preparacion":[{"titulo":"Paso 1/5","descripcion":"Picamos los ajos y los cocinamos a fuego muy suave durante 1 minuto. Que no coja color"},
+			{"titulo":"Paso 2/5","descripcion":"Aï¿½adimos el medio kilo de tomates, ya pelados y troceados y subimos la potencia del fuego. Salpimentamos y cocinamos durante un rato. El tomate soltarï¿½ agua, debe evaporarse toda que, puede tartar un rato. Una vez evaporada dejamos cocinar a fuego suave mientras removemos constantemente, durante 5 minutos mï¿½s, para que coja buen sabor."},
+			{"titulo":"Paso 3/5","descripcion":"Mientras se evapora el agua de los tomates, preparamos el pico de gallo. En un bol echamos toda la verdura de esta salsa bien picada. Aï¿½adimos el zumo de 1/2 lima o de medio limï¿½n y removemos bien. Dejamos reposar."},
+			{"titulo":"Paso 4/5","descripcion":"Cuando se haya cocinado un poco el tomate, aï¿½adimos la carne picada que hayamos elegido. Echamos su parte de sal y pimienta y cocinamos a fuego fuerte. Con una cuchara de madera, vamos removiendo todo y desmenuzando la carne picada, para que no que queden trozos grandes. De hecho, cuanto mï¿½s finos queden mejor. Asï¿½ que mezclamos con el tomate y el ajo, mientras la desmenuzamos y cocinamos la carne"},
+			{"titulo":"Paso 5/5","descripcion":"Una vez se haya cocinado, ï¿½ya estï¿½ lista! Calentamos una a una las tortillas por sus dos caras en una sartï¿½n a fuego medio. Despuï¿½s ponemos encima unas cucharadas de la carne, aderezamos con un poco de pico de gallo, lo envolvemos dï¿½ndole la forma caracterï¿½stica de taco ï¿½Y ya estï¿½ listo!. Opcionalmente puedes espolvorear tambiï¿½n queso rallado por encima."}
 	],
-	"ingredientes":["6 tortillas de trigo o de maíz","350g de carne picada de ternera o de pollo","4 dientes de ajo","500g de tomates","sal y pimienta","aceite","queso rallado","1 cebolleta pequeña","1 jalapeño","Unas hojas de cilantro","1/2 lima o 1/2 limón"]
+	"ingredientes":["6 tortillas de trigo o de maï¿½z","350g de carne picada de ternera o de pollo","4 dientes de ajo","500g de tomates","sal y pimienta","aceite","queso rallado","1 cebolleta pequeï¿½a","1 jalapeï¿½o","Unas hojas de cilantro","1/2 lima o 1/2 limï¿½n"]
 	},
 	"videos":[{"videoUrl":"","titulo":"","descripcion":""}]
 

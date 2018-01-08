@@ -1,5 +1,5 @@
 // JavaScript Document
-var piazzaUrl = "http://www.mocky.io/v2/5a3ba376300000181682d290";
+var operaUrl = "http://www.mocky.io/v2/5a3ba24b300000941682d28c";
 
 function inyectaTipoRestaurante (jsonObj)
 {
@@ -64,4 +64,4 @@ function openAndLoad (pUrl, callback)
 	request.send();	
 }
 
-openAndLoad(piazzaUrl, inyectaTipoRestaurante);
+openAndLoad(operaUrl, inyectaTipoRestaurante);

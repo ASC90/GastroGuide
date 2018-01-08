@@ -1,4 +1,4 @@
-﻿URL: http://www.mocky.io/v2/5a3ba458300000091882d292
+﻿http://www.mocky.io/v2/5a535f183000004b201ebef7
 {
 	"nombre":"Guzzo",
 	"valoracion": "7,3",
@@ -22,7 +22,6 @@
 	"titol":"Postres",
 	"platos":"Cheesecake de mango o fresa o maracuyá con helados artesanos",
 	"tipus":"3"},
-	Cochinita pibil, tacos de arrachera, tacos gobernador
 	{
 	"titol":"Menú grupos 25€",
 	"platos":"Los platos arriba mencionados podrán cambiar en función del mercado y aparecen indicados a modo de ejemplo.",
@@ -51,8 +50,7 @@
 	"descripcion":"Menús y bebidas no incluidos. Esta promoción se aplica sin consumo mínimo, ni restricciones de platos, para que comas lo que te apetezca y solamente prestes atención a disfrutar. Válida en la franja horaria seleccionada."
 	},
 	
-	},
-	"videos":[{"videoUrl":"","titulo":"","descripcion":""}]
+	"videos":[{"videoUrl":"https://www.youtube.com/embed/6fhAchG-jcw","titulo":"Como funciona nuestra cocina","descripcion":"Estuvimos a la hora del almuerzo, en medio de fogones, ollas y cocineros apasionados por lo que hacen. Bladimir Tovar, chef encargado de la cocina, fue el guía."}]
 
 }
 	
