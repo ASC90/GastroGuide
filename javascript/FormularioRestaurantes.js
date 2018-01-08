@@ -85,7 +85,7 @@ function validarFormularioRestaurantes() {
         document.getElementById("errorpassword2").innerText = "Las contraseñas no coinciden";
         document.getElementById("errorpassword2").className = "FormResError";
     }
-    
+
     if (formularioRestaurantes.password2.value == "" || formularioRestaurantes.password2.value == null) {
             document.getElementById("errorpassword2").innerText = "Por favor confirme su contraseña";
             document.getElementById("errorpassword2").className = "FormResError";
@@ -157,3 +157,7 @@ var output = document.getElementById("resImagePreview");
 output.src = URL.createObjectURL(event.target.files[0]);
     
 }
+
+
+document.getElementById("formularioRestaurantes").onsubmit = validarFormularioRestaurantes;
+document.getElementById("res-anadir").onchange = previewFormularioRestaurantes;
