@@ -421,6 +421,10 @@ div.icon-user {
     margin-top: 10%;
 }
 
+#formresimageimage2 {
+    margin-top: 10%;
+}
+
 .res-genero input {
     margin-top: 10px;
 }
@@ -779,6 +783,14 @@ section#opciones {
     display: inline-block;
 }
 
+#pub-con-gal2 img {
+    height: 100%;
+}
+
+#pub-con-gal2 {
+    max-width: 65em;
+    display: inline-block;
+}
 
 /*////////////////////////////////////////////////Video///////////////////////////////////////////////////////////////////////*/
 
@@ -869,7 +881,7 @@ div#platos-menu {
     border-radius: 0.1em;
     padding: 0.3em;
     display: block;
-    margin-top: 2em;
+    margin-top: 0.4em;
     margin-bottom: 2em;
     width: 320px;
 }
@@ -947,7 +959,6 @@ div.recetas h3 {
 .form-recetas textarea {
     margin-top: 1em;
     margin-left: 9.5em;
-    margin-bottom: 5em;
 }
 
 .form-recetas button {
@@ -973,6 +984,18 @@ div.recetas h3 {
     display: block;
 }
 
+.formresflo{height:8em; }
+
+.formresflo img{
+    margin-top:1em;
+    height: 100%;
+}
+
+.paddbtn{float:right;}
+
+ul#listaIngredientes{
+    margin-left:8em;
+}
 
 /*////////////////////////////////////////////////construccion///////////////////////////////////////////////////////////////////////*/
 
@@ -1160,18 +1183,23 @@ footer ul li {
     font-size: 0.7em;
 }
 
+.errorRojo{
+    color:red;
+    font-style: italic;
+}
+
 /* Zona Marta Perfil Restaurante*/
 
 @media (min-width:320px) and (max-width:480px){
 
    
-    .celler #tipo li{
+    .perfil_rest #tipo li{
         margin:5px;
         display: block;
         width: 120px;
         text-align: center;
     }
-    .celler .pdatos p {
+    .perfil_rest .pdatos p {
         float: right;
         font-size: 1.5em;
         font-weight: 700;
@@ -1198,8 +1226,159 @@ footer ul li {
     text-align: center;
    }
 
+    .perfil_rest article.pmenu {
+        width: 100%
+    }
+   .perfil_rest .popinion .pcol2 {
+    width: 18em;
+    margin-right: 2em;
+    }
+    .perfil_rest h2{
+    font-size: 1.3em;
+    }
+    .perfil_rest .popinion .pcol3 {
+        width: 3em;
+        font-size: 1.3em;
+        font-weight: 700;
+        vertical-align: top;
+        padding-bottom: 1em;
+    }
+    .perfil_rest .prep {
+        width: 20em;
     }
 
-    @media (min-width:481px) and (max-width:1068px){
-    
+    .perfil_rest > #recetas> div> div> p{
+
+        width: 18em; 
     }
+
+    .perfil_rest> #poferta> div> p{
+        width: 12em; 
+    }
+    .perfil_rest> #recetas> div.ingre{
+        width: 13em;
+        vertical-align: top;
+    }
+
+    .perfil_rest .popinion .pcol1{
+        width: 3em;
+        height: 3em;
+        margin-right: 2em;
+    }
+    .perfil_rest .popinion .pcol2 h4{
+        margin-top: -2em;
+        margin-left: 4em;
+    }
+    .perfil_rest .precetas .ingre{
+        width: 13em;
+        vertical-align: top;
+        margin-left: 0;
+    }
+    .perfil_rest .pvideo .pcol1 iframe{
+        width: 100%;
+        height: 100%;
+    }
+     .perfil_rest .pvideo .pcol2 > p{
+        width: 18em; 
+    }
+}
+/* Footer */ 
+
+@media (min-width:320px) and (max-width:480px){
+
+footer div.contenedor> p{
+    font-size: 0.8em;
+}
+
+footer p#texto-footer{
+    font-size: 0.5em;
+}
+
+footer> div> div> div.col2> ul> li> a> img{
+    width: 55%;
+}
+footer> div> div> div> img#logo-footer{
+    width: 80pt;
+    height: 60pt;
+    padding-top: 10px;
+}
+.footer .row .col1{
+    padding-right: 0;
+    width: 33%; 
+}
+.footer .row .col2{
+    padding-left: 0;
+    width: 33%;
+}
+.footer .row .col2 h3{
+    font-size: 0.8em;     
+}
+.footer .row .col1 a h4{
+    font-size: 0.7em; 
+}
+
+}
+
+/* Home Principal */ 
+@media (min-width:320px) and (max-width:480px){
+
+.premiamos-tu-confianza{
+    margin: 0;
+}
+
+.premiamos-tu-confianza img{
+    width: 300px;
+}
+
+}
+
+/* Pagina de Filtros y buscador */
+@media (min-width:320px) and (max-width:480px) {
+    body{
+        font-size: 0.75em;
+    }
+    .mobile-out {
+        display: none;
+    }
+    .cuadro-blanco {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 0.5em 0;
+    }
+    .formulario {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    #section-fichas {
+        display: block !important;
+        padding-top: 0 !important;
+    }
+    #section-filtro {
+        display: none !important;
+    }
+    .contenedor-fichas{
+        padding: 0;
+        height: auto;
+    }
+    .img-ficha {
+        height: 10em;
+        display: block;
+        overflow-y: hidden;
+    }
+    .img-ficha img{
+        width: 100%;
+        height: auto;
+        vertical-align: auto;
+        margin-top: -90px;
+    }
+    .text-ficha{
+        height: 8em;
+    }
+    .opiniones-nota{
+        margin-left: 0;
+        height: 8em;
+    }
+    #section-fichas h2{
+        margin: 0.5em 0 0 0;
+    }
+}
