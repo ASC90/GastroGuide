@@ -110,6 +110,8 @@ div.icon-user {
     border-radius: 25px;
     margin-top: 15px;
     font-family: "Muli", sans-serif;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .boton:hover {
@@ -323,10 +325,12 @@ div.icon-user {
 }
 
 .formres h1 {
-    border-bottom: solid 0.2em;
-    margin-left: 33.3%;
-    margin-bottom: 2%;
-    width: 18%;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: underline;
+    margin:auto;
+    margin-bottom: 5%;
+    width: 100%;
     height: 1%;
 }
 
@@ -338,7 +342,7 @@ div.icon-user {
 
 .formresimage {
     margin-left: 5%;
-    width: 25%;
+    width: 200px;
     text-align: left;
     vertical-align: top;
     display: inline-block;
@@ -357,7 +361,7 @@ div.icon-user {
 .formreslist {
     width: 60%;
     display: inline-block;
-    padding-left: 40px;
+   
 }
 
 
@@ -1184,11 +1188,29 @@ footer ul li {
     font-style: italic;
 }
 
-/* Zona Marta Perfil Restaurante*/
+
 
 @media (min-width:320px) and (max-width:480px){
 
-   
+
+     /*///////////////////////////////////////////////FormularioRestaurante/////////////////////////////////////////////*/
+   .formresimage {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5%;
+    
+    }
+ 
+    .formreslist {
+     margin: 0 auto;
+     display: block;
+    }
+ 
+    .formreslist input {
+    width: 100%;
+    }
+
+   /* Zona Marta Perfil Restaurante*/
     .perfil_rest #tipo li{
         margin:5px;
         display: block;
@@ -1200,6 +1222,11 @@ footer ul li {
         font-size: 1.5em;
         font-weight: 700;
     }
+  
+   .formreslist div:last-child {
+    text-align: center;
+   }
+
     .perfil_rest article.pmenu {
         width: 100%
     }
