@@ -1188,11 +1188,29 @@ footer ul li {
     font-style: italic;
 }
 
-/* Zona Marta Perfil Restaurante*/
+
 
 @media (min-width:320px) and (max-width:480px){
 
-   
+
+     /*///////////////////////////////////////////////FormularioRestaurante/////////////////////////////////////////////*/
+   .formresimage {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5%;
+    
+    }
+ 
+    .formreslist {
+     margin: 0 auto;
+     display: block;
+    }
+ 
+    .formreslist input {
+    width: 100%;
+    }
+
+   /* Zona Marta Perfil Restaurante*/
     .perfil_rest #tipo li{
         margin:5px;
         display: block;
@@ -1204,23 +1222,6 @@ footer ul li {
         font-size: 1.5em;
         font-weight: 700;
     }
-
-    /*///////////////////////////////////////////////FormularioRestaurante/////////////////////////////////////////////*/
-   .formresimage {
-   margin: 0 auto;
-   display: block;
-   margin-bottom: 5%;
-   
-   }
-
-   .formreslist {
-    margin: 0 auto;
-    display: block;
-   }
-
-   .formreslist input {
-   width: 100%;
-   }
   
    .formreslist div:last-child {
     text-align: center;
