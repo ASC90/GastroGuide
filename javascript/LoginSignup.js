@@ -75,6 +75,6 @@ document.getElementById("btnSubmitRestaurante").onclick = function(){
   document.getElementById("passRestauranteOK").innerText= "";
 
   if( validarEmailRestaurante() && validarPasswordRestaurante() )
-    window.location.href = 'homerestaurante.html';
+  Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function(){window.location.href = 'homerestaurante.html'} , serialize(document.getElementById("inicio-sesion-restaurante")));
 };
 
