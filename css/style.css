@@ -1072,7 +1072,7 @@ ul#listaIngredientes{
     margin: 1em auto;
     width: 75%;
     height: 40px;
-    max-width: 900px;
+    /*max-width: 900px;*/
     padding-bottom: 15px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.50);
 }
