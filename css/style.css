@@ -1527,8 +1527,8 @@ footer> div> div> div> img#logo-footer{
         }
 
         .form-ofertas2 textarea {
-            width: 300px;
-            margin-left: -3em;
+            width: 320px;
+            margin-left: -1.5em;
         }
         div.recetas {
             display: block;
@@ -1575,8 +1575,9 @@ footer> div> div> div> img#logo-footer{
         
         #pub-con-f-an{
             min-width: 250px;
-            margin-left: 4em;
+            margin-left: 5em;
             display: block;
+            height: 100px;
         }
 
         #pub-con-f-an-tab{
@@ -1591,4 +1592,28 @@ footer> div> div> div> img#logo-footer{
         .imgsrc2{
             margin-left: 4em;
         }
+
+        #area-video textarea{
+            width: 320px;
+        }
+
+        .seccion-videos h3{
+            border-bottom: 0;
+        }
+        .form-ofertas2 button {
+            display: block;
+            margin-left: 23em;
+        }
+
+        .seccion-menu form button {
+            margin-left: 25em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .formresimage2 {
+             margin-left: 5em;
+        }
+
+   
 }
