@@ -1152,3 +1152,26 @@ footer ul li {
 #texto-footer {
     font-size: 0.7em;
 }
+
+/* Zona Marta Perfil Restaurante*/
+
+@media (min-width:320px) and (max-width:480px){
+
+   
+    .celler #tipo li{
+        margin:5px;
+        display: block;
+        width: 120px;
+        text-align: center;
+    }
+    .celler .pdatos p {
+        float: right;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+   
+    }
+
+    @media (min-width:481px) and (max-width:1068px){
+    
+    }
