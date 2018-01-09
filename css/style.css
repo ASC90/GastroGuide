@@ -1156,69 +1156,111 @@ footer ul li {
     font-size: 0.7em;
 }
 
-/* Zona Marta Perfil Restaurante*/
+/* Zona Marta Perfil Restaurante */
 
 @media (min-width:320px) and (max-width:480px){
 
    
-    .celler #tipo li{
+    .perfil_rest #tipo li{
         margin:5px;
         display: block;
         width: 120px;
         text-align: center;
     }
-    .celler .pdatos p {
+    .perfil_rest .pdatos p {
         float: right;
         font-size: 1.5em;
         font-weight: 700;
     }
-     .celler article.pmenu {
+    .perfil_rest article.pmenu {
         width: 100%
     }
-   .celler .popinion .pcol2 {
+   .perfil_rest .popinion .pcol2 {
     width: 18em;
     margin-right: 2em;
     }
-    .celler h2{
+    .perfil_rest h2{
     font-size: 1.3em;
     }
-    .celler .popinion .pcol3 {
+    .perfil_rest .popinion .pcol3 {
         width: 3em;
         font-size: 1.3em;
         font-weight: 700;
         vertical-align: top;
         padding-bottom: 1em;
     }
-    .celler .prep {
+    .perfil_rest .prep {
         width: 20em;
     }
 
-    .celler > #recetas> div> div> p{
+    .perfil_rest > #recetas> div> div> p{
 
         width: 18em; 
     }
 
-    .celler> #poferta> div> p{
+    .perfil_rest> #poferta> div> p{
         width: 12em; 
     }
-    .celler> #recetas> div.ingre{
+    .perfil_rest> #recetas> div.ingre{
         width: 13em;
         vertical-align: top;
     }
 
-    .celler .popinion .pcol1{
+    .perfil_rest .popinion .pcol1{
         width: 3em;
         height: 3em;
         margin-right: 2em;
     }
-    .celler .popinion .pcol2 h4{
+    .perfil_rest .popinion .pcol2 h4{
         margin-top: -2em;
         margin-left: 4em;
     }
+    .perfil_rest .precetas .ingre{
+        width: 13em;
+        vertical-align: top;
+        margin-left: 0;
+    }
+    .perfil_rest .pvideo .pcol1 iframe{
+        width: 100%;
+        height: 100%;
+    }
+     .perfil_rest .pvideo .pcol2 > p{
+        width: 18em; 
+    }
+}
+/* Footer */ 
 
+@media (min-width:320px) and (max-width:480px){
+
+footer div.contenedor> p{
+    font-size: 0.8em;
 }
 
+footer p#texto-footer{
+    font-size: 0.5em;
+}
 
-    @media (min-width:481px) and (max-width:1068px){
-    
-    }
+footer> div> div> div.col2> ul> li> a> img{
+    width: 55%;
+}
+footer> div> div> div> img#logo-footer{
+    width: 80pt;
+    height: 60pt;
+    padding-top: 10px;
+}
+.footer .row .col1{
+    padding-right: 0;
+    width: 33%; 
+}
+.footer .row .col2{
+    padding-left: 0;
+    width: 33%;
+}
+.footer .row .col2 h3{
+    font-size: 0.8em;     
+}
+.footer .row .col1 a h4{
+    font-size: 0.7em; 
+}
+
+}
