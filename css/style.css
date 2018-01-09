@@ -110,6 +110,8 @@ div.icon-user {
     border-radius: 25px;
     margin-top: 15px;
     font-family: "Muli", sans-serif;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .boton:hover {
@@ -323,10 +325,12 @@ div.icon-user {
 }
 
 .formres h1 {
-    border-bottom: solid 0.2em;
-    margin-left: 33.3%;
-    margin-bottom: 2%;
-    width: 18%;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: underline;
+    margin:auto;
+    margin-bottom: 5%;
+    width: 100%;
     height: 1%;
 }
 
@@ -338,7 +342,7 @@ div.icon-user {
 
 .formresimage {
     margin-left: 5%;
-    width: 25%;
+    width: 200px;
     text-align: left;
     vertical-align: top;
     display: inline-block;
@@ -357,7 +361,7 @@ div.icon-user {
 .formreslist {
     width: 60%;
     display: inline-block;
-    padding-left: 40px;
+   
 }
 
 
@@ -1068,7 +1072,7 @@ ul#listaIngredientes{
     margin: 1em auto;
     width: 75%;
     height: 40px;
-    max-width: 900px;
+    /*max-width: 900px;*/
     padding-bottom: 15px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.50);
 }
@@ -1184,69 +1188,230 @@ footer ul li {
     font-style: italic;
 }
 
-/* Zona Marta Perfil Restaurante*/
+
 
 @media (min-width:320px) and (max-width:480px){
 
-   
-    .celler #tipo li{
+
+     /*///////////////////////////////////////////////FormularioRestaurante/////////////////////////////////////////////*/
+   .formresimage {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5%;
+    
+    }
+ 
+    .formreslist {
+     margin: 0 auto;
+     display: block;
+    }
+ 
+    .formreslist input {
+    width: 100%;
+    }
+
+   /* Zona Marta Perfil Restaurante*/
+    .perfil_rest #tipo li{
         margin:5px;
         display: block;
         width: 120px;
         text-align: center;
     }
-    .celler .pdatos p {
+    .perfil_rest .pdatos p {
         float: right;
         font-size: 1.5em;
         font-weight: 700;
     }
-     .celler article.pmenu {
+  
+   .formreslist div:last-child {
+    text-align: center;
+   }
+
+    .perfil_rest article.pmenu {
         width: 100%
     }
-   .celler .popinion .pcol2 {
+   .perfil_rest .popinion .pcol2 {
     width: 18em;
     margin-right: 2em;
     }
-    .celler h2{
+    .perfil_rest h2{
     font-size: 1.3em;
     }
-    .celler .popinion .pcol3 {
+    .perfil_rest .popinion .pcol3 {
         width: 3em;
         font-size: 1.3em;
         font-weight: 700;
         vertical-align: top;
         padding-bottom: 1em;
     }
-    .celler .prep {
+    .perfil_rest .prep {
         width: 20em;
     }
 
-    .celler > #recetas> div> div> p{
+    .perfil_rest > #recetas> div> div> p{
 
         width: 18em; 
     }
 
-    .celler> #poferta> div> p{
+    .perfil_rest> #poferta> div> p{
         width: 12em; 
     }
-    .celler> #recetas> div.ingre{
+    .perfil_rest> #recetas> div.ingre{
         width: 13em;
         vertical-align: top;
     }
 
-    .celler .popinion .pcol1{
+    .perfil_rest .popinion .pcol1{
         width: 3em;
         height: 3em;
         margin-right: 2em;
     }
-    .celler .popinion .pcol2 h4{
+    .perfil_rest .popinion .pcol2 h4{
         margin-top: -2em;
         margin-left: 4em;
     }
+    .perfil_rest .precetas .ingre{
+        width: 13em;
+        vertical-align: top;
+        margin-left: 0;
+    }
+    .perfil_rest .pvideo .pcol1 iframe{
+        width: 100%;
+        height: 100%;
+    }
+     .perfil_rest .pvideo .pcol2 > p{
+        width: 18em; 
+    }
+}
+/* Footer */ 
+
+@media (min-width:320px) and (max-width:480px){
+
+footer div.contenedor> p{
+    font-size: 0.8em;
+}
+
+footer p#texto-footer{
+    font-size: 0.5em;
+}
+
+footer> div> div> div.col2> ul> li> a> img{
+    width: 55%;
+}
+footer> div> div> div> img#logo-footer{
+    width: 80pt;
+    height: 60pt;
+    padding-top: 10px;
+}
+.footer .row .col1{
+    padding-right: 0;
+    width: 33%; 
+}
+.footer .row .col2{
+    padding-left: 0;
+    width: 33%;
+}
+.footer .row .col2 h3{
+    font-size: 0.8em;     
+}
+.footer .row .col1 a h4{
+    font-size: 0.7em; 
+}
 
 }
 
+/* Home Principal */ 
+@media (min-width:320px) and (max-width:480px){
 
-    @media (min-width:481px) and (max-width:1068px){
+.premiamos-tu-confianza{
+    margin: 0;
+}
+.premiamos-tu-confianza img{
+    width: 300px;
+    margin-top: 15px;
+}
+.img-fondo{
+    display:none;
+}
+.container-textsobre{
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+.columna1 p{
+    display: none; 
+}
+.columna2 p{
+    display: none;
+}
+.columna3 p{
+    display: none;
+}
+}
+
+/* Pagina de Filtros y buscador */
+@media (min-width:320px) and (max-width:480px) {
+    body{
+        font-size: 0.75em;
+    }
+    .mobile-out {
+        display: none;
+    }
+    .cuadro-blanco {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 0.5em 0;
+    }
+    .formulario {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    #section-fichas {
+        display: block !important;
+        padding-top: 0 !important;
+    }
+    #section-filtro {
+        display: none !important;
+    }
+    .contenedor-fichas{
+        padding: 0;
+        height: auto;
+    }
+    .img-ficha {
+        height: 10em;
+        display: block;
+        overflow-y: hidden;
+    }
+    .img-ficha img{
+        width: 100%;
+        height: auto;
+        vertical-align: auto;
+        margin-top: -90px;
+    }
+    .text-ficha{
+        height: 8em;
+    }
+    .opiniones-nota{
+        margin-left: 0;
+        height: 8em;
+    }
+    #section-fichas h2{
+        margin: 0.5em 0 0 0;
+    }
+}
+
+/* Log in */
+@media (min-width:320px) and (max-width:480px) {
+    .lover{
+        width: 100%;
+    }
+    .lover img{
+        height: 200px;
+    }
+    .chef{
+        width: 100%;
+    }
+    .chef img{
+        height: 210px;
+    }
     
     }

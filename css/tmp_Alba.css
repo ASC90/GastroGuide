@@ -1,0 +1,15 @@
+@media (min-width:320px) and (max-width:480px) {
+.lover{
+    width: 100%;
+}
+.lover img{
+    height: 200px;
+}
+.chef{
+    width: 100%;
+}
+.chef img{
+    height: 210px;
+}
+
+}
