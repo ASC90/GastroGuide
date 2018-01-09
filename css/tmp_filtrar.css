@@ -1,0 +1,23 @@
+@media (min-width:320px) and (max-width:480px){
+    #body_filtrar{
+        font-size: 0.75em;
+    }
+    .mobile-out{
+        display: none;
+    }
+    .cuadro-blanco{
+        width: 100%;
+        margin: 0; 
+        padding: 0 0 0.5em 0;;
+    }
+    .formulario{
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+   
+    }
+
+    @media (min-width:481px) and (max-width:1068px){
+    
+    }
