@@ -16,7 +16,7 @@
 			<!--navbar-->
 			<ul class="navbar">
 				<li class="lista-navbar">
-					<a href="index.html">
+					<a href="home_page.html">
 						<img src="img/logo-small.png" alt="" class="gastro-guide-logo">
 					</a>
 				</li>
@@ -124,7 +124,10 @@
 	<section id="pub-con-f">
 		<div id="pub-con-f-an">
 			<div id="pub-con-f-an-tab">
-				<div id="pub-con-f-an-tab-txt">Añadir imagenes</div>
+				<div id="pub-con-f-an-tab-txt">
+					<input type="file" id="imgsrc" class="inputfile">
+					<label for= "imgsrc" class="boton">Añadir imagenes</label>
+				</div>
 			</div>
 		</div>
 
@@ -160,24 +163,28 @@
 			<div id="inputs-video">
 				<form action="">
 					<span>Título: </span>
-					<input type="text" placeholder="Introduce un titulo...">
+					<input type="text"  id="titVideo" placeholder="Introduce un titulo...">
+					<span class= "errorRojo" id="titVideoOK"></span>
 					<span>Descripción:</span>
-					<input type="url" placeholder="Descripción">
+					<input type="url" id="descVideo" placeholder="Descripción">
+					<span class= "errorRojo" id="descVideoOK"></span>
 					<span>URL video:</span>
-					<input type="url" placeholder="Examinar">
+					<input type="url" id="urlVideo" placeholder="Examinar">
+					<span class= "errorRojo" id="urlVideoOK"></span>
 				</form>
 			</div>
 
 			<div id="area-video">
-				<textarea name="" id="" cols="30" rows="10" placeholder="Introduce un texto..."></textarea>
-				<button class="boton">Aplicar</button>
+				<textarea name="" id="textoVideo" cols="30" rows="10" placeholder="Introduce un texto..."></textarea>
+				<span class= "errorRojo" id="textoVideoOK"></span>
+				<button class="boton" id="btnVideos">Aplicar</button>
 			</div>
 		</div>
 
 
 	</section>
 
-	<!--/////////////////////////////////////MENU RESTUARANTE//////////////////////////////////////////////////////-->
+	<!--/////////////////////////////////////MENU RESTURANTE//////////////////////////////////////////////////////-->
 
 	<section class="seccion-menu">
 		<form action="">
@@ -190,25 +197,30 @@
 			<div>
 				<div id="platos-menu">
 					<h4>Entrantes</h4>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir entrantes"></textarea>
+					<textarea name="" id="entrante" cols="30" rows="10" placeholder="Introducir entrantes"></textarea><br>
+					<span id="entranteOK" class="errorRojo"></span>     
 
 					<h4>Primer plato</h4>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir primeros platos"></textarea>
+					<textarea name="" id="primerPlato" cols="30" rows="10" placeholder="Introducir primeros platos"></textarea><br>
+					<span id="primerPlatoOK" class="errorRojo"></span>  
 				</div>
 
 				<div id="platos-menu">
 					<h4>Segundo plato</h4>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir segundos platos"></textarea>
+					<textarea name="" id="segundoPlato" cols="30" rows="10" placeholder="Introducir segundos platos"></textarea><br>
+					<span id="segundoPlatoOK" class="errorRojo"></span> 
 
 					<h4>Postre</h4>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Introducir postres"></textarea>
-
+					<textarea name="" id="postre" cols="30" rows="10" placeholder="Introducir postres"></textarea><br>
+					<span id="postreOK" class="errorRojo"></span> 
 				</div>
 				<div id="platos-menu">
-					<input type="text" placeholder="Nombre del menú">
-					<textarea name="" id="" cols="30" rows="10" placeholder="Introduce algún aspecto destacado..."></textarea>
+					<input type="text" id="titMenu" placeholder="Nombre del menú">
+					<span id="titMenuOK" class="errorRojo"></span> <br>
+					<textarea name="" id="nombreMenu" cols="30" rows="10" placeholder="Introduce algún aspecto destacado..."></textarea><br>
+					<span id="nombreMenuOK" class="errorRojo"></span> 
 					<br>
-					<button class="boton">Aplicar</button>
+					<button class="boton" id="btnMenu">Aplicar</button>
 				</div>
 			</div>
 		</form>
@@ -225,12 +237,13 @@
 
 		<div class="form-ofertas1">
 			<form>
-				<input type="radio" name="radio">
+				<input type="radio" name="radio" id="radioOferta1">
 				<b>Promociones</b>
 				<br>
-				<input type="radio" name="radio">
+				<input type="radio" name="radio" id="radioOferta2">
 				<b>Descuentos</b>
 				<br>
+				<span id="radioOfertaOK" class="errorRojo"></span>
 			</form>
 		</div>
 
@@ -239,8 +252,9 @@
 				<b>Descripción de la oferta:</b>
 				<br>
 				<br>
-				<textarea placeholder="Describe la oferta..." name="" id="" cols="30" rows="10"></textarea>
-				<button class="boton">Aplicar</button>
+				<textarea placeholder="Describe la oferta..." name="" id="textoOferta" cols="30" rows="10"></textarea><br>
+				<span id="textoOfertaOK" class="errorRojo"></span>
+				<button class="boton" id="btnOferta">Aplicar</button>
 			</form>
 		</div>
 
@@ -259,26 +273,37 @@
 			<div>
 				<label for="receta">Nombre de la receta</label>
 				<input id="receta" type="text" name="receta" required placeholder="Nombre de la receta...">
+				<span id="recetaOK" class="errorRojo"></span>
+			</div>
+			<div>
 				<label for="ingredientes">Ingredientes</label>
 				<input id="ingredientes" type="text" name="ingredientes" required placeholder="Ingredientes...">
-				<button class="boton">Añadir +</button>
+				<span id="ingredientesOK" class="errorRojo"></span>		
+				<button class="boton" id="btnIngredientes">Añadir +</button>
+				<div>
+					<ul id="listaIngredientes"></ul>
+				</div>
 			</div>
 
 			<div class="prep-receta">
 				<br>
 				<label>Preparación:</label>
+				<span id="textoRecetaOK" class="errorRojo"></span>
 				<br>
-				<textarea placeholder="Introduce la preparación de la receta..." name="preparación" cols="100" rows="10"></textarea>
+				<textarea placeholder="Introduce la preparación de la receta..." name="preparación" cols="100" rows="10" id="textoReceta"></textarea>
 				<br>
+				<button class="boton paddbtn" id="btnReceta">Aplicar</button>
+			
 			</div>
-
-			<div class="img-recetas">
-				<img src="img/GastroChef.png" alt="">
-				<button class="boton">Añadir foto + </button>
-			</div>
-		</div>
+		</div>           
+		<div class="formresimage2">  
+			<label for= "imgsrc2" class="boton">Añadir imagenes</label>		   
+            <div id="pub-con-gal2">
+				<input type="file" id="imgsrc2" class="inputfile">
+            </div>
+		<div>
 	</section>
-
+<br>
 
 	<footer>
 		<div class="footer">
@@ -332,7 +357,7 @@
 				</div>
 			</div>
 	</footer>
-	<script src="javascript/home_restaurante.js"></script>
+	<script src="javascript/homerestaurante.js"></script>
 </body>
 
 </html>
