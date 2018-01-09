@@ -110,6 +110,8 @@ div.icon-user {
     border-radius: 25px;
     margin-top: 15px;
     font-family: "Muli", sans-serif;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .boton:hover {
@@ -311,6 +313,9 @@ div.icon-user {
     vertical-align: top
 }
 
+.imgrec{
+    margin: 1em;
+}
 
 /*////////////////////////////////////////////////FormularioRegistroRestaurantes///////////////////////////////////////////////*/
 
@@ -330,21 +335,24 @@ div.icon-user {
     height: 1%;
 }
 
-.FormResError {
-    color: red;
-}
 
 /* Columna imagen+subir */
 
 .formresimage {
-    margin-left: 5%;
+    margin-left: 8em;
     width: 25%;
     text-align: left;
     vertical-align: top;
     display: inline-block;
 }
 
-
+.formresimage2 {
+    margin-left: 8em;
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+}
 /* Margen fiv casilla */
 
 .formreslist div {
@@ -416,6 +424,11 @@ div.icon-user {
 #formresimageimage {
     margin-top: 10%;
 }
+
+#formresimageimage2 {
+    margin-top: 10%;
+}
+
 
 .res-genero input {
     margin-top: 10px;
@@ -744,17 +757,6 @@ section#opciones {
     justify-content: center;
 }
 
-#pub-con-f-an {
-    width: 250px;
-    height: 250px;
-    border: dashed lightgrey;
-    color: lightgrey;
-    font-weight: bold;
-    font-size: 1.4em;
-    text-align: center;
-    display: inline-block;
-    min-width: 250px;
-}
 
 #pub-con-f-an-tab {
     display: table !important;
@@ -775,6 +777,14 @@ section#opciones {
     display: inline-block;
 }
 
+#pub-con-gal2 img {
+    height: 100%;
+}
+
+#pub-con-gal2 {
+    max-width: 65em;
+    display: inline-block;
+}
 
 /*////////////////////////////////////////////////Video///////////////////////////////////////////////////////////////////////*/
 
@@ -801,7 +811,7 @@ section#opciones {
 }
 
 .seccion-videos form input {
-    margin-bottom: 2em;
+    margin-bottom: 0.4em;
     width: 320px;
     margin-top: 0;
 }
@@ -865,7 +875,7 @@ div#platos-menu {
     border-radius: 0.1em;
     padding: 0.3em;
     display: block;
-    margin-top: 2em;
+    margin-top: 0.4em;
     margin-bottom: 2em;
     width: 320px;
 }
@@ -940,10 +950,10 @@ div.recetas h3 {
     font-weight: bold;
 }
 
+
 .form-recetas textarea {
     margin-top: 1em;
     margin-left: 9.5em;
-    margin-bottom: 5em;
 }
 
 .form-recetas button {
@@ -968,6 +978,21 @@ div.recetas h3 {
 .img-recetas button {
     display: block;
 }
+
+.formresflo{height:8em; }
+
+.formresflo img{
+    margin-top:1em;
+    height: 100%;
+}
+
+.paddbtn{float:right;}
+
+ul#listaIngredientes{
+    margin-left:8em;
+}
+
+
 
 
 /*////////////////////////////////////////////////construccion///////////////////////////////////////////////////////////////////////*/
@@ -1156,69 +1181,8 @@ footer ul li {
     font-size: 0.7em;
 }
 
-/* Zona Marta Perfil Restaurante*/
-
-@media (min-width:320px) and (max-width:480px){
-
-   
-    .celler #tipo li{
-        margin:5px;
-        display: block;
-        width: 120px;
-        text-align: center;
-    }
-    .celler .pdatos p {
-        float: right;
-        font-size: 1.5em;
-        font-weight: 700;
-    }
-     .celler article.pmenu {
-        width: 100%
-    }
-   .celler .popinion .pcol2 {
-    width: 18em;
-    margin-right: 2em;
-    }
-    .celler h2{
-    font-size: 1.3em;
-    }
-    .celler .popinion .pcol3 {
-        width: 3em;
-        font-size: 1.3em;
-        font-weight: 700;
-        vertical-align: top;
-        padding-bottom: 1em;
-    }
-    .celler .prep {
-        width: 20em;
-    }
-
-    .celler > #recetas> div> div> p{
-
-        width: 18em; 
-    }
-
-    .celler> #poferta> div> p{
-        width: 12em; 
-    }
-    .celler> #recetas> div.ingre{
-        width: 13em;
-        vertical-align: top;
-    }
-
-    .celler .popinion .pcol1{
-        width: 3em;
-        height: 3em;
-        margin-right: 2em;
-    }
-    .celler .popinion .pcol2 h4{
-        margin-top: -2em;
-        margin-left: 4em;
-    }
-
+.errorRojo{
+    color:red;
+    font-style: italic;
 }
 
-
-    @media (min-width:481px) and (max-width:1068px){
-    
-    }
