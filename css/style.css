@@ -755,8 +755,6 @@ section#opciones {
 #pub-con-f-an {
     width: 250px;
     height: 250px;
-    border: dashed lightgrey;
-    color: lightgrey;
     font-weight: bold;
     font-size: 1.4em;
     text-align: center;
@@ -990,6 +988,8 @@ div.recetas h3 {
     margin-top:1em;
     height: 100%;
 }
+
+.imgsrc2{margin-left:10em;}
 
 .paddbtn{float:right;}
 
@@ -1415,3 +1415,205 @@ footer> div> div> div> img#logo-footer{
     }
     
     }
+
+    /*Home Restaurante*/
+
+        @media (min-width:320px) and (max-width:480px){
+         #titulo-publicar-contenido{
+            padding-left: 8em;
+
+        }    
+    
+        #titulo-publicar-contenido h2{
+            display: block;
+            margin-right: 10em;
+            border: none;
+        }
+
+        #bloque1 {
+            display: inline-block; 
+            padding: 0;          
+        }
+
+        #bloque1 img {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        #bloque1 h3 {
+            display: none;
+        }
+
+        #bloque2 {
+            display: inline-block; 
+            padding: 0;
+        }
+
+        #bloque2 img {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        #bloque2 h3 {
+            display: none;
+        }
+         
+         #pub-con-f-title {
+              padding-left:4em;
+        }       
+        
+        #pub-con-f-title h3{
+            display: block;
+            width: none;
+            border-bottom: 0.3em;  
+        }
+
+        section#opciones{
+            padding-left: 5em;
+        }
+
+
+        section#section-panel-control {
+            display: none;
+        }
+       
+       #pub-con-f-title  {
+            display: block !important;
+            margin-bottom: 0;
+
+        }
+
+        section#pub-con-f{
+            margin:0;
+            padding: 0;
+        }
+
+        #pub-con-gal img {
+            height: 50%;
+            width: auto;
+        }
+
+        #pub-con-f-an-tab-txt{
+            margin: 0;
+            height: auto;
+            display: block !important;
+        }
+
+        .seccion-videos div{
+            padding-left: 4em;
+        }
+
+        div#area-video {
+            display: block;
+            margin-left: -3em;
+        }
+
+     
+        .seccion-menu div h3 {
+            width: 100%;
+            border-bottom: 0;
+        }
+
+        .seccion-menu {
+            margin: 0;
+            padding: 0;
+            padding-left: 4em;
+        }
+
+        div#ofertas {
+            display: block;
+            border-bottom: 0;
+            margin-left: 4em;
+        }
+
+        .form-ofertas2 textarea {
+            width: 320px;
+            margin-left: -1.5em;
+        }
+        div.recetas {
+            display: block;
+            margin-left: 4em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-bottom: 0;
+        } 
+
+        .form-recetas label {
+            padding-left: 4em;
+            font-weight: bold;
+            display: block;
+            padding-bottom: 0.5em;
+        }    
+        input#receta {
+            margin-left: 5em;
+            margin-bottom: 0.5em;
+        }
+
+        input#ingredientes {
+             margin-left: 5em;
+        }
+        
+        .form-recetas button {
+            margin-left: 5em;
+            display: block;
+        }
+
+        .form-recetas textarea{
+            margin-left:4em;
+            width: 300px;
+        }
+
+        #pub-con-f-an-tab-txt{
+            margin:0;
+            height: auto;
+            display: block !important; 
+            vertical-align: none; 
+        }
+        #pub-con-f{
+            display: block !important;
+        }
+        
+        #pub-con-f-an{
+            min-width: 250px;
+            margin-left: 5em;
+            display: block;
+            height: 100px;
+        }
+
+        #pub-con-f-an-tab{
+            height: auto;
+            display: block; 
+        }
+
+        #pub-con-f>div>div{
+            margin: 0 10px 0px 32px;
+        }
+
+        .imgsrc2{
+            margin-left: 4em;
+        }
+
+        #area-video textarea{
+            width: 320px;
+        }
+
+        .seccion-videos h3{
+            border-bottom: 0;
+        }
+        .form-ofertas2 button {
+            display: block;
+            margin-left: 23em;
+        }
+
+        .seccion-menu form button {
+            margin-left: 25em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .formresimage2 {
+             margin-left: 5em;
+        }
+
+   
+}
