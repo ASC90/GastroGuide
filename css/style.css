@@ -1308,7 +1308,7 @@ footer> div> div> div> img#logo-footer{
 
 /* Pagina de Filtros y buscador */
 @media (min-width:320px) and (max-width:480px) {
-    #body_filtrar {
+    body{
         font-size: 0.75em;
     }
     .mobile-out {
