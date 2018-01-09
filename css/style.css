@@ -751,8 +751,6 @@ section#opciones {
 #pub-con-f-an {
     width: 250px;
     height: 250px;
-    border: dashed lightgrey;
-    color: lightgrey;
     font-weight: bold;
     font-size: 1.4em;
     text-align: center;
@@ -986,6 +984,8 @@ div.recetas h3 {
     margin-top:1em;
     height: 100%;
 }
+
+.imgsrc2{margin-left:10em;}
 
 .paddbtn{float:right;}
 
