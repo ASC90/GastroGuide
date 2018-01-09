@@ -9,26 +9,44 @@
         width: 100%;
         margin: 0;
         padding: 0 0 0.5em 0;
-        ;
     }
     .formulario {
         padding: 1em;
         margin-bottom: 1em;
     }
     #section-fichas {
-        display: block;
-        padding-top: 0;
+        display: block !important;
+        padding-top: 0 !important;
     }
     #section-filtro {
-        display: none;
+        display: none !important;
+    }
+    .contenedor-fichas{
+        padding: 0;
+        height: auto;
     }
     .img-ficha {
-        width: 100%;
         height: 10em;
         display: block;
-        overflow: hidden;
-        top: -50%;
+        overflow-y: hidden;
     }
+    .img-ficha img{
+        width: 100%;
+        height: auto;
+        vertical-align: auto;
+        margin-top: -90px;
+    }
+    .text-ficha{
+        height: 8em;
+    }
+    .opiniones-nota{
+        margin-left: 0;
+        height: 8em;
+    }
+    #section-fichas h2{
+        margin: 0.5em 0 0 0;
+    }
+
 }
 
 @media (min-width:481px) and (max-width:1068px) {}
