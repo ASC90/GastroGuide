@@ -1,23 +1,34 @@
-@media (min-width:320px) and (max-width:480px){
-    #body_filtrar{
+@media (min-width:320px) and (max-width:480px) {
+    #body_filtrar {
         font-size: 0.75em;
     }
-    .mobile-out{
+    .mobile-out {
         display: none;
     }
-    .cuadro-blanco{
+    .cuadro-blanco {
         width: 100%;
-        margin: 0; 
-        padding: 0 0 0.5em 0;;
+        margin: 0;
+        padding: 0 0 0.5em 0;
+        ;
     }
-    .formulario{
+    .formulario {
         padding: 1em;
         margin-bottom: 1em;
     }
-
-   
+    #section-fichas {
+        display: block;
+        padding-top: 0;
     }
-
-    @media (min-width:481px) and (max-width:1068px){
-    
+    #section-filtro {
+        display: none;
     }
+    .img-ficha {
+        width: 100%;
+        height: 10em;
+        display: block;
+        overflow: hidden;
+        top: -50%;
+    }
+}
+
+@media (min-width:481px) and (max-width:1068px) {}
