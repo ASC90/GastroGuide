@@ -1,5 +1,5 @@
 // JavaScript Document
-var roca_barUrl = "http://www.mocky.io/v2/5a534a4f300000cb1b1ebe7c";
+var roca_barUrl = "http://www.mocky.io/v2/5a53a037300000b82f1ec00d";
 
 function inyectaTipoRestaurante (jsonObj)
 {

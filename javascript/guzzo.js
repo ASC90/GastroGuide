@@ -1,5 +1,5 @@
 // JavaScript Document
-var guzzoUrl = "http://www.mocky.io/v2/5a535f183000004b201ebef7";
+var guzzoUrl = "http://www.mocky.io/v2/5a53a1aa300000e32f1ec010";
 
 function inyectaTipoRestaurante (jsonObj)
 {
