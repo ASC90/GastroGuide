@@ -1,7 +1,7 @@
 
-function validarFormularioRestaurantes() {
+function validarFormularioRestaurantes(event1) {
 
-    
+    event1.preventDefault();
 
     var ok = true;
 
@@ -169,7 +169,7 @@ function validarFormularioRestaurantes() {
     ok = false;
  }
 
-return ok;
+if (OK) { Ajax ("POST","example.com",null,serialize(document.getElementById("formularioRestaurantes")));}
 
 
 }
@@ -180,3 +180,6 @@ var output = document.getElementById("resImagePreview");
 output.src = URL.createObjectURL(event.target.files[0]);
     
 }
+
+document.getElementById("formularioRestaurantes").onclick = validarFormularioRestaurantes;
+document.getElementById("res-anadir").onchange = previewFormularioRestaurantes;
