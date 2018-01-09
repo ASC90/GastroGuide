@@ -1,10 +1,10 @@
-﻿http://www.mocky.io/v2/5a535f183000004b201ebef7
+﻿http://www.mocky.io/v2/5a53a1aa300000e32f1ec010
 {
 	"nombre":"Guzzo",
 	"valoracion": "7,3",
 	"adresa":"Carrer dels Arcs, 5 08002 Barcelona",
 	"tipo":["Mexicano","Fusión","Romántico","Grupos"],
-	"imagen":"img/rest1.jpg",
+	"imagen":"img/rest3.jpg",
 	"menu":[
 	{
 	"titol":"Entrantes",

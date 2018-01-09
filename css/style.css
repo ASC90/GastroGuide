@@ -1156,4 +1156,69 @@ footer ul li {
     font-size: 0.7em;
 }
 
+/* Zona Marta Perfil Restaurante*/
 
+@media (min-width:320px) and (max-width:480px){
+
+   
+    .celler #tipo li{
+        margin:5px;
+        display: block;
+        width: 120px;
+        text-align: center;
+    }
+    .celler .pdatos p {
+        float: right;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+     .celler article.pmenu {
+        width: 100%
+    }
+   .celler .popinion .pcol2 {
+    width: 18em;
+    margin-right: 2em;
+    }
+    .celler h2{
+    font-size: 1.3em;
+    }
+    .celler .popinion .pcol3 {
+        width: 3em;
+        font-size: 1.3em;
+        font-weight: 700;
+        vertical-align: top;
+        padding-bottom: 1em;
+    }
+    .celler .prep {
+        width: 20em;
+    }
+
+    .celler > #recetas> div> div> p{
+
+        width: 18em; 
+    }
+
+    .celler> #poferta> div> p{
+        width: 12em; 
+    }
+    .celler> #recetas> div.ingre{
+        width: 13em;
+        vertical-align: top;
+    }
+
+    .celler .popinion .pcol1{
+        width: 3em;
+        height: 3em;
+        margin-right: 2em;
+    }
+    .celler .popinion .pcol2 h4{
+        margin-top: -2em;
+        margin-left: 4em;
+    }
+
+}
+
+
+    @media (min-width:481px) and (max-width:1068px){
+    
+    }
