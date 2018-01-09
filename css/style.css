@@ -330,6 +330,9 @@ div.icon-user {
     height: 1%;
 }
 
+.FormResError {
+    color: red;
+}
 
 /* Columna imagen+subir */
 
