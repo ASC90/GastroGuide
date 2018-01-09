@@ -1,22 +1,4 @@
-function Ajax(method, url, onSuccess) {
-    let getData = new XMLHttpRequest();
-    getData.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            onSuccess(JSON.parse(this.responseText));
-        }
-    };
-    getData.open(method, url, true);
-    getData.send();
-};
-
-function composicion(como, donde, lista) {
-    let contenido = "";
-    lista.forEach(composicion => {
-        contenido += como.renderizar(composicion);
-    })
-    donde.innerHTML += contenido;
-};
-
+//// RESULTADO DE LOS RESTAURANTES
 class Buscador {
     constructor() {
         this.resultados = [];
@@ -57,19 +39,8 @@ class Restaurante {
     `;
     }
 };
-class Filtrado {
-    constructor() {
-        this.listas = null; //esto sirve para indicar que no tiene nada.
-    }
-    obtenerDatos() {
-        let filtros = document.getElementById("chk-tipo-cocina");
-        let buscando = document.getElementById("selc-cocina");
-        Ajax("GET", "http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", (datos) => {
-            composicion(Cocina, filtros, datos.tipoDeCocina);
-            composicion(BuscadorCocina, buscando, datos.tipoDeCocina);
-        });
-    };
-};
+
+/// FILTRO DE COCINA
 class Cocina {
     static renderizar(datos) {
         return `
@@ -78,14 +49,19 @@ class Cocina {
     `;
     }
 };
-class BuscadorCocina {
-    static renderizar(datos) {
-        return `
-       <option value="${datos}"> ${datos}</option>
-    `;
+class Filtrado {
+    constructor() {
+        this.listas = null; //esto sirve para indicar que no tiene nada.
     }
+    obtenerDatos() {
+        let filtros = document.getElementById("chk-tipo-cocina");
+        Ajax("GET", "http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", (datos) => {
+            composicion(Cocina, filtros, datos.tipoDeCocina);
+        });
+    };
 };
 
+/// FILTRO DE AMBIENTE
 class FiltroAmbientes {
     obtenerAmbientes() {
         let filtros = document.getElementById("chk-ambientes");
@@ -98,6 +74,7 @@ class FiltroAmbientes {
         });
     };
 };
+
 class Ambientes {
     static renderizar(datos) {
         return `
@@ -106,9 +83,13 @@ class Ambientes {
     `;
     }
 };
-let buscando = new Buscador();
-buscando.obtenerData();
+
+//// LLAMADAS
 let filtrando = new Filtrado();
 filtrando.obtenerDatos();
+let buscando = new Buscador();
+buscando.obtenerData();
 let ambientando = new FiltroAmbientes();
 ambientando.obtenerAmbientes();
+
+

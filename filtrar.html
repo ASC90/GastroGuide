@@ -35,7 +35,7 @@
 			</ul>
 		</nav>
 		<div class="cuadro-blanco" align="center">
-			<form action="filtrar.html" class="formulario">
+			<form class="formulario" name="buscador" id="buscar_submit">
 				<!--primer selector-->
 				<select name="" id="selc-cocina" class="selector-buscador">
 				</select>
@@ -43,9 +43,9 @@
 
 				<img class="espacio-imagen" src="img/glass-icon.png" alt="">
 
-				<input type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
+				<input name="buscar_adress" type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
 				<!--segundo selector-->
-				<input type="date" class="selector-buscador">
+				<input name="fecha" type="date" class="selector-buscador" >
 				<!--tercer selector-->
 				<select name="" id="" class="selector-buscador">
 					<option value="option 1">8:00</option>
@@ -62,10 +62,12 @@
 					<option value="option 4">4 personas</option>
 					<option value="option 5">5 personas</option>
 				</select>
-				<button class="selector-buscador">
+				<button class="selector-buscador" id="btn_busqueda">
 						Buscar
 				</button>
 			</form>
+			<div id="errorbusqueda"></div>
+			<div id="errorfecha"></div>
 		</div>
 	</header>
 
@@ -167,7 +169,8 @@
 				</div>
 			</div>
 	</footer>
-	<script src="./javascript/filatrar_results.js"></script>
+	<script src="./javascript/general.js"></script>
+	<script src="./javascript/filtrar_results.js"></script>
 </body>
 
 </html>
