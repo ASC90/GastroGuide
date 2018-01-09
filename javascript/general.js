@@ -72,12 +72,16 @@ function Ajax(method, url, onSuccess, pinfo) {
     let info = pinfo || null;//email=e@e.es&pass=xxx
     getData.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            onSuccess(JSON.parse(this.responseText));
+          if(onSuccess) onSuccess(JSON.parse(this.responseText));
         }
     };
     getData.open(method, url, true);
     getData.send(info);
 };
+////// Envio de datos de la barra de busqueda
+
+
+
 
 ////// Se utiliza para concatenar el codigo HTML
 function composicion(como, donde, lista) {
@@ -136,7 +140,7 @@ function ValidationBusqueda(evento) {
     }
 
     if (ok) {
-        window.location.href = 'filtrar.html';
+        Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function(){window.location.href = 'filtrar.html'} , serialize(document.getElementById("buscar_submit")));
     }
 };
 
