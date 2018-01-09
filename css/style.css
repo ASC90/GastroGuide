@@ -1398,3 +1398,20 @@ footer> div> div> div> img#logo-footer{
         margin: 0.5em 0 0 0;
     }
 }
+
+/* Log in */
+@media (min-width:320px) and (max-width:480px) {
+    .lover{
+        width: 100%;
+    }
+    .lover img{
+        height: 200px;
+    }
+    .chef{
+        width: 100%;
+    }
+    .chef img{
+        height: 210px;
+    }
+    
+    }
