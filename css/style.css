@@ -1299,11 +1299,26 @@ footer> div> div> div> img#logo-footer{
 .premiamos-tu-confianza{
     margin: 0;
 }
-
 .premiamos-tu-confianza img{
     width: 300px;
+    margin-top: 15px;
 }
-
+.img-fondo{
+    display:none;
+}
+.container-textsobre{
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+.columna1 p{
+    display: none; 
+}
+.columna2 p{
+    display: none;
+}
+.columna3 p{
+    display: none;
+}
 }
 
 /* Pagina de Filtros y buscador */
