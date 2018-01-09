@@ -1292,3 +1292,16 @@ footer> div> div> div> img#logo-footer{
 }
 
 }
+
+/* Home Principal */ 
+@media (min-width:320px) and (max-width:480px){
+
+.premiamos-tu-confianza{
+    margin: 0;
+}
+
+.premiamos-tu-confianza img{
+    width: 300px;
+}
+
+}
