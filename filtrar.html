@@ -35,22 +35,17 @@
 			</ul>
 		</nav>
 		<div class="cuadro-blanco" align="center">
-			<form action="filtrar.html" class="formulario">
+			<form class="formulario" name="buscador" id="buscar_submit">
 				<!--primer selector-->
-				<select name="" id="" class="selector-buscador">
-					<option value="option 1"> Japonés</option>
-					<option value="option 2">Mexicano</option>
-					<option value="option 3">Brasileño</option>
-					<option value="option 4">Chino</option>
-					<option value="option 5">Cubano</option>
+				<select name="" id="selc-cocina" class="selector-buscador">
 				</select>
 				<!--buscador-->
 
 				<img class="espacio-imagen" src="img/glass-icon.png" alt="">
 
-				<input type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
+				<input name="buscar_adress" type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
 				<!--segundo selector-->
-				<input type="date" class="selector-buscador">
+				<input name="fecha" type="date" class="selector-buscador" >
 				<!--tercer selector-->
 				<select name="" id="" class="selector-buscador">
 					<option value="option 1">8:00</option>
@@ -67,10 +62,12 @@
 					<option value="option 4">4 personas</option>
 					<option value="option 5">5 personas</option>
 				</select>
-				<button class="selector-buscador">
+				<button class="selector-buscador" id="btn_busqueda">
 						Buscar
 				</button>
 			</form>
+			<div id="errorbusqueda"></div>
+			<div id="errorfecha"></div>
 		</div>
 	</header>
 
@@ -84,58 +81,14 @@
 				<h4 class="tipo-cocina">Cocina</h4>
 			</div>
 			<div class="checkbox-tipo-cocina">
-				<form action="tipo-cocina">
-					<input type="checkbox" name="tipo-cocina" value="Española">Española
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="India">India
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Japonesa">Japonesa
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="China">China
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Italiana">Italiana
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Mexicana">Mexicana
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Tailandesa">Tailandesa
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Coreana">Coreana
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Mediterranea">Mediterránea
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Americana">Americana
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Marroqui">Marroquí
-					<br>
-					<input type="checkbox" name="tipo-cocina" value="Escandinava">Escandinava
-					<br>
+				<form id="chk-tipo-cocina" action="tipo-cocina">
 				</form>
 			</div>
 			<div class="ambientes">
 				<h4>Ambientes</h4>
 			</div>
 			<div class="checkbox-ambientes">
-				<form action="">
-					<input type="checkbox" name="ambientes" value="con-amigos">Con amigos
-					<br>
-					<input type="checkbox" name="ambientes" value="romantico">Romántico
-					<br>
-					<input type="checkbox" name="ambientes" value="de-fiesta">De fiesta
-					<br>
-					<input type="checkbox" name="ambientes" value="moderno">Moderno
-					<br>
-					<input type="checkbox" name="ambientes" value="tradicional">Tradicional
-					<br>
-					<input type="checkbox" name="ambientes" value="negocios">De negocios
-					<br>
-					<input type="checkbox" name="ambientes" value="para-grupos">Para grupos
-					<br>
-					<input type="checkbox" name="ambientes" value="familia">Família
-					<br>
-					<input type="checkbox" name="ambientes" value="tranquilo">Tranquilo
-					<br>
-					<input type="checkbox" name="ambientes" value="ecologico">Ecológico
-					<br>
+				<form id="chk-ambientes" action="">
 				</form>
 			</div>
 			<div class="precio-persona">
@@ -216,7 +169,8 @@
 				</div>
 			</div>
 	</footer>
-	<script src="./javascript/filatrar_results.js"></script>
+	<script src="./javascript/general.js"></script>
+	<script src="./javascript/filtrar_results.js"></script>
 </body>
 
 </html>
