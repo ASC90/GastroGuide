@@ -44,7 +44,7 @@ buscandoCocina.obtenerDatos();
 ////// Validacion direccion y fecha del buscador
 function ValidationBusqueda(evento) {
     evento.preventDefault();
-    
+    var mql = window.matchMedia('screen and (min-width:320px) and (max-width:480px)');
     var ok=true;
     let adressval = /^[\s 0-9a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]+$/;
     if (adressval.test(buscador.buscar_adress.value) == false) {
@@ -59,7 +59,7 @@ function ValidationBusqueda(evento) {
         ok=false;
     }
 
-    if (!buscador.fecha.value && buscador.buscar_adress.value) {
+    if (!mql.matches && !buscador.fecha.value && buscador.buscar_adress.value) {
         document.getElementById("errorbusqueda").innerText = "";
         document.getElementById("errorfecha").innerText = "Por favor introduzca una fecha";
         document.getElementById("errorfecha").className = "FormResError";
@@ -70,4 +70,5 @@ function ValidationBusqueda(evento) {
         window.location.href = 'filtrar.html';
     }
 };
+
 document.getElementById('buscar_submit').onsubmit = ValidationBusqueda;
