@@ -120,7 +120,7 @@ function ValidationBusqueda(evento) {
     var mql = window.matchMedia('screen and (min-width:320px) and (max-width:480px)');
     var ok = true;
     let adressval = /^[\s 0-9a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]+$/;
-    if (adressval.test(buscador.buscar_adress.value) == false) {
+    if (adressval.test(buscador.buscar_adress.value) == false && !buscador.fecha.value) {
         document.getElementById("errorbusqueda").innerText = "Por favor introduzca una dirección valida";
         document.getElementById("errorbusqueda").className = "FormResError";
         ok = false;
