@@ -68,6 +68,60 @@
 			<div id="errorbusqueda"></div>
 			<div id="errorfecha"></div>
 		</div>
+   		 <!-- Buscador Movil -->
+        <form name="buscador_mvl" class="container formulario" id="form_buscar_submit">
+            <div class="form-row">
+                <div class="col-9">
+                    <input name="buscar_adress" id="buscar_adress_mvl" type="search" class="form-control input-group-prepend" placeholder="Dirección">
+                </div>
+                <div class="col-1">
+                    <!-- Button trigger modal -->
+                    <button id="selector-buscador-mvl" type="button" data-toggle="modal" class="btn btn-outline-secondary" data-target="#exampleModal">Buscar</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="opciones" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="address_ModalLabel">Modal title</h5>
+                            </div>
+                            <div class="modal-body form-group">
+                                <div class="form-row mb-2">
+                                    <select name="tipo-cocina" id="modal-cocina" class="form-control">
+                                    </select>
+                                </div>
+                                <div class="form-row mb-2">
+                                    <input name="fecha" type="date" class="form-control" placeholder="Last name">
+                                </div>
+                                <div class="form-row mb-2">
+                                    <select name="hora" id="inputState" class="form-control">
+                                        <option selected>Hora</option>
+                                        <option value="option 1">8:00</option>
+                                        <option value="option 2">9:00</option>
+                                        <option value="option 3">10:00</option>
+                                        <option value="option 4">11:00</option>
+                                        <option value="option 5">12:00</option>
+                                    </select>
+                                </div>
+                                <div class="form-row">
+                                    <select name="personas" id="inputState" class="form-control">
+                                        <option selected>Personas</option>
+                                        <option value="option 1">1 persona</option>
+                                        <option value="option 2">2 personas</option>
+                                        <option value="option 3">3 personas</option>
+                                        <option value="option 4">4 personas</option>
+                                        <option value="option 5">5 personas</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </header>
     <section class="perfil">
         <div>
