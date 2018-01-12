@@ -72,7 +72,7 @@ function Ajax(method, url, onSuccess, pinfo) {
     let info = pinfo || null;//email=e@e.es&pass=xxx
     getData.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-          if(onSuccess) onSuccess(JSON.parse(this.responseText));
+            if (onSuccess) onSuccess(JSON.parse(this.responseText));
         }
     };
     getData.open(method, url, true);
@@ -89,7 +89,7 @@ function composicion(como, donde, lista) {
     lista.forEach(composicion => {
         contenido += como.renderizar(composicion);
     })
-    donde.innerHTML += contenido;
+    if(donde){donde.innerHTML += contenido;}
 };
 
 ///////Filtro de resultados en la barra del buscador
@@ -140,8 +140,20 @@ function ValidationBusqueda(evento) {
     }
 
     if (ok) {
-        Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function(){window.location.href = 'filtrar.html'} , serialize(document.getElementById("buscar_submit")));
+        Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () { window.location.href = 'filtrar.html' }, serialize(document.getElementById("buscar_submit")));
     }
 };
-
+if(document.getElementById('buscar_submit')){
 document.getElementById('buscar_submit').onsubmit = ValidationBusqueda;
+}
+if(document.getElementById('selector-buscador-mvl')){
+$('#selector-buscador-mvl').click(function (e) { 
+    e.preventDefault();
+    $('#myModal').modal('show');
+    let ciudad = $('#buscar_adress_mvl').val();
+    $('#address_ModalLabel').html(ciudad);
+    let mvlbsc = document.getElementById('modal-cocina');
+    $.getJSON("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", (datos) => {
+            composicion(BuscadorCocina, mvlbsc, datos.tipoDeCocina);
+    });
+});}
