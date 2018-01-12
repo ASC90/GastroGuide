@@ -1237,9 +1237,6 @@ footer ul li {
     .perfil_rest h2{
     /*font-size: 1.3em;*/
     }
-	.perfil_rest h4{
-		font-size: 1.3em;
-	}
     .perfil_rest .popinion .pcol3 {
         width: 3em;
         font-size: 1.3em;
@@ -1363,7 +1360,6 @@ footer> div> div> div> img#logo-footer{
         width: 100%;
         margin: 0;
         padding: 0 0 0.5em 0;
-        display: none;
     }
     .formulario {
         padding: 1em;
@@ -1621,7 +1617,3 @@ footer> div> div> div> img#logo-footer{
 
    
 }
-@media (min-width:720px) and (max-width:1400px) {
-    #form_buscar_submit {
-        display: none;
-    }
