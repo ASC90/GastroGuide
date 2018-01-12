@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>GastroGuide</title>
-	<!--MATERIALIZE-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<!--ICONOS MATERIALIZE-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>GastroGuide</title>
+    <!--MATERIALIZE-->
+    <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css">
+    <!--ICONOS MATERIALIZE-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="row">
+        <form class="col m12">
+            <div class="search-wrapper card">
+                <div class="col m2">
+                    <div class="input-field col s12">
+                        <select multiple>
+                            <option value="" disabled selected>Tipo de comida</option>
+                            <option value="1">Japonesa</option>
+                            <option value="2">India</option>
+                            <option value="3">Italiana</option>
+                        </select>
+                        <label>Materialize Multiple Select</label>
+                    </div>
+                </div>
+                <div class="col m4">
+
+                    <input id="search" placeholder="Direccion">
+                    <i class="material-icons">search</i>
+                    <div class="search-results"></div>
+
+                </div>
+                <div class="col m2">
+
+                </div>
+                <div class="col m1">1</div>
+                <div class="col m2">1</div>
+                <div class="col m1">1</div>
+            </div>
+        </form>
+    </div>
 
 
+    <!-- JS -->
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- Materialize -->
+    <script src="../node_modules/hammerjs/hammer.js"></script>    
+    <script src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../javascript/index.js"></script>
 
-
-	<!-- JS -->	
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<!-- Materialize -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
+
 </html>
