@@ -1618,3 +1618,7 @@ footer> div> div> div> img#logo-footer{
 
    
 }
+@media (min-width:720px) and (max-width:1400px) {
+    #form_buscar_submit {
+        display: none;
+    }
