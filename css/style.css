@@ -309,7 +309,7 @@ div.icon-user {
 
 .pvideo .pcol2 {
     width: 20em;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
     vertical-align: top
 }
 
@@ -1222,7 +1222,12 @@ footer ul li {
         font-size: 1.5em;
         font-weight: 700;
     }
-  
+  	
+	.pdatos div:first-child 
+	{
+    	width: 100%;
+	}
+	
    .formreslist div:last-child {
     text-align: center;
    }
