@@ -18,19 +18,18 @@ class Buscador {
 class Restaurante {
     static renderizar(data) {
         return `
-    <div class="contenedor-fichas">
-        <div class="img-ficha">
+    <div class="row">
+        <div class="col-12 col-md-3 mt-1 mb-1 img-ficha">
             <img src="${data.foto}" alt="">
         </div>
-        <div class="text-ficha">
+        <div class="col-8 col-md-4 mt-1 mb-1 text-ficha">
             <label>
                 <a href="${data.link}">
                     <h2>${data.nombre}</h2>
                 </a>
                 <br>${data.direccion}</label>
         </div>
-
-        <div class="opiniones-nota">
+        <div class="col-4 col-md-3 mt-1 mb-1 opiniones-nota">
             <label>
                 <h2>${data.nota}</h2>
                 <br>${data.opiniones} Opiniones</label>
@@ -42,11 +41,16 @@ class Restaurante {
 
 /// FILTRO DE COCINA
 class Cocina {
-    static renderizar(datos) {
+    static renderizar(datos,index) {
         return `
-        <input type="checkbox" name="tipo-cocina" value="${datos}">${datos}
-        <br>
-    `;
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck${index}" name="tipo-cocina" value="${datos[index]}">
+            <label class="custom-control-label" for="customCheck${index}">${datos[index]}</label>
+        </div>
+    `
+   /* <input type="checkbox" name="tipo-cocina" value="${datos}">${datos}
+    <br>*/
+    ;
     }
 };
 class Filtrado {
@@ -55,31 +59,38 @@ class Filtrado {
     }
     obtenerDatos() {
         let filtros = document.getElementById("chk-tipo-cocina");
-        Ajax("GET", "http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", (datos) => {
-            composicion(Cocina, filtros, datos.tipoDeCocina);
+        $.get("http://www.mocky.io/v2/5a5a49262e0000231971fb30", (datos) => {
+            let contenido = "";
+            for(let index=0; index< datos.tipoDeCocina.length; index++){
+                contenido += Cocina.renderizar(datos.tipoDeCocina,index);
+            };
+            filtros.innerHTML += contenido
         });
     };
 };
+
 
 /// FILTRO DE AMBIENTE
 class FiltroAmbientes {
     obtenerAmbientes() {
         let filtros = document.getElementById("chk-ambientes");
-        Ajax("GET", "http://www.mocky.io/v2/5a3b8525300000e40e82d1e3", (datos) => {
+        $.get("http://www.mocky.io/v2/5a3b8525300000e40e82d1e3", (datos) => {
             let contenido = "";
-            datos.tipoDeAmbiente.forEach(ambiente => {
-                contenido += Ambientes.renderizar(ambiente);
-            });
+            for(let index=0; index< datos.tipoDeAmbiente.length; index++){
+                contenido += Ambientes.renderizar(datos.tipoDeAmbiente,index);
+            };
             filtros.innerHTML += contenido
         });
     };
 };
 
 class Ambientes {
-    static renderizar(datos) {
+    static renderizar(datos,index) {
         return `
-       <input type="checkbox" name="ambientes" value="${datos}">${datos}
-       <br>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="amb_customCheck${index}" name="ambientes" value="${datos[index]}">
+            <label class="custom-control-label" for="amb_customCheck${index}">${datos[index]}</label>
+        </div>
     `;
     }
 };

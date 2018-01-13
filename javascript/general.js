@@ -9,7 +9,7 @@ function serialize(form) {
         if (form.elements[i].name === "") {
             continue;
         }
-        console.log(form.elements[i].nodeName, form.elements[i].value, form.elements[i].type)
+      //  console.log(form.elements[i].nodeName, form.elements[i].value, form.elements[i].type)
 
         switch (form.elements[i].nodeName.toUpperCase()) {
             case 'INPUT':
@@ -63,7 +63,7 @@ function serialize(form) {
         }
     }
     data = q.join("&");
-    console.log(q);
+    //console.log(q);
     return data;
 }
 ///// Request de datos al servidor
@@ -78,18 +78,14 @@ function Ajax(method, url, onSuccess, pinfo) {
     getData.open(method, url, true);
     getData.send(info);
 };
-////// Envio de datos de la barra de busqueda
-
-
-
 
 ////// Se utiliza para concatenar el codigo HTML
 function composicion(como, donde, lista) {
     let contenido = "";
-    lista.forEach(composicion => {
+    lista.forEach(composicion => {  
         contenido += como.renderizar(composicion);
     })
-    if(donde){donde.innerHTML += contenido;}
+    if (donde) { donde.innerHTML += contenido; }
 };
 
 ///////Filtro de resultados en la barra del buscador
@@ -106,7 +102,7 @@ class BusquedaCocina {
     }
     obtenerDatos() {
         let buscando = document.getElementById("selc-cocina");
-        Ajax("GET", "http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", (datos) => {
+        Ajax("GET", "http://www.mocky.io/v2/5a5a49262e0000231971fb30", (datos) => {
             composicion(BuscadorCocina, buscando, datos.tipoDeCocina);
         });
     };
@@ -115,45 +111,51 @@ let buscandoCocina = new BusquedaCocina();
 buscandoCocina.obtenerDatos();
 
 ////// Validacion direccion y fecha del buscador
-function ValidationBusqueda(evento) {
-    evento.preventDefault();
+function ValidationBusqueda() {
     var mql = window.matchMedia('screen and (min-width:320px) and (max-width:480px)');
     var ok = true;
     let adressval = /^[\s 0-9a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]+$/;
-    if (adressval.test(buscador.buscar_adress.value) == false && !buscador.fecha.value) {
-        document.getElementById("errorbusqueda").innerText = "Por favor introduzca una dirección valida";
-        document.getElementById("errorbusqueda").className = "FormResError";
+    if (adressval.test(buscador.buscar_adress.value) == false) {
+        $("#errorfecha").html("");
+        $("#errorbusqueda").html("Por favor introduzca una dirección valida");
+        $("#errorbusqueda").attr('class','FormResError');
         ok = false;
     }
-
     if (!buscador.buscar_adress.value) {
-        document.getElementById("errorbusqueda").innerText = "Por favor introduzca una localidad";
-        document.getElementById("errorbusqueda").className = "FormResError";
+        $("#errorfecha").html("");
+        $("#errorbusqueda").html("Por favor introduzca una localidad");
+        $("#errorbusqueda").attr('class','FormResError');
         ok = false;
     }
-
-    if (!mql.matches && !buscador.fecha.value && buscador.buscar_adress.value) {
-        document.getElementById("errorbusqueda").innerText = "";
-        document.getElementById("errorfecha").innerText = "Por favor introduzca una fecha";
-        document.getElementById("errorfecha").className = "FormResError";
+    if (!mql.matches && !buscador.fecha.value && buscador.buscar_adress.value && adressval.test(buscador.buscar_adress.value)) {
+        $("#errorbusqueda").html("");
+        $("#errorfecha").html("Por favor introduzca una fecha");
+        $("#errorfecha").attr('class','FormResError');
         ok = false;
     }
-
     if (ok) {
         Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () { window.location.href = 'filtrar.html' }, serialize(document.getElementById("buscar_submit")));
     }
 };
-if(document.getElementById('buscar_submit')){
-document.getElementById('buscar_submit').onsubmit = ValidationBusqueda;
+if (document.getElementById('buscar_submit')) {
+    document.getElementById('buscar_submit').onsubmit = ValidationBusqueda;
 }
-if(document.getElementById('selector-buscador-mvl')){
-$('#selector-buscador-mvl').click(function (e) { 
-    e.preventDefault();
-    $('#myModal').modal('show');
-    let ciudad = $('#buscar_adress_mvl').val();
-    $('#address_ModalLabel').html(ciudad);
-    let mvlbsc = document.getElementById('modal-cocina');
-    $.getJSON("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", (datos) => {
+if (document.getElementById('selector-buscador-mvl')) {
+    $('#selector-buscador-mvl').click(function (e) {
+        e.preventDefault();
+        $('#myModal').modal('show');
+        let ciudad = $('#buscar_adress_mvl').val();
+        $('#address_ModalLabel').html(ciudad);
+        let mvlbsc = document.getElementById('modal-cocina');
+        $.getJSON("http://www.mocky.io/v2/5a5a49262e0000231971fb30", (datos) => {
             composicion(BuscadorCocina, mvlbsc, datos.tipoDeCocina);
+        });
     });
-});}
+    $('#btn-mvl').click(function (ev) {
+        $('#myModal').modal('hide');
+        ev.preventDefault();
+        ValidationBusqueda();
+        $.post("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", function () { window.location.href = 'b_filtrar.html' }, serialize(document.getElementById("form_buscar_submit")));
+    },
+    );
+};
