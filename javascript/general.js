@@ -74,6 +74,9 @@ function Ajax(method, url, onSuccess, pinfo) {
         if (this.readyState == 4 && this.status == 200) {
             if (onSuccess) onSuccess(JSON.parse(this.responseText));
         }
+        if(this.status != 200){
+            
+        }
     };
     getData.open(method, url, true);
     getData.send(info);

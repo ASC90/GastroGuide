@@ -1366,10 +1366,10 @@
             padding-left: 0;
             width: 33%;
         }
-        .footer .foo-row .foo-col2 h3 {
+        .footer h3 {
             font-size: 0.8em;
         }
-        .footer .foo-row .foo-col1 a h4 {
+        .footer a h4 {
             font-size: 0.7em;
         }
     }
@@ -1419,7 +1419,7 @@
 
     @media (min-width:320px) and (max-width:480px) {
         body {
-            font-size: 0.75em;
+
         }
         .mobile-out {
             display: none;
