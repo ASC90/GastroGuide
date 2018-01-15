@@ -131,16 +131,16 @@
 	<div class="container">
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="nav-fotos" aria-selected="false">Publicar o modificar fotos</a>
+				<a class="nav-link text-warning" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="nav-fotos" aria-selected="false">Publicar o modificar fotos</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="nav-videos" aria-selected="false">Publicar Vídeos</a>
+				<a class="nav-link text-warning" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="nav-videos" aria-selected="false"><strong>Publicar Vídeos</strong></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="nav-menu" aria-selected="false">Menu</a>
+				<a class="nav-link text-warning" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="nav-menu" aria-selected="false">Menu</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" id="ofertas-tab" data-toggle="tab" href="#ofertas-tab" role="tab" aria-controls="ofertas" aria-selected="false">Ofertas</a>
+				<a class="nav-link text-warning" id="ofertas-tab" data-toggle="tab" href="#ofertas-tab" role="tab" aria-controls="ofertas" aria-selected="false">Ofertas</a>
 			</li>
 
 		</ul>
@@ -183,36 +183,27 @@
 
 			<div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
 				<h3 class="mt-5">Publicar videos</h3>
-				<section class="seccion-videos">
-					<div>
-						<a name="Videos">
-							<h3>Publicar Vídeos</h3>
-						</a>
-					</div>
-					<div id="cont-video">
-						<div id="inputs-video">
-							<form id="form-video">
-								<span>Título: </span>
-								<input name="titulo" type="text"  id="titVideo" placeholder="Introduce un titulo...">
-								<span class= "errorRojo" id="titVideoOK"></span>
-								<span>Descripción:</span>
-								<input name="descripcion" type="url" id="descVideo" placeholder="Descripción">
-								<span class= "errorRojo" id="descVideoOK"></span>
-								<span>URL video:</span>
-								<input name="url" type="url" id="urlVideo" placeholder="Examinar">
-								<span class= "errorRojo" id="urlVideoOK"></span>
+				
+					<div class="row">
+						<div class="col-lg-12">
+							<form>
+								<div class="form-group">
+									<input class="form-control" id="titVideo" type="text" placeholder="Introduce un titulo...">
+									<span class= "errorRojo" id="titVideoOK"></span>
+									<input class="form-control" id="descVideo" type="text" placeholder="Descripción">
+									<span class= "errorRojo" id="descVideoOK"></span>
+									<input class="form-control" id="urlVideo" type="text" placeholder="Examinar">
+									<span class= "errorRojo" id="urlVideoOK"></span>
+	    							<textarea class="form-control" id="textoVideo" rows="3" placeholder="Introduce un texto..."></textarea>
+									<span class= "errorRojo" id="textoVideoOK"></span>								
+								</div>
+
 							</form>
 						</div>
-
-						<div id="area-video">
-							<textarea name="" id="textoVideo" cols="30" rows="10" placeholder="Introduce un texto..."></textarea>
-							<span class= "errorRojo" id="textoVideoOK"></span>
-							<button class="boton" id="btnVideos">Aplicar</button>
-						</div>
+						<button class="boton" id="btnVideos">Aplicar</button>	
 					</div>
-
-
-				</section>
+						
+				
 			</div>
 
 			<div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
