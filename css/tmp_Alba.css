@@ -1,20 +1,3 @@
 
 
-/*Tipografia responsive esto es SASS*/
-html {
-    font-size: 1rem;
-  };
-  
-  @media(min-width:320px) and (max-width:480px) {
-    html {
-      font-size: 1.2rem;
-    }
-  };
-  
-  @media (min-width:720px) and (max-width:1400px){
-    html {
-      font-size: 1.4rem;
-    }
-  };
-
 
