@@ -1061,8 +1061,7 @@
 
     .container-textsobre>div {
         display: inline-block;
-        width: 20%;
-        margin: 2% 5%;
+
         vertical-align: top;
     }
     /*///////////////////////////Buscador////////////////////////////////////*/
@@ -1200,6 +1199,10 @@
             width: 100%;
         }
         /* Zona Marta Perfil Restaurante*/
+		#tipo
+		{
+			display: none;
+		}
         .perfil_rest #tipo li {
             margin: 5px;
             display: block;
@@ -1297,10 +1300,10 @@
             padding-left: 0;
             width: 33%;
         }
-        .footer .foo-row .foo-col2 h3 {
+        .footer h3 {
             font-size: 0.8em;
         }
-        .footer .foo-row .foo-col1 a h4 {
+        .footer a h4 {
             font-size: 0.7em;
         }
     }
@@ -1336,13 +1339,13 @@
             padding-top: 30px;
             padding-bottom: 0px;
         }
-        .columna1 p {
+        .container-textsobre  p {
             display: none;
         }
-        .columna2 p {
+        .container-textsobre  p {
             display: none;
         }
-        .columna3 p {
+        .container-textsobre  p {
             display: none;
         }
     }
@@ -1350,7 +1353,7 @@
 
     @media (min-width:320px) and (max-width:480px) {
         body {
-            font-size: 0.75em;
+
         }
         .mobile-out {
             display: none;
