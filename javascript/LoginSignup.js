@@ -18,13 +18,13 @@ function validarEmailCliente() {
 function validarPasswordCliente() {
     var campo = document.getElementById("passwordCliente");
     var valido = document.getElementById('passClienteOK');
-    var passRegex = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;   
+    var passRegex = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;   
 
     if (passRegex.test(campo.value)) {
       return true;
     } 
     else {
-      valido.innerText = "Debe contener 8 caracteres como mínimo una mayúscula, minuscula, carácter especial y numero";
+      valido.innerText = "Debe contener 8 caracteres como mínimo una mayúscula, minúscula y número";
       return false;
     }
 };
@@ -59,13 +59,13 @@ function validarEmailRestaurante() {
 function validarPasswordRestaurante() {
     var campo = document.getElementById("passwordRestaurante");
     var valido = document.getElementById('passRestauranteOK');
-    var passRegex = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;   
+    var passRegex = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;   
 
     if (passRegex.test(campo.value)) {
       return true;
     } 
     else {
-      valido.innerText = "Debe contener 8 caracteres como mínimo una mayúscula, minuscula, carácter especial y numero";
+      valido.innerText = "Debe contener 8 caracteres como mínimo una mayúscula, minúscula y número";
       return false;
     }
 };
@@ -74,7 +74,20 @@ document.getElementById("btnSubmitRestaurante").onclick = function(){
   document.getElementById("emailRestauranteOK").innerText= "";
   document.getElementById("passRestauranteOK").innerText= "";
 
+  let url = "http://www.mocky.io/v2/5a5cc9ee2e0000c1099f842b";
+  let badurl = "http://www.mocky.io/v2/5a5cce592e0000931e9f8440";
+
   if( validarEmailRestaurante() && validarPasswordRestaurante() )
-  Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function(){window.location.href = 'homerestaurante.html'} , serialize(document.getElementById("inicio-sesion-restaurante")));
+  Ajax("POST","http://www.mocky.io/v2/5a5cc9ee2e0000c1099f842b", function(obj){
+    if (obj.status == "OK")
+    {window.location.href = 'homerestaurante.html';
+    
+  }
+    else {
+       document.getElementById("passRestauranteOK").innerText = "El usuario no existe";
+
+    }
+  } ,
+   serialize(document.getElementById("inicio-sesion-restaurante")));
 };
 
