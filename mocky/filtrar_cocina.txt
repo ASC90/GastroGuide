@@ -1,9 +1,10 @@
-﻿// JSON Document
-URL: http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4
+// JSON Document
+URL: http://www.mocky.io/v2/5a5a49262e0000231971fb30
 {
 	"filtrar": "Cocina",
-	"tipoDeCocina": ["Española","Inida","Japonesa",
+	"tipoDeCocina": ["Española","India","Japonesa",
 				  "China","Italiana","Mexicana",
 				  "Tailandesa","Coreana","Mediterránea",
-				  "Americana","Marroquí","Escandinava"]
+				  "Americana","Marroquí","Escandinava"],
+	"valor": ["0","1","2","3","4","5","6","7","8","9","10","11"]
 }

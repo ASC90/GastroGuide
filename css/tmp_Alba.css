@@ -1,15 +1,20 @@
-@media (min-width:320px) and (max-width:480px) {
-.lover{
-    width: 100%;
-}
-.lover img{
-    height: 200px;
-}
-.chef{
-    width: 100%;
-}
-.chef img{
-    height: 210px;
-}
 
-}
+
+/*Tipografia responsive esto es SASS*/
+html {
+    font-size: 1rem;
+  };
+  
+  @media(min-width:320px) and (max-width:480px) {
+    html {
+      font-size: 1.2rem;
+    }
+  };
+  
+  @media (min-width:720px) and (max-width:1400px){
+    html {
+      font-size: 1.4rem;
+    }
+  };
+
+

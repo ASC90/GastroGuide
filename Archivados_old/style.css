@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 1rem;
+    font-size: 12pt;
 }
 
 
@@ -309,7 +309,7 @@ div.icon-user {
 
 .pvideo .pcol2 {
     width: 20em;
-    /*margin-left: 2em;*/
+    margin-left: 2em;
     vertical-align: top
 }
 
@@ -574,108 +574,7 @@ section#section-fichas {
     margin-left: 5em;
     vertical-align: top;
 }
-/*Estetica de los Range-sliders (Precio y Nota de Filtros*/
-.range {
-    display: table;
-    position: relative;
-    height: 25px;
-    margin-top: 20px;
-    background-color: rgb(245, 245, 245);
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
 
-.range input[type="range"] {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    -ms-appearance: none !important;
-    -o-appearance: none !important;
-    appearance: none !important;
-
-    display: table-cell;
-    width: 100%;
-    background-color: transparent;
-    height: 25px;
-    cursor: pointer;
-}
-.range input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    -ms-appearance: none !important;
-    -o-appearance: none !important;
-    appearance: none !important;
-
-    width: 11px;
-    height: 25px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0px;
-    background-color: rgb(153, 153, 153);
-}
-
-.range input[type="range"]::-moz-slider-thumb {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    -ms-appearance: none !important;
-    -o-appearance: none !important;
-    appearance: none !important;
-    
-    width: 11px;
-    height: 25px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0px;
-    background-color: rgb(153, 153, 153);
-}
-
-.range output {
-    display: table-cell;
-    padding: 3px 5px 2px;
-    min-width: 40px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(153, 153, 153);
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    width: 1%;
-    white-space: nowrap;
-    vertical-align: middle;
-
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: -moz-none;
-    -o-user-select: none;
-    user-select: none;
-}
-.range input[type="range"] {
-    outline: none;
-}
-.range.range-warning input[type="range"]::-webkit-slider-thumb {
-    background-color: rgb(240, 173, 78);
-}
-.range.range-warning input[type="range"]::-moz-slider-thumb {
-    background-color: rgb(240, 173, 78);
-}
-.range.range-warning output {
-    background-color: rgb(240, 173, 78);
-}
-.range.range-warning input[type="range"] {
-    outline-color: rgb(240, 173, 78);
-}
 
 /*////////////////////////////////////////////////HOME RESTAURANTE////////////////////////////////////////////////////////////////*/
 
@@ -1172,7 +1071,7 @@ ul#listaIngredientes{
 .cuadro-blanco {
     margin: 1em auto;
     width: 75%;
-    height: 55px;
+    height: 40px;
     /*max-width: 900px;*/
     padding-bottom: 15px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.50);
@@ -1224,17 +1123,17 @@ footer a {
     text-align: center;
 }
 
-.foo-row {
+.row {
     display: inline-block;
     width: auto;
 }
 
-.foo-col1 {
+.col1 {
     display: inline-block;
     padding-right: 5%;
 }
 
-.foo-col1 h4 {
+.col1 h4 {
     padding-top: 0.5em;
     margin: 0;
 }
@@ -1249,13 +1148,13 @@ img#logo-footer {
     height: 100pt;
 }
 
-.foo-col2 {
+.col2 {
     display: inline-block;
     padding-left: 5%;
     font-family: entypo;
 }
 
-.foo-col2 h3 {
+.col2 h3 {
     padding-left: 1.6em;
     font-family: 'Muli', sans-serif;
 }
@@ -1265,7 +1164,7 @@ footer ul li {
     display: inline-block;
 }
 
-.foo-col2 ul li img {
+.col2 ul li img {
     padding-right: 0.3em;
 }
 
@@ -1323,12 +1222,7 @@ footer ul li {
         font-size: 1.5em;
         font-weight: 700;
     }
-  	
-	.pdatos div:first-child 
-	{
-    	width: 100%;
-	}
-	
+  
    .formreslist div:last-child {
     text-align: center;
    }
@@ -1343,9 +1237,6 @@ footer ul li {
     .perfil_rest h2{
     /*font-size: 1.3em;*/
     }
-	.perfil_rest h4{
-		font-size: 1.3em;
-	}
     .perfil_rest .popinion .pcol3 {
         width: 3em;
         font-size: 1.3em;
@@ -1404,7 +1295,7 @@ footer p#texto-footer{
     font-size: 0.5em;
 }
 
-footer> div> div> div.foo-col2> ul> li> a> img{
+footer> div> div> div.col2> ul> li> a> img{
     width: 55%;
 }
 footer> div> div> div> img#logo-footer{
@@ -1412,18 +1303,18 @@ footer> div> div> div> img#logo-footer{
     height: 60pt;
     padding-top: 10px;
 }
-.footer .foo-row .foo-col1{
+.footer .row .col1{
     padding-right: 0;
     width: 33%; 
 }
-.footer .foo-row .foo-col2{
+.footer .row .col2{
     padding-left: 0;
     width: 33%;
 }
-.footer .foo-row .foo-col2 h3{
+.footer .row .col2 h3{
     font-size: 0.8em;     
 }
-.footer .foo-row .foo-col1 a h4{
+.footer .row .col1 a h4{
     font-size: 0.7em; 
 }
 
@@ -1469,7 +1360,6 @@ footer> div> div> div> img#logo-footer{
         width: 100%;
         margin: 0;
         padding: 0 0 0.5em 0;
-        display: none;
     }
     .formulario {
         padding: 1em;
@@ -1727,7 +1617,3 @@ footer> div> div> div> img#logo-footer{
 
    
 }
-@media (min-width:720px) and (max-width:1400px) {
-    #form_buscar_submit {
-        display: none;
-    }
