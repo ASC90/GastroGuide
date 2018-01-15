@@ -48,8 +48,7 @@ function openAndLoad (pUrl, callback)
 		{
 			lista += '<li>'+jsonObj.recetas.ingredientes[i]+'</li>';
 		}
-		document.getElementById("recetas").innerHTML += '<h2>RECETAS</h2><div><img src="'+jsonObj.recetas.imagen+'" alt="foto receta"><h3 class="mt-5 text-center">'+jsonObj.recetas.nombre+'</h3></div><div class="prep"><h4>Preparación</h4>'+cadena+'</div><div class="ingre"><h4>Ingredientes</h4><ul>'+lista+'</ul></div></div>';
-		
+		document.getElementById("recetas").innerHTML += '<h2>RECETAS</h2><div><img src="'+jsonObj.recetas.imagen+'" alt="foto receta"><h3 class="mt-5 text-center">'+jsonObj.recetas.nombre+'</h3></div><div class="row"><div class="prep col-lg-7"><h4>Preparación</h4>'+cadena+'</div><div class="ingre col-lg-4"><h4>Ingredientes</h4><ul>'+lista+'</ul></div></div></div>';
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		if (this.status === 200)
 		{
