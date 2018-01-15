@@ -67,12 +67,17 @@ function serialize(form) {
     return data;
 }
 ///// Request de datos al servidor
-function Ajax(method, url, onSuccess, pinfo) {
+function Ajax(method, url, onSuccess, pinfo, iderror) {
     let getData = new XMLHttpRequest();
     let info = pinfo || null;//email=e@e.es&pass=xxx
     getData.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            if (onSuccess) onSuccess(JSON.parse(this.responseText));
+        if (this.readyState == 4) {
+            if (this.status == 200) {
+                if (onSuccess) onSuccess(JSON.parse(this.responseText));
+            }
+            else {
+                document.getElementById(iderror).innerText = "Error de servidor. Por favor inténtelo de nuevo en unos segundos.";
+            }
         }
     };
     getData.open(method, url, true);
@@ -162,11 +167,12 @@ if (document.getElementById('selector-buscador-mvl')) {
     $('#btn-mvl').click(function (ev) {
         ev.preventDefault();
         if (ValidationBusqueda($('#mvl_eFecha'), $("#mvl_eBusqueda"), $('#buscar_adress_mvl').val(), $('#fecha_mvl').val())) {
-            $.post("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4",serialize(document.getElementById("form_buscar_submit")), function () { 
+            $.post("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", serialize(document.getElementById("form_buscar_submit")), function () {
                 $('#myModal').modal('hide');
-                window.location.href = 'b_filtrar.html' ;
+                window.location.href = 'b_filtrar.html';
             });
-        }}
+        }
+    }
     );
 };
 
