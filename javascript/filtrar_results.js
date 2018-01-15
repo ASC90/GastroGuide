@@ -69,7 +69,6 @@ class Filtrado {
     };
 };
 
-
 /// FILTRO DE AMBIENTE
 class FiltroAmbientes {
     obtenerAmbientes() {
@@ -94,13 +93,27 @@ class Ambientes {
     `;
     }
 };
+////// AJUSTE FILTROS MEDIAQUERY
+if(window.matchMedia('screen and (min-width:320px) and (max-width:480px)').matches){
+$('#accordion a').attr('class' , 'collapsed text-dark');
+$('.show').attr('class' , 'collapse')
+};
 
-//// LLAMADAS
+///////RANGE SLIDER DE PRECIOS & NOTA
+function rangeSlider(que,donde,valor){
+$(que).on('change', function () {
+    $(donde).html($(this).val()+valor);
+});}
+
+//// LLAMADAS 
 let filtrando = new Filtrado();
 filtrando.obtenerDatos();
 let buscando = new Buscador();
 buscando.obtenerData();
 let ambientando = new FiltroAmbientes();
 ambientando.obtenerAmbientes();
+rangeSlider('#precioAlto','#rangeAlto','€');
+rangeSlider('#precioBajo','#rangeBajo','€');
+rangeSlider('#notaOpinion','#rangeNota',"");
 
 

@@ -9,7 +9,7 @@ function serialize(form) {
         if (form.elements[i].name === "") {
             continue;
         }
-      //  console.log(form.elements[i].nodeName, form.elements[i].value, form.elements[i].type)
+        //  console.log(form.elements[i].nodeName, form.elements[i].value, form.elements[i].type)
 
         switch (form.elements[i].nodeName.toUpperCase()) {
             case 'INPUT':
@@ -82,7 +82,7 @@ function Ajax(method, url, onSuccess, pinfo) {
 ////// Se utiliza para concatenar el codigo HTML
 function composicion(como, donde, lista) {
     let contenido = "";
-    lista.forEach(composicion => {  
+    lista.forEach(composicion => {
         contenido += como.renderizar(composicion);
     })
     if (donde) { donde.innerHTML += contenido; }
@@ -111,35 +111,39 @@ let buscandoCocina = new BusquedaCocina();
 buscandoCocina.obtenerDatos();
 
 ////// Validacion direccion y fecha del buscador
-function ValidationBusqueda() {
+function ValidationBusqueda(eFecha,eBusqueda) {
     var mql = window.matchMedia('screen and (min-width:320px) and (max-width:480px)');
     var ok = true;
     let adressval = /^[\s 0-9a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]+$/;
     if (adressval.test(buscador.buscar_adress.value) == false) {
-        $("#errorfecha").html("");
-        $("#errorbusqueda").html("Por favor introduzca una dirección valida");
-        $("#errorbusqueda").attr('class','FormResError');
+        $(eFecha).html("");
+        $(eBusqueda).html("Por favor introduzca una dirección valida");
+        $(eBusqueda).attr('class', 'FormResError');
         ok = false;
     }
     if (!buscador.buscar_adress.value) {
-        $("#errorfecha").html("");
-        $("#errorbusqueda").html("Por favor introduzca una localidad");
-        $("#errorbusqueda").attr('class','FormResError');
+        $(eFecha).html("");
+        $(eBusqueda).html("Por favor introduzca una localidad");
+        $(eBusqueda).attr('class', 'FormResError');
         ok = false;
     }
     if (!mql.matches && !buscador.fecha.value && buscador.buscar_adress.value && adressval.test(buscador.buscar_adress.value)) {
-        $("#errorbusqueda").html("");
-        $("#errorfecha").html("Por favor introduzca una fecha");
-        $("#errorfecha").attr('class','FormResError');
+        $(eBusqueda).html("");
+        $(eFecha).html("Por favor introduzca una fecha");
+        $(eFecha).attr('class', 'FormResError');
         ok = false;
     }
     if (ok) {
-        Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () { window.location.href = 'filtrar.html' }, serialize(document.getElementById("buscar_submit")));
+        Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () { window.location.href = 'b_filtrar.html' }, serialize(document.getElementById("buscar_submit")));
     }
 };
 if (document.getElementById('buscar_submit')) {
-    document.getElementById('buscar_submit').onsubmit = ValidationBusqueda;
-}
+    $('#btn_busqueda').click(function(env) {
+        env.preventDefault();
+        ValidationBusqueda("#errorfecha","#errorbusqueda");
+    });
+};
+    
 if (document.getElementById('selector-buscador-mvl')) {
     $('#selector-buscador-mvl').click(function (e) {
         e.preventDefault();
@@ -154,7 +158,7 @@ if (document.getElementById('selector-buscador-mvl')) {
     $('#btn-mvl').click(function (ev) {
         $('#myModal').modal('hide');
         ev.preventDefault();
-        ValidationBusqueda();
+        ValidationBusqueda('#mvl_eFecha','#mvl_eBusqueda');
         $.post("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", function () { window.location.href = 'b_filtrar.html' }, serialize(document.getElementById("form_buscar_submit")));
     },
     );
