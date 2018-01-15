@@ -959,6 +959,12 @@
         padding: 0.3em;
         width: 320px;
     }
+#pub-con-f {
+    display: inline-flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
     .seccion-menu form button {
         margin-left: 18em;
