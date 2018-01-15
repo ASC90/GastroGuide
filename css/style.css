@@ -3,7 +3,6 @@
 /* CSS Document */
 
 @import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
-@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 body {
     font-family: "Muli", sans-serif!important;
     margin: 0;
@@ -12,7 +11,6 @@ body {
     font-size: 1rem;
 }
 
-;
 
 /*////////////////////////////////////////////////Navbar///////////////////////////////////////////////////////////////////////*/
 
@@ -34,7 +32,7 @@ li.lista-navbar a {
     text-align: center;
     padding: 4px 12px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 li.lista-navbar a:hover {
@@ -330,7 +328,7 @@ div.icon-user {
     white-space: nowrap;
     text-align: center;
     text-decoration: underline;
-    margin: auto;
+    margin:auto;
     margin-bottom: 5%;
     width: 100%;
     height: 1%;
@@ -339,7 +337,6 @@ div.icon-user {
 .FormResError {
     color: red;
 }
-
 
 /* Columna imagen+subir */
 
@@ -364,6 +361,7 @@ div.icon-user {
 .formreslist {
     width: 60%;
     display: inline-block;
+   
 }
 
 
@@ -531,112 +529,6 @@ section#section-filtro {
 }
 
 
-/*Estetica de los Range-sliders (Precio y Nota de Filtros)*/
-
-.range {
-    display: table;
-    position: relative;
-    height: 25px;
-    margin-top: 20px;
-    background-color: rgb(245, 245, 245);
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-.range input[type="range"] {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    -ms-appearance: none !important;
-    -o-appearance: none !important;
-    appearance: none !important;
-    display: table-cell;
-    width: 100%;
-    background-color: transparent;
-    height: 25px;
-    cursor: pointer;
-}
-
-.range input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    -ms-appearance: none !important;
-    -o-appearance: none !important;
-    appearance: none !important;
-    width: 11px;
-    height: 25px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0px;
-    background-color: rgb(153, 153, 153);
-}
-
-.range input[type="range"]::-moz-slider-thumb {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    -ms-appearance: none !important;
-    -o-appearance: none !important;
-    appearance: none !important;
-    width: 11px;
-    height: 25px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0px;
-    background-color: rgb(153, 153, 153);
-}
-
-.range output {
-    display: table-cell;
-    padding: 3px 5px 2px;
-    min-width: 40px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(153, 153, 153);
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    width: 1%;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: -moz-none;
-    -o-user-select: none;
-    user-select: none;
-}
-
-.range input[type="range"] {
-    outline: none;
-}
-
-.range.range-warning input[type="range"]::-webkit-slider-thumb {
-    background-color: rgb(240, 173, 78);
-}
-
-.range.range-warning input[type="range"]::-moz-slider-thumb {
-    background-color: rgb(240, 173, 78);
-}
-
-.range.range-warning output {
-    background-color: rgb(240, 173, 78);
-}
-
-.range.range-warning input[type="range"] {
-    outline-color: rgb(240, 173, 78);
-}
-
-
 /*/////////////////////////////////////////FICHAS FILTRADAS RESTAURANTES///////////////////////////////////////////////////////////////*/
 
 section#section-fichas {
@@ -682,7 +574,108 @@ section#section-fichas {
     margin-left: 5em;
     vertical-align: top;
 }
+/*Estetica de los Range-sliders (Precio y Nota de Filtros*/
+.range {
+    display: table;
+    position: relative;
+    height: 25px;
+    margin-top: 20px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
 
+.range input[type="range"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+
+    display: table-cell;
+    width: 100%;
+    background-color: transparent;
+    height: 25px;
+    cursor: pointer;
+}
+.range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+
+    width: 11px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0px;
+    background-color: rgb(153, 153, 153);
+}
+
+.range input[type="range"]::-moz-slider-thumb {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+    
+    width: 11px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0px;
+    background-color: rgb(153, 153, 153);
+}
+
+.range output {
+    display: table-cell;
+    padding: 3px 5px 2px;
+    min-width: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(153, 153, 153);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+.range input[type="range"] {
+    outline: none;
+}
+.range.range-warning input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(240, 173, 78);
+}
+.range.range-warning input[type="range"]::-moz-slider-thumb {
+    background-color: rgb(240, 173, 78);
+}
+.range.range-warning output {
+    background-color: rgb(240, 173, 78);
+}
+.range.range-warning input[type="range"] {
+    outline-color: rgb(240, 173, 78);
+}
 
 /*////////////////////////////////////////////////HOME RESTAURANTE////////////////////////////////////////////////////////////////*/
 
@@ -897,7 +890,6 @@ section#opciones {
     display: inline-block;
 }
 
-
 /*////////////////////////////////////////////////Video///////////////////////////////////////////////////////////////////////*/
 
 .seccion-videos {
@@ -1090,27 +1082,20 @@ div.recetas h3 {
     display: block;
 }
 
-.formresflo {
-    height: 8em;
-}
+.formresflo{height:8em; }
 
-.formresflo img {
-    margin-top: 1em;
+.formresflo img{
+    margin-top:1em;
     height: 100%;
 }
 
-.imgsrc2 {
-    margin-left: 10em;
-}
+.imgsrc2{margin-left:10em;}
 
-.paddbtn {
-    float: right;
-}
+.paddbtn{float:right;}
 
-ul#listaIngredientes {
-    margin-left: 8em;
+ul#listaIngredientes{
+    margin-left:8em;
 }
-
 
 /*////////////////////////////////////////////////construccion///////////////////////////////////////////////////////////////////////*/
 
@@ -1149,7 +1134,7 @@ ul#listaIngredientes {
     text-align: center;
 }
 
-.premiamos-tu-confianza img {
+.premiamos-tu-confianza img{
     border-radius: 25px;
 }
 
@@ -1298,28 +1283,36 @@ footer ul li {
     font-size: 0.7em;
 }
 
-.errorRojo {
-    color: red;
+.errorRojo{
+    color:red;
     font-style: italic;
 }
 
-@media (min-width:320px) and (max-width:480px) {
-    /*///////////////////////////////////////////////FormularioRestaurante/////////////////////////////////////////////*/
-    .formresimage {
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 5%;
+
+
+@media (min-width:320px) and (max-width:480px){
+
+
+     /*///////////////////////////////////////////////FormularioRestaurante/////////////////////////////////////////////*/
+   .formresimage {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5%;
+    
     }
+ 
     .formreslist {
-        margin: 0 auto;
-        display: block;
+     margin: 0 auto;
+     display: block;
     }
+ 
     .formreslist input {
-        width: 100%;
+    width: 100%;
     }
-    /* Zona Marta Perfil Restaurante*/
-    .perfil_rest #tipo li {
-        margin: 5px;
+
+   /* Zona Marta Perfil Restaurante*/
+    .perfil_rest #tipo li{
+        margin:5px;
         display: block;
         width: 120px;
         text-align: center;
@@ -1329,25 +1322,29 @@ footer ul li {
         font-size: 1.5em;
         font-weight: 700;
     }
-    .pdatos div:first-child {
-        width: 100%;
-    }
-    .formreslist div:last-child {
-        text-align: center;
-    }
+  	
+	.pdatos div:first-child 
+	{
+    	width: 100%;
+	}
+	
+   .formreslist div:last-child {
+    text-align: center;
+   }
+
     .perfil_rest article.pmenu {
         width: 100%
     }
-    .perfil_rest .popinion .pcol2 {
-        width: 18em;
-        margin-right: 2em;
+   .perfil_rest .popinion .pcol2 {
+    width: 18em;
+    margin-right: 2em;
     }
-    .perfil_rest h2 {
+    .perfil_rest h2{
     /*font-size: 1.3em;*/
     }
-    .perfil_rest h4 {
-        font-size: 1.3em;
-    }
+	.perfil_rest h4{
+		font-size: 1.3em;
+	}
     .perfil_rest .popinion .pcol3 {
         width: 3em;
         font-size: 1.3em;
@@ -1358,92 +1355,112 @@ footer ul li {
     .perfil_rest .prep {
         width: 20em;
     }
-    .perfil_rest>#recetas>div>div>p {
-        width: 18em;
+
+    .perfil_rest > #recetas> div> div> p{
+
+        width: 18em; 
     }
-    .perfil_rest>#poferta>div>p {
-        width: 12em;
+
+    .perfil_rest> #poferta> div> p{
+        width: 12em; 
     }
-    .perfil_rest>#recetas>div.ingre {
+    .perfil_rest> #recetas> div.ingre{
         width: 13em;
         vertical-align: top;
     }
-    .perfil_rest .popinion .pcol1 {
+
+    .perfil_rest .popinion .pcol1{
         width: 3em;
         height: 3em;
         margin-right: 2em;
     }
-    .perfil_rest .popinion .pcol2 h4 {
+    .perfil_rest .popinion .pcol2 h4{
         margin-top: -2em;
         margin-left: 4em;
     }
-    .perfil_rest .precetas .ingre {
+    .perfil_rest .precetas .ingre{
         width: 13em;
         vertical-align: top;
         margin-left: 0;
     }
-    .perfil_rest .pvideo .pcol1 iframe {
+    .perfil_rest .pvideo .pcol1 iframe{
         width: 100%;
         height: 100%;
     }
-    .perfil_rest .pvideo .pcol2>p {
-        width: 18em;
+     .perfil_rest .pvideo .pcol2 > p{
+        width: 18em; 
     }
-    /* Footer */
-    footer div.contenedor>p {
-        font-size: 0.8em;
+}
+/* Footer */ 
+
+@media (min-width:320px) and (max-width:480px){
+
+footer div.contenedor> p{
+    font-size: 0.8em;
+}
+
+footer p#texto-footer{
+    font-size: 0.5em;
+}
+
+footer> div> div> div.foo-col2> ul> li> a> img{
+    width: 55%;
+}
+footer> div> div> div> img#logo-footer{
+    width: 80pt;
+    height: 60pt;
+    padding-top: 10px;
+}
+.footer .foo-row .foo-col1{
+    padding-right: 0;
+    width: 33%; 
+}
+.footer .foo-row .foo-col2{
+    padding-left: 0;
+    width: 33%;
+}
+.footer .foo-row .foo-col2 h3{
+    font-size: 0.8em;     
+}
+.footer .foo-row .foo-col1 a h4{
+    font-size: 0.7em; 
+}
+
+}
+
+/* Home Principal */ 
+@media (min-width:320px) and (max-width:480px){
+
+.premiamos-tu-confianza{
+    margin: 0;
+}
+.premiamos-tu-confianza img{
+    width: 300px;
+    margin-top: 15px;
+}
+.img-fondo{
+    display:none;
+}
+.container-textsobre{
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+.columna1 p{
+    display: none; 
+}
+.columna2 p{
+    display: none;
+}
+.columna3 p{
+    display: none;
+}
+}
+
+/* Pagina de Filtros y buscador */
+@media (min-width:320px) and (max-width:480px) {
+    body{
+        font-size: 0.75em;
     }
-    footer p#texto-footer {
-        font-size: 0.5em;
-    }
-    footer>div>div>div.foo-col2>ul>li>a>img {
-        width: 55%;
-    }
-    footer>div>div>div>img#logo-footer {
-        width: 80pt;
-        height: 60pt;
-        padding-top: 10px;
-    }
-    .footer .foo-row .foo-col1 {
-        padding-right: 0;
-        width: 33%;
-    }
-    .footer .foo-row .foo-col2 {
-        padding-left: 0;
-        width: 33%;
-    }
-    .footer .foo-row .foo-col2 h3 {
-        font-size: 0.8em;
-    }
-    .footer .foo-row .foo-col1 a h4 {
-        font-size: 0.7em;
-    }
-    /* Home Principal */
-    .premiamos-tu-confianza {
-        margin: 0;
-    }
-    .premiamos-tu-confianza img {
-        width: 300px;
-        margin-top: 15px;
-    }
-    .img-fondo {
-        display: none;
-    }
-    .container-textsobre {
-        padding-top: 30px;
-        padding-bottom: 0px;
-    }
-    .columna1 p {
-        display: none;
-    }
-    .columna2 p {
-        display: none;
-    }
-    .columna3 p {
-        display: none;
-    }
-    
-    /* Pagina de Filtros y buscador */
     .mobile-out {
         display: none;
     }
@@ -1464,7 +1481,7 @@ footer ul li {
     #section-filtro {
         display: none !important;
     }
-    .contenedor-fichas {
+    .contenedor-fichas{
         padding: 0;
         height: auto;
     }
@@ -1473,194 +1490,243 @@ footer ul li {
         display: block;
         overflow-y: hidden;
     }
-    .img-ficha img {
+    .img-ficha img{
         width: 100%;
         height: auto;
         vertical-align: auto;
         margin-top: -90px;
     }
-    .text-ficha {
+    .text-ficha{
         height: 8em;
     }
-    .opiniones-nota {
+    .opiniones-nota{
         margin-left: 0;
         height: 8em;
     }
-    #section-fichas h2 {
+    #section-fichas h2{
         margin: 0.5em 0 0 0;
     }
-    /* Log in */
-    .lover {
+}
+
+/* Log in */
+@media (min-width:320px) and (max-width:480px) {
+    .lover{
         width: 100%;
     }
-    .lover img {
+    .lover img{
         height: 200px;
     }
-    .chef {
+    .chef{
         width: 100%;
     }
-    .chef img {
+    .chef img{
         height: 210px;
     }
+    
+    }
+
     /*Home Restaurante*/
-    #titulo-publicar-contenido {
-        padding-left: 8em;
-    }
-    #titulo-publicar-contenido h2 {
-        display: block;
-        margin-right: 10em;
-        border: none;
-    }
-    #bloque1 {
-        display: inline-block;
-        padding: 0;
-    }
-    #bloque1 img {
-        display: inline-block;
-        margin-bottom: 1em;
-    }
-    #bloque1 h3 {
-        display: none;
-    }
-    #bloque2 {
-        display: inline-block;
-        padding: 0;
-    }
-    #bloque2 img {
-        display: inline-block;
-        margin-bottom: 1em;
-    }
-    #bloque2 h3 {
-        display: none;
-    }
-    #pub-con-f-title {
-        padding-left: 4em;
-    }
-    #pub-con-f-title h3 {
-        display: block;
-        width: none;
-        border-bottom: 0.3em;
-    }
-    section#opciones {
-        padding-left: 5em;
-    }
-    section#section-panel-control {
-        display: none;
-    }
-    #pub-con-f-title {
-        display: block !important;
-        margin-bottom: 0;
-    }
-    section#pub-con-f {
-        margin: 0;
-        padding: 0;
-    }
-    #pub-con-gal img {
-        height: 50%;
-        width: auto;
-    }
-    #pub-con-f-an-tab-txt {
-        margin: 0;
-        height: auto;
-        display: block !important;
-    }
-    .seccion-videos div {
-        padding-left: 4em;
-    }
-    div#area-video {
-        display: block;
-        margin-left: -3em;
-    }
-    .seccion-menu div h3 {
-        width: 100%;
-        border-bottom: 0;
-    }
-    .seccion-menu {
-        margin: 0;
-        padding: 0;
-        padding-left: 4em;
-    }
-    div#ofertas {
-        display: block;
-        border-bottom: 0;
-        margin-left: 4em;
-    }
-    .form-ofertas2 textarea {
-        width: 320px;
-        margin-left: -1.5em;
-    }
-    div.recetas {
-        display: block;
-        margin-left: 4em;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        border-bottom: 0;
-    }
-    .form-recetas label {
-        padding-left: 4em;
-        font-weight: bold;
-        display: block;
-        padding-bottom: 0.5em;
-    }
-    input#receta {
-        margin-left: 5em;
-        margin-bottom: 0.5em;
-    }
-    input#ingredientes {
-        margin-left: 5em;
-    }
-    .form-recetas button {
-        margin-left: 5em;
-        display: block;
-    }
-    .form-recetas textarea {
-        margin-left: 4em;
-        width: 300px;
-    }
-    #pub-con-f-an-tab-txt {
-        margin: 0;
-        height: auto;
-        display: block !important;
-        vertical-align: none;
-    }
-    #pub-con-f {
-        display: block !important;
-    }
-    #pub-con-f-an {
-        min-width: 250px;
-        margin-left: 5em;
-        display: block;
-        height: 100px;
-    }
-    #pub-con-f-an-tab {
-        height: auto;
-        display: block;
-    }
-    #pub-con-f>div>div {
-        margin: 0 10px 0px 32px;
-    }
-    .imgsrc2 {
-        margin-left: 4em;
-    }
-    #area-video textarea {
-        width: 320px;
-    }
-    .seccion-videos h3 {
-        border-bottom: 0;
-    }
-    .form-ofertas2 button {
-        display: block;
-        margin-left: 23em;
-    }
-    .seccion-menu form button {
-        margin-left: 25em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    .formresimage2 {
-        margin-left: 5em;
-    }
+
+        @media (min-width:320px) and (max-width:480px){
+         #titulo-publicar-contenido{
+            padding-left: 8em;
+
+        }    
+    
+        #titulo-publicar-contenido h2{
+            display: block;
+            margin-right: 10em;
+            border: none;
+        }
+
+        #bloque1 {
+            display: inline-block; 
+            padding: 0;          
+        }
+
+        #bloque1 img {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        #bloque1 h3 {
+            display: none;
+        }
+
+        #bloque2 {
+            display: inline-block; 
+            padding: 0;
+        }
+
+        #bloque2 img {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        #bloque2 h3 {
+            display: none;
+        }
+         
+         #pub-con-f-title {
+              padding-left:4em;
+        }       
+        
+        #pub-con-f-title h3{
+            display: block;
+            width: none;
+            border-bottom: 0.3em;  
+        }
+
+        section#opciones{
+            padding-left: 5em;
+        }
+
+
+        section#section-panel-control {
+            display: none;
+        }
+       
+       #pub-con-f-title  {
+            display: block !important;
+            margin-bottom: 0;
+
+        }
+
+        section#pub-con-f{
+            margin:0;
+            padding: 0;
+        }
+
+        #pub-con-gal img {
+            height: 50%;
+            width: auto;
+        }
+
+        #pub-con-f-an-tab-txt{
+            margin: 0;
+            height: auto;
+            display: block !important;
+        }
+
+        .seccion-videos div{
+            padding-left: 4em;
+        }
+
+        div#area-video {
+            display: block;
+            margin-left: -3em;
+        }
+
+     
+        .seccion-menu div h3 {
+            width: 100%;
+            border-bottom: 0;
+        }
+
+        .seccion-menu {
+            margin: 0;
+            padding: 0;
+            padding-left: 4em;
+        }
+
+        div#ofertas {
+            display: block;
+            border-bottom: 0;
+            margin-left: 4em;
+        }
+
+        .form-ofertas2 textarea {
+            width: 320px;
+            margin-left: -1.5em;
+        }
+        div.recetas {
+            display: block;
+            margin-left: 4em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-bottom: 0;
+        } 
+
+        .form-recetas label {
+            padding-left: 4em;
+            font-weight: bold;
+            display: block;
+            padding-bottom: 0.5em;
+        }    
+        input#receta {
+            margin-left: 5em;
+            margin-bottom: 0.5em;
+        }
+
+        input#ingredientes {
+             margin-left: 5em;
+        }
+        
+        .form-recetas button {
+            margin-left: 5em;
+            display: block;
+        }
+
+        .form-recetas textarea{
+            margin-left:4em;
+            width: 300px;
+        }
+
+        #pub-con-f-an-tab-txt{
+            margin:0;
+            height: auto;
+            display: block !important; 
+            vertical-align: none; 
+        }
+        #pub-con-f{
+            display: block !important;
+        }
+        
+        #pub-con-f-an{
+            min-width: 250px;
+            margin-left: 5em;
+            display: block;
+            height: 100px;
+        }
+
+        #pub-con-f-an-tab{
+            height: auto;
+            display: block; 
+        }
+
+        #pub-con-f>div>div{
+            margin: 0 10px 0px 32px;
+        }
+
+        .imgsrc2{
+            margin-left: 4em;
+        }
+
+        #area-video textarea{
+            width: 320px;
+        }
+
+        .seccion-videos h3{
+            border-bottom: 0;
+        }
+        .form-ofertas2 button {
+            display: block;
+            margin-left: 23em;
+        }
+
+        .seccion-menu form button {
+            margin-left: 25em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .formresimage2 {
+             margin-left: 5em;
+        }
+
+   
+}
+@media (min-width:720px) and (max-width:1400px) {
     #form_buscar_submit {
         display: none;
     }
-}
