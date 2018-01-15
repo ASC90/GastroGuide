@@ -1071,7 +1071,7 @@ ul#listaIngredientes{
 .cuadro-blanco {
     margin: 1em auto;
     width: 75%;
-    height: 40px;
+    height: 55px;
     /*max-width: 900px;*/
     padding-bottom: 15px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.50);
@@ -1123,17 +1123,17 @@ footer a {
     text-align: center;
 }
 
-.row {
+.foo-row {
     display: inline-block;
     width: auto;
 }
 
-.col1 {
+.foo-col1 {
     display: inline-block;
     padding-right: 5%;
 }
 
-.col1 h4 {
+.foo-col1 h4 {
     padding-top: 0.5em;
     margin: 0;
 }
@@ -1148,13 +1148,13 @@ img#logo-footer {
     height: 100pt;
 }
 
-.col2 {
+.foo-col2 {
     display: inline-block;
     padding-left: 5%;
     font-family: entypo;
 }
 
-.col2 h3 {
+.foo-col2 h3 {
     padding-left: 1.6em;
     font-family: 'Muli', sans-serif;
 }
@@ -1164,7 +1164,7 @@ footer ul li {
     display: inline-block;
 }
 
-.col2 ul li img {
+.foo-col2 ul li img {
     padding-right: 0.3em;
 }
 
@@ -1303,7 +1303,7 @@ footer p#texto-footer{
     font-size: 0.5em;
 }
 
-footer> div> div> div.col2> ul> li> a> img{
+footer> div> div> div.foo-col2> ul> li> a> img{
     width: 55%;
 }
 footer> div> div> div> img#logo-footer{
@@ -1311,18 +1311,18 @@ footer> div> div> div> img#logo-footer{
     height: 60pt;
     padding-top: 10px;
 }
-.footer .row .col1{
+.footer .foo-row .foo-col1{
     padding-right: 0;
     width: 33%; 
 }
-.footer .row .col2{
+.footer .foo-row .foo-col2{
     padding-left: 0;
     width: 33%;
 }
-.footer .row .col2 h3{
+.footer .foo-row .foo-col2 h3{
     font-size: 0.8em;     
 }
-.footer .row .col1 a h4{
+.footer .foo-row .foo-col1 a h4{
     font-size: 0.7em; 
 }
 
