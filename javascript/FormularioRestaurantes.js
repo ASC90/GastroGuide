@@ -45,7 +45,7 @@ function validarFormularioRestaurantes(event1) {
     ///////////////////////////////////////////NOMBRE CLIENTE///////////////////////////////////////////////////////
 
 
-    var nombrereg = /^[\s 0-9a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]+$/;
+    var nombrereg = /^[\s a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]+$/;
     if (nombrereg.test(formularioRestaurantes.nombre.value) == false) {
         document.getElementById("errornombre").innerText = "Su nombre no puede contener números o caracteres especiales";
         document.getElementById("errornombre").className = "alert alert-danger";

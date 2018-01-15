@@ -316,7 +316,7 @@ div.icon-user {
 
 /*////////////////////////////////////////////////FormularioRegistroRestaurantes///////////////////////////////////////////////*/
 
-#formre {
+/* #formre {
     margin: 5% 0 10% 0;
 }
 
@@ -336,69 +336,69 @@ div.icon-user {
 
 .FormResError {
     color: red;
-}
+} */
 
 /* Columna imagen+subir */
 
-.formresimage {
+/* .formresimage {
     margin-left: 5%;
     width: 200px;
     text-align: left;
     vertical-align: top;
     display: inline-block;
-}
+} */
 
 
 /* Margen fiv casilla */
 
-.formreslist div {
+/* .formreslist div {
     margin-bottom: 2%;
-}
+} */
 
 
 /* Columna formulario */
 
-.formreslist {
+/* .formreslist {
     width: 60%;
     display: inline-block;
    
-}
+} */
 
 
 /* imagen */
 
-.formresimage img {
+/* .formresimage img {
     width: 100px;
-}
+} */
 
 
 /* Diseño casilla */
 
-.formreslist input {
+/* .formreslist input {
     margin: 1% 0;
     padding: 1%;
     width: 80%;
     border: none;
     background-color: #e0e9e6d5;
     display: block;
-}
+} */
 
 
 /* Enseñar genero en linea */
 
-.res-genero div {
+/* .res-genero div {
     margin: 0;
     display: inline-block;
 }
 
 #res-mujerg {
     margin-left: 5%;
-}
+} */
 
 
 /* Width aceptar terminos */
 
-#rescheck input {
+/* #rescheck input {
     margin: 0;
     width: auto;
     display: inline-block;
@@ -427,7 +427,7 @@ div.icon-user {
 
 .res-genero input {
     margin-top: 10px;
-}
+} */
 
 
 /*/////////////////////////////////////////FILTRO LATERAL//////////////////////////////////////////////////////////////////////////*/
