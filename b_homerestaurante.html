@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gastro GUIDE</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
     <link rel="shortcut icon" type="image/x-icon" href="img/logoicon.png">
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -21,5 +21,84 @@
     <script src="./javascript/general.js"></script>
 
 </body>
+
+<div class="container">
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+  		<li class="nav-item">
+   		 	<a class="nav-link" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="nav-fotos" aria-selected="false">Publicar o modificar fotos</a>
+  		</li>
+	  	<li class="nav-item">
+	    	<a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="nav-videos" aria-selected="false">Publicar Vídeos</a>
+	  	</li>
+	  	<li class="nav-item">
+	    	<a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="nav-menu" aria-selected="false">Menu</a>
+	  	</li>
+	  	<li class="nav-item">
+	    	<a class="nav-link" id="ofertas-tab" data-toggle="tab" href="#ofertas" role="tab" aria-controls="ofertas" aria-selected="false">Ofertas</a>
+	  	</li>
+
+	</ul>
+
+	<div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade show active" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">
+			<h3 class="mt-5">Publicar o modificar fotos</h3>
+			<img src="img/photo.png" alt="photo" class="img-thumbnail w-20 mt-5">
+
+		</div>
+
+		<div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+			<h3 class="mt-5">Publicar videos</h3>
+			<img src="img/video.png" alt="video" class="img-thumbnail w-20 mt-5">
+
+		</div>
+	
+		<div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+			<h3 class="mt-5">Introduce tu Menú</h3>
+			<img src="img/menu.png" alt="menu" class="img-thumbnail w-20 mt-5">
+
+		</div>
+
+		<div class="tab-pane fade" id="ofertas" role="tabpanel" aria-labelledby="ofertas-tab">
+			<h3 class="mt-5">Ofertas</h3>
+			<img src="img/coupon.png" alt="ofertas" class="img-thumbnail w-20 mt-5">
+			<br>
+			<div class="form-ofertas1">
+				<form>
+					<input type="radio" name="radio" id="radioOferta1">
+					<b>Promociones</b>
+					<br>
+					<input type="radio" name="radio" id="radioOferta2">
+					<b>Descuentos</b>
+					<br>
+					<span id="radioOfertaOK" class="errorRojo"></span>
+				</form>
+			</div>
+			<div class="row">
+				<div class="form-ofertas2">
+					<form>
+						<b>Descripción de la oferta:</b>
+						<br>
+						<br>
+						<textarea placeholder="Describe la oferta..." name="" id="textoOferta" cols="30" rows="10"></textarea><br>
+						<span id="textoOfertaOK" class="errorRojo"></span>
+						<button class="boton" id="btnOferta">Aplicar</button>
+					</form>
+				</div>
+
+
+				<div class="form-ofertas2">
+					<form>
+						<b>Descripción de la oferta:</b>
+						<br>
+						<br>
+						<textarea placeholder="Describe la oferta..." name="" id="textoOferta" cols="30" rows="10"></textarea><br>
+						<span id="textoOfertaOK" class="errorRojo"></span>
+						<button class="boton" id="btnOferta">Aplicar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </html>
