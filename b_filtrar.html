@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gastro GUIDE</title>
-    <link rel="stylesheet" href="css/tmp_Alba.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/logoicon.png">
@@ -41,9 +40,9 @@
                 <select name="tipo-cocina" id="selc-cocina" class="selector-buscador mobile-out">
                 </select>
                 <img class="espacio-imagen" src="img/glass-icon.png" alt="">
-                <input name="buscar_adress" type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
+                <input id="buscarAdress" name="buscar_adress" type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
                 <!--segundo selector-->
-                <input name="fecha" type="date" class="selector-buscador mobile-out">
+                <input id="buscarFecha" name="fecha" type="date" class="selector-buscador mobile-out">
                 <!--tercer selector-->
                 <select name="hora" id="" class="selector-buscador mobile-out">
                     <option value="option 1">8:00</option>
@@ -91,7 +90,7 @@
                                         </select>
                                     </div>
                                     <div class="form-row mb-2">
-                                        <input name="fecha" type="date" class="form-control" placeholder="Last name">
+                                        <input id="fecha_mvl" name="fecha" type="date" class="form-control" placeholder="fecha">
                                     </div>
                                     <div class="form-row mb-2">
                                         <select name="hora" id="inputState" class="form-control">
@@ -290,7 +289,7 @@
     <!-- JQUERY -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!-- BOOTSTRAP -->
-    <!--   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
       <script src="node_modules/bootstrap/js/dist/dropdown.js"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./javascript/general.js"></script>
