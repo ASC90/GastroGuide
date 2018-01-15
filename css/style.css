@@ -1131,8 +1131,7 @@
 
     .container-textsobre>div {
         display: inline-block;
-        width: 20%;
-        margin: 2% 5%;
+
         vertical-align: top;
     }
     /*///////////////////////////Buscador////////////////////////////////////*/
@@ -1406,13 +1405,13 @@
             padding-top: 30px;
             padding-bottom: 0px;
         }
-        .columna1 p {
+        .container-textsobre  p {
             display: none;
         }
-        .columna2 p {
+        .container-textsobre  p {
             display: none;
         }
-        .columna3 p {
+        .container-textsobre  p {
             display: none;
         }
     }
