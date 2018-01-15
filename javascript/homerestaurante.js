@@ -2,7 +2,7 @@
 
 document.getElementById("imgsrc").onchange = function () {
   var temporal = URL.createObjectURL(event.target.files[0]);
-  document.getElementById("pub-con-gal").innerHTML += '<div><img src="' + temporal + '"></div>';
+  document.getElementById("pub-con-gal").innerHTML += '<div class="col-md-6 col-sm-12 mt-5"><img class="img-thumbnail" src="' + temporal + '"></div>';
 }
 
 //////////////////////VIDEO/////////////////////////////////////////////////////////
@@ -139,7 +139,8 @@ function validarReceta() {
 
 }
 
-document.getElementById("btnIngredientes").onclick = function () {
+document.getElementById("btnIngredientes").onclick = function (event) {
+  event.preventDefault();
   let ingredientes = document.getElementById("ingredientes");
 
   if (!ingredientes.value) {
@@ -152,11 +153,6 @@ document.getElementById("btnIngredientes").onclick = function () {
     ingredientes.value = "";
     document.getElementById("ingredientesOK").innerText = "";
   }
-}
-
-document.getElementById("imgsrc2").onchange = function () {
-  var temporal = URL.createObjectURL(event.target.files[0]);
-  document.getElementById("pub-con-gal2").innerHTML += '<div class="formresflo"><img src="' + temporal + '"></div>';
 }
 
 document.getElementById("imgsrc").onchange = function () {

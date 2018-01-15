@@ -79,6 +79,9 @@ function Ajax(method, url, onSuccess, pinfo, iderror) {
                 document.getElementById(iderror).innerText = "Error de servidor. Por favor inténtelo de nuevo en unos segundos.";
             }
         }
+        if(this.status != 200){
+            
+        }
     };
     getData.open(method, url, true);
     getData.send(info);

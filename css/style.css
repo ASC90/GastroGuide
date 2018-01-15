@@ -823,77 +823,7 @@
     }
     /*////////////////////////////////////////////////Foto///////////////////////////////////////////////////////////////////////*/
 
-    #pub-con-f-title {
-        display: block !important;
-        margin-bottom: 3em;
-        padding-left: 8em;
-    }
-
-    #pub-con-f-title h3 {
-        border-bottom: 0.1em solid;
-        width: 80%;
-    }
-
-    #pub-con-f {
-        display: inline-flex;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        padding-left: 8em;
-    }
-
-    #pub-con-f>div {
-        margin-right: 20px;
-    }
-
-    #pub-con-f>div>div {
-        height: 200px;
-        margin: 0 20px 40px 20px;
-        display: inline-block;
-        vertical-align: middle;
-        align-items: center;
-        -webkit-align-items: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-    }
-
-    #pub-con-f-an {
-        width: 250px;
-        height: 250px;
-        font-weight: bold;
-        font-size: 1.4em;
-        text-align: center;
-        display: inline-block;
-        min-width: 250px;
-    }
-
-    #pub-con-f-an-tab {
-        display: table !important;
-        margin: 20px !important;
-    }
-
-    #pub-con-f-an-tab-txt {
-        display: table-cell !important;
-        vertical-align: middle;
-    }
-
-    #pub-con-gal img {
-        height: 100%;
-    }
-
-    #pub-con-gal {
-        max-width: 65em;
-        display: inline-block;
-    }
-
-    #pub-con-gal2 img {
-        height: 100%;
-    }
-
-    #pub-con-gal2 {
-        max-width: 65em;
-        display: inline-block;
-    }
+ 
     /*////////////////////////////////////////////////Video///////////////////////////////////////////////////////////////////////*/
 
     .seccion-videos {
@@ -1103,9 +1033,6 @@
         float: right;
     }
 
-    ul#listaIngredientes {
-        margin-left: 8em;
-    }
     /*////////////////////////////////////////////////construccion///////////////////////////////////////////////////////////////////////*/
 
     .enconstruccion {
@@ -1163,7 +1090,8 @@
 
     .container-textsobre>div {
         display: inline-block;
-
+        width: 20%;
+        margin: 2% 5%;
         vertical-align: top;
     }
     /*///////////////////////////Buscador////////////////////////////////////*/
@@ -1437,13 +1365,13 @@
             padding-top: 30px;
             padding-bottom: 0px;
         }
-        .container-textsobre  p {
+        .columna1 p {
             display: none;
         }
-        .container-textsobre  p {
+        .columna2 p {
             display: none;
         }
-        .container-textsobre  p {
+        .columna3 p {
             display: none;
         }
     }
@@ -1570,10 +1498,7 @@
             margin: 0;
             padding: 0;
         }
-        #pub-con-gal img {
-            height: 50%;
-            width: auto;
-        }
+
         #pub-con-f-an-tab-txt {
             margin: 0;
             height: auto;
