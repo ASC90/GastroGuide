@@ -1229,6 +1229,9 @@
             width: 100%;
         }
         /* Zona Marta Perfil Restaurante*/
+		#tipo{
+			display: none;
+		}
         .perfil_rest #tipo li {
             margin: 5px;
             display: block;
