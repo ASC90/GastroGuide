@@ -24,7 +24,7 @@ class Restaurante {
         </div>
         <div class="col-8 col-md-4 mt-1 mb-1 text-ficha">
             <label>
-                <a href="${data.link}">
+                <a href="b_${data.link}">
                     <h2>${data.nombre}</h2>
                 </a>
                 <br>${data.direccion}</label>

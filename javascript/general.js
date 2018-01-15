@@ -162,8 +162,11 @@ if (document.getElementById('selector-buscador-mvl')) {
     $('#btn-mvl').click(function (ev) {
         ev.preventDefault();
         if (ValidationBusqueda($('#mvl_eFecha'), $("#mvl_eBusqueda"), $('#buscar_adress_mvl').val(), $('#fecha_mvl').val())) {
-            $.post("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", function () { window.location.href = 'b_filtrar.html' }, serialize(document.getElementById("form_buscar_submit")));
-            $('#myModal').modal('hide');
+            $.post("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4",serialize(document.getElementById("form_buscar_submit")), function () { 
+                $('#myModal').modal('hide');
+                window.location.href = 'b_filtrar.html' ;
+            });
         }}
     );
 };
+
