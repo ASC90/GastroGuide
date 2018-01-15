@@ -2,7 +2,7 @@
 
 document.getElementById("imgsrc").onchange = function () {
   var temporal = URL.createObjectURL(event.target.files[0]);
-  document.getElementById("pub-con-gal").innerHTML += '<div><img src="' + temporal + '"></div>';
+  document.getElementById("pub-con-gal").innerHTML += '<div class="col-md-6 col-sm-12 mt-5"><img class="img-thumbnail" src="' + temporal + '"></div>';
 }
 
 //////////////////////VIDEO/////////////////////////////////////////////////////////
