@@ -31,8 +31,9 @@ function validarVideo() {
     document.getElementById("textoVideoOK").innerText = "Campo vacío";
   var ok = false;};
   if(ok){
-
-    Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", limpiar(), serialize(document.getElementById("form-video")));
+    var urlOK = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
+    var urlNOK = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
+    Ajax("POST",urlNOK, limpiar(), serialize(document.getElementById("form-video")),"errorVideoResturante");
 
   }
 
@@ -61,24 +62,44 @@ function validarMenu() {
   var postr = document.getElementById("postre").value;
   var tmenu = document.getElementById("titMenu").value;
   var nmenu = document.getElementById("nombreMenu").value;
+  var ok = true;
 
-  if (!entrante)
+  if (!entrante){
     document.getElementById("entranteOK").innerText = "Campo vacío";
+    var ok = false;
+  };
 
-  if (!primer)
+  if (!primer){
     document.getElementById("primerPlatoOK").innerText = "Campo vacío";
+    var ok = false;
+  };
 
-  if (!segund)
+  if (!segund){
     document.getElementById("segundoPlatoOK").innerText = "Campo vacío";
+    var ok = false;
+  };
 
-  if (!postr)
+  if (!postr){
     document.getElementById("postreOK").innerText = "Campo vacío";
+    var ok = false;
+  }
 
-  if (!tmenu)
+  if (!tmenu){
     document.getElementById("titMenuOK").innerText = "Campo vacío";
+    var ok = false;
+  };
 
-  if (!nmenu)
+  if (!nmenu){
     document.getElementById("nombreMenuOK").innerText = "Campo vacío";
+    var ok = false;
+  };
+
+  if(ok){
+    var urlOK = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
+    var urlNOK = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
+    Ajax("POST",urlNOK, limpiar(), serialize(document.getElementById("form-menu-restaurante")),"errorMenuRestaurante");
+
+  }
 
 }
 
@@ -102,6 +123,7 @@ function validarOferta() {
   radioOf1 = document.getElementById("radioOferta1").checked;
   radioOf2 = document.getElementById("radioOferta2").checked;
   txtOf = document.getElementById("textoOferta").value;
+  var ok = true; 
 
   if (radioOf1 || radioOf2) {
   }
@@ -110,9 +132,17 @@ function validarOferta() {
     document.getElementById("radioOfertaOK").innerText = "Campo vacío";
   }
 
-  if (!txtOf)
+  if (!txtOf){
     document.getElementById("textoOfertaOK").innerText = "Campo vacío";
+    var ok=false;
+  }
 
+  if(ok){
+    var urlOK = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
+    var urlNOK = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
+    Ajax("POST",urlNOK, limpiar(), serialize(document.getElementById("form-oferta-restaurante")),"errorOfertaRestaurante");
+
+  }
 }
 
 document.getElementById("btnOferta").onclick = function (evt) {
@@ -130,12 +160,24 @@ document.getElementById("btnOferta").onclick = function (evt) {
 function validarReceta() {
   var titreceta = document.getElementById("receta").value;
   var txtreceta = document.getElementById("textoReceta").value;
+  var ok = true;
 
-  if (!titreceta)
+  if (!titreceta){
     document.getElementById("recetaOK").innerText = "Campo vacío";
-
-  if (!txtreceta)
+    var ok=false;
+  }
+  if (!txtreceta){
     document.getElementById("textoRecetaOK").innerText = "Campo vacío";
+    var ok=false;
+  }
+
+
+  if(ok){
+    var urlOK = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
+    var urlNOK = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
+    Ajax("POST",urlNOK, limpiar(), serialize(document.getElementById("form-recetas-restaurante")),"errorRecetaRestaurante");
+
+  }
 
 }
 
@@ -153,11 +195,6 @@ document.getElementById("btnIngredientes").onclick = function (event) {
     ingredientes.value = "";
     document.getElementById("ingredientesOK").innerText = "";
   }
-}
-
-document.getElementById("imgsrc").onchange = function () {
-  var temporal = URL.createObjectURL(event.target.files[0]);
-  document.getElementById("pub-con-gal").innerHTML += '<div><img src="' + temporal + '"></div>';
 }
 
 document.getElementById("btnReceta").onclick = function (evt) {
