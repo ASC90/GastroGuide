@@ -146,6 +146,7 @@ function ValidationBusqueda(eFecha, eBusqueda, bAdress, bFecha) {
     }
     return (true);
 };
+
 if (document.getElementById('buscar_submit')) {
     $('#btn_busqueda').click(function (env) {
         env.preventDefault();
