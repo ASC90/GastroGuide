@@ -192,7 +192,7 @@ function validarFormularioRestaurantes(event1) {
         Ajax("POST",
             url,
             function () {
-                window.location.href = 'homerestaurante.html'
+                window.location.href = 'b_homerestaurante.html'
             },
             serialize(document.getElementById("formularioRestaurantes")),
             "errorenviar");
