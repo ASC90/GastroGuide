@@ -110,9 +110,11 @@ class BusquedaCocina {
     }
     obtenerDatos() {
         let buscando = document.getElementById("selc-cocina");
-        Ajax("GET", "http://www.mocky.io/v2/5a5a49262e0000231971fb30", (datos) => {
+        let okUrl = "http://www.mocky.io/v2/5a5a49262e0000231971fb30";
+        let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";       
+        Ajax("GET", okUrl, (datos) => {
             composicion(BuscadorCocina, buscando, datos.tipoDeCocina);
-        });
+        },null,"errorbusqueda");
     };
 };
 let buscandoCocina = new BusquedaCocina();
@@ -150,7 +152,7 @@ if (document.getElementById('buscar_submit')) {
     $('#btn_busqueda').click(function (env) {
         env.preventDefault();
         if (ValidationBusqueda($("#errorfecha"), $("#errorbusqueda"), $('#buscarAdress').val(), $('#buscarFecha').val())) {
-            Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () { window.location.href = 'b_filtrar.html' }, serialize(document.getElementById("buscar_submit")));
+            Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () { window.location.href = 'b_filtrar.html' }, serialize(document.getElementById("buscar_submit")),"errorbusqueda");
         }
     });
 };
@@ -160,20 +162,33 @@ if (document.getElementById('selector-buscador-mvl')) {
         e.preventDefault();
         let ciudad = $('#buscar_adress_mvl').val();
         $('#address_ModalLabel').html(ciudad);
+        let okUrl = "http://www.mocky.io/v2/5a5a49262e0000231971fb30";
+        let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         let mvlbsc = document.getElementById('modal-cocina');
         if (ValidationBusqueda(null, $("#mvl_eBusqueda"), $('#buscar_adress_mvl').val(), null)) {
             $('#myModal').modal('show');
-            $.getJSON("http://www.mocky.io/v2/5a5a49262e0000231971fb30", (datos) => {
+            $.getJSON(okUrl, (datos) => {
                 composicion(BuscadorCocina, mvlbsc, datos.tipoDeCocina);
+            })
+            .fail(function(jqXHR, textStatus, errorThrown){
+                $('#mvl_eFecha').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
+                $('#mvl_eFecha').attr('class', 'text-danger');
             });
+            ;
         }
     });
     $('#btn-mvl').click(function (ev) {
         ev.preventDefault();
+        let okUrl = "http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4";
+        let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         if (ValidationBusqueda($('#mvl_eFecha'), $("#mvl_eBusqueda"), $('#buscar_adress_mvl').val(), $('#fecha_mvl').val())) {
-            $.post("http://www.mocky.io/v2/5a3b8528300000aa0e82d1e4", serialize(document.getElementById("form_buscar_submit")), function () {
+            $.post(okUrl, serialize(document.getElementById("form_buscar_submit")), function () {
                 $('#myModal').modal('hide');
                 window.location.href = 'b_filtrar.html';
+            })
+            .fail(function(jqXHR, textStatus, errorThrown){
+                $('#mvl_eFecha').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
+                $('#mvl_eFecha').attr('class', 'text-danger');
             });
         }
     }
