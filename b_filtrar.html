@@ -40,7 +40,8 @@
                 <select name="tipo-cocina" id="selc-cocina" class="selector-buscador mobile-out">
                 </select>
                 <img class="espacio-imagen" src="img/glass-icon.png" alt="">
-                <input id="buscarAdress" name="buscar_adress" type="search" placeholder="Dirección o código postal..." class="selector-buscador" size="26">
+                <input id="buscarAdress" name="buscar_adress" type="search" placeholder="Dirección o código postal..." class="selector-buscador"
+                    size="26">
                 <!--segundo selector-->
                 <input id="buscarFecha" name="fecha" type="date" class="selector-buscador mobile-out">
                 <!--tercer selector-->
@@ -129,7 +130,7 @@
         <div class="col-12 col-md-3" id="a-section-filtro">
             <div class="card pt-3 pb-3 text-center bg-warning" role="tab">
                 <h4 class="mb-0 font-weight-bold">
-                        Filtrar la búsqueda
+                    Filtrar la búsqueda
                 </h4>
             </div>
             <div id="accordion" role="tablist">
@@ -177,7 +178,7 @@
                     </div>
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
-                            <div id="">
+                            <form id="precio-min-max">
                                 <div class="container">
                                     <div class="row text-center">
                                         <div class="col-xs-6">
@@ -198,7 +199,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -214,20 +215,27 @@
                         <div class="card-body">
                             <div class="row text-center mb-4">
                                 <div class="col-xs-6">
-                                    <h5>Nota</h5>
-                                    <div class="range range-warning">
-                                        <input id="notaOpinion" type="range" name="precio_min" min="1" max="10" value="5">
-                                        <output id="rangeNota">5</output>
-                                    </div>
+                                    <form="nota-opi">
+                                        <h5>Nota</h5>
+                                        <div class="range range-warning">
+                                            <input id="notaOpinion" type="range" name="nota_opinion" min="1" max="10" value="5">
+                                            <output id="rangeNota">5</output>
+                                        </div>
+                                        </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="card text-center" role="tab">
+                <button id="btn-filtrar" type="button" class="btn btn-warning">Filtrar</button>
+            </div>
+            <div id="errorfiltro"></div>
         </div>
         <div class="col-12 col-md-7" id="section-fichas">
             <!--FICHAS FILTRADAS RESTAURANTES-->
+            <div id="fail-fichas"></div>
         </div>
     </div>
 

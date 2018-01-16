@@ -77,6 +77,7 @@ function Ajax(method, url, onSuccess, pinfo, iderror) {
             }
             else {
                 document.getElementById(iderror).innerText = "Error de servidor. Por favor inténtelo de nuevo en unos segundos.";
+                $('#'+iderror).attr('class','alert alert-danger');
             }
         }
         if(this.status != 200){
