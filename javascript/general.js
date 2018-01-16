@@ -80,8 +80,7 @@ function Ajax(method, url, onSuccess, pinfo, iderror) {
                 $('#'+iderror).attr('class','alert alert-danger');
             }
         }
-        if(this.status != 200){
-            
+        if(this.status != 200){       
         }
     };
     getData.open(method, url, true);

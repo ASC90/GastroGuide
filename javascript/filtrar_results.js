@@ -83,7 +83,7 @@ class FiltroAmbientes {
         let filtros = document.getElementById("chk-ambientes");
         let okUrl = "http://www.mocky.io/v2/5a3b8525300000e40e82d1e3";
         let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
-        $.get(badUrl, (datos) => {
+        $.get(okUrl, (datos) => {
             let contenido = "";
             for (let index = 0; index < datos.tipoDeAmbiente.length; index++) {
                 contenido += Ambientes.renderizar(datos.tipoDeAmbiente, index);
@@ -118,7 +118,7 @@ $('#btn-filtrar').click(function (e) {
     let s5 = document.getElementById('notaOpinion').name + ":" + document.getElementById('notaOpinion').value;
     let okUrl = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
     let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
-    Ajax("POST", badUrl , function () {
+    Ajax("POST", okUrl , function () {
         $("#section-fichas").html("");
     let buscando = new Buscador();
         buscando.obtenerData();
