@@ -307,7 +307,7 @@
     }
     /*////////////////////////////////////////////////FormularioRegistroRestaurantes///////////////////////////////////////////////*/
 
-    #formre {
+    /* #formre {
         margin: 5% 0 10% 0;
     }
 
@@ -323,46 +323,46 @@
         margin-bottom: 5%;
         width: 100%;
         height: 1%;
-    }
+    } */
 
-    .FormResError {
+    /* .FormResError {
         color: red;
-    }
+    } */
     /* Columna imagen+subir */
 
-    .formresimage {
+    /* .formresimage {
         margin-left: 5%;
         width: 200px;
         text-align: left;
         vertical-align: top;
         display: inline-block;
-    }
+    } */
     /* Margen fiv casilla */
 
-    .formreslist div {
+    /* .formreslist div {
         margin-bottom: 2%;
-    }
+    } */
     /* Columna formulario */
 
-    .formreslist {
+    /* .formreslist {
         width: 60%;
         display: inline-block;
-    }
+    } */
     /* imagen */
 
-    .formresimage img {
+    /* .formresimage img {
         width: 100px;
-    }
+    } */
     /* Diseño casilla */
 
-    .formreslist input {
+    /* .formreslist input {
         margin: 1% 0;
         padding: 1%;
         width: 80%;
         border: none;
         background-color: #e0e9e6d5;
         display: block;
-    }
+    } */
     /* Enseñar genero en linea */
 
 /* #formre {
@@ -374,7 +374,7 @@
     }
     /* Width aceptar terminos */
 
-    #rescheck input {
+    /* #rescheck input {
         margin: 0;
         width: auto;
         display: inline-block;
@@ -384,9 +384,9 @@
     color: red;
 } */
 
-    .formresimage div {
+    /* .formresimage div {
         text-align: center;
-    }
+    }  */
 
 /* .formresimage {
     margin-left: 5%;
@@ -396,18 +396,18 @@
     display: inline-block;
 } */
 
-    #formresimageimage2 {
+    /* #formresimageimage2 {
         margin-top: 10%;
     }
 
     .res-genero input {
         margin-top: 10px;
-    }
+    } */
+    
+  
     /*/////////////////////////////////////////FILTRO LATERAL//////////////////////////////////////////////////////////////////////////*/
 
-/* .formreslist div {
-    margin-bottom: 2%;
-} */
+
     section#section-filtro {
         display: inline-block;
         vertical-align: top;
@@ -425,11 +425,6 @@
         border-radius: 2em 2em 0 0;
     }
 
-/* .formreslist {
-    width: 60%;
-    display: inline-block;
-   
-} */
     .title-box h2 {
         padding: 0;
         margin: 0;
@@ -448,9 +443,6 @@
         padding-left: 0.6em;
     }
 
-/* .formresimage img {
-    width: 100px;
-} */
     .checkbox-tipo-cocina {
         display: block;
         padding-top: 0.6em;
@@ -470,14 +462,6 @@
         margin-bottom: 1em;
     }
 
-/* .formreslist input {
-    margin: 1% 0;
-    padding: 1%;
-    width: 80%;
-    border: none;
-    background-color: #e0e9e6d5;
-    display: block;
-} */
     #slide-personas {
         text-align: center;
     }
@@ -495,17 +479,6 @@
         text-align: center;
     }
 
-/* .res-genero div {
-    margin: 0;
-    display: inline-block;
-}
-    .nota {
-        border: solid 0.3em;
-    }
-
-#res-mujerg {
-    margin-left: 5%;
-} */
     .barra-nota {
         border: solid 0.3em;
     }
@@ -521,16 +494,6 @@
         padding-left: 0.6em;
     }
 
-/* #rescheck input {
-    margin: 0;
-    width: auto;
-    display: inline-block;
-}
-    .checkbox-ambientes {
-        display: block;
-        padding-top: 0.6em;
-        padding-left: 0.6em;
-    }
     /*/////////////////////////////////////////FICHAS FILTRADAS RESTAURANTES///////////////////////////////////////////////////////////////*/
 
     section#section-fichas {
@@ -1161,8 +1124,8 @@
 
     .container-textsobre>div {
         display: inline-block;
-        width: 20%;
-        margin: 2% 5%;
+    
+    
         vertical-align: top;
     }
     /*///////////////////////////Buscador////////////////////////////////////*/
@@ -1287,7 +1250,7 @@
 
     @media (min-width:320px) and (max-width:480px) {
         /*///////////////////////////////////////////////FormularioRestaurante/////////////////////////////////////////////*/
-        .formresimage {
+        /* .formresimage {
             margin: 0 auto;
             display: block;
             margin-bottom: 5%;
@@ -1298,8 +1261,11 @@
         }
         .formreslist input {
             width: 100%;
-        }
+        } */
         /* Zona Marta Perfil Restaurante*/
+		#tipo{
+			display: none;
+		}
         .perfil_rest #tipo li {
             margin: 5px;
             display: block;
