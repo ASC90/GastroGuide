@@ -44,6 +44,7 @@ function limpiar(){
   document.getElementById("descVideoOK").innerText = "";
   document.getElementById("urlVideoOK").innerText = "";
   document.getElementById("textoVideoOK").innerText = "";
+  
 }
 document.getElementById("btnVideos").onclick = function (evt) {
   evt.preventDefault();
@@ -51,7 +52,12 @@ document.getElementById("btnVideos").onclick = function (evt) {
   validarVideo();
 
 }
-
+//BORRA FORMULARIO AL HACER CLIC EN LAS OTRAS TABS
+$("#fotos-tab").add("#menu-tab").add("#ofertas-tab").add("#recetas-tab").click( function (){
+   $("input").val("");
+   $("textarea").val("");
+   $("#errorVideoResturante").html("");
+});
 
 ///////////////////////////////MENU/////////////////////////////////////////////////
 
@@ -116,6 +122,12 @@ document.getElementById("btnMenu").onclick = function (evt) {
   validarMenu();
 }
 
+$("#menu-tab").add("#fotos-tab").add("#videos-tab").add("#ofertas-tab").add("#recetas-tab").click( function (){
+   $("input").val("");
+   $("textarea").val("");
+   $("#errorMenuRestaurante").html("");
+});
+
 
 /////////////////////////OFERTAS///////////////////////////////
 
@@ -153,6 +165,12 @@ document.getElementById("btnOferta").onclick = function (evt) {
 
   validarOferta();
 }
+
+$("#ofertas-tab").add("#fotos-tab").add("#videos-tab").add("#ofertas-tab").add("#recetas-tab").click( function (){
+   $("input").val("");
+   $("textarea").val("");
+   $("#errorOfertaRestaurante").html("");
+});
 
 ///////////////////////////////////////RECETAS//////////////////////////////////////////
 
@@ -206,3 +224,8 @@ document.getElementById("btnReceta").onclick = function (evt) {
   validarReceta();
 }
 
+$("#recetas-tab").add("#fotos-tab").add("#videos-tab").add("#ofertas-tab").add("#recetas-tab").click( function (){
+   $("input").val("");
+   $("textarea").val("");
+   $("#errorRecetaRestaurante").html("");
+});
