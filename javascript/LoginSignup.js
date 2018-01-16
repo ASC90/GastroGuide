@@ -18,9 +18,9 @@ function validarEmailCliente() {
 function validarPasswordCliente() {
     var campo = document.getElementById("passwordCliente");
     var valido = document.getElementById('passClienteOK');
-    var passRegex = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;   
+    // var passRegex = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;   
 
-    if (passRegex.test(campo.value)) {
+    if (campo.value) {
       return true;
     } 
     else {
@@ -59,9 +59,9 @@ function validarEmailRestaurante() {
 function validarPasswordRestaurante() {
     var campo = document.getElementById("passwordRestaurante");
     var valido = document.getElementById('passRestauranteOK');
-    var passRegex = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;   
+    // var passRegex = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;   
 
-    if (passRegex.test(campo.value)) {
+    if (campo.value) {
       return true;
     } 
     else {
@@ -74,11 +74,12 @@ document.getElementById("btnSubmitRestaurante").onclick = function(){
   document.getElementById("emailRestauranteOK").innerText= "";
   document.getElementById("passRestauranteOK").innerText= "";
 
-  let url = "http://www.mocky.io/v2/5a5cc9ee2e0000c1099f842b";
-  let badurl = "http://www.mocky.io/v2/5a5cce592e0000931e9f8440";
+  let OK = "http://www.mocky.io/v2/5a5cc9ee2e0000c1099f842b";
+  let notOK = "http://www.mocky.io/v2/5a5cce592e0000931e9f8440";
+  let badresponse = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
 
   if( validarEmailRestaurante() && validarPasswordRestaurante() )
-  Ajax("POST","http://www.mocky.io/v2/5a5cc9ee2e0000c1099f842b", function(obj){
+  Ajax("POST",badresponse, function(obj){
     if (obj.status == "OK")
     {window.location.href = 'homerestaurante.html';
     
@@ -88,6 +89,6 @@ document.getElementById("btnSubmitRestaurante").onclick = function(){
 
     }
   } ,
-   serialize(document.getElementById("inicio-sesion-restaurante")));
+   serialize(document.getElementById("inicio-sesion-restaurante")),"passRestauranteOK");
 };
 
