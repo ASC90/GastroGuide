@@ -21,17 +21,17 @@ class Restaurante {
     static renderizar(data) {
         return `
     <div class="row">
-        <div class="col-12 col-md-3 mt-1 mb-1 img-ficha">
-            <img src="${data.foto}" alt="">
+        <div class="col-12 col-sm-3 col-md-3 mt-1 mb-1 img-ficha">
+            <img src="${data.foto}" class="img-fluid" alt="">
         </div>
-        <div class="col-8 col-md-4 mt-1 mb-1 text-ficha">
+        <div class="col-8 col-sm-5 col-md-4 col-md-5 mt-1 mb-1 text-ficha">
             <label>
                 <a href="b_${data.link}">
                     <h2>${data.nombre}</h2>
                 </a>
                 <br>${data.direccion}</label>
         </div>
-        <div class="col-4 col-md-3 mt-1 mb-1 opiniones-nota">
+        <div class="col-sm-2 col-md-2 col-lg-4 mt-1 mb-1 opiniones-nota">
             <label>
                 <h2>${data.nota}</h2>
                 <br>${data.opiniones} Opiniones</label>
