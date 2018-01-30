@@ -6,51 +6,57 @@ function openAndLoad (pUrl)
 	var jsonObj = {};
 	var request = new XMLHttpRequest();
 	request.open ("GET", pUrl);
-	request.onload = function ()
-	{
+	request.onload = function (){
 		jsonObj = JSON.parse(request.response);
-		console.log (jsonObj);
-		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		//Escriu i dibuixa l'HTML
-		document.getElementById("nombre").innerHTML = jsonObj.nombre;
-		document.getElementById("valoracion").innerHTML = jsonObj.valoracion + "/10";
-		document.getElementById("adresa").innerHTML = jsonObj.adresa;
 		
-/*		$.get("../gestion_plantilla.mod/templates/templateformulariorestaurante.hbs", function(data){
-			var plantilla = $.parseHTML(data);
+		/////////////////////////Escriu i dibuixa l'HTML//////////////////////////////
+		var nombreRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/nombre.hbs");
+		var adresaRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/adresa.hbs");
+		var valoracionRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/valoracion.hbs");
+		//var tipoRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/tipo.hbs");				
+		var imagenRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/imagen.hbs");		
 
-			var tmplimg = Handlebars.compile(plantilla[0].innerHTML);
-			$('#imagen').append(tmplimg(jsonObj));
+		//document.getElementById("nombre").innerHTML = jsonObj.nombre;
+		nombreRestaurante.then(function (value) {
+    		var tmplnombre = Handlebars.compile(value[0].innerHTML);
+			$('#nombre').append(tmplnombre(jsonObj));
+  		})	
 
+		//document.getElementById("valoracion").innerHTML = jsonObj.valoracion + "/10";
+		valoracionRestaurante.then(function (value) {
+    		var tmplvaloracion = Handlebars.compile(value[0].innerHTML);
+			$('#valoracion').append(tmplvaloracion(jsonObj));
+  		})			
 
-		});*/
+		//document.getElementById("adresa").innerHTML = jsonObj.adresa;
+		adresaRestaurante.then(function (value) {
+    		var tmpladresa = Handlebars.compile(value[0].innerHTML);
+			$('#adresa').append(tmpladresa(jsonObj));
+  		})	
 
-		var resultRender= GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/templateformulariorestaurante.hbs");
-
-		resultRender.then(function (value) {
-    		var tmplimg = Handlebars.compile(value[0].innerHTML);
-			$('#imagen').append(tmplimg(jsonObj));
-  		})
-		
 		var cadena3 = "";
-		for (let i = 0; i < jsonObj.tipo.length; i++)
-		{
+		for (let i = 0; i < jsonObj.tipo.length; i++){
 			cadena3 +='<li><a href="#">'+ jsonObj.tipo[i] +'</a></li>';
 		}
-		document.getElementById("tipo").innerHTML = cadena3;
-		//document.getElementById("imagen").innerHTML = '<img src='+jsonObj.imagen+' alt="foto del restaurante">';
-		
 
-		for (let i = 0; i < jsonObj.menu.length; i++)
-		{
+		document.getElementById("tipo").innerHTML = cadena3;
+		
+		//document.getElementById("imagen").innerHTML = '<img src='+jsonObj.imagen+' alt="foto del restaurante">';
+		imagenRestaurante.then(function (value) {
+    		var tmplimagen = Handlebars.compile(value[0].innerHTML);
+			$('#imagen').append(tmplimagen(jsonObj));
+  		})	
+
+		for (let i = 0; i < jsonObj.menu.length; i++){
 			document.getElementById("menu").innerHTML += '<h4>'+jsonObj.menu[i].titol+'</h4><p>'+jsonObj.menu[i].platos+'</p>';
 		}
 		///////////////////////
 		document.getElementById("opiniones").innerHTML += '<h2>OPINIONES</h2>';
-		for (let i = 0; i < jsonObj.opiniones.length; i++)
-		{
+		
+		for (let i = 0; i < jsonObj.opiniones.length; i++){
 			document.getElementById("opiniones").innerHTML += '<div><div class="pcol1"><img src="'+ jsonObj.opiniones[i].imagen +'" alt=""></div><div class="pcol3 float-right"><span>'+jsonObj.opiniones[i].valoracion+ '/10'+'</span></div><div class="pcol2"><h4>'+jsonObj.opiniones[i].nombre+'</h4><p>'+jsonObj.opiniones[i].comentario+'</p></div></div>';	
 		}
+
 		document.getElementById("poferta").innerHTML = '<h2>PROMOCIONES</h2><div class="p-3"><h4>'+jsonObj.promociones.promocion+'</h4><p>'+jsonObj.promociones.descripcion+'</p></div>';
 		let cadena = "";
 		for (let i = 0; i < jsonObj.recetas.preparacion.length;i++)

@@ -1,8 +1,7 @@
-<h4>{{}}}</h4><p>{{}}}</p>
-<img src={{}}}
-<span>{{}}}</span><h4>{{}}}</h4><p>{{}}}</p>
-<h4>{{}}</h4><p>{{}}</p>
-<h4>{{}}}</h4><p>{{}}}</p>
-<h5></h5><p></p>
-<li></li>
-<img src="{{}}"><h3 class="mt-5 text-center">{{}}</h3><ul>{{}}</ul>
+
+
+<h2 id={{nombre}}></h2>
+address id={{adresa}}></address>
+<ul id={{tipo}}></ul>
+
+
