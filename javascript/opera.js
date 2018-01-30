@@ -1,17 +1,7 @@
 // JavaScript Document
 var operaUrl = "http://www.mocky.io/v2/5a3ba24b300000941682d28c";
 
-function inyectaTipoRestaurante (jsonObj)
-{
-	var cadena = "";
-	for (let i = 0; i < jsonObj.tipo.length; i++)
-	{
-		cadena +='<li><a href="#">'+ jsonObj.tipo[i] +'</a></li>';
-	}
-	return cadena;
-}
-
-function openAndLoad (pUrl, callback)
+function openAndLoad (pUrl)
 {
 	var jsonObj = {};
 	var request = new XMLHttpRequest();
@@ -25,8 +15,32 @@ function openAndLoad (pUrl, callback)
 		document.getElementById("nombre").innerHTML = jsonObj.nombre;
 		document.getElementById("valoracion").innerHTML = jsonObj.valoracion + "/10";
 		document.getElementById("adresa").innerHTML = jsonObj.adresa;
-		document.getElementById("tipo").innerHTML = callback(jsonObj);
-		document.getElementById("imagen").innerHTML = '<img src='+jsonObj.imagen+' alt="foto del restaurante">';
+		
+/*		$.get("../gestion_plantilla.mod/templates/templateformulariorestaurante.hbs", function(data){
+			var plantilla = $.parseHTML(data);
+
+			var tmplimg = Handlebars.compile(plantilla[0].innerHTML);
+			$('#imagen').append(tmplimg(jsonObj));
+
+
+		});*/
+
+		var resultRender= GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/templateformulariorestaurante.hbs");
+
+		resultRender.then(function (value) {
+    		var tmplimg = Handlebars.compile(value[0].innerHTML);
+			$('#imagen').append(tmplimg(jsonObj));
+  		})
+		
+		var cadena3 = "";
+		for (let i = 0; i < jsonObj.tipo.length; i++)
+		{
+			cadena3 +='<li><a href="#">'+ jsonObj.tipo[i] +'</a></li>';
+		}
+		document.getElementById("tipo").innerHTML = cadena3;
+		//document.getElementById("imagen").innerHTML = '<img src='+jsonObj.imagen+' alt="foto del restaurante">';
+		
+
 		for (let i = 0; i < jsonObj.menu.length; i++)
 		{
 			document.getElementById("menu").innerHTML += '<h4>'+jsonObj.menu[i].titol+'</h4><p>'+jsonObj.menu[i].platos+'</p>';
@@ -48,7 +62,7 @@ function openAndLoad (pUrl, callback)
 		{
 			lista += '<li>'+jsonObj.recetas.ingredientes[i]+'</li>';
 		}
-		document.getElementById("recetas").innerHTML += '<h2>RECETAS</h2><div><img src="'+jsonObj.recetas.imagen+'" alt="foto receta"><h3 class="mt-5 text-center">'+jsonObj.recetas.nombre+'</h3></div><div class="row"><div class="prep col-lg-7"><h4>Preparación</h4>'+cadena+'</div><div class="ingre col-lg-4"><h4>Ingredientes</h4><ul>'+lista+'</ul></div></div></div>';
+		//document.getElementById("recetas").innerHTML += '<h2>RECETAS</h2><div><img src="'+jsonObj.recetas.imagen+'" alt="foto receta"><h3 class="mt-5 text-center">'+jsonObj.recetas.nombre+'</h3></div><div class="row"><div class="prep col-lg-7"><h4>Preparación</h4>'+cadena+'</div><div class="ingre col-lg-4"><h4>Ingredientes</h4><ul>'+lista+'</ul></div></div></div>';
 		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		if (this.status === 200)
@@ -64,4 +78,4 @@ function openAndLoad (pUrl, callback)
 	request.send();	
 }
 
-openAndLoad(operaUrl, inyectaTipoRestaurante);
+openAndLoad(operaUrl);
