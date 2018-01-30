@@ -306,7 +306,6 @@
         vertical-align: top
     }
     /*////////////////////////////////////////////////FormularioRegistroRestaurantes///////////////////////////////////////////////*/
-
     /* #formre {
         margin: 5% 0 10% 0;
     }
@@ -324,12 +323,10 @@
         width: 100%;
         height: 1%;
     } */
-
     /* .FormResError {
         color: red;
     } */
     /* Columna imagen+subir */
-
     /* .formresimage {
         margin-left: 5%;
         width: 200px;
@@ -338,23 +335,19 @@
         display: inline-block;
     } */
     /* Margen fiv casilla */
-
     /* .formreslist div {
         margin-bottom: 2%;
     } */
     /* Columna formulario */
-
     /* .formreslist {
         width: 60%;
         display: inline-block;
     } */
     /* imagen */
-
     /* .formresimage img {
         width: 100px;
     } */
     /* Diseño casilla */
-
     /* .formreslist input {
         margin: 1% 0;
         padding: 1%;
@@ -364,8 +357,7 @@
         display: block;
     } */
     /* Enseñar genero en linea */
-
-/* #formre {
+    /* #formre {
     margin: 5% 0 10% 0;
 }
 
@@ -373,7 +365,6 @@
         margin-left: 5%;
     }
     /* Width aceptar terminos */
-
     /* #rescheck input {
         margin: 0;
         width: auto;
@@ -383,19 +374,16 @@
 .FormResError {
     color: red;
 } */
-
     /* .formresimage div {
         text-align: center;
     }  */
-
-/* .formresimage {
+    /* .formresimage {
     margin-left: 5%;
     width: 200px;
     text-align: left;
     vertical-align: top;
     display: inline-block;
 } */
-
     /* #formresimageimage2 {
         margin-top: 10%;
     }
@@ -403,10 +391,7 @@
     .res-genero input {
         margin-top: 10px;
     } */
-    
-  
     /*/////////////////////////////////////////FILTRO LATERAL//////////////////////////////////////////////////////////////////////////*/
-
 
     section#section-filtro {
         display: inline-block;
@@ -493,7 +478,6 @@
         padding-top: 0.1em;
         padding-left: 0.6em;
     }
-
     /*/////////////////////////////////////////FICHAS FILTRADAS RESTAURANTES///////////////////////////////////////////////////////////////*/
 
     section#section-fichas {
@@ -511,6 +495,7 @@
 
     .img-ficha {
         display: inline-block;
+        overflow: hidden;
     }
 
     .img-ficha img {
@@ -518,9 +503,10 @@
         height: 10em;
     }
 
-.res-genero input {
-    margin-top: 10px;
-} */
+    .res-genero input {
+        margin-top: 10px;
+    }
+
     .text-ficha {
         display: inline-block;
         height: 10em;
@@ -786,60 +772,60 @@
     }
     /*////////////////////////////////////////////////Foto///////////////////////////////////////////////////////////////////////*/
 
-#pub-con-f-title {
-    display: block !important;
-    margin-bottom: 3em;
-    padding-left: 8em;
-}
+    #pub-con-f-title {
+        display: block !important;
+        margin-bottom: 3em;
+        padding-left: 8em;
+    }
 
-#pub-con-f-title h3 {
-    border-bottom: 0.1em solid;
-    width: 80%;
-}
+    #pub-con-f-title h3 {
+        border-bottom: 0.1em solid;
+        width: 80%;
+    }
 
-#pub-con-f {
-    display: inline-flex;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 8em;
-}
+    #pub-con-f {
+        display: inline-flex;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 8em;
+    }
 
-#pub-con-f>div {
-    margin-right: 20px;
-}
+    #pub-con-f>div {
+        margin-right: 20px;
+    }
 
-#pub-con-f>div>div {
-    height: 200px;
-    margin: 0 20px 40px 20px;
-    display: inline-block;
-    vertical-align: middle;
-    align-items: center;
-    -webkit-align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-}
+    #pub-con-f>div>div {
+        height: 200px;
+        margin: 0 20px 40px 20px;
+        display: inline-block;
+        vertical-align: middle;
+        align-items: center;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
 
-#pub-con-f-an {
-    width: 250px;
-    height: 250px;
-    font-weight: bold;
-    font-size: 1.4em;
-    text-align: center;
-    display: inline-block;
-    min-width: 250px;
-}
+    #pub-con-f-an {
+        width: 250px;
+        height: 250px;
+        font-weight: bold;
+        font-size: 1.4em;
+        text-align: center;
+        display: inline-block;
+        min-width: 250px;
+    }
 
-#pub-con-f-an-tab {
-    display: table !important;
-    margin: 20px !important;
-}
+    #pub-con-f-an-tab {
+        display: table !important;
+        margin: 20px !important;
+    }
 
-#pub-con-f-an-tab-txt {
-    display: table-cell !important;
-    vertical-align: middle;
-}
-/*
+    #pub-con-f-an-tab-txt {
+        display: table-cell !important;
+        vertical-align: middle;
+    }
+    /*
 #pub-con-gal img {
     height: 100%;
 }
@@ -955,12 +941,13 @@
         padding: 0.3em;
         width: 320px;
     }
-#pub-con-f {
-    display: inline-flex;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
+    #pub-con-f {
+        display: inline-flex;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
     .seccion-menu form button {
         margin-left: 18em;
@@ -1066,7 +1053,6 @@
     .paddbtn {
         float: right;
     }
-
     /*////////////////////////////////////////////////construccion///////////////////////////////////////////////////////////////////////*/
 
     .enconstruccion {
@@ -1124,8 +1110,6 @@
 
     .container-textsobre>div {
         display: inline-block;
-    
-    
         vertical-align: top;
     }
     /*///////////////////////////Buscador////////////////////////////////////*/
@@ -1133,9 +1117,9 @@
     .cuadro-blanco {
         margin: 1em auto;
         width: 75%;
-        height: 55px;
+        /* height: 55px; */
         /*max-width: 900px;*/
-        padding-bottom: 15px;
+        /* padding-bottom: 15px; */
         box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.50);
     }
 
@@ -1263,9 +1247,9 @@
             width: 100%;
         } */
         /* Zona Marta Perfil Restaurante*/
-		#tipo{
-			display: none;
-		}
+        #tipo {
+            display: none;
+        }
         .perfil_rest #tipo li {
             margin: 5px;
             display: block;
@@ -1373,19 +1357,19 @@
     /* Home Principal */
 
     @media (min-width:320px) and (max-width:480px) {
-        h1{
+        h1 {
             font-size: 1.7rem !important;
         }
-        h2{
+        h2 {
             font-size: 1.5rem !important;
         }
-        h3{
+        h3 {
             font-size: 1.3rem !important;
         }
-        h4{
+        h4 {
             font-size: 1.1rem !important;
         }
-        h5{
+        h5 {
             font-size: 0.9rem !important;
         }
         .premiamos-tu-confianza {
@@ -1414,17 +1398,20 @@
     }
     /* Pagina de Filtros y buscador */
 
+    @media (min-width:320px) and (max-width:1023px) {
+        .cuadro-blanco {
+            width: 100%;
+            margin: 0;
+            padding: 0 0 0.5em 0;
+            display: none;
+        }
+    }
+
     @media (min-width:320px) and (max-width:480px) {
         body {
             font-size: 0.75em;
         }
         .mobile-out {
-            display: none;
-        }
-        .cuadro-blanco {
-            width: 100%;
-            margin: 0;
-            padding: 0 0 0.5em 0;
             display: none;
         }
         .formulario {
@@ -1535,7 +1522,6 @@
             margin: 0;
             padding: 0;
         }
-
         #pub-con-f-an-tab-txt {
             margin: 0;
             height: auto;
@@ -1580,12 +1566,9 @@
             padding-bottom: 0.5em;
         }
         input#receta {
-    
             margin-bottom: 0.5em;
         }
-        input#ingredientes {
-        
-        }
+        input#ingredientes {}
         .form-recetas button {
             margin-left: 5em;
             display: block;
@@ -1639,8 +1622,10 @@
         }
     }
 
-    @media (min-width:720px) and (max-width:1400px) {
+    @media (min-width:1024px) {
         #form_buscar_submit {
             display: none;
         }
+        .opiniones-nota {
+            margin-left: 0;}
     }

@@ -1,42 +1,91 @@
-URL: “http://www.mocky.io/v2/5a5355223000002b1e1ebebe”
+URL: “http://www.mocky.io/v2/5a6f2db530000053296fe514"
+[{
+		"nombre": "Piazza Navona",
+		"direccion": "Carrer de Provença, 300 08008 Barcelona",
+		"ciudad": "Barcelona",
+		"cp": "08008",
+		"nota": "8,8",
+		"opiniones": "222",
+		"foto": "img/cater.jpg",
+		"link": "piazza_navona.html",
+		"tags": ["Italiana", "Con Amigos", "Moderno", "Para grupos"]
+	},
+	{
+		"nombre": "Roca Bar",
+		"direccion": "Carrer del Roselló, 148 08036 Barcelona",
+		"ciudad": "Barcelona",
+		"cp": "08036",
+		"nota": "9,2",
+		"opiniones": "34",
+		"foto": "img/alex.jpg",
+		"link": "roca_bar.html",
+		"tags": ["Mexicana", "Romántico", "Tradicional"]
+	},
+	{
+		"nombre": "Opera",
+		"direccion": "Plaza Molina, 2 08006 Barcelona",
+		"ciudad": "Barcelona",
+		"cp": "08006",
+		"nota": "6,7",
+		"opiniones": "85",
+		"foto": "img/clifford.jpg",
+		"link": "opera.html",
+		"tags": ["Mediterranea", "Creativo", "Negocios", "Grupos"]
+	},
+	{
+		"nombre": "Guzzo",
+		"direccion": "Carrer dels Arcs, 5 08002 Barcelona",
+		"ciudad": "Barcelona",
+		"cp": "08002",
+		"nota": "7,3",
+		"opiniones": "409",
+		"foto": "img/jay.jpg",
+		"link": "guzzo.html",
+		"tags": ["Mexicana", "Romántico", "Fusión", "Para Grupos"]
+	},
+	{
+		"nombre": "El Celler",
+		"direccion": "Avinguda Diagonal, 423 08036 Barcelona",
+		"ciudad": "Barcelona",
+		"cp": "08036",
+		"nota": "5,5",
+		"opiniones": "332",
+		"foto": "img/roman.jpg",
+		"link": "el_celler.html",
+		"tags": ["Mediterránea", "Con amigos", "Moderno"]
+	},
+	{
+		"nombre": "El Taj",
+		"direccion": "Avinguda Josep Terradelles, 125 08014 Barcelona",
+		"ciudad": "Barcelona",
+		"cp": "08014",
+		"nota": "6,5",
+		"opiniones": "32",
+		"foto": "img/taj.jpg",
+		"link": "el_celler.html",
+		"tags": ["India", "Ecológico", "Tradicional"]
+	},
+	{
+		"nombre": "El Palacio Dorado",
+		"direccion": "Via Julia, 209 08042 Barcelona",
+		"ciudad": "Barcelona",
+		"cp": "08042",
+		"nota": "6",
+		"opiniones": "104",
+		"foto": "img/palacio.jpg",
+		"link": "el_celler.html",
+		"tags": ["China", "Para grupos", "Tranquilo"]
+	},
+	{
+		"nombre": "Susushi",
+		"direccion": "Aribau, 129 08018 Barcelona",
+		"nota": "8",
+		"ciudad": "Barcelona",
+		"cp": "08018",
+		"opiniones": "405",
+		"foto": "img/susushi.jpg",
+		"link": "el_celler.html",
+		"tags": ["Japonesa", "De negocios", "Moderno"]
+	}
 
-[{  
-    "nombre": "Piazza Navona",
-    "direccion": "Carrer de Provença, 300 08008 Barcelona",
-    "nota": "8,8",
-    "opiniones": "222",
-    "foto":"img/cater.jpg",
-    "link":"piazza_navona.html"
-},
-{   
-    "nombre": "Roca Bar",
-    "direccion": "Carrer del Roselló,148 08036 Barcelona",
-    "nota": "9,2",
-    "opiniones": "34",
-    "foto":"img/alex.jpg",
-    "link":"roca_bar.html"
-},
-{   
-    "nombre": "Opera",
-    "direccion": "Plaza Molina, 2 08006 Barcelona",
-    "nota": "6,7",
-    "opiniones": "85",
-    "foto":"img/clifford.jpg",
-    "link":"opera.html"
-},
-{   
-    "nombre": "Guzzo",
-    "direccion": "Carrer dels Arcs, 5 08002 Barcelona",
-    "nota": "7,3",
-    "opiniones": "409",
-    "foto":"img/jay.jpg",
-    "link":"guzzo.html"
-},
-{   
-    "nombre": "El Celler",
-    "direccion": "Avinguda Diagonal, 423 08036 Barcelona",
-    "nota": "5,5",
-    "opiniones": "332",
-    "foto":"img/roman.jpg",
-    "link":"el_celler.html"
-}]
+]

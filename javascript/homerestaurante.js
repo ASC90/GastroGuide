@@ -1,10 +1,17 @@
 //////////////////////FOTO/////////////////////////////////////////////////////////
 
 document.getElementById("imgsrc").onchange = function () {
-  var temporal = URL.createObjectURL(event.target.files[0]);
-  document.getElementById("pub-con-gal").innerHTML += '<div class="col-md-6 col-sm-12 mt-5"><img class="img-thumbnail" src="' + temporal + '"></div>';
-}
 
+  var temporal = {imgsrc:URL.createObjectURL(event.target.files[0])};
+
+  //document.getElementById("pub-con-gal").innerHTML += '<div class="col-md-6 col-sm-12 mt-5"><img class="img-thumbnail" src="' + temporal + '"></div>';
+  var resultRender=GestorModPlantilla.render("../gestion_plantilla.mod/templates/templatehomerestaurante.hbs",temporal);
+    
+  resultRender.then(function (value) {
+    document.getElementById("pub-con-gal").innerHTML += value;
+  })
+
+}
 //////////////////////VIDEO/////////////////////////////////////////////////////////
 
 function validarVideo() {
