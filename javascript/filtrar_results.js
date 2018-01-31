@@ -20,7 +20,7 @@ class Buscador {
 
 class Restaurante {
     static pintaRest(datRest) {
-        var restFiltrado = GestorModPlantilla.procesa("./gestion_plantilla.mod/templates/templRestFiltrados.hbs");
+        var restFiltrado = GestorModPlantilla.procesa("./mod.gestion_plantilla/templates/templRestFiltrados.hbs");
         return restFiltrado.then(function (value) {
             var tmplFilRes = Handlebars.compile(value[0].innerHTML);
             return $('#section-fichas').append(tmplFilRes(datRest));
