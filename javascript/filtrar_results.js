@@ -5,39 +5,45 @@ class Buscador {
     }
     obtenerData() {
         let fichas = document.getElementById("section-fichas");
-        let okUrl = "http://www.mocky.io/v2/5a5355223000002b1e1ebebe";
+        let okUrl = "http://www.mocky.io/v2/5a71a2f62f0000df1177633a";
         let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         Ajax("GET", okUrl, (data) => {
             let contenido = "";
+            console.log(data)
             data.forEach(restaurante => {
-                contenido += Restaurante.renderizar(restaurante);
+                contenido += Restaurante.pintaRest(restaurante);
             });
-            fichas.innerHTML += contenido;
-        },null,"fail-fichas");
+            // fichas.innerHTML = contenido;
+        }, null, "fail-fichas");
     }
 };
 
 class Restaurante {
-    static renderizar(data) {
-        return `
-    <div class="row">
-        <div class="col-12 col-sm-3 col-md-3 mt-1 mb-1 img-ficha">
-            <img src="${data.foto}" class="img-fluid" alt="">
-        </div>
-        <div class="col-8 col-sm-5 col-md-4 col-md-5 mt-1 mb-1 text-ficha">
-            <label>
-                <a href="b_${data.link}">
-                    <h2>${data.nombre}</h2>
-                </a>
-                <br>${data.direccion}</label>
-        </div>
-        <div class="col-sm-2 col-md-2 col-lg-4 mt-1 mb-1 opiniones-nota">
-            <label>
-                <h2>${data.nota}</h2>
-                <br>${data.opiniones} Opiniones</label>
-        </div>
-    </div>
-    `;
+    static pintaRest(datRest) {
+        var restFiltrado = GestorModPlantilla.procesa("./gestion_plantilla.mod/templates/templRestFiltrados.hbs");
+        return restFiltrado.then(function (value) {
+            var tmplFilRes = Handlebars.compile(value[0].innerHTML);
+            return $('#section-fichas').append(tmplFilRes(datRest));
+        })
+        /*      return `
+         <div class="row">
+             <div class="col-12 col-sm-3 col-md-3 mt-1 mb-1 img-ficha">
+                 <img src="${data.foto}" class="img-fluid" alt="">
+             </div>
+             <div class="col-8 col-sm-5 col-md-4 col-md-5 mt-1 mb-1 text-ficha">
+                 <label>
+                     <a href="b_${data.link}">
+                         <h2>${data.nombre}</h2>
+                     </a>
+                     <br>${data.direccion}</label>
+             </div>
+             <div class="col-sm-2 col-md-2 col-lg-4 mt-1 mb-1 opiniones-nota">
+                 <label>
+                     <h2>${data.nota}</h2>
+                     <br>${data.opiniones} Opiniones</label>
+             </div>
+         </div>
+         `;*/
     }
 };
 
@@ -50,9 +56,9 @@ class Cocina {
             <label class="custom-control-label" for="customCheck${index}">${datos[index]}</label>
         </div>
     `
-            /* <input type="checkbox" name="tipo-cocina" value="${datos}">${datos}
-             <br>*/
-            ;
+        /* <input type="checkbox" name="tipo-cocina" value="${datos}">${datos}
+         <br>*/
+        ;
     }
 };
 class Filtrado {
@@ -64,16 +70,16 @@ class Filtrado {
         let okUrl = "http://www.mocky.io/v2/5a5a49262e0000231971fb30";
         let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         $.get(okUrl, (datos) => {
-            let contenido = "";
-            for (let index = 0; index < datos.tipoDeCocina.length; index++) {
-                contenido += Cocina.renderizar(datos.tipoDeCocina, index);
-            };
-            filtros.innerHTML += contenido
-        })
-        .fail(function(jqXHR, textStatus, errorThrown){
-            $('#chk-tipo-cocina').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
-            $('#chk-tipo-cocina').attr('class', 'text-danger');
-        });
+                let contenido = "";
+                for (let index = 0; index < datos.tipoDeCocina.length; index++) {
+                    contenido += Cocina.renderizar(datos.tipoDeCocina, index);
+                };
+                filtros.innerHTML += contenido
+            })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                $('#chk-tipo-cocina').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
+                $('#chk-tipo-cocina').attr('class', 'text-danger');
+            });
     };
 };
 
@@ -84,16 +90,16 @@ class FiltroAmbientes {
         let okUrl = "http://www.mocky.io/v2/5a3b8525300000e40e82d1e3";
         let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         $.get(okUrl, (datos) => {
-            let contenido = "";
-            for (let index = 0; index < datos.tipoDeAmbiente.length; index++) {
-                contenido += Ambientes.renderizar(datos.tipoDeAmbiente, index);
-            };
-            filtros.innerHTML += contenido
-        })
-        .fail(function(jqXHR, textStatus, errorThrown){
-            $('#chk-ambientes').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
-            $('#chk-ambientes').attr('class', 'text-danger');
-        });
+                let contenido = "";
+                for (let index = 0; index < datos.tipoDeAmbiente.length; index++) {
+                    contenido += Ambientes.renderizar(datos.tipoDeAmbiente, index);
+                };
+                filtros.innerHTML += contenido
+            })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                $('#chk-ambientes').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
+                $('#chk-ambientes').attr('class', 'text-danger');
+            });
     };
 };
 
@@ -114,21 +120,30 @@ $('#btn-filtrar').click(function (e) {
     let s1 = serialize(document.getElementById('chk-tipo-cocina'));
     let s2 = serialize(document.getElementById('chk-ambientes'));
     let s5 = serialize(document.getElementById('nota-opi'));
-   /*  let s3 = document.getElementById('precioAlto').name + ":" + document.getElementById('precioAlto').value;
-    let s4 = document.getElementById('precioBajo').name + ":" + document.getElementById('precioBajo').value;*/
-    console.log(s1,s2,s5)
-    datosEnviados = [s1,s2,s5]
-    let okUrl = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
+    /*  let s3 = document.getElementById('precioAlto').name + ":" + document.getElementById('precioAlto').value;
+     let s4 = document.getElementById('precioBajo').name + ":" + document.getElementById('precioBajo').value;*/
+    console.log(s1, s2, s5)
+    datosEnviados = [s1, s2, s5]
+    let okUrl = "http://www.mocky.io/v2/5a71a2f62f0000df1177633a";
     let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
-    Ajax("POST", okUrl , function () {
-        $("#section-fichas").html("");
-    let buscando = new Buscador();
-        buscando.obtenerData();
-    }, (s1 + s2 + s5),"errorfiltro");
-    FiltradoResultados.resultados(datosEnviados).then(function(data){
-        console.log(data);
-    })
-
+    Ajax("POST", okUrl, function () {
+        FiltradoResultados.resultados(datosEnviados).then(function (data) {
+            var x = 0;
+            if (x == data.length) {
+                $('#section-fichas').html('<div class="alert alert-danger">Lo sentimos actualemnte no hay ningun restaurante que cumpla con estas caracterisiticas</div>')
+            }
+            if (data.length > x) {
+                let fichas = document.getElementById("section-fichas");
+                fichas.innerHTML = "";
+                let contenido = "";
+                console.log(data)
+                data.forEach(restaurante => {
+                    contenido += Restaurante.pintaRest(restaurante);
+                });
+                // fichas.innerHTML += contenido;
+            }
+        })
+    }, (s1 + s2 + s5), "errorfiltro");
 });
 
 ////// AJUSTE FILTROS MEDIAQUERY
@@ -154,5 +169,3 @@ ambientando.obtenerAmbientes();
 rangeSlider('#precioAlto', '#rangeAlto', '€');
 rangeSlider('#precioBajo', '#rangeBajo', '€');
 rangeSlider('#notaOpinion', '#rangeNota', "");
-
-

@@ -163,10 +163,12 @@ function ValidationBusqueda(eFecha, eBusqueda, bAdress, bFecha) {
 if (document.getElementById('buscar_submit')) {
     $('#btn_busqueda').click(function (env) {
         env.preventDefault();
+        var dat = serialize(document.getElementById("buscar_submit"));
         if (ValidationBusqueda($("#errorfecha"), $("#errorbusqueda"), $('#buscarAdress').val(), $('#buscarFecha').val())) {
             Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () {
-                window.location.href = 'b_filtrar.html'
-            }, serialize(document.getElementById("buscar_submit")), "errorbusqueda");
+                // window.location.href = 'b_filtrar.html'
+                console.log(dat);
+            }, dat, "errorbusqueda");
         }
     });
 };

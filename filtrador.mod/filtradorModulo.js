@@ -34,11 +34,12 @@ var FiltradoResultados = (function () {
     function filtro(tagsParaFiltrar) {
         return $.get("http://www.mocky.io/v2/5a71a2f62f0000df1177633a").then(function (data) {
             return data.filter(function (restaurante) {
-                var tipoCocinaFound, ambieteFound, notaFound = false;
+                var tipoCocinaFound, ambieteFound, notaFound, ciudadFound = false;
                 // Comprobamos si tiene el tipo de comida
                 tipoCocinaFound = tagsParaFiltrar[0].tipoCocina ? restaurante.tags.filter((n) => tagsParaFiltrar[0].tipoCocina.includes(n)).length > 0 : true;
                 ambienteFound = tagsParaFiltrar[1].ambientes ? restaurante.tags.filter((n) => tagsParaFiltrar[1].ambientes.includes(n)).length > 0 : true;
                 notaFound = tagsParaFiltrar[2].nota_opinion ? parseFloat(restaurante.nota) >= parseFloat(tagsParaFiltrar[2].nota_opinion) : true;
+                ciudadFound = tagsParaFiltrar.buscar_adress && restaurante.ciudad == tagsParaFiltrar.buscar_adress ?  : true;
 
                 return tipoCocinaFound && ambienteFound && notaFound;
             })
