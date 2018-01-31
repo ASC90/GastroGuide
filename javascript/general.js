@@ -4,12 +4,11 @@ function serialize(form) {
     if (!form || form.nodeName !== "FORM") {
         return;
     }
-    var i, j, q = [];
+    var i, j, q = {};
     for (i = form.elements.length - 1; i >= 0; i = i - 1) {
         if (form.elements[i].name === "") {
             continue;
         }
-        //  console.log(form.elements[i].nodeName, form.elements[i].value, form.elements[i].type)
 
         switch (form.elements[i].nodeName.toUpperCase()) {
             case 'INPUT':
@@ -18,16 +17,25 @@ function serialize(form) {
                     case 'date':
                     case 'search':
                     case 'hidden':
+                    case 'range':
                     case 'password':
                     case 'button':
                     case 'reset':
                     case 'submit':
-                        q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                        // q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                        q[form.elements[i].name] = form.elements[i].value;
                         break;
                     case 'checkbox':
                     case 'radio':
                         if (form.elements[i].checked) {
-                            q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                            //si es una array
+                            if (!q[form.elements[i].name]) q[form.elements[i].name] = [];
+                            q[form.elements[i].name].push(form.elements[i].value);
+                            //ORIGINAL
+                            // q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                            //si es un string
+                            // if (!q[form.elements[i].name]) q[form.elements[i].name] = '';
+                            // q[form.elements[i].name]+='&' + encodeURIComponent(form.elements[i].value);
                         }
                         break;
                 }
@@ -35,17 +43,20 @@ function serialize(form) {
             case 'file':
                 break;
             case 'TEXTAREA':
-                q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                // q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                q[form.elements[i].name] = form.elements[i].value;
                 break;
             case 'SELECT':
                 switch (form.elements[i].type) {
                     case 'select-one':
-                        q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                        // q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                        q[form.elements[i].name] = form.elements[i].value;
                         break;
                     case 'select-multiple':
                         for (j = form.elements[i].options.length - 1; j >= 0; j = j - 1) {
                             if (form.elements[i].options[j].selected) {
-                                q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].options[j].value));
+                                // q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].options[j].value));
+                                q[form.elements[i].name] = form.elements[i].options[j].value;
                             }
                         }
                         break;
@@ -56,32 +67,31 @@ function serialize(form) {
                     case 'reset':
                     case 'submit':
                     case 'button':
-                        q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                        // q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
+                        q[form.elements[i].name] = form.elements[i].value;
                         break;
                 }
                 break;
         }
     }
-    data = q.join("&");
+    data = q;
     //console.log(q);
     return data;
 }
 ///// Request de datos al servidor
 function Ajax(method, url, onSuccess, pinfo, iderror) {
     let getData = new XMLHttpRequest();
-    let info = pinfo || null;//email=e@e.es&pass=xxx
+    let info = pinfo || null; //email=e@e.es&pass=xxx
     getData.onreadystatechange = function () {
         if (this.readyState == 4) {
             if (this.status == 200) {
                 if (onSuccess) onSuccess(JSON.parse(this.responseText));
-            }
-            else {
+            } else {
                 document.getElementById(iderror).innerText = "Error de servidor. Por favor inténtelo de nuevo en unos segundos.";
-                $('#'+iderror).attr('class','alert alert-danger');
+                $('#' + iderror).attr('class', 'alert alert-danger');
             }
         }
-        if(this.status != 200){       
-        }
+        if (this.status != 200) {}
     };
     getData.open(method, url, true);
     getData.send(info);
@@ -93,7 +103,9 @@ function composicion(como, donde, lista) {
     lista.forEach(composicion => {
         contenido += como.renderizar(composicion);
     })
-    if (donde) { donde.innerHTML += contenido; }
+    if (donde) {
+        donde.innerHTML += contenido;
+    }
 };
 
 ///////Filtro de resultados en la barra del buscador
@@ -111,10 +123,10 @@ class BusquedaCocina {
     obtenerDatos() {
         let buscando = document.getElementById("selc-cocina");
         let okUrl = "http://www.mocky.io/v2/5a5a49262e0000231971fb30";
-        let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";       
+        let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         Ajax("GET", okUrl, (datos) => {
             composicion(BuscadorCocina, buscando, datos.tipoDeCocina);
-        },null,"errorbusqueda");
+        }, null, "errorbusqueda");
     };
 };
 let buscandoCocina = new BusquedaCocina();
@@ -152,7 +164,9 @@ if (document.getElementById('buscar_submit')) {
     $('#btn_busqueda').click(function (env) {
         env.preventDefault();
         if (ValidationBusqueda($("#errorfecha"), $("#errorbusqueda"), $('#buscarAdress').val(), $('#buscarFecha').val())) {
-            Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () { window.location.href = 'b_filtrar.html' }, serialize(document.getElementById("buscar_submit")),"errorbusqueda");
+            Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () {
+                window.location.href = 'b_filtrar.html'
+            }, serialize(document.getElementById("buscar_submit")), "errorbusqueda");
         }
     });
 };
@@ -168,13 +182,12 @@ if (document.getElementById('selector-buscador-mvl')) {
         if (ValidationBusqueda(null, $("#mvl_eBusqueda"), $('#buscar_adress_mvl').val(), null)) {
             $('#myModal').modal('show');
             $.getJSON(okUrl, (datos) => {
-                composicion(BuscadorCocina, mvlbsc, datos.tipoDeCocina);
-            })
-            .fail(function(jqXHR, textStatus, errorThrown){
-                $('#mvl_eFecha').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
-                $('#mvl_eFecha').attr('class', 'text-danger');
-            });
-            ;
+                    composicion(BuscadorCocina, mvlbsc, datos.tipoDeCocina);
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                    $('#mvl_eFecha').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
+                    $('#mvl_eFecha').attr('class', 'text-danger');
+                });;
         }
     });
     $('#btn-mvl').click(function (ev) {
@@ -183,15 +196,13 @@ if (document.getElementById('selector-buscador-mvl')) {
         let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         if (ValidationBusqueda($('#mvl_eFecha'), $("#mvl_eBusqueda"), $('#buscar_adress_mvl').val(), $('#fecha_mvl').val())) {
             $.post(okUrl, serialize(document.getElementById("form_buscar_submit")), function () {
-                $('#myModal').modal('hide');
-                window.location.href = 'b_filtrar.html';
-            })
-            .fail(function(jqXHR, textStatus, errorThrown){
-                $('#mvl_eFecha').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
-                $('#mvl_eFecha').attr('class', 'text-danger');
-            });
+                    $('#myModal').modal('hide');
+                    window.location.href = 'b_filtrar.html';
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                    $('#mvl_eFecha').html("Lo sentimos ha habido un error en el servidor, por favor pruebe más tarde");
+                    $('#mvl_eFecha').attr('class', 'text-danger');
+                });
         }
-    }
-    );
+    });
 };
-
