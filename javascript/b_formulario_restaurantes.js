@@ -2,7 +2,7 @@
 window.onload = function () {
 
 
-    function Restaurante(restaurante,nombre,apellidos,genero,correo,password,telefono,cp,poblacion,calle,numero) {
+    function Restaurante(restaurante, nombre, apellidos, genero, correo, password, telefono, cp, poblacion, calle, numero) {
 
         this.restaurante = restaurante;
         this.nombre = nombre;
@@ -36,7 +36,7 @@ window.onload = function () {
 
             }
 
-            else ok = true;
+   
         }
 
         function isChecked(val, err, fun) {
@@ -50,7 +50,7 @@ window.onload = function () {
                 ok = obj.status;
 
             }
-            else ok = true;
+   
         }
 
         validarVacio('[name="restaurante"]', "#errorrestaurante", "restauranteVacio");
@@ -67,31 +67,28 @@ window.onload = function () {
         validarVacio('[name="numero"]', "#errornumero", "numeroVacio");
         isChecked("#rescheckcheck", "#errorrescheck", "checked");
 
-        if (ok) { alert("GREAT SUCCESS") 
-    
-        var usuario = new Restaurante();
+        if (ok) {
 
-        usuario.restaurante = $('[name="restaurante"]').val();
-        usuario.nombre = $('[name="nombre"]').val();
-        usuario.apellidos = $('[name="apellidos"]').val();
-        usuario.genero = $('[name="genero"]').val();
-        usuario.correo = $('[name="email"]').val();
-        usuario.password = $("#password2").val();
-        usuario.telefono = $('[name="telefono"]').val();
-        usuario.cp = $('[name="cp"]').val();
-        usuario.poblacion = $('[name="poblacion"]').val();
-        usuario.calle = $('[name="calle"]').val();
-        usuario.numero = $('[name="numero"]').val();
+            var usuario = new Restaurante();
 
-        
-        console.log(usuario)
-    
+            usuario.restaurante = $('[name="restaurante"]').val();
+            usuario.nombre = $('[name="nombre"]').val();
+            usuario.apellidos = $('[name="apellidos"]').val();
+            usuario.genero = $('[name="genero"]').val();
+            usuario.correo = $('[name="email"]').val();
+            usuario.password = $("#password2").val();
+            usuario.telefono = $('[name="telefono"]').val();
+            usuario.cp = $('[name="cp"]').val();
+            usuario.poblacion = $('[name="poblacion"]').val();
+            usuario.calle = $('[name="calle"]').val();
+            usuario.numero = $('[name="numero"]').val();
+ 
 
-        $.get("http://www.mocky.io/v2/5a70bab2330000534aff5e05",usuario,function(data){console.log(data)})
+            console.log(usuario);
 
+            $.post("http://www.mocky.io/v2/5a70bab2330000534aff5e05", usuario, function (data) { console.log(data) });
 
-
-    }
+        }
 
     }
 
@@ -106,23 +103,25 @@ window.onload = function () {
             $(err).text(obj.error).addClass(obj.class);
             ok = obj.status;
         }
-        else ok = true;
+        
     }
     //////////////////////////////////////gritar Regex y excluir campos que no lo necessitan///////////////////////////
-    $("form input").not("#restaurante").not("#password2").not("#poblacion").not("#calle").not("#numero").keyup(function () {
+    $("form input")
+        .not("#restaurante")
+        .not("#password2")
+        .not("#poblacion")
+        .not("#calle")
+        .not("#numero")
+        .keyup(function () {
+            var val = this.value;
+            var fun = this.id + "Regex";
+            var err = "#error" + this.id;
 
+            validarRegex(val, fun, err);
 
-        var val = this.value;
-        var fun = this.id + "Regex";
-        var err = "#error" + this.id;
-
-        validarRegex(val, fun, err);
-
-    })
+        })
     ////////////////////////////////////comparar contraseñas/////////////////////////////////////////
     $("#password2").keyup(function () {
-
-        console.log("holaksae");
 
         $("#errorpassword2").empty().removeClass();
 
@@ -132,7 +131,7 @@ window.onload = function () {
             $("#errorpassword2").text(obj.error).addClass(obj.class);
             ok = obj.status
         }
-        else ok = true;
+      
     })
 
     ///////////////////////vaciar error de vacio al escribir para campos que no usan regex/////////////
