@@ -46,7 +46,7 @@ class Cocina {
     static renderizar(datos, index) {
         return `
         <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck${index}" name="tipo-cocina" value="${datos[index]}">
+            <input type="checkbox" class="custom-control-input" id="customCheck${index}" name="tipoCocina" value="${datos[index]}">
             <label class="custom-control-label" for="customCheck${index}">${datos[index]}</label>
         </div>
     `
@@ -113,16 +113,21 @@ $('#btn-filtrar').click(function (e) {
     e.preventDefault();
     let s1 = serialize(document.getElementById('chk-tipo-cocina'));
     let s2 = serialize(document.getElementById('chk-ambientes'));
-    let s3 = document.getElementById('precioAlto').name + ":" + document.getElementById('precioAlto').value;
-    let s4 = document.getElementById('precioBajo').name + ":" + document.getElementById('precioBajo').value;
-    let s5 = document.getElementById('notaOpinion').name + ":" + document.getElementById('notaOpinion').value;
+    let s5 = serialize(document.getElementById('nota-opi'));
+   /*  let s3 = document.getElementById('precioAlto').name + ":" + document.getElementById('precioAlto').value;
+    let s4 = document.getElementById('precioBajo').name + ":" + document.getElementById('precioBajo').value;*/
+    console.log(s1,s2,s5)
+    datosEnviados = [s1,s2,s5]
     let okUrl = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
     let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
     Ajax("POST", okUrl , function () {
         $("#section-fichas").html("");
     let buscando = new Buscador();
         buscando.obtenerData();
-    }, (s1 + s2 + s3 + s4 + s5),"errorfiltro");
+    }, (s1 + s2 + s5),"errorfiltro");
+    FiltradoResultados.resultados(datosEnviados).then(function(data){
+        console.log(data);
+    })
 
 });
 
