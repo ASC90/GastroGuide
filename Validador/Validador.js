@@ -157,20 +157,56 @@ var Validador = (function () {
 
     var telRegex = function (val) {
 
-        var telefonoreg = /^(?=.*[0-9])(?=.{8})/;
+        var telefonoreg = /^[0-9]{9}$/;
         return _regex(telefonoreg, val, "Por favor introduzca su teléfono en formato correcto");
     }
     var cpRegex = function (val) {
-
-        var cpreg = /^(?=.*[0-9])(?=.{5})/;
+		//	/^(?=.*[0-9])(?=.{4})/
+        var cpreg = /^[0-9]{5}$/;
         return _regex(cpreg, val, "Por favor introduzca su código postal en formato correcto");
     }
-
     var password2Regex = function (val1,val2) {
 
         return _equalTo(val1,val2,"Las contraseñas no coinciden");
     }
- 
+	/////////////Arnau
+ 	var video = function (val) {
+
+        if (!val) {
+
+            return {
+                error: "Campo vacío",
+                class: "alert alert-danger",
+                status: false
+			}
+        }
+    }
+	var videoUrl = function (val) {
+		var urlRegExp = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/;
+		if (urlRegExp.test(val))
+		{
+			return {ok:"ok"}
+		}
+		else
+			{
+				return {
+					error: "Url incorrecta",
+					class: "alert alert-danger",
+					status: false
+				}
+			}
+	}
+	var empty = function (val)
+	{
+		 if (!val) {
+
+            return {
+                error: "Campo vacío",
+                class: "alert alert-danger",
+                status: false
+			}
+        }
+	}
     return {
         restauranteVacio: restauranteVacio,
         nombreVacio: nombreVacio,
@@ -192,6 +228,10 @@ var Validador = (function () {
         password2Regex: password2Regex,
         telRegex: telRegex,
         cpRegex: cpRegex,
+		//Arnau
+		video: video,
+		videoUrl: videoUrl,
+		empty: empty,
         
     }
 

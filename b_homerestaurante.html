@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/logoicon.png">
 	<!--BOOTSTRAP-->
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script src="Validador/Validador.js"></script>
 </head>
 
 <body>
@@ -99,19 +100,19 @@
 						<form id="form-video-res">
 							<div class="form-group">
 								<input class="form-control" id="titVideo" type="text" placeholder="Introduce un titulo...">
-								<span class= "errorRojo" id="titVideoOK"></span>
+								<div class= "errorRojo" id="titVideoOK"></div>
 							</div>	
 							<div class="form-group">
 								<input class="form-control" id="descVideo" type="text" placeholder="Descripción">
-								<span class= "errorRojo" id="descVideoOK"></span>
+								<div class= "errorRojo" id="descVideoOK"></div>
 							</div>
 							<div class="form-group">
 								<input class="form-control" id="urlVideo" type="text" placeholder="URL">
-								<span class= "errorRojo" id="urlVideoOK"></span>
+								<div class= "errorRojo" id="urlVideoOK"></div>
 							</div>
 							<div class="form-group">
 								<textarea class="form-control" id="textoVideo" rows="3" placeholder="Introduce un texto..."></textarea>
-								<span class= "errorRojo" id="textoVideoOK"></span>								
+								<div class= "errorRojo" id="textoVideoOK"></div>								
 							</div>
 							<div id="errorVideoResturante"></div>
 						</form>
@@ -130,24 +131,24 @@
 						<form id="form-menu-restaurante">
 							<div class="form-group">
 								<textarea class="form-control" id="entrante" rows="3" placeholder="Introduce los entrantes..."></textarea>
-								<span class= "errorRojo" id="entranteOK"></span>	
+								<div class= "errorRojo" id="entranteOK"></div>	
 								<div class="form-group mt-3">
 									<textarea class="form-control" id="primerPlato" rows="3" placeholder="Introduce los primeros platos..."></textarea>
-									<span class= "errorRojo" id="primerPlatoOK"></span>								
+									<div class= "errorRojo" id="primerPlatoOK"></div>								
 								</div>
 								<div class="form-group mt-3">
 									<textarea class="form-control" id="segundoPlato" rows="3" placeholder="Introduce los segundos platos..."></textarea>
-									<span class= "errorRojo" id="segundoPlatoOK"></span>								
+									<div class= "errorRojo" id="segundoPlatoOK"></div>								
 								</div>
 								<div class="form-group mt-3">
 									<textarea class="form-control" id="postre" rows="3" placeholder="Introduce los postres..."></textarea>
-									<span class= "errorRojo" id="postreOK"></span>								
+									<div class= "errorRojo" id="postreOK"></div>								
 								</div>
 								<div class="form-group mt-3">
 									<input class="form-control" id="titMenu" type="text" placeholder="Nombre del menú">
-									<span class= "errorRojo" id="titMenuOK"></span>
+									<div class= "errorRojo" id="titMenuOK"></div>
 									<textarea class="form-control mt-3" id="nombreMenu" rows="3" placeholder="Introduce algún aspecto destacado..."></textarea>
-									<span class= "errorRojo" id="nombreMenuOK"></span>								
+									<div class= "errorRojo" id="nombreMenuOK"></div>								
 								</div>	
 								<div id="errorMenuRestaurante"></div>					
 							</div>
@@ -170,9 +171,9 @@
 							<input type="checkbox" class="form-check-input" id="radioOferta2">
 							<label class="form-check-label" for="radioOferta2">Descuentos</label>
 							<br>
-							<span id="radioOfertaOK" class="errorRojo"></span>	
+							<div id="radioOfertaOK" class="errorRojo"></div>	
 							<textarea class="form-control mt-5" id="textoOferta" rows="3" placeholder="Describe la oferta..."></textarea>
-							<span id="textoOfertaOK" class="errorRojo"></span>
+							<div id="textoOfertaOK" class="errorRojo"></div>
 							<div class="col-lg-12 p-0">
 								<button class="boton float-right" id="btnOferta">Aplicar</button>	
 								<br>
@@ -190,11 +191,11 @@
 						<form id="form-recetas-restaurante">									
 							<div class="form-group">
 								<input class="form-control mb-5" id="receta" type="text" name="receta" placeholder="Nombre de la receta...">
-								<span id="recetaOK" class="errorRojo"></span>
+								<div id="recetaOK" class="errorRojo"></div>
 							</div>
 							<div class="form-group">
 								<input id="ingredientes" class="form-control" type="text" name="ingredientes" placeholder="Ingredientes...">
-								<span id="ingredientesOK" class="errorRojo"></span>	
+								<div id="ingredientesOK" class="errorRojo"></div>	
 								<div class="col-lg-12 text-right p-0">
 									<button class="boton" id="btnIngredientes">Añadir +</button>
 								</div>		
@@ -205,7 +206,7 @@
 							</div>
 							
 							<div class="form-group">
-								<span id="textoRecetaOK" class="errorRojo"></span>
+								<div id="textoRecetaOK" class="errorRojo"></div>
 								<textarea class="form-control" id="textoReceta" rows="3" placeholder="Introduce la preparación de la receta..."></textarea>
 								<br>
 								<div id="errorRecetaRestaurante"></div>
@@ -274,8 +275,8 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <!-- BOOTSTRAP --> 
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script src="../gestion_plantilla.mod/handlebars-v4.0.11.js"></script>
-<script src="../gestion_plantilla.mod/gestormodplantilla.js"></script>
+<script src="gestion_plantilla.mod/handlebars-v4.0.11.js"></script>
+<script src="gestion_plantilla.mod/gestormodplantilla.js"></script>
 <script src="javascript/homerestaurante.js"></script>
 <script src="./javascript/general.js"></script>
 </body>
