@@ -163,15 +163,45 @@ function ValidationBusqueda(eFecha, eBusqueda, bAdress, bFecha) {
 if (document.getElementById('buscar_submit')) {
     $('#btn_busqueda').click(function (env) {
         env.preventDefault();
-        var dat = serialize(document.getElementById("buscar_submit"));
+        var dat = [];
+        dat.push(serialize(document.getElementById("buscar_submit")));
         if (ValidationBusqueda($("#errorfecha"), $("#errorbusqueda"), $('#buscarAdress').val(), $('#buscarFecha').val())) {
             Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () {
-                // window.location.href = 'b_filtrar.html'
+                window.location.href = 'b_filtrar.html'
                 console.log(dat);
             }, dat, "errorbusqueda");
         }
     });
 };
+if (document.getElementById('buscar_submit')) {
+    $('#btn_busqueda_filtro').click(function (env) {
+        env.preventDefault();
+        var dat = [];
+        dat.push(serialize(document.getElementById("buscar_submit")));
+        if (ValidationBusqueda($("#errorfecha"), $("#errorbusqueda"), $('#buscarAdress').val(), $('#buscarFecha').val())) {
+            Ajax("POST", "http://www.mocky.io/v2/5a54dda32d000000315b1de3", function () {
+                // window.location.href = 'b_filtrar.html'
+                console.log(dat);
+                FiltradoResultados.busquedas(dat).then(function (data) {
+                    var x = 0;
+                    if (x == data.length) {
+                        $('#section-fichas').html('<div class="alert alert-danger">Lo sentimos actualemnte no hay ningun restaurante que cumpla con estas caracterisiticas</div>')
+                    }
+                    if (data.length > x) {
+                        let fichas = document.getElementById("section-fichas");
+                        fichas.innerHTML = "";
+                        let contenido = "";
+                        console.log(data)
+                        data.forEach(restaurante => {
+                            contenido += Restaurante.pintaRest(restaurante);
+                        });
+                    }
+                })
+            }, dat, "errorbusqueda");
+        }
+    });
+};
+
 
 if (document.getElementById('selector-buscador-mvl')) {
     $('#selector-buscador-mvl').click(function (e) {
