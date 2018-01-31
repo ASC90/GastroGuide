@@ -20,9 +20,9 @@ describe("Libreria validador", function () {
         })
     })
 
-    it("si paso numeros devuelve objeto con error", function () {
-        expect(Validador.checked(123)).toEqual({
-            error: "Su nombre no puede contener números o caracteres especiales",
+    it("si checkbox no esta checked", function () {
+        expect(Validador.checked("test")).toEqual({
+            error: "Tiene que aceptar las condiciones legales",
             class: "alert alert-danger",
             status: false
         })
