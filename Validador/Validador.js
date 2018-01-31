@@ -170,7 +170,44 @@ var Validador = (function () {
 
         return _equalTo(val1,val2,"Las contraseñas no coinciden");
     }
- 
+	/////////////Arnau
+ 	var video = function (val) {
+
+        if (!val) {
+
+            return {
+                error: "Campo vacío",
+                class: "alert alert-danger",
+                status: false
+			}
+        }
+    }
+	var videoUrl = function (val) {
+		var urlRegExp = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/;
+		if (urlRegExp.test(val))
+		{
+			return {ok:"ok"}
+		}
+		else
+			{
+				return {
+					error: "Url incorrecta",
+					class: "alert alert-danger",
+					status: false
+				}
+			}
+	}
+	var empty = function (val)
+	{
+		 if (!val) {
+
+            return {
+                error: "Campo vacío",
+                class: "alert alert-danger",
+                status: false
+			}
+        }
+	}
     return {
         restauranteVacio: restauranteVacio,
         nombreVacio: nombreVacio,
@@ -192,6 +229,10 @@ var Validador = (function () {
         password2Regex: password2Regex,
         telRegex: telRegex,
         cpRegex: cpRegex,
+		//Arnau
+		video: video,
+		videoUrl: videoUrl,
+		empty: empty,
         
     }
 
