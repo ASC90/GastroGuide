@@ -26,14 +26,14 @@ function initAll () {
 
 	function pintaHandlebars(jsonObj){
 		//////////////////////////////////////////////Escriu i dibuixa l'HTML
-		var nombreRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/nombre.hbs");
-		var adresaRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/adresa.hbs");
-		var valoracionRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/valoracion.hbs");
-		var tipoRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/tipo.hbs");				
-		var imagenRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/imagen.hbs");		
-		var menuRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/menu.hbs");
-		var opinionesRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/opiniones.hbs");
-		var pofertaRestaurante = GestorModPlantilla.procesa("../gestion_plantilla.mod/templates/formularioRestaurante/poferta.hbs");
+		var nombreRestaurante = GestorModPlantilla.procesa("../mod.gestion_plantilla/templates/formularioRestaurante/nombre.hbs");
+		var adresaRestaurante = GestorModPlantilla.procesa("../mod.gestion_plantilla/templates/formularioRestaurante/adresa.hbs");
+		var valoracionRestaurante = GestorModPlantilla.procesa("../mod.gestion_plantilla/templates/formularioRestaurante/valoracion.hbs");
+		var tipoRestaurante = GestorModPlantilla.procesa("../mod.gestion_plantilla/templates/formularioRestaurante/tipo.hbs");				
+		var imagenRestaurante = GestorModPlantilla.procesa("../mod.gestion_plantilla/templates/formularioRestaurante/imagen.hbs");		
+		var menuRestaurante = GestorModPlantilla.procesa("../mod.gestion_plantilla/templates/formularioRestaurante/menu.hbs");
+		var opinionesRestaurante = GestorModPlantilla.procesa("../mod.gestion_plantilla/templates/formularioRestaurante/opiniones.hbs");
+		var pofertaRestaurante = GestorModPlantilla.procesa("../mod.gestion_plantilla/templates/formularioRestaurante/poferta.hbs");
 
 		//document.getElementById("nombre").innerHTML = jsonObj.nombre;
 		nombreRestaurante.then(function (value) {

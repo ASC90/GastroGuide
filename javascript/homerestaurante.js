@@ -10,7 +10,7 @@ document.getElementById("imgsrc").onchange = function () {
 	var temporal = {imgsrc:URL.createObjectURL(event.target.files[0])};
 
 	//document.getElementById("pub-con-gal").innerHTML += '<div class="col-md-6 col-sm-12 mt-5"><img class="img-thumbnail" src="' + temporal + '"></div>';
-	var resultRender=GestorModPlantilla.render("../gestion_plantilla.mod/templates/img_homeRestaurante.hbs",temporal);
+	var resultRender=GestorModPlantilla.render("../mod.gestion_plantilla/templates/img_homeRestaurante.hbs",temporal);
 	    
 	resultRender.then(function (value) {
 		$("#pub-con-gal").append(value);
