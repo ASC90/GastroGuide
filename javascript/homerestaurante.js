@@ -1,20 +1,20 @@
 var okVid = true;
 var okMenu = true;
 var okOferta = true;
-var okRecetas = true;
+var okRecetas = true; 
 
 //////////////////////FOTO/////////////////////////////////////////////////////////
 
 document.getElementById("imgsrc").onchange = function () {
 
-  var temporal = {imgsrc:URL.createObjectURL(event.target.files[0])};
+	var temporal = {imgsrc:URL.createObjectURL(event.target.files[0])};
 
-  //document.getElementById("pub-con-gal").innerHTML += '<div class="col-md-6 col-sm-12 mt-5"><img class="img-thumbnail" src="' + temporal + '"></div>';
-  var resultRender=GestorModPlantilla.render("../gestion_plantilla.mod/templates/templatehomerestaurante.hbs",temporal);
-    
-  resultRender.then(function (value) {
-    document.getElementById("pub-con-gal").innerHTML += value;
-  })
+	//document.getElementById("pub-con-gal").innerHTML += '<div class="col-md-6 col-sm-12 mt-5"><img class="img-thumbnail" src="' + temporal + '"></div>';
+	var resultRender=GestorModPlantilla.render("../gestion_plantilla.mod/templates/img_homeRestaurante.hbs",temporal);
+	    
+	resultRender.then(function (value) {
+		$("#pub-con-gal").append(value);
+	})
 
 }
 ////////////////////////////////////////////////////////////
