@@ -1,10 +1,11 @@
+<div id="contentRest">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-3 mt-1 mb-1 img-ficha">
-            <img src="${data.foto}" class="img-fluid" alt="">
+            <img src="{{foto}}" class="img-fluid" alt="">
         </div>
-        <div class="col-8 col-sm-8 col-md-4 col-lg-5 mt-1 mb-1 text-ficha">
+        <div class="col-5 col-sm-5 col-md-4 col-lg-5 mt-1 mb-1 text-ficha">
             <label>
-                <a href="b_${data.link}">
+                <a href="b_{{link}}">
                     <h2>{{nombre}}</h2>
                 </a>
                 <br>{{direccion}}</label>
@@ -15,3 +16,4 @@
                 <br>{{opiniones}} Opiniones</label>
         </div>
     </div>
+</div>

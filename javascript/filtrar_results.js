@@ -5,40 +5,45 @@ class Buscador {
     }
     obtenerData() {
         let fichas = document.getElementById("section-fichas");
-        let okUrl = "http://www.mocky.io/v2/5a5355223000002b1e1ebebe";
+        let okUrl = "http://www.mocky.io/v2/5a71a2f62f0000df1177633a";
         let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         Ajax("GET", okUrl, (data) => {
             let contenido = "";
+            console.log(data)
             data.forEach(restaurante => {
                 contenido += Restaurante.pintaRest(restaurante);
             });
-            fichas.innerHTML += contenido;
+            // fichas.innerHTML = contenido;
         }, null, "fail-fichas");
     }
 };
 
 class Restaurante {
-    static pintaRest(data) {
-        return GestorModPlantilla.render("../gestion_plantilla.mod/templates/templRestFiltrados.hbs", data);
+    static pintaRest(datRest) {
+        var restFiltrado = GestorModPlantilla.procesa("./gestion_plantilla.mod/templates/templRestFiltrados.hbs");
+        return restFiltrado.then(function (value) {
+            var tmplFilRes = Handlebars.compile(value[0].innerHTML);
+            return $('#section-fichas').append(tmplFilRes(datRest));
+        })
         /*      return `
-          <div class="row">
-              <div class="col-12 col-sm-3 col-md-3 mt-1 mb-1 img-ficha">
-                  <img src="${data.foto}" class="img-fluid" alt="">
-              </div>
-              <div class="col-8 col-sm-5 col-md-4 col-md-5 mt-1 mb-1 text-ficha">
-                  <label>
-                      <a href="b_${data.link}">
-                          <h2>${data.nombre}</h2>
-                      </a>
-                      <br>${data.direccion}</label>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-4 mt-1 mb-1 opiniones-nota">
-                  <label>
-                      <h2>${data.nota}</h2>
-                      <br>${data.opiniones} Opiniones</label>
-              </div>
-          </div>
-          `;*/
+         <div class="row">
+             <div class="col-12 col-sm-3 col-md-3 mt-1 mb-1 img-ficha">
+                 <img src="${data.foto}" class="img-fluid" alt="">
+             </div>
+             <div class="col-8 col-sm-5 col-md-4 col-md-5 mt-1 mb-1 text-ficha">
+                 <label>
+                     <a href="b_${data.link}">
+                         <h2>${data.nombre}</h2>
+                     </a>
+                     <br>${data.direccion}</label>
+             </div>
+             <div class="col-sm-2 col-md-2 col-lg-4 mt-1 mb-1 opiniones-nota">
+                 <label>
+                     <h2>${data.nota}</h2>
+                     <br>${data.opiniones} Opiniones</label>
+             </div>
+         </div>
+         `;*/
     }
 };
 
@@ -119,23 +124,26 @@ $('#btn-filtrar').click(function (e) {
      let s4 = document.getElementById('precioBajo').name + ":" + document.getElementById('precioBajo').value;*/
     console.log(s1, s2, s5)
     datosEnviados = [s1, s2, s5]
-    let okUrl = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
+    let okUrl = "http://www.mocky.io/v2/5a71a2f62f0000df1177633a";
     let badUrl = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
     Ajax("POST", okUrl, function () {
-        $("#section-fichas").html("");
-        let buscando = new Buscador();
-        buscando.obtenerData();
+        FiltradoResultados.resultados(datosEnviados).then(function (data) {
+            var x = 0;
+            if (x == data.length) {
+                $('#section-fichas').html('<div class="alert alert-danger">Lo sentimos actualemnte no hay ningun restaurante que cumpla con estas caracterisiticas</div>')
+            }
+            if (data.length > x) {
+                let fichas = document.getElementById("section-fichas");
+                fichas.innerHTML = "";
+                let contenido = "";
+                console.log(data)
+                data.forEach(restaurante => {
+                    contenido += Restaurante.pintaRest(restaurante);
+                });
+                // fichas.innerHTML += contenido;
+            }
+        })
     }, (s1 + s2 + s5), "errorfiltro");
-    FiltradoResultados.resultados(datosEnviados).then(function (data) {
-        var x = 0;
-        if (x == data.length) {
-            $('#section-fichas').html('<div class="alert alert-danger">Lo sentimos actualemnte no hay ningun restaurante que cumpla con estas caracterisiticas</div>')
-        }
-        if (data.length > x) {
-            console.log(data);
-        }
-    })
-
 });
 
 ////// AJUSTE FILTROS MEDIAQUERY
