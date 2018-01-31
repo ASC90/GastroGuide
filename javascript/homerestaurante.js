@@ -63,7 +63,7 @@ function validarPublicarOferta(evt)
 {
 	evt.preventDefault();
 	validarOfertas("#textoOferta", "#textoOfertaOK");
-	validarOfertasRadios("#radioOferta1:checkbox:checked","#radioOferta1:checkbox:checked","#radioOfertaOK");videoPost();
+	validarOfertasRadios("#radioOferta1:checkbox:checked","#radioOferta1:checkbox:checked","#radioOfertaOK");
 	ofertasPost();
 }
 $("#btnOferta").click(validarPublicarOferta);
@@ -148,6 +148,7 @@ function videoPost() {
         var urlOK = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
         var urlNOK = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
         Ajax("POST", urlNOK, limpiar(), serialize(document.getElementById("form-video")), "errorVideoResturante");
+		alert ("Tu contenido ha sido publicado");
     }
 }
 
@@ -200,6 +201,7 @@ function menuPost() {
         var urlOK = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
         var urlNOK = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
 		Ajax("POST",urlNOK, limpiar(), serialize(document.getElementById("form-menu-restaurante")),"errorMenuRestaurante");
+		alert ("Tu contenido ha sido publicado");
     }
 }
 
@@ -253,6 +255,7 @@ function ofertasPost() {
         var urlOK = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
         var urlNOK = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
 		Ajax("POST",urlNOK, limpiar(), serialize(document.getElementById("form-oferta-restaurante")),"errorOfertaRestaurante");
+		alert ("Tu contenido ha sido publicado");
     }
 }
 
@@ -296,6 +299,7 @@ function recetasPost() {
         var urlOK = "http://www.mocky.io/v2/5a54dda32d000000315b1de3";
         var urlNOK = "http://www.mocky.io/v2/5a5cb2262e0000e3109f83d9";
 		Ajax("POST",urlNOK, limpiar(), serialize(document.getElementById("form-recetas-restaurante")),"errorRecetaRestaurante");
+		alert ("Tu contenido ha sido publicado");
     }
 
 }
