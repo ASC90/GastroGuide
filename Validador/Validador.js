@@ -157,15 +157,14 @@ var Validador = (function () {
 
     var telRegex = function (val) {
 
-        var telefonoreg = /^(?=.*[0-9])(?=.{8})/;
+        var telefonoreg = /^[0-9]{9}$/;
         return _regex(telefonoreg, val, "Por favor introduzca su teléfono en formato correcto");
     }
     var cpRegex = function (val) {
-
-        var cpreg = /^(?=.*[0-9])(?=.{5})/;
+		//	/^(?=.*[0-9])(?=.{4})/
+        var cpreg = /^[0-9]{5}$/;
         return _regex(cpreg, val, "Por favor introduzca su código postal en formato correcto");
     }
-
     var password2Regex = function (val1,val2) {
 
         return _equalTo(val1,val2,"Las contraseñas no coinciden");
