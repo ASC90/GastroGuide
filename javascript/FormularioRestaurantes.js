@@ -40,7 +40,7 @@ function validarFormularioRestaurantes(event1) {
     if (formularioRestaurantes.restaurante.value == "" || formularioRestaurantes.restaurante.value == null) {
         document.getElementById("errorrestaurante").innerText = "Por favor introduzca el nombre de su restaurante";
         document.getElementById("errorrestaurante").className = "alert alert-danger";
-        ;
+        ok = false;
     }
     ///////////////////////////////////////////NOMBRE CLIENTE///////////////////////////////////////////////////////
 
