@@ -20,14 +20,17 @@ describe("Libreria validador", function () {
         })
     })
 
-    it("si checkbox no esta checked", function () {
-        expect(Validador.checked("test")).toEqual({
+    it("si checkbox esta checked devuelve null", function () {
+        expect(Validador.checked('<input type="checkbox" checked>')).toEqual(null)
+    })
+
+    it("si checkbox no esta checked devuelve objeto con error", function () {
+        expect(Validador.checked('<input type="checkbox">')).toEqual({
             error: "Tiene que aceptar las condiciones legales",
             class: "alert alert-danger",
             status: false
         })
     })
-
 
 
 })

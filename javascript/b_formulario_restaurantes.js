@@ -157,4 +157,11 @@ window.onload = function () {
 
     })
 
+    function previewFormularioRestaurantes() {
+        var output = document.getElementById("resImagePreview");
+        output.src = URL.createObjectURL(event.target.files[0]);
+    }
+
+    document.getElementById("res-anadir").onchange = previewFormularioRestaurantes;
+
 }
